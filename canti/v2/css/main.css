@@ -536,6 +536,7 @@ footer {
 .c {
     display: inline !important; /* INLINE invece di inline-block: mantiene la parola unita! */
     position: relative !important;
+    font-weight: inherit !important;
 }
 
 /* L'accordo BLU in alto */
