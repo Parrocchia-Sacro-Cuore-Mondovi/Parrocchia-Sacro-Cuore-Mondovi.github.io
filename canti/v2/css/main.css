@@ -520,47 +520,64 @@ footer {
 }
 
 /* ============================================================
-   ACCORDI ALTI E TESTO COMPATTO (ZERO SPAZI)
+   ACCORDI ALTI E TESTO COMPATTO (MIGLIORATO PER MOBILE)
    ============================================================ */
 
 .lyrics {
-    line-height: 3.5 !important;   /* Spazio abbondante tra le righe */
+    line-height: 1.5 !important; /* Interlinea base compatta per TUTTI */
     font-size: 1.15rem !important;
-    padding-top: 40px !important;  /* Spazio in cima alla prima riga */
-    white-space: pre-wrap !important;
-}
-
-/* Quando nascondi gli accordi, il testo torna compresso */
-.lyrics.hide-chords {
-    line-height: 1.5 !important;
     padding-top: 10px !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important; /* Evita che spezzi le parole a caso */
+    overflow-wrap: break-word !important; /* Manda a capo l'intera parola se la riga finisce */
 }
 
-/* Contenitore dell'accordo: NON deve avere inline-block o flex */
-.c-wrap {
+/* L'elemento accordo */
+.c {
+    display: inline !important; /* INLINE invece di inline-block: mantiene la parola unita! */
     position: relative !important;
-    display: inline !important; /* Mantiene le lettere unite */
 }
 
-/* L'accordo BLU: vola sopra senza occupare spazio orizzontale */
-.c-note {
+/* L'accordo BLU in alto */
+.c::before {
+    content: attr(data-v) !important;
     position: absolute !important;
-    
-    /* ALTEZZA: alzato a 2.5em per massima distanza */
-    bottom: 2.5em !important; 
-    
+    bottom: 100% !important; /* Si appoggia esattamente sopra la lettera, scalando meglio */
     left: 0 !important;
     color: var(--primary-blue) !important;
     font-weight: bold !important;
     font-size: 0.85rem !important;
-    white-space: nowrap !important;
     line-height: 1 !important;
     pointer-events: none !important;
     user-select: none !important;
 }
 
-/* LOGICA NASCONDI */
-.lyrics.hide-chords .c-note {
+/* IL PILASTRO: Alza la riga solo se gli accordi sono visibili e SOLO in quella riga */
+.lyrics:not(.hide-chords) .c::after {
+    content: "" !important; /* Completamente vuoto: ignora il grassetto */
+    display: inline-block !important;
+    width: 0 !important;
+    height: 2.5em !important; /* Altezza pura che spinge il "soffitto" in su */
+    vertical-align: bottom !important; /* Si aggancia millimetricamente alla riga */
+}
+
+/* Quando nascosti, gli accordi spariscono e il pilastro non esiste */
+.lyrics.hide-chords .c::before,
+.lyrics.hide-chords .c::after {
     display: none !important;
 }
 
+/* --- BOTTONI --- */
+.btn-chord {
+    background-color: transparent;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-chord.chords-visible { color: white; background-color: var(--primary-blue); }
+.btn-chord.chords-hidden { color: #888; border-color: #ccc; }

@@ -29,7 +29,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Apri le tue Braccia",
         "momento": "messe:",
         "messe": [],
-        "testo_md": "Hai cer[Re-]cato la lib[Do]ertà lont[Re-]ano,\nhai tro[La-]vato la noia[Mib] e le cate[Sib]ne.\nHai[Sol] vag[Re-]ato s[Sol-]enza [Re-]via,\ns[Sol-]olo con[Mib] la tua fam[Do]e.\n\n**Apri le tue braccia,\ncorri in contro al Padre.\nOggi la sua casa\nsarà in festa per te.\n(2 volte)**\n\nSe vorrai spezzare le catene,\ntroverai la strada dell'amore,\nla tua gioia cnaterai:\nquesta è libertà.\n\nI tuoi occhi ricercano l'azzurro,\nc'è una casa che aspetta il tuo ritorno\ne la pace tornerà:\nquesta è libertà."
+        "testo_md": "Hai cer[Re-]cato la lib[Do]ertà lont[Re-]ano,\nhai tro[La-]vato la noia[Mib] e le cate[Sib]ne.\nHai[Sol] vag[Re-]ato s[Sol-]enza [Re-]via,\ns[Sol-]olo con[Mib] la tua fam[Do]e.\n\n**[Fa]Apri[Do] le tue [Re-]braccia[La-],\n[Sib]corri inco[Sol-]ntro al Pa[Do]dre.\n[Fa]Oggi[Re-] la s[Sol-]ua ca[Sib6]sa\nsarà in [Fa]festa[Do7] per [Fa]te.\n(2 volte)**\n\nSe vorrai spezzare le catene,\ntroverai la strada dell'amore,\nla tua gioia cnaterai:\nquesta è libertà.\n\nI tuoi occhi ricercano l'azzurro,\nc'è una casa che aspetta il tuo ritorno\ne la pace tornerà:\nquesta è libertà."
     },
     {
         "titolo": "Ave Maria ora Pronobis",

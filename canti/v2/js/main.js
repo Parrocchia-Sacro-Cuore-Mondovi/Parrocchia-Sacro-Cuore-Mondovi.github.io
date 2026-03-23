@@ -105,10 +105,13 @@ function aggiornaListaCanti() {
     cantiFiltrati.forEach(canto => {
         const nomeMomento = mappaMomenti[canto.momento]?.nome || "Vario";
         
-        // TRASFORMAZIONE PULITA: [Do]A diventa <span class="c" data-v="Do">A</span>
+        // Controlla se il canto ha accordi per decidere se mostrare il bottone
+        const haAccordi = canto.testo_md.includes('[');
+
+        // Trasforma [Do]A in uno span che "comanda" l'altezza della riga
         const testoConAccordi = canto.testo_md.replace(/\[([^\]]+)\](.)?/g, (match, accordo, lettera) => {
             const char = lettera ? lettera : '&nbsp;';
-            return `<span class="c-wrap"><span class="c-note">${accordo}</span>${char}</span>`;
+            return `<span class="c" data-v="${accordo}">${char}</span>`;
         });
         
         const testoHtml = marked.parse(testoConAccordi, { breaks: true });
@@ -119,7 +122,7 @@ function aggiornaListaCanti() {
                     <div class="song-info"><div class="song-title">${canto.titolo}</div></div>
                     <div class="song-category">${nomeMomento}</div>
                     <div class="song-actions">
-                        <button class="btn-chord chords-hidden chords-toggle-btn"><i class="fa-solid fa-music"></i></button>
+                        ${haAccordi ? `<button class="btn-chord chords-hidden chords-toggle-btn"><i class="fa-solid fa-music"></i></button>` : ''}
                         <button class="btn-go btn-green toggle-btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
