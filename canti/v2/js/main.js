@@ -109,9 +109,8 @@ function aggiornaListaCanti() {
         const haAccordi = canto.testo_md.includes('[');
 
         // Trasforma [Do]A in uno span che "comanda" l'altezza della riga
-        const testoConAccordi = canto.testo_md.replace(/\[([^\]]+)\](.)?/g, (match, accordo, lettera) => {
-            const char = lettera ? lettera : '&nbsp;';
-            return `<span class="c" data-v="${accordo}">${char}</span>`;
+        const testoConAccordi = canto.testo_md.replace(/\[([^\]]+)\]/g, (match, accordo) => {
+            return `<span class="c" data-v="${accordo}">&#8203;</span>`;
         });
         
         const testoHtml = marked.parse(testoConAccordi, { breaks: true });
