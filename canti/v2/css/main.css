@@ -594,3 +594,7 @@ footer {
 .lyrics b .c::before {
     font-weight: 700 !important;
 }
+.lyrics strong .c,
+.lyrics b .c {
+    font-weight: 700 !important;
+}
