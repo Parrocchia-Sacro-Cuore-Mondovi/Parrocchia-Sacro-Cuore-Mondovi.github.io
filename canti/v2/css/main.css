@@ -581,3 +581,16 @@ footer {
 }
 .btn-chord.chords-visible { color: white; background-color: var(--primary-blue); }
 .btn-chord.chords-hidden { color: #888; border-color: #ccc; }
+
+/* FORZA IL GRASSETTO SUI DISPOSITIVI MOBILE */
+.lyrics strong,
+.lyrics b {
+    font-weight: 700 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Opzionale: scurisce leggermente il grassetto per farlo risaltare di più */
+.lyrics strong .c::before,
+.lyrics b .c::before {
+    font-weight: 700 !important;
+}
