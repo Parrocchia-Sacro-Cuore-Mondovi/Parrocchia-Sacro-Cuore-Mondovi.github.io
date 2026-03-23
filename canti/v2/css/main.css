@@ -1,0 +1,566 @@
+/* --- Variabili e Reset --- */
+:root {
+    --primary-blue: #4285F4;
+    --primary-green: #20b2aa;
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-body: #f8f9fc;
+    --bg-white: #ffffff;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-dark);
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--bg-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid #b3d4ff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    font-size: 40px;
+    color: var(--primary-blue);
+}
+
+.logo-text h1 {
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.logo-text p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+nav a.active {
+    color: var(--text-dark);
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+nav a.risorse {
+    color: var(--primary-green);
+}
+
+/* --- Layout Principale --- */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* --- Sidebar (Filtri) --- */
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b3d4ff;
+    padding-bottom: 10px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.filter-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.filter-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-list li:hover {
+    color: var(--primary-blue);
+}
+
+.filter-list {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.filter-group.collapsed .filter-list {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.filter-header i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.filter-group.collapsed .filter-header i {
+    transform: rotate(180deg);
+}
+
+/* --- Contenuto Principale --- */
+.main-content {
+    flex-grow: 1;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-header h2 {
+    font-size: 22px;
+}
+
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px 10px 35px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+/* --- Lista Canti --- */
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.song-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-white);
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.song-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.song-author {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.song-category {
+    flex: 1;
+    font-size: 14px;
+}
+
+.song-source {
+    flex: 1;
+    font-size: 14px;
+}
+
+.song-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.icon-btn {
+    color: #b05a5a; /* Colore per PDF */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon-btn.music { color: var(--primary-blue); }
+.icon-btn.audio { color: #a07a50; }
+
+.btn-go {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.btn-green { background-color: var(--primary-green); }
+.btn-blue { background-color: var(--primary-blue); }
+
+/* --- Footer --- */
+footer {
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+    padding: 20px 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.footer-col a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-social i {
+    font-size: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.logo-parrocchia {
+    height: 50px;
+    width: auto;
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.song-text-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+.song-text-wrapper.aperto {
+    grid-template-rows: 1fr;
+}
+
+.song-text-inner {
+    overflow: hidden;
+}
+
+.lyrics {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+.lyrics p {
+    margin-bottom: 1.5rem !important;
+    margin-top: 0 !important;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+}
+
+.toggle-btn i {
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.ruotato i {
+    transform: rotate(90deg);
+}
+
+/* --- Gestione Mobile Sidebar --- */
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Nascondi il bottone filtri su Desktop */
+.filter-mobile-btn {
+    display: none;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* --- REGOLE PER MOBILE --- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Mette la sidebar sopra o sotto il contenuto */
+        margin-top: 10px;
+    }
+
+    .filter-mobile-btn {
+        display: flex; /* Mostra il bottone solo su schermi piccoli */
+        align-items: center;
+        gap: 6px;
+    }
+
+    .sidebar {
+        display: none; /* Nasconde la sidebar di default su mobile */
+        width: 100%;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    /* Quando la sidebar ha questa classe, viene mostrata */
+    .sidebar.show-mobile {
+        display: block;
+    }
+
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 100%; /* La barra di ricerca prende tutto lo spazio su mobile */
+    }
+}
+
+/* NAVBAR da mobile*/
+/* --- Desktop: Nascondi i bottoni mobile --- */
+.hamburger-btn, .close-nav-btn {
+    display: none;
+}
+
+/* --- Mobile (Max 768px) --- */
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--text-dark);
+        cursor: pointer;
+    }
+
+    /* Trasformazione del NAV in Sidebar */
+    nav {
+        position: fixed;
+        top: 0;
+        right: -300px; /* Nasconde la sidebar a destra */
+        width: 280px;
+        height: 100vh;
+        background-color: white;
+        z-index: 1001; /* Sopra a tutto */
+        transition: right 0.3s ease-in-out;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        padding: 60px 20px;
+    }
+
+    nav.nav-open {
+        right: 0; /* Fa scivolare dentro la sidebar */
+    }
+
+    nav ul {
+        flex-direction: column; /* Lista verticale */
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Bottone di chiusura dentro la sidebar */
+    .close-nav-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Overlay scuro dietro la sidebar */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+
+    .nav-overlay.active {
+        display: block;
+    }
+}
+
+/* --- BOTTONI --- */
+.btn-chord {
+    background-color: transparent;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-chord.chords-visible {
+    color: white;
+    background-color: var(--primary-blue);
+}
+.btn-chord.chords-hidden {
+    color: #888;
+    border-color: #ccc;
+}
+
+/* ============================================================
+   ACCORDI ALTI E TESTO COMPATTO (ZERO SPAZI)
+   ============================================================ */
+
+.lyrics {
+    line-height: 3.5 !important;   /* Spazio abbondante tra le righe */
+    font-size: 1.15rem !important;
+    padding-top: 40px !important;  /* Spazio in cima alla prima riga */
+    white-space: pre-wrap !important;
+}
+
+/* Quando nascondi gli accordi, il testo torna compresso */
+.lyrics.hide-chords {
+    line-height: 1.5 !important;
+    padding-top: 10px !important;
+}
+
+/* Contenitore dell'accordo: NON deve avere inline-block o flex */
+.c-wrap {
+    position: relative !important;
+    display: inline !important; /* Mantiene le lettere unite */
+}
+
+/* L'accordo BLU: vola sopra senza occupare spazio orizzontale */
+.c-note {
+    position: absolute !important;
+    
+    /* ALTEZZA: alzato a 2.5em per massima distanza */
+    bottom: 2.5em !important; 
+    
+    left: 0 !important;
+    color: var(--primary-blue) !important;
+    font-weight: bold !important;
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+/* LOGICA NASCONDI */
+.lyrics.hide-chords .c-note {
+    display: none !important;
+}
+

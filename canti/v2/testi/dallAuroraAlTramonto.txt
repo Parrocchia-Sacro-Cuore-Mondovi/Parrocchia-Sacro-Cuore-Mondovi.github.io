@@ -1,0 +1,13 @@
+# Dall'Aurora al Tramonto
+---
+momento: ingresso
+messe: 
+  - natale
+  - pasqua
+---
+
+**Rit: Lode al Signore, lodate il suo nome.**
+
+Dall'[Do]aurora al tra[Sol]monto
+lode al [La-]nome del Si[Fa]gnore.
+Con [Do]gioia cante[Sol]remo a [Fa]Te.

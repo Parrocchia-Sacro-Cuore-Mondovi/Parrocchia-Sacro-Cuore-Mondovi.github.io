@@ -1,9 +1,102 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrocchia S.Cuore di Gesù - Mondovì</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
+
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Orari Messe</a></li>
+                <li><a href="#">Liturgia</a></li>
+                <li><a href="#" class="active">Coro</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="filterSidebar">
+            <h2>Filtra per Categoria</h2>
+            
+            <div class="filter-group">
+                <div class="filter-header">Momenti Liturgici <i class="fa-solid fa-chevron-up"></i></div>
+                <ul class="filter-list" id="lista-momenti"></ul>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-header">Messe Importanti <i class="fa-solid fa-chevron-up"></i></div>
+                <ul class="filter-list" id="lista-messe"></ul>
+            </div>
+            
+            <button id="reset-filters" style="display: none; width: 100%; padding: 8px; margin-top: 15px; border-radius: 6px; border: 1px solid var(--primary-blue); background: white; color: var(--primary-blue); cursor: pointer;">
+                Rimuovi filtri
+            </button>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <div class="title-container">
+                    <h2 id="titolo-sezione">Esplora i Canti</h2>
+                    <button class="filter-mobile-btn" onclick="toggleSidebar()">
+                        <i class="fa-solid fa-filter"></i> Filtri
+                    </button>
+                </div>
+
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cerca un canto..." id="searchInput">
+                </div>
+            </div>
+
+            <div class="song-list" id="song-list-container">
+                <p>Caricamento in corso...</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-col">
+            <p>Parrocchia S.Cuore di Gesù - Mondovì</p>
+            <p><i class="fa-regular fa-envelope"></i> parrocchia@email.com</p>
+            <p><i class="fa-solid fa-phone"></i> +3342566776</p>
+        </div>
+        <div class="footer-col" style="text-align: right;">
+            <p>© 2026 Parrocchia S.Cuore di Gesù - Mondovì</p>
+            <p style="margin-top: 5px;">Sito realizzato per la comunità parrocchiale.</p>
+        </div>
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
