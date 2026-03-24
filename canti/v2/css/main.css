@@ -345,7 +345,7 @@ footer {
     line-height: 1.5;
 }
 .lyrics p {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 0.1rem !important;
     margin-top: 0 !important;
 }
 
@@ -551,6 +551,8 @@ footer {
     line-height: 1 !important;
     pointer-events: none !important;
     user-select: none !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
 }
 
 /* IL PILASTRO: Alza la riga solo se gli accordi sono visibili e SOLO in quella riga */
