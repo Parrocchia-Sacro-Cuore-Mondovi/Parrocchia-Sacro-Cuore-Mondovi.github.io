@@ -1,0 +1,15 @@
+# Santo (Osanna nelle Altezze)
+
+---
+momento: santo
+messe:
+ - sSanto
+---
+
+Sa - nto, sa - nto
+I cieli e la terra sono pieni della Tua gloria.
+Osanna, osanna, osanna, osanna nelle altezze.
+Benedetto Colui che viene nel nome del Signore.
+Osanna, osanna, osanna, osanna nelle altezze.
+Osanna, osanna, osanna…
+
