@@ -78,8 +78,20 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ha fatto [FA]germogliare fiori [DO]dalle [SOL]rocce!\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ci ha riport[FA]ati liberi [DO]alla nostra [SOL]terra!\n> Ed [LA-]ora possiamo cant[RE-7]are, possiamo [MI-7]gridare\n> l'amore che [FA]Dio ha versato su [SOL]noi.\n\n[DO]Tu, che [SOL]sai strappar[RE-]e dalla[LA-] morte[DO],\nhai sollevato[FA] il nostro [DO]viso dalla [SOL]polvere;\n[DO]Tu, che [SOL]hai sent[RE-]ito il nostro[LA-] pianto[DO],\nnel nostro [FA]cuore hai messo un [DO]seme di [SOL]felicità."
     },
     {
-        "titolo": "Voi Siete di Dio",
+        "titolo": "Vocazione",
         "momento": "messe:",
+        "messe": [],
+        "testo_md": "Era un giorno come tanti altri\ne quel giorno Lui passò.\nEra un uomo come tutti gli altri\ne passando mi chiamò.\nCome lo sapesse che il mio nome\nera proprio quello\ncome mai vedesse proprio me\nnella Sua vita non lo so.\nEra un giorno come tanti altri\ne quel giorno mi chiamò. **Rit.**\n\n> Rit. Tu Dio, che conosci il nome mio,\n> fa che ascoltando la Tua voce\n> io ricordi dove porta la mia strada\n> nella vita all'incontro con Te.\n\nEra un'alba triste e senza vita\ne qualcuno mi chiamò.\nEra un uomo come tanti altri,\nma la voce quella no.\nQuante volte un uomo\ncon il nome giusto mi ha chiamato.\nUna volta sola l'ho sentito\npronunciare con amore.\nEra un uomo come nessun altro\ne quel giorno mi chiamò. **Rit.**"
+    },
+    {
+        "titolo": "Voglio Cantare al Signor",
+        "momento": "messe:",
+        "messe": [],
+        "testo_md": "> Rit.\n> Voglio cantare al Signor e dare gloria a Lui.\n> Voglio cantare per sempre al Signor. (x2)\n\nCavallo e cavaliere ha gettato nel mare.\nEgli è il mio Dio e Lo voglio esaltare.\nChi è come Te, lassù nei cieli, o Signor.\nChi è come Te, lassù, maestoso in santità! **Rit.**\n\nLa destra del Signore ha annientato il nemico,\nle sue schiere ha riversato in fondo al mare.\nSull’asciutto tutto il Suo popolo passò,\ncon timpani e con danze al Signore inneggiò. **Rit.**\n\nCon la Tua potenza Israele hai salvato,\nper la Tua promessa una terra gli hai dato.\nPer i Suoi prodigi al Signore canterò,\ncon un canto nuovo il Suo nome esalterò. **Rit.**"
+    },
+    {
+        "titolo": "Voi siete di Dio",
+        "momento": "fine",
         "messe": [],
         "testo_md": "Tutte le stelle della notte,\nle nebulose le comete,\nil sole su una ragnatela:\nè tutto vostro e voi siete di Dio.\n\nTutte le rose della vita,\nil grano i prati i fili d’erba,\nil mare i fiumi le montagne:\nè tutto vostro e voi siete di Dio.\n\nTutte le musiche e le danze,\ni grattacieli le astronavi,\ni quadri i libri le culture:\nè tutto vostro e voi siete di Dio.\n\nTutte le volte che perdono,\nquando sorrido e quando piango,\nquando mi accorgo di chi sono:\nè tutto vostro e voi siete di Dio,\nè tutto nostro e noi siamo di Dio."
     }
