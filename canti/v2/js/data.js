@@ -88,7 +88,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "gSanto"
         ],
-        "testo_md": ""
+        "testo_md": "> Rit.\n> Pane del cielo sei Tu, Gesù,\n> via d’amore: Tu ci fai come Te.\n\nNo, non è rimasta fredda la terra: Tu sei rimasto con noi\nper nutrirci di Te, pane di vita, ed infiammare col Tuo Amore\ntutta l’umanità. **Rit.**\n\nSì, il cielo è qui su questa terra: Tu sei rimasto con noi,\nma ci porti con Te nella Tua casa dove vivremo insieme a Te\ntutta l’eternità. **Rit.**\n\nNo, la morte non può farci paura: Tu sei rimasto con noi.\nE chi vive di Te vive per sempre. Sei Dio con noi, sei Dio per noi,\nDio in mezzo a noi. **Rit.**"
     },
     {
         "titolo": "Servire è Regnare",
@@ -96,7 +96,15 @@ const datiParrocchialiSalvati = {
         "messe": [
             "gSanto"
         ],
-        "testo_md": "Guardiamo a te che sei\nMaestro e Signore,\nchinato a terra stai,\nci mostri che l’amore\nè cingersi il grembiule,\nsapersi inginocchiare,\nc’insegni che amare è servire. **Rit.**\n\n> Rit. Fa’ che impariamo,\n> Signore, da Te,\n> che il più grande è chi più sa servire,\n> chi si abbassa e chi si sa piegare,\n> perché grande è soltanto l’amore.\n\nE ti vediamo poi,\nMaestro e Signore,\nche lavi i piedi a noi\nche siamo Tue creature;\ne cinto del grembiule,\nche è il manto Tuo regale,\nc’insegni che servire è regnare. **Rit.**"
+        "testo_md": "Guardiamo a te che sei\nMaestro e Signore,\nchinato a terra stai,\nci mostri che l’amore\nè cingersi il grembiule,\nsapersi inginocchiare,\nc’insegni che amare è servire. **Rit.**\n\n> Rit.\n> Fa’ che impariamo,\n> Signore, da Te,\n> che il più grande è chi più sa servire,\n> chi si abbassa e chi si sa piegare,\n> perché grande è soltanto l’amore.\n\nE ti vediamo poi,\nMaestro e Signore,\nche lavi i piedi a noi\nche siamo Tue creature;\ne cinto del grembiule,\nche è il manto Tuo regale,\nc’insegni che servire è regnare. **Rit.**"
+    },
+    {
+        "titolo": "Sono qui a LodarTi",
+        "momento": "adorazione",
+        "messe": [
+            "vSanto"
+        ],
+        "testo_md": "Luce del mondo nel buio del cuore,\nvieni ed illuminami.\nTu mia sola speranza di vita,\nresta per sempre con me.\n\n> Rit.\n> Sono qui a lodarTi, qui per adorarTi\n> qui per dirTi che Tu sei il mio Dio.\n> E solo Tu sei santo, sei meraviglioso,\n> degno e glorioso sei per me.\n\nRe della storia e Re nella gloria,\nsei sceso in terra fra noi.\nCon umiltà il Tuo trono hai lasciato\nper dimostrarci il Tuo amor. **Rit.**\n\n> Io mai saprò quanto Ti costò\n> lì sulla Croce morir per me. (x2) Rit."
     },
     {
         "titolo": "Vivere la vita",
@@ -108,7 +116,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Vocazione",
         "momento": "comunione",
         "messe": [],
-        "testo_md": "Era un giorno come tanti altri\ne quel giorno Lui passò.\nEra un uomo come tutti gli altri\ne passando mi chiamò.\nCome lo sapesse che il mio nome\nera proprio quello\ncome mai vedesse proprio me\nnella Sua vita non lo so.\nEra un giorno come tanti altri\ne quel giorno mi chiamò. **Rit.**\n\n> Rit. Tu Dio, che conosci il nome mio,\n> fa che ascoltando la Tua voce\n> io ricordi dove porta la mia strada\n> nella vita all'incontro con Te.\n\nEra un'alba triste e senza vita\ne qualcuno mi chiamò.\nEra un uomo come tanti altri,\nma la voce quella no.\nQuante volte un uomo\ncon il nome giusto mi ha chiamato.\nUna volta sola l'ho sentito\npronunciare con amore.\nEra un uomo come nessun altro\ne quel giorno mi chiamò. **Rit.**"
+        "testo_md": "Era un giorno come tanti altri\ne quel giorno Lui passò.\nEra un uomo come tutti gli altri\ne passando mi chiamò.\nCome lo sapesse che il mio nome\nera proprio quello\ncome mai vedesse proprio me\nnella Sua vita non lo so.\nEra un giorno come tanti altri\ne quel giorno mi chiamò. **Rit.**\n\n> Rit.\n> Tu Dio, che conosci il nome mio,\n> fa che ascoltando la Tua voce\n> io ricordi dove porta la mia strada\n> nella vita all'incontro con Te.\n\nEra un'alba triste e senza vita\ne qualcuno mi chiamò.\nEra un uomo come tanti altri,\nma la voce quella no.\nQuante volte un uomo\ncon il nome giusto mi ha chiamato.\nUna volta sola l'ho sentito\npronunciare con amore.\nEra un uomo come nessun altro\ne quel giorno mi chiamò. **Rit.**"
     },
     {
         "titolo": "Voglio Cantare al Signor",
