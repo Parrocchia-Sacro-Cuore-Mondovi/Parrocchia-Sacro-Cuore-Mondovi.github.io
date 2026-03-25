@@ -7,14 +7,19 @@ const datiParrocchialiSalvati = {
         { "id": "pace", "nome": "Pace", "ordine": 5 },
         { "id": "comunione", "nome": "Comunione", "ordine": 6 },
         { "id": "fine", "nome": "Fine", "ordine": 7 },
-        { "id": "vario", "nome": "Vario", "ordine": 8 }
+        { "id": "adorazione", "nome": "Adorazione", "ordine": 8 },
+        { "id": "cresime", "nome": "Cresime", "ordine": 9 },
+        { "id": "funerali", "nome": "Funerali", "ordine": 10 },
+        { "id": "matrimoni", "nome": "Matrimoni", "ordine": 11 },
+        { "id": "pasqua", "nome": "Tempo Pasquale", "ordine": 12 },
+        { "id": "quaresima", "nome": "Quaresima", "ordine": 13 },
+        { "id": "natale", "nome": "Tempo di Natale", "ordine": 14 },
+        { "id": "vario", "nome": "Vario", "ordine": 15 }
     ],
     "messe": [
-        { "id": "natale", "nome": "Natale" },
-        { "id": "pasqua", "nome": "Triduo Pasquale" },
-        { "id": "prime_comunioni", "nome": "Prime Comunioni" },
-        { "id": "cresime", "nome": "Cresime" },
-        { "id": "festa_patronale", "nome": "Festa Patronale" }
+        { "id": "gSanto", "nome": "Giovedì Santo" },
+        { "id": "vSanto", "nome": "Venerdì Santo" },
+        { "id": "sSanto", "nome": "Sabato Santo" },
     ],
     "canti": [
     {
@@ -78,8 +83,20 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ha fatto [FA]germogliare fiori [DO]dalle [SOL]rocce!\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ci ha riport[FA]ati liberi [DO]alla nostra [SOL]terra!\n> Ed [LA-]ora possiamo cant[RE-7]are, possiamo [MI-7]gridare\n> l'amore che [FA]Dio ha versato su [SOL]noi.\n\n[DO]Tu, che [SOL]sai strappar[RE-]e dalla[LA-] morte[DO],\nhai sollevato[FA] il nostro [DO]viso dalla [SOL]polvere;\n[DO]Tu, che [SOL]hai sent[RE-]ito il nostro[LA-] pianto[DO],\nnel nostro [FA]cuore hai messo un [DO]seme di [SOL]felicità."
     },
     {
-        "titolo": "Vocazione",
+        "titolo": "Servire è Regnare",
+        "momento": "comunione",
+        "messe": [],
+        "testo_md": "Guardiamo a te che sei\nMaestro e Signore,\nchinato a terra stai,\nci mostri che l’amore\nè cingersi il grembiule,\nsapersi inginocchiare,\nc’insegni che amare è servire. **Rit.**\n\n> Rit. Fa’ che impariamo,\n> Signore, da Te,\n> che il più grande è chi più sa servire,\n> chi si abbassa e chi si sa piegare,\n> perché grande è soltanto l’amore.\n\nE ti vediamo poi,\nMaestro e Signore,\nche lavi i piedi a noi\nche siamo Tue creature;\ne cinto del grembiule,\nche è il manto Tuo regale,\nc’insegni che servire è regnare. **Rit.**"
+    },
+    {
+        "titolo": "Vivere la vita",
         "momento": "messe:",
+        "messe": [],
+        "testo_md": "Vivere la vita con le gioie e coi dolori di ogni giorno:\nè quello che Dio vuole da te.\nVivere la vita e inabissarti nell'Amore\nè il tuo destino:\nè quello che Dio vuole da te.\n\n> Fare insieme agli altri la tua strada verso Lui,\n> correre con i fratelli tuoi...\n> Scoprirai allora il cielo dentro di te,\n> una scia di luce lascerai.\n\nVivere la vita è l'avventura più stupenda dell'amore:\nè quello che Dio vuole da te.\nVivere la vita e generare ogni momento il paradiso:\nè quello che Dio vuole da te.\n\n> Vivere perché ritorni al mondo l'unità\n> perché Dio sta nei fratelli tuoi...\n> Scoprirai allora il cielo dentro di te,\n> una scia di luce lascerai. (x2)"
+    },
+    {
+        "titolo": "Vocazione",
+        "momento": "comunione",
         "messe": [],
         "testo_md": "Era un giorno come tanti altri\ne quel giorno Lui passò.\nEra un uomo come tutti gli altri\ne passando mi chiamò.\nCome lo sapesse che il mio nome\nera proprio quello\ncome mai vedesse proprio me\nnella Sua vita non lo so.\nEra un giorno come tanti altri\ne quel giorno mi chiamò. **Rit.**\n\n> Rit. Tu Dio, che conosci il nome mio,\n> fa che ascoltando la Tua voce\n> io ricordi dove porta la mia strada\n> nella vita all'incontro con Te.\n\nEra un'alba triste e senza vita\ne qualcuno mi chiamò.\nEra un uomo come tanti altri,\nma la voce quella no.\nQuante volte un uomo\ncon il nome giusto mi ha chiamato.\nUna volta sola l'ho sentito\npronunciare con amore.\nEra un uomo come nessun altro\ne quel giorno mi chiamò. **Rit.**"
     },

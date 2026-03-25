@@ -1,7 +1,7 @@
 # Vocazione
 
 ---
-momento:
+momento: comunione
 messe:
 ---
 

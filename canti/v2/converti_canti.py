@@ -42,7 +42,7 @@ def analizza_file(percorso):
     for riga in righe:
         riga_pulita = riga.strip()
 
-        is_rit = riga_pulita.startswith('**Rit.') and riga_pulita != '**Rit.**'
+        is_rit = riga_pulita.startswith('**Rit') and riga_pulita != '**Rit**'
         is_finale = riga_pulita.lower().startswith('**finale') and riga_pulita.lower() != '**finale**'
 
         # 1. Inizio blocco esteso (testo sulla stessa riga dell'apertura)
@@ -122,14 +122,19 @@ def main():
         { "id": "pace", "nome": "Pace", "ordine": 5 },
         { "id": "comunione", "nome": "Comunione", "ordine": 6 },
         { "id": "fine", "nome": "Fine", "ordine": 7 },
-        { "id": "vario", "nome": "Vario", "ordine": 8 }
+        { "id": "adorazione", "nome": "Adorazione", "ordine": 8 },
+        { "id": "cresime", "nome": "Cresime", "ordine": 9 },
+        { "id": "funerali", "nome": "Funerali", "ordine": 10 },
+        { "id": "matrimoni", "nome": "Matrimoni", "ordine": 11 },
+        { "id": "pasqua", "nome": "Tempo Pasquale", "ordine": 12 },
+        { "id": "quaresima", "nome": "Quaresima", "ordine": 13 },
+        { "id": "natale", "nome": "Tempo di Natale", "ordine": 14 },
+        { "id": "vario", "nome": "Vario", "ordine": 15 }
     ],
     "messe": [
-        { "id": "natale", "nome": "Natale" },
-        { "id": "pasqua", "nome": "Triduo Pasquale" },
-        { "id": "prime_comunioni", "nome": "Prime Comunioni" },
-        { "id": "cresime", "nome": "Cresime" },
-        { "id": "festa_patronale", "nome": "Festa Patronale" }
+        { "id": "gSanto", "nome": "Giovedì Santo" },
+        { "id": "vSanto", "nome": "Venerdì Santo" },
+        { "id": "sSanto", "nome": "Sabato Santo" },
     ],
     "canti": []
 };"""
