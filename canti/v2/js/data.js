@@ -83,12 +83,28 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ha fatto [FA]germogliare fiori [DO]dalle [SOL]rocce!\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ci ha riport[FA]ati liberi [DO]alla nostra [SOL]terra!\n> Ed [LA-]ora possiamo cant[RE-7]are, possiamo [MI-7]gridare\n> l'amore che [FA]Dio ha versato su [SOL]noi.\n\n[DO]Tu, che [SOL]sai strappar[RE-]e dalla[LA-] morte[DO],\nhai sollevato[FA] il nostro [DO]viso dalla [SOL]polvere;\n[DO]Tu, che [SOL]hai sent[RE-]ito il nostro[LA-] pianto[DO],\nnel nostro [FA]cuore hai messo un [DO]seme di [SOL]felicità."
     },
     {
+        "titolo": "Lode al Nome Tuo",
+        "momento": "comunione",
+        "messe": [
+            "vSanto"
+        ],
+        "testo_md": "Lode al nome Tuo dalle terre più floride\ndove tutto sembra vivere, lode al nome Tuo.\nLode al nome Tuo dalle terre più aride\ndove tutto sembra sterile, lode al nome Tuo. **Rit.**\n\n> Rit.\n> Tornerò a lodarTi sempre per ogni dono Tuo\n> e quando scenderà la notte, sempre io dirò:\n> “Benedetto il nome del Signor,\n> lode al nome Tuo.\n> Benedetto il nome del Signor\n> il glorioso nome di Gesù”.\n\nLode al nome Tuo quando il sole splende su di me,\nquando tutto è incantevole, lode al nome Tuo.\nLode al nome Tuo quando io sto davanti a Te\ncon il cuore triste e fragile, lode al nome Tuo. **Rit.**\n\nTu doni e porti via,\nTu doni e porti via,\nma sempre sceglierò\ndi benedire Te. **Rit.**\n\n> Tu doni e porti via,\n> Tu doni e porti via,\n> ma sempre sceglierò\n> di benedire Te. (x2)"
+    },
+    {
         "titolo": "Pane del cielo",
         "momento": "offertorio",
         "messe": [
             "gSanto"
         ],
         "testo_md": "> Rit.\n> Pane del cielo sei Tu, Gesù,\n> via d’amore: Tu ci fai come Te.\n\nNo, non è rimasta fredda la terra: Tu sei rimasto con noi\nper nutrirci di Te, pane di vita, ed infiammare col Tuo Amore\ntutta l’umanità. **Rit.**\n\nSì, il cielo è qui su questa terra: Tu sei rimasto con noi,\nma ci porti con Te nella Tua casa dove vivremo insieme a Te\ntutta l’eternità. **Rit.**\n\nNo, la morte non può farci paura: Tu sei rimasto con noi.\nE chi vive di Te vive per sempre. Sei Dio con noi, sei Dio per noi,\nDio in mezzo a noi. **Rit.**"
+    },
+    {
+        "titolo": "Resto con te",
+        "momento": "comunione",
+        "messe": [
+            "vSanto"
+        ],
+        "testo_md": "Seme gettato nel mondo,\nFiglio donato alla terra,\nil Tuo silenzio custodirò.\nIn ciò che vive e che muore\nvedo il Tuo volto d'amore:\nsei il mio Signore e sei il mio Dio. **Rit.1**\n\n> Rit.1\n> Io lo so che Tu sfidi la mia morte,\n> io lo so che Tu abiti il mio buio.\n> Nell'attesa del giorno che verrà\n> resto con Te.\n\nNube di mandorlo in fiore\ndentro gli inverni del cuore\nè questo pane che Tu ci dai.\nVena di cielo profondo\ndentro le notti del mondo\nè questo vino che Tu ci dai. **Rit.1 + Rit.2**\n\n> Rit2.\n> Tu sei Re di stellate immensità\n> e sei Tu il futuro che verrà,\n> sei l’amore che muove ogni realtà\n> e Tu sei qui,\n> resto con Te."
     },
     {
         "titolo": "Servire è Regnare",
@@ -104,7 +120,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "vSanto"
         ],
-        "testo_md": "Luce del mondo nel buio del cuore,\nvieni ed illuminami.\nTu mia sola speranza di vita,\nresta per sempre con me.\n\n> Rit.\n> Sono qui a lodarTi, qui per adorarTi\n> qui per dirTi che Tu sei il mio Dio.\n> E solo Tu sei santo, sei meraviglioso,\n> degno e glorioso sei per me.\n\nRe della storia e Re nella gloria,\nsei sceso in terra fra noi.\nCon umiltà il Tuo trono hai lasciato\nper dimostrarci il Tuo amor. **Rit.**\n\n> Io mai saprò quanto Ti costò\n> lì sulla Croce morir per me. (x2) Rit."
+        "testo_md": "Luce del mondo nel buio del cuore,\nvieni ed illuminami.\nTu mia sola speranza di vita,\nresta per sempre con me. **Rit.**\n\n> Rit.\n> Sono qui a lodarTi, qui per adorarTi\n> qui per dirTi che Tu sei il mio Dio.\n> E solo Tu sei santo, sei meraviglioso,\n> degno e glorioso sei per me.\n\nRe della storia e Re nella gloria,\nsei sceso in terra fra noi.\nCon umiltà il Tuo trono hai lasciato\nper dimostrarci il Tuo amor. **Rit.**\n\n> Io mai saprò quanto Ti costò\n> lì sulla Croce morir per me. (x2) Rit."
     },
     {
         "titolo": "Vivere la vita",
