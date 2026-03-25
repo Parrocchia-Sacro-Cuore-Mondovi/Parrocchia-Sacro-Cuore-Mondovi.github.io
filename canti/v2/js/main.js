@@ -116,7 +116,6 @@ function aggiornaListaCanti() {
 
     // 3. Renderizzazione con GRUPPI per lo Sticky Header
     let letteraAttuale = '';
-    let momentoAttuale = '';
     let currentGroup = null; // Memorizza il contenitore del gruppo attuale
 
     cantiFiltrati.forEach(canto => {
@@ -125,15 +124,7 @@ function aggiornaListaCanti() {
         let testoSeparatore = '';
         let classeSeparatore = '';
 
-        if (filtroAttuale.tipo === 'messa') {
-            // if (nomeMomento !== momentoAttuale) {
-            //     momentoAttuale = nomeMomento;
-            //     creaNuovoGruppo = true;
-            //     testoSeparatore = momentoAttuale;
-            //     classeSeparatore = 'moment-separator';
-            // }
-        } 
-        else if (!searchQuery) { 
+        if (!searchQuery && !(filtroAttuale.tipo === 'messa')) { 
             const primaLettera = canto.titolo.trim().charAt(0).toUpperCase();
             if (primaLettera !== letteraAttuale) {
                 letteraAttuale = primaLettera;
@@ -166,7 +157,7 @@ function aggiornaListaCanti() {
         const cardHTML = `
             <div class="song-card">
                 <div class="song-header">
-                    <div class="song-info"><div class="song-title">${canto.titolo}</div></div>
+                    <div class="song-info"><div class="song-title"><strong>${canto.titolo}</strong></div></div>
                     <div class="song-category">${nomeMomento}</div>
                     <div class="song-actions">
                         ${haAccordi ? `<button class="btn-chord chords-hidden chords-toggle-btn"><i class="fa-solid fa-music"></i></button>` : ''}
