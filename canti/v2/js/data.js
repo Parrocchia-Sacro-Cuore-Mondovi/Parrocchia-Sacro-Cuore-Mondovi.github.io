@@ -1,12 +1,13 @@
 const datiParrocchialiSalvati = {
     "momenti": [
         { "id": "ingresso", "nome": "Ingresso", "ordine": 1 },
-        { "id": "offertorio", "nome": "Offertorio", "ordine": 2 },
-        { "id": "santo", "nome": "Santo", "ordine": 3 },
-        { "id": "pace", "nome": "Pace", "ordine": 4 },
-        { "id": "comunione", "nome": "Comunione", "ordine": 5 },
-        { "id": "fine", "nome": "Fine", "ordine": 6 },
-        { "id": "vario", "nome": "Vario", "ordine": 7 }
+        { "id": "alleluia", "nome": "Alleluia", "ordine":2 },
+        { "id": "offertorio", "nome": "Offertorio", "ordine": 3 },
+        { "id": "santo", "nome": "Santo", "ordine": 4 },
+        { "id": "pace", "nome": "Pace", "ordine": 5 },
+        { "id": "comunione", "nome": "Comunione", "ordine": 6 },
+        { "id": "fine", "nome": "Fine", "ordine": 7 },
+        { "id": "vario", "nome": "Vario", "ordine": 8 }
     ],
     "messe": [
         { "id": "natale", "nome": "Natale" },

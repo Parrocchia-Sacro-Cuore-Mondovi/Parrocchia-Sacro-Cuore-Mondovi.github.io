@@ -3,7 +3,6 @@
 ---
 momento: ingresso
 messe:
- - natale
 ---
 
 **Rit.
@@ -16,7 +15,6 @@ messe:
 [DO#-]sempre canterò [MI]la [FA#-]tua [SI]lode,
 [DO#-]perché sei il mio [SOL#-]Dio, [LA]il mio [SI]riparo
 [DO#-]mi proteggerai [SOL#-]all'omb[LA]ra delle tue [SI4]ali.**Rit.**
-
 
 Non mi fermerò un solo istante,
 io racconterò le tue opere

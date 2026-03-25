@@ -3,8 +3,6 @@
 ---
 momento: comunione
 messe: 
-  - natale
-  - pasqua
 ---
 
 Altissimo Onnipotente, Buon Signore,
