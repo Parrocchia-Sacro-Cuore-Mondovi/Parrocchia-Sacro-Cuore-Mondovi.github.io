@@ -100,7 +100,20 @@ function aggiornaListaCanti() {
         );
     }
 
-    cantiFiltrati.sort((a, b) => a.titolo.localeCompare(b.titolo));
+    cantiFiltrati.sort((a, b) => {
+        
+        if (filtroAttuale.tipo === 'messa') {
+
+            const ordineA = mappaMomenti[a.momento] ? mappaMomenti[a.momento].ordine : 999;
+            const ordineB = mappaMomenti[b.momento] ? mappaMomenti[b.momento].ordine : 999;
+            
+            if (ordineA !== ordineB) {
+                return ordineA - ordineB;
+            }
+        }
+        
+        return a.titolo.localeCompare(b.titolo);
+    });
 
     cantiFiltrati.forEach(canto => {
         const nomeMomento = mappaMomenti[canto.momento]?.nome || "Vario";
@@ -109,8 +122,11 @@ function aggiornaListaCanti() {
         const haAccordi = canto.testo_md.includes('[');
 
         // Trasforma [Do]A in uno span che "comanda" l'altezza della riga
-        const testoConAccordi = canto.testo_md.replace(/\[([^\]]+)\]/g, (match, accordo) => {
-            return `<span class="c" data-v="${accordo}">&#8203;</span>`;
+        let testoConAccordi = canto.testo_md.replace(/(\S*\[[^\]]+\]\S*)/g, '<span class="keep-together">$1</span>');
+        
+        // 2. Trasforma gli accordi all'interno della parola blindata nei nostri span visivi.
+        testoConAccordi = testoConAccordi.replace(/\[([^\]]+)\]/g, (match, accordo) => {
+            return `<span class="c" data-v="${accordo}"></span>`;
         });
         
         const testoHtml = marked.parse(testoConAccordi, { breaks: true });

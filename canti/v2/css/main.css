@@ -601,3 +601,40 @@ footer {
 .lyrics b .c {
     font-weight: 700 !important;
 }
+
+/* ============================================================
+   STILE RITORNELLI 
+   ============================================================ */
+.lyrics blockquote {
+    margin: 2px 0 2px 25px !important; 
+    padding: 0 !important;
+    border: none !important;         /* Rimuove TUTTI i bordi */
+    border-left: none !important;    /* Assicura che il bordo sinistro sia morto */
+    box-shadow: none !important;     /* Previene ombreggiature di default */
+    background: transparent !important; 
+    line-height: 1.3 !important; 
+}
+
+/* Azzera i margini dei paragrafi interni */
+.lyrics blockquote p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* NASCONDE FISICAMENTE I BLOCCHI VUOTI CHE CREANO LA RIGA FANTASMA */
+.lyrics blockquote:empty,
+.lyrics blockquote p:empty,
+.lyrics p:empty {
+    display: none !important;
+}
+
+/* Regola per il mobile */
+@media (max-width: 768px) {
+    .lyrics blockquote {
+        margin: 2px 0 2px 15px !important; 
+    }
+}
+
+.keep-together {
+    white-space: nowrap !important;
+}

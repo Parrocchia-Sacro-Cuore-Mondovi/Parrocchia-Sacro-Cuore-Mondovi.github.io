@@ -1,13 +1,16 @@
 # Dall'Aurora Al Tramonto
+
 ---
-momento:
+momento: ingresso
 messe:
+ - natale
 ---
 
-**Rit. [DO#-]Dall'aurora [MI]io cerco [FA#-]Te, [SI]
-[DO#-]fino al tramonto [MI]Ti [FA#-]chiamo, [SI]
-[DO#-]ha sete [SOL#-]solo di [LA]Te [SI]l'anima [DO#-]mia [SOL#-]come [LA]terra [SI]deserta.**
-(2 volte)
+**Rit.
+    [DO#-]Dall'aurora [MI]io cerco [FA#-]Te, [SI]
+    [DO#-]fino al tramonto [MI]Ti [FA#-]chiamo, [SI]
+    [DO#-]ha sete [SOL#-]solo di [LA]Te [SI]l'anima [DO#-]mia [SOL#-]come [LA]terra [SI]deserta.**
+    (2 volte)
 
 [DO#-]Non mi fermerò [MI]un [FA#-]solo [SI]istante,
 [DO#-]sempre canterò [MI]la [FA#-]tua [SI]lode,

@@ -30,12 +30,48 @@ def analizza_file(percorso):
         if m_mes: messe = [m.strip() for m in m_mes]
 
     # 3. Pulisci il Testo per data.js
-    # Rimuoviamo la riga del titolo (# Titolo)
     testo_pulito = re.sub(r'^\s*#\s*.*$', '', contenuto, flags=re.MULTILINE)
-    # Rimuoviamo il blocco metadati (--- ... ---)
     testo_pulito = re.sub(r'---[\s\S]+?---', '', testo_pulito)
-    # Pulizia finale spazi e a capo inutili
     testo_pulito = testo_pulito.strip()
+
+    # --- INIZIO LOGICA RITORNELLO (BLOCKQUOTE) ---
+    righe = testo_pulito.split('\n')
+    righe_elaborate = []
+    in_ritornello = False
+
+    for riga in righe:
+        riga_pulita = riga.strip()
+
+        # Inizio ritornello esteso
+        if riga_pulita.startswith('**Rit.') and riga_pulita != '**Rit.**':
+            in_ritornello = True
+            righe_elaborate.append('> ' + riga) # Aggiunge > per creare il blocco
+            
+            # Se si apre e chiude sulla stessa riga
+            if riga_pulita.endswith('**') and len(riga_pulita) > 8:
+                in_ritornello = False
+            continue
+
+        # Richiamo breve del ritornello
+        if riga_pulita == '**Rit.**':
+            righe_elaborate.append('> ' + riga)
+            continue
+
+        # Testo dentro il ritornello
+        if in_ritornello:
+            if riga_pulita == '':
+                righe_elaborate.append('>') # Mantiene a capo pulito
+            else:
+                righe_elaborate.append('> ' + riga)
+                
+            if riga_pulita.endswith('**'):
+                in_ritornello = False
+        else:
+            # Testo normale (strofe)
+            righe_elaborate.append(riga)
+
+    testo_pulito = '\n'.join(righe_elaborate)
+    # --- FINE LOGICA RITORNELLO ---
 
     return {
         "titolo": titolo,
