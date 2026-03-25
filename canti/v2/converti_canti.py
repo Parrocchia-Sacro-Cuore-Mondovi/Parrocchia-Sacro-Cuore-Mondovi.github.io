@@ -130,7 +130,7 @@ def main():
         { "id": "quaresima", "nome": "Quaresima", "ordine": 13 },
         { "id": "natale", "nome": "Tempo di Natale", "ordine": 14 },
         { "id": "mariani", "nome": "Canti Mariani", "ordine": 15 },
-        { "id": "vario", "nome": "Vario", "ordine": 16 }
+        { "id": "vario", "nome": "Vario", "ordine": 16, "nascosto": true }
     ],
     "messe": [
         { "id": "gSanto", "nome": "Giovedì Santo" },
