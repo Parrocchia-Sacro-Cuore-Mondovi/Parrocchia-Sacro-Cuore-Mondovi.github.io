@@ -93,6 +93,7 @@ function aggiornaListaCanti() {
 
     let cantiFiltrati = [...datiParrocchiali.canti];
 
+    // 1. Filtri
     if (filtroAttuale.tipo === 'momento') cantiFiltrati = cantiFiltrati.filter(c => c.momento === filtroAttuale.id);
     else if (filtroAttuale.tipo === 'messa') cantiFiltrati = cantiFiltrati.filter(c => c.messe.includes(filtroAttuale.id));
 
@@ -103,31 +104,59 @@ function aggiornaListaCanti() {
         );
     }
 
+    // 2. Ordinamento
     cantiFiltrati.sort((a, b) => {
-        
         if (filtroAttuale.tipo === 'messa') {
-
             const ordineA = mappaMomenti[a.momento] ? mappaMomenti[a.momento].ordine : 999;
             const ordineB = mappaMomenti[b.momento] ? mappaMomenti[b.momento].ordine : 999;
-            
-            if (ordineA !== ordineB) {
-                return ordineA - ordineB;
-            }
+            if (ordineA !== ordineB) return ordineA - ordineB;
         }
-        
         return a.titolo.localeCompare(b.titolo);
     });
 
+    // 3. Renderizzazione con GRUPPI per lo Sticky Header
+    let letteraAttuale = '';
+    let momentoAttuale = '';
+    let currentGroup = null; // Memorizza il contenitore del gruppo attuale
+
     cantiFiltrati.forEach(canto => {
         const nomeMomento = mappaMomenti[canto.momento]?.nome || "Vario";
+        let creaNuovoGruppo = false;
+        let testoSeparatore = '';
+        let classeSeparatore = '';
+
+        if (filtroAttuale.tipo === 'messa') {
+            // if (nomeMomento !== momentoAttuale) {
+            //     momentoAttuale = nomeMomento;
+            //     creaNuovoGruppo = true;
+            //     testoSeparatore = momentoAttuale;
+            //     classeSeparatore = 'moment-separator';
+            // }
+        } 
+        else if (!searchQuery) { 
+            const primaLettera = canto.titolo.trim().charAt(0).toUpperCase();
+            if (primaLettera !== letteraAttuale) {
+                letteraAttuale = primaLettera;
+                creaNuovoGruppo = true;
+                testoSeparatore = letteraAttuale;
+                classeSeparatore = 'letter-separator';
+            }
+        }
         
-        // Controlla se il canto ha accordi per decidere se mostrare il bottone
+        // Se c'è un cambio lettera/momento, creiamo il "recinto" (div) per quel gruppo
+        if (creaNuovoGruppo) {
+            currentGroup = document.createElement('div');
+            currentGroup.className = 'song-group';
+            currentGroup.innerHTML = `<div class="list-separator ${classeSeparatore}">${testoSeparatore}</div>`;
+            container.appendChild(currentGroup);
+        }
+
+        // Se stiamo cercando, currentGroup è vuoto, quindi attacchiamo direttamente al container principale
+        const targetContainer = currentGroup ? currentGroup : container;
+
         const haAccordi = canto.testo_md.includes('[');
 
-        // Trasforma [Do]A in uno span che "comanda" l'altezza della riga
         let testoConAccordi = canto.testo_md.replace(/(\S*\[[^\]]+\]\S*)/g, '<span class="keep-together">$1</span>');
-        
-        // 2. Trasforma gli accordi all'interno della parola blindata nei nostri span visivi.
         testoConAccordi = testoConAccordi.replace(/\[([^\]]+)\]/g, (match, accordo) => {
             return `<span class="c" data-v="${accordo}"></span>`;
         });
@@ -151,7 +180,7 @@ function aggiornaListaCanti() {
                     </div>
                 </div>
             </div>`;
-        container.insertAdjacentHTML('beforeend', cardHTML);
+        targetContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
 }
 
