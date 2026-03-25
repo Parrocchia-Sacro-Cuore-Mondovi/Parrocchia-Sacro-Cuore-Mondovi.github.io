@@ -1,7 +1,7 @@
 const datiParrocchialiSalvati = {
     "momenti": [
         { "id": "ingresso", "nome": "Ingresso", "ordine": 1 },
-        { "id": "alleluia", "nome": "Alleluia", "ordine": 2 }
+        { "id": "alleluia", "nome": "Alleluia", "ordine": 2 },
         { "id": "offertorio", "nome": "Offertorio", "ordine": 3 },
         { "id": "santo", "nome": "Santo", "ordine": 4 },
         { "id": "pace", "nome": "Pace", "ordine": 5 },
