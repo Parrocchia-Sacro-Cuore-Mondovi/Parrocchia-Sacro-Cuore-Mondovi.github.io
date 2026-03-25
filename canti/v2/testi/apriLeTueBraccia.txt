@@ -3,6 +3,7 @@
 ---
 momento:
 messe:
+ - natale
 ---
 
 Hai cer[Re-]cato la lib[Do]ertà lont[Re-]ano,
