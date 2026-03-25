@@ -77,7 +77,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Come Fuoco Vivo",
-        "momento": "messe:",
+        "momento": "comunione",
         "messe": [
             "sSanto"
         ],
@@ -219,7 +219,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Voglio Cantare al Signor",
-        "momento": "messe:",
+        "momento": "pasqua",
         "messe": [
             "sSanto"
         ],

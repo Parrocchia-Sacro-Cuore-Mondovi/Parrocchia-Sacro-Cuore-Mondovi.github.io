@@ -1,7 +1,7 @@
 # Voglio Cantare al Signor
 
 ---
-momento: 
+momento: pasqua
 messe:
  - sSanto
 ---
