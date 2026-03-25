@@ -210,6 +210,24 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> Pane del cielo sei Tu, Gesù,\n> via d’amore: Tu ci fai come Te.\n\nNo, non è rimasta fredda la terra: Tu sei rimasto con noi\nper nutrirci di Te, pane di vita, ed infiammare col Tuo Amore\ntutta l’umanità. **Rit.**\n\nSì, il cielo è qui su questa terra: Tu sei rimasto con noi,\nma ci porti con Te nella Tua casa dove vivremo insieme a Te\ntutta l’eternità. **Rit.**\n\nNo, la morte non può farci paura: Tu sei rimasto con noi.\nE chi vive di Te vive per sempre. Sei Dio con noi, sei Dio per noi,\nDio in mezzo a noi. **Rit.**"
     },
     {
+        "titolo": "Re dei Re",
+        "momento": "fine",
+        "messe": [],
+        "testo_md": "Hai sollevato i nostri volti dalla polvere,\nle nostre colpe hai portato su di Te,\nSignore Ti sei fatto uomo in tutto come noi, per amore. \n\n> Rit.\n> Figlio dell'Altissimo, povero tra i poveri, vieni a dimorare tra noi.\n> Dio dell'impossibile, Re di tutti secoli, vieni nella Tua maestà.\n> Re dei re, i popoli Ti acclamano, i cieli Ti proclamano\n> Re dei re, luce degli uomini, regna col Tuo amore tra no - - i.\n\nCi hai riscattati dalla stretta delle tenebre\nperché potessimo glorificare Te,\nhai riversato in noi la vita del Tuo Spirito, per amore. **Rit.**\n\nTua è la gloria per se - mpre.\nTua è la gloria per se - mpre.\nGloria, gloria,\ngloria, gloria. **Rit.**"
+    },
+    {
+        "titolo": "Resta Accanto a me",
+        "momento": "fine",
+        "messe": [],
+        "testo_md": "> Rit.\n> Ora vado sulla mia strada\n> con l'amore Tuo che mi guida.\n> O Signore, ovunque io vada\n> resta accanto a me.\n> Io Ti prego, stammi vicino\n> ogni passo del mio cammino,\n> ogni notte, ogni mattino\n> resta accanto a me.\n\nIl tuo sguardo puro sia luce per me\ne la Tua parola sia voce per me.\nChe io trovi il senso del mio andare\nsolo in Te,\nnel Tuo fedele amare il mio perché. **Rit.**\n\nFa’ che chi mi guarda non veda che Te,\nfa’ che chi mi ascolta non senta che Te\ne chi pensa a me, fa’ che nel cuore\npensi a Te\ne trovi quell'amore che hai dato a me. **Rit.**"
+    },
+    {
+        "titolo": "Resta qui con noi",
+        "momento": "fine",
+        "messe": [],
+        "testo_md": "Le ombre si distendono, scende ormai la sera\ne s’allontanano dietro i monti\ni riflessi di un giorno che non finirà,\ndi un giorno che ora correrà sempre\nperché sappiamo che una nuova vita\nda qui è partita e mai più si fermerà. **Rit.**\n\n> Rit.\n> Resta qui con noi, il sole scende già.\n> Resta qui con noi, Signore è sera ormai.\n> Resta qui con noi, il sole scende già.\n> Se Tu sei fra noi, la notte non verrà.\n\nS’allarga verso il mare il Tuo cerchio d’onda\nche il vento spingerà fino a quando\ngiungerà ai confini di ogni cuore, alle porte dell’amore vero.\nCome una fiamma che dove passa brucia,\ncosì il Tuo amore tutto il mondo invaderà. **Rit.**\n\nDavanti a noi l’umanità soffre, lotta e spera\ncome una terra che nell’arsura chiede acqua\nda un cielo senza nuvole, ma che sempre le può dare vita.\nCon Te saremo sorgente d’acqua pura.\nCon Te fra noi il deserto fiorirà. **Rit.**"
+    },
+    {
         "titolo": "Resto con te",
         "momento": "comunione",
         "messe": [
@@ -224,6 +242,18 @@ const datiParrocchialiSalvati = {
             "sSanto"
         ],
         "testo_md": "Che gioia ci hai dato, Signore del cielo,\nSignore del grande universo.\nChe gioia ci hai dato, vestito di luce,\nvestito di gloria infinita,\nvestito di gloria infinita.\nVederTi risorto, vederTi Signore,\nil cuore sta per impazzire.\nTu sei ritornato, Tu sei qui fra noi\ne adesso Ti avremo per sempre,\ne adesso Ti avremo per sempre.\nChi cercate, donne, quaggiù,\nchi cercate, donne, quaggiù,\nquello ch’era morto non è qui.\nÈ risorto, sì, come aveva detto anche a voi.\nVoi gridate a tutti che è risorto Lui,\na tutti che è risorto Lui.\nTu hai vinto il mondo Gesù,\nTu hai vinto il mondo Gesù,\nliberiamo la felicità.\nE la morte, no, non esiste più,\nl’hai vinta Tu e hai salvato\ntutti noi, uomini con Te,\ntutti noi, uomini con Te."
+    },
+    {
+        "titolo": "Ritornelli per l'Adorazione",
+        "momento": "adorazione",
+        "messe": [],
+        "testo_md": "Ecco l’agnello di Dio,\necco l’agnello di Dio,\necco l’agnello di Dio,\nè Lui, toglierà il peccato del mondo,\nè Lui, toglierà il peccato del mondo.\n\nVieni nel mio cuor,\nvieni nel mio cuor\nvieni nel mio cuor, Signor,\nvieni nel mio cuor.\n\nLaudate omnes gentes,\nlaudate Dominum.\nLaudate omnes gentes,\nlaudate Dominum.\n\nTu sei sorgente viva,\nTu sei fuoco, sei carità.\nVieni Spirito Santo,\nvieni Spirito Santo!"
+    },
+    {
+        "titolo": "Rivestiti di Luce",
+        "momento": "fine",
+        "messe": [],
+        "testo_md": "E come adagio se ne va la nebbia\nportata via dal vento.\nQuasi come accade ad un bambino\nche apre gli occhi al mondo.\nOgni giorno è un giorno vivo\ndi un colore nuovo che\nè luce, è luce in me!\nImmensamente chiaro,\nquel raggio che al mattino\nillumina la mia anima,\ncol Suo amore è Dio che mi è vicino.\nFa di ogni giorno un giorno vivo\ndi un colore nuovo che\nè luce, è luce! **Rit.**\n\n> Rit.\n> Rivestiti di luce,\n> porta il sole attorno a te.\n> Rivestiti d’amore,\n> è l’amore che cerca te.\n> Rivestiti di pace,\n> la vita abbraccerai:\n> e la forza che non hai trovato mai\n> dalla Sua luce ti arriverà! (x2)\n\nDolcemente senza far rumore\nLui mi svela i misteri che aprono il cuore,\nun sorriso può portare la luce\ned aprire le porte del Paradiso,\npuò far di ogni giorno un giorno diverso\ndi un colore nuovo che\nè luce, è luce. **Rit.**"
     },
     {
         "titolo": "Salve Regina",
