@@ -24,6 +24,12 @@ const datiParrocchialiSalvati = {
     ],
     "canti": [
     {
+        "titolo": "A te vorrei dire",
+        "momento": "comunione",
+        "messe": [],
+        "testo_md": "Se il sole non illuminasse più\nquesto pallido pianeta,\nse il silenzio della morte\nammutolisse il mio canto,\nse il cuore della terra\nnon riscaldasse più\nnon dispererei,\nperché troppo grande è in me\nla tua presenza,\nperché so, Dio, che Tu sei amore. **Rit.**\n\n> Rit.\n> A te che ascolti vorrei dire:\n> “Dio è amore, amore”.\n> A te che piangi vorrei dire:\n> “Dio è amore, amore”.\n> A te che lotti vorrei dire:\n> “Dio è amore, amore”.\n\nNon ci sarà mai amore più grande\ndi chi dà la vita per gli amici suoi.\nE noi abbiamo creduto e conosciuto\nl'amore che Dio ha per tutti noi. **Rit.**\n\n>\n> …ad ogni uomo vorrei dire:\n> “Dio è Amore, Amore”.\n> Ad ogni uomo vorrei dire:\n> “Dio è Amore, Amore”.\n> Ad ogni uomo vorrei dire:\n> “Dio è Amore,\n> Dio è Amore”."
+    },
+    {
         "titolo": "Abbracciami",
         "momento": "comunione",
         "messe": [],

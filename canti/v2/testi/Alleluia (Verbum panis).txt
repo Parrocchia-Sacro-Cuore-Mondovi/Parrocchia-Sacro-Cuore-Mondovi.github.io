@@ -1,0 +1,10 @@
+# Alleluia (Verbum panis)
+
+---
+momento: alleluia
+messe:
+---
+
+**Rit.
+Alleluia, alleluia.
+Alleluia, alleluia. (x2)**
