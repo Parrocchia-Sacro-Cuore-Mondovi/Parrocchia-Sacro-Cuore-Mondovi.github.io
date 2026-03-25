@@ -3,6 +3,7 @@
 ---
 momento:
 messe:
+ - natale
 ---
 
 [Re- Do Re- La-]
