@@ -171,7 +171,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "sSanto"
         ],
-        "testo_md": "Mille e mille grani nelle spighe d'oro\nmandano fragranza e danno gioia al cuore.\nQuando macinati, fanno un pane solo:\npane quotidiano, dono Tuo, Signore. **Rit. **\n\n> Rit.\n> Ecco il pane e il vino, segni del Tuo amore.\n> Ecco questa offerta, accoglila Signore.\n> Tu di mille e mille cuori fai un cuore solo,\n> un corpo solo in Te\n> e il Figlio Tuo verrà, vivrà\n> ancora in mezzo a noi.\n\nMille grappoli maturi sotto il sole,\nfesta della terra, donano vigore.\nQuando da ogni perla stilla il vino nuovo:\nvino della gioia, dono Tuo, Signore. **Rit. (x2)**"
+        "testo_md": "Mille e mille grani nelle spighe d'oro\nmandano fragranza e danno gioia al cuore.\nQuando macinati, fanno un pane solo:\npane quotidiano, dono Tuo, Signore. **Rit.**\n\n> Rit.\n> Ecco il pane e il vino, segni del Tuo amore.\n> Ecco questa offerta, accoglila Signore.\n> Tu di mille e mille cuori fai un cuore solo,\n> un corpo solo in Te\n> e il Figlio Tuo verrà, vivrà\n> ancora in mezzo a noi.\n\nMille grappoli maturi sotto il sole,\nfesta della terra, donano vigore.\nQuando da ogni perla stilla il vino nuovo:\nvino della gioia, dono Tuo, Signore. **Rit. (x2)**"
     },
     {
         "titolo": "Servire è Regnare",
