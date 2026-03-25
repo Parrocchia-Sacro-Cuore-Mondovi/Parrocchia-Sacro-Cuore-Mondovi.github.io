@@ -1,0 +1,7 @@
+# Pane del cielo
+
+---
+momento: offertorio
+messe:
+ - gSanto
+---
