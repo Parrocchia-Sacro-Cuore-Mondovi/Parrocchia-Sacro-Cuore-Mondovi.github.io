@@ -42,7 +42,6 @@ def analizza_file(percorso):
     for riga in righe:
         riga_pulita = riga.strip()
 
-        # Verifica se inizia per "**Rit." o "**Finale" (ignorando maiuscole/minuscole per il finale)
         is_rit = riga_pulita.startswith('**Rit.') and riga_pulita != '**Rit.**'
         is_finale = riga_pulita.lower().startswith('**finale') and riga_pulita.lower() != '**finale**'
 
@@ -51,45 +50,44 @@ def analizza_file(percorso):
             in_ritornello = True
             testo_riga = riga_pulita.replace('**', '')
             
-            # Se è un Finale, "mangiamo" la parola "Finale" e l'eventuale punteggiatura (:, ., o spazi)
+            # Se è un Finale, "mangiamo" la parola "Finale" e la punteggiatura
             if is_finale:
                 testo_riga = re.sub(r'(?i)^Finale[\s\.:-]*', '', testo_riga).strip()
             
-            # Apriamo il contenitore
-            righe_elaborate.append('<div class="ritornello">')
-            
-            # Stampiamo il testo se è rimasto qualcosa dopo aver tolto "Finale"
             if testo_riga:
-                righe_elaborate.append(testo_riga)
+                righe_elaborate.append('> ' + testo_riga)
+            else:
+                righe_elaborate.append('>')
             
-            # Se si apre e chiude sulla stessa riga (es. **Finale: Amen**)
+            # Se si apre e chiude sulla stessa riga
             if riga_pulita.endswith('**') and len(riga_pulita) > 6:
                 in_ritornello = False
-                righe_elaborate.append('</div>')
             continue
 
         # 2. Richiamo breve (es. **Rit.**)
         if riga_pulita == '**Rit.**':
-            righe_elaborate.append('<div class="ritornello">Rit.</div>')
+            righe_elaborate.append('> Rit.')
             continue
             
-        # 3. Apertura pura del Finale (es. **Finale** da solo su una riga)
+        # 3. Apertura pura del Finale su una riga a sé stante
         if riga_pulita.lower() == '**finale**':
             in_ritornello = True
-            righe_elaborate.append('<div class="ritornello">')
+            righe_elaborate.append('>')
             continue
 
-        # 4. Testo all'interno del blocco Ritornello/Finale
+        # 4. Testo all'interno del blocco
         if in_ritornello:
             testo_riga = riga_pulita.replace('**', '')
-            righe_elaborate.append(testo_riga)
+            if testo_riga == '':
+                righe_elaborate.append('>')
+            else:
+                righe_elaborate.append('> ' + testo_riga)
                 
-            # Se la riga finiva con gli asterischi, chiudiamo il contenitore
+            # Chiusura del blocco
             if riga_pulita.endswith('**'):
                 in_ritornello = False
-                righe_elaborate.append('</div>')
         else:
-            # Strofe normali fuori dai blocchi
+            # Strofe normali
             righe_elaborate.append(riga)
 
     testo_pulito = '\n'.join(righe_elaborate)
