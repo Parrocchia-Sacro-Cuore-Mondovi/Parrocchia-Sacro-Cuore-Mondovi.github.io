@@ -59,6 +59,9 @@ function inizializzaSidebar() {
     listaMesse.innerHTML = '';
 
     datiParrocchiali.momenti.forEach(momento => {
+
+        if (momento.nascosto) return;
+
         const li = document.createElement('li');
         li.textContent = momento.nome;
         li.addEventListener('click', () => impostaFiltro('momento', momento.id, momento.nome));
