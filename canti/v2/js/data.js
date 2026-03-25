@@ -18,7 +18,7 @@ const datiParrocchialiSalvati = {
     "canti": [
     {
         "titolo": "Abbracciami",
-        "momento": "vario",
+        "momento": "comunione",
         "messe": [],
         "testo_md": "Gesù, parola viva e vera,\nsorgente che disseta e cura ogni ferita,\nferma su di me i Tuoi occhi,\nla Tua mano stendi e donami la vita. **Rit.**\n\n> Rit.\tAbbracciami Dio dell’eternità,\n> rifugio dell’anima,\n> grazia che opera.\n> Riscaldami fuoco che libera.\n> Manda il Tuo Spirito,\n> Maranathà Gesù.\n\nGesù asciuga il nostro pianto.\nLeone vincitore della tribù di Giuda,\nvieni nella Tua potenza,\nquesto cuore sciogli\ncon ogni sua paura. **Rit.**\n\nPer sempre io canterò\nla Tua immensa fedeltà.\nIl Tuo Spirito in me in eterno ti loderà. (x2) **Rit.**"
     },

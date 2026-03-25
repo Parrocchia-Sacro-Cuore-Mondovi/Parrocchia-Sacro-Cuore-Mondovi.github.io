@@ -3,7 +3,7 @@
 ---
 momento: comunione
 messe:
- ---
+---
 
 Gesù, parola viva e vera,
 sorgente che disseta e cura ogni ferita,
