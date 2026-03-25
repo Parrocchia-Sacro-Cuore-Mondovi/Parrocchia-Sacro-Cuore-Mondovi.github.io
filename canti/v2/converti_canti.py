@@ -45,24 +45,26 @@ def analizza_file(percorso):
         # Inizio ritornello esteso
         if riga_pulita.startswith('**Rit.') and riga_pulita != '**Rit.**':
             in_ritornello = True
-            righe_elaborate.append('> ' + riga) # Aggiunge > per creare il blocco
+            # Togliamo i fastidiosi asterischi per non confondere il Markdown
+            testo_riga = riga_pulita.replace('**', '')
+            righe_elaborate.append('> ' + testo_riga) 
             
-            # Se si apre e chiude sulla stessa riga
             if riga_pulita.endswith('**') and len(riga_pulita) > 8:
                 in_ritornello = False
             continue
 
         # Richiamo breve del ritornello
         if riga_pulita == '**Rit.**':
-            righe_elaborate.append('> ' + riga)
+            righe_elaborate.append('> Rit.')
             continue
 
         # Testo dentro il ritornello
         if in_ritornello:
-            if riga_pulita == '':
-                righe_elaborate.append('>') # Mantiene a capo pulito
+            testo_riga = riga_pulita.replace('**', '')
+            if testo_riga == '':
+                righe_elaborate.append('>') 
             else:
-                righe_elaborate.append('> ' + riga)
+                righe_elaborate.append('> ' + testo_riga)
                 
             if riga_pulita.endswith('**'):
                 in_ritornello = False

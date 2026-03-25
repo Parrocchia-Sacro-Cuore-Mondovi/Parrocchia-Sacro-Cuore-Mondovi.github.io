@@ -649,3 +649,11 @@ footer {
     line-height: 1.3 !important; 
     font-weight: 700 !important; /* Forza tutto il ritornello in grassetto! */
 }
+
+.lyrics blockquote, 
+.lyrics blockquote p,
+.lyrics blockquote .keep-together {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important; 
+    color: #2c3e50 !important; /* Un grigio-blu scuro elegante per farlo risaltare in ogni caso */
+}
