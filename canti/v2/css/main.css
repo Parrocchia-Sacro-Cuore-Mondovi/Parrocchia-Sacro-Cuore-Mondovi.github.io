@@ -694,3 +694,19 @@ footer {
 .letter-separator { color: var(--primary-blue); border-bottom: 2px solid var(--primary-blue); }
 .moment-separator { color: var(--primary-green); border-bottom: 2px solid var(--primary-green); }
 
+.lyrics strong,
+.lyrics b {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    
+    /* Il trucco magico per i dispositivi mobile che ignorano il font-weight */
+    /* Usiamo 'currentColor' così prende in automatico il colore del testo in cui si trova */
+    -webkit-text-stroke: 0.3px currentColor !important; 
+}
+
+/* Assicura che anche gli accordi sopra le parole in grassetto siano ben marcati */
+.lyrics strong .c::before,
+.lyrics b .c::before {
+    font-weight: 700 !important;
+    -webkit-text-stroke: 0.3px var(--primary-blue) !important;
+}
