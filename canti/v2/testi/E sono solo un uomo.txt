@@ -1,4 +1,4 @@
-# E sono solo un uomo
+﻿# E sono solo un uomo
 
 ---
 momento: fine

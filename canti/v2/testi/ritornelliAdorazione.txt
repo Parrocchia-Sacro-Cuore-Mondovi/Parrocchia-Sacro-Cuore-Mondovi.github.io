@@ -1,4 +1,4 @@
-# Ritornelli per l'Adorazione
+﻿# Ritornelli per l'Adorazione
 
 ---
 momento: adorazione

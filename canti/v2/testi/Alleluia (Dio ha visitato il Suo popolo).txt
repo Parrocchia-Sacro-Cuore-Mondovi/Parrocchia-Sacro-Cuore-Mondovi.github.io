@@ -1,4 +1,4 @@
-# Alleluia (Dio ha visitato il Suo popolo)
+﻿# Alleluia (Dio ha visitato il Suo popolo)
 
 ---
 momento: alleluia

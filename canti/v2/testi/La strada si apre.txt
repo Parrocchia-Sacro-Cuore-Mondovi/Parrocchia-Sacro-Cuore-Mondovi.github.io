@@ -1,4 +1,4 @@
-# La strada si apre
+﻿# La strada si apre
 
 ---
 momento: fine

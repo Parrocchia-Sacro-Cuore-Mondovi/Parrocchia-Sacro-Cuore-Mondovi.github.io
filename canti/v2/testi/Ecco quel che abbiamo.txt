@@ -1,4 +1,4 @@
-# Ecco quel che abbiamo
+﻿# Ecco quel che abbiamo
 
 ---
 momento: offertorio

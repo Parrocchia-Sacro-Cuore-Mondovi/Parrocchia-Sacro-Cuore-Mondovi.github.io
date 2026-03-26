@@ -1,4 +1,4 @@
-# Santo è il Signore Dio
+﻿# Santo è il Signore Dio
 
 ---
 momento: santo

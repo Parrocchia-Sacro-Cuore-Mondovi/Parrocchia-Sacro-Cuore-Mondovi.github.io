@@ -1,4 +1,4 @@
-# Antica, eterna danza
+﻿# Antica, eterna danza
 
 ---
 momento: offertorio

@@ -1,4 +1,4 @@
-# Emmanuel - Inno GMG 2000
+﻿# Emmanuel - Inno GMG 2000
 
 ---
 momento: 

@@ -1,4 +1,4 @@
-# Verbum Panis
+﻿# Verbum Panis
 
 ---
 momento: offertorio

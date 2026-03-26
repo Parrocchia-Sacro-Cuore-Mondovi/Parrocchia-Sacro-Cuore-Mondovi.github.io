@@ -1,7 +1,7 @@
-# Lode a Dio
+﻿# Lode a Dio
 
 ---
-momento: alleluia
+momento: 
 messe:
 ---
 

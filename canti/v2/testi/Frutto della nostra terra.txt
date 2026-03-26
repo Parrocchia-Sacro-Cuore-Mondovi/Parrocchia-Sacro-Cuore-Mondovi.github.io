@@ -1,4 +1,4 @@
-# Frutto della nostra terra
+﻿# Frutto della nostra terra
 
 ---
 momento: offertorio

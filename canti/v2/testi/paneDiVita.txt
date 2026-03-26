@@ -1,4 +1,4 @@
-# Pane di vita
+﻿# Pane di vita
 
 ---
 momento: offertorio

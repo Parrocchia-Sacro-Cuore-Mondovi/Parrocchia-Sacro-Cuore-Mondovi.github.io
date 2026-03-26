@@ -1,4 +1,4 @@
-# Laudato sii, Signore mio
+﻿# Laudato sii, Signore mio
 
 ---
 momento: comunione

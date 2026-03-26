@@ -1,4 +1,4 @@
-# La stella polare
+﻿# La stella polare
 
 ---
 momento: comunione

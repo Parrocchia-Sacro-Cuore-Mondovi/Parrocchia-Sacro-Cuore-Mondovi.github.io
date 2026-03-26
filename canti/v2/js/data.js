@@ -1,26 +1,27 @@
 const datiParrocchialiSalvati = {
     "momenti": [
         { "id": "ingresso", "nome": "Ingresso", "ordine": 1 },
-        { "id": "alleluia", "nome": "Alleluia", "ordine": 2 },
-        { "id": "offertorio", "nome": "Offertorio", "ordine": 3 },
-        { "id": "santo", "nome": "Santo", "ordine": 4 },
-        { "id": "pace", "nome": "Pace", "ordine": 5 },
-        { "id": "comunione", "nome": "Comunione", "ordine": 6 },
-        { "id": "fine", "nome": "Fine", "ordine": 7 },
-        { "id": "adorazione", "nome": "Adorazione", "ordine": 8 },
-        { "id": "cresime", "nome": "Cresime", "ordine": 9 },
-        { "id": "funerali", "nome": "Funerali", "ordine": 10 },
-        { "id": "matrimoni", "nome": "Matrimoni", "ordine": 11 },
-        { "id": "pasqua", "nome": "Tempo Pasquale", "ordine": 12 },
-        { "id": "quaresima", "nome": "Quaresima", "ordine": 13 },
-        { "id": "natale", "nome": "Tempo di Natale", "ordine": 14 },
-        { "id": "mariani", "nome": "Canti Mariani", "ordine": 15 },
-        { "id": "vario", "nome": "Vario", "ordine": 16, "nascosto": true }
+        { "id": "gloria", "nome": "Gloria", "ordine": 2 },
+        { "id": "alleluia", "nome": "Alleluia", "ordine": 3 },
+        { "id": "offertorio", "nome": "Offertorio", "ordine": 4 },
+        { "id": "santo", "nome": "Santo", "ordine": 5 },
+        { "id": "pace", "nome": "Pace", "ordine": 6 },
+        { "id": "comunione", "nome": "Comunione", "ordine": 7 },
+        { "id": "fine", "nome": "Fine", "ordine": 8 },
+        { "id": "adorazione", "nome": "Adorazione", "ordine": 9 },
+        { "id": "cresime", "nome": "Cresime", "ordine": 10 },
+        { "id": "funerali", "nome": "Funerali", "ordine": 11 },
+        { "id": "matrimoni", "nome": "Matrimoni", "ordine": 12 },
+        { "id": "pasqua", "nome": "Tempo Pasquale", "ordine": 13 },
+        { "id": "quaresima", "nome": "Quaresima", "ordine": 14 },
+        { "id": "natale", "nome": "Tempo di Natale", "ordine": 15 },
+        { "id": "mariani", "nome": "Canti Mariani", "ordine": 16 },
+        { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true }
     ],
     "messe": [
         { "id": "gSanto", "nome": "Giovedì Santo" },
         { "id": "vSanto", "nome": "Venerdì Santo" },
-        { "id": "sSanto", "nome": "Sabato Santo" },
+        { "id": "sSanto", "nome": "Sabato Santo" }
     ],
     "canti": [
     {

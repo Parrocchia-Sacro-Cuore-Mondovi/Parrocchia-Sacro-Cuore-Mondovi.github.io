@@ -1,4 +1,4 @@
-# Ogni mia parola
+﻿# Ogni mia parola
 
 ---
 momento: comunione
