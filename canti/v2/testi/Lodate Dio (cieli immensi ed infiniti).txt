@@ -1,7 +1,7 @@
 # Lodate Dio (cieli immensi ed infiniti)
 
 ---
-momento: 
+momento: ingresso
 messe:
 ---
 
