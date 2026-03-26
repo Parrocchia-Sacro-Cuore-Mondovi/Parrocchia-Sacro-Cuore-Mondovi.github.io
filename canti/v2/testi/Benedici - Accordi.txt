@@ -1,4 +1,4 @@
-#Benedici, O Signore
+﻿#Benedici, O Signore
 
 ---
 momento: offertorio

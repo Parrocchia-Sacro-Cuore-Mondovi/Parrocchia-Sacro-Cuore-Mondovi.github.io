@@ -1,4 +1,4 @@
-# Resta accanto a me
+﻿# Resta accanto a me
 
 ---
 momento: fine
