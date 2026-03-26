@@ -1,7 +1,7 @@
 # Io credo: risorgerò
 
 ---
-momento: 
+momento: funerali
 messe:
 ---
 

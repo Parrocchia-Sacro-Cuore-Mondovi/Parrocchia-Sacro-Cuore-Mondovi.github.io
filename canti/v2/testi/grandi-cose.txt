@@ -1,6 +1,6 @@
 ﻿# Grandi Cose
 ---
-momento:
+momento: ingresso
 messe:
 ---
 

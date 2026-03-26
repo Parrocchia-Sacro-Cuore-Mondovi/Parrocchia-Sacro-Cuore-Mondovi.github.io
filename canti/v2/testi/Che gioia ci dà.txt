@@ -1,7 +1,7 @@
 # Che gioia ci dà
 
 ---
-momento: finale
+momento: fine
 messe:
 ---
 

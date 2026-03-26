@@ -1,7 +1,7 @@
 # Come tu mi vuoi
 
 ---
-momento:
+momento: comunione
 messe:
 ---
 

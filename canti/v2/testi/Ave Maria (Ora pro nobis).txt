@@ -1,7 +1,7 @@
 # Ave Maria (Ora pro nobis)
 
 ---
-momento: finale
+momento: fine
 messe:
 ---
 
