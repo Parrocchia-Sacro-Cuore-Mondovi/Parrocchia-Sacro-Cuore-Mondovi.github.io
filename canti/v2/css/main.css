@@ -90,11 +90,21 @@ nav a.risorse {
     flex-shrink: 0;
 }
 
-.sidebar h2 {
-    font-size: 18px;
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
     border-bottom: 2px solid #b3d4ff;
     padding-bottom: 10px;
+}
+
+.sidebar-header h2 {
+    font-size: 18px;
+}
+
+.close-sidebar-btn {
+    display: none; /* Il bottone X è nascosto su PC, non serve! */
 }
 
 .filter-group {
@@ -397,19 +407,45 @@ footer {
         gap: 6px;
     }
 
+    /* --- POP-UP FILTRI (OVERLAY) --- */
     .sidebar {
-        display: none; /* Nasconde la sidebar di default su mobile */
-        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 400px;
+        max-height: 85vh;
+        overflow-y: auto;
         background: white;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
+        z-index: 2000;
+        padding: 20px;
+        border-radius: 12px;
+        
+        /* IL TRUCCO MAGICO: un'ombra gigante che crea il fondale scuro trasparente! */
+        box-shadow: 0 5px 25px rgba(0,0,0,0.2), 0 0 0 10000px rgba(0,0,0,0.5);
+        
+        /* Nasconde dolcemente il popup */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
     }
 
-    /* Quando la sidebar ha questa classe, viene mostrata */
     .sidebar.show-mobile {
-        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .close-sidebar-btn {
+        display: block; /* Mostriamo la X su mobile */
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--text-dark);
+        cursor: pointer;
     }
 
     .content-header {
@@ -709,4 +745,39 @@ footer {
 .lyrics b .c::before {
     font-weight: 700 !important;
     -webkit-text-stroke: 0.3px var(--primary-blue) !important;
+}
+
+/* ============================================================
+   BOTTONE FILTRI STICKY (SOLO MOBILE)
+   ============================================================ */
+/* Nascondiamo il wrapper su desktop */
+.sticky-filter-wrapper {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .sticky-filter-wrapper {
+        display: flex;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 8px; /* Si allinea all'altezza del testo della lettera A */
+        height: 0; /* Magia: altezza zero per non rubare spazio ai canti sotto! */
+        z-index: 50; /* Assicura che passi sopra i separatori e le card */
+        justify-content: flex-end; /* Lo spinge tutto a destra */
+        
+        /* Disabilita i click sul wrapper invisibile per poter cliccare i canti sotto */
+        pointer-events: none; 
+    }
+    
+    .sticky-filter-wrapper .filter-mobile-btn {
+        pointer-events: auto; /* Riattiva il click solo sul bottone */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombra per staccarlo dallo sfondo */
+        margin-right: 5px; /* Previene che tocchi il bordo destro dello schermo */
+    }
+
+    /* Salvagente per i separatori lunghi (es. "Offertorio") */
+    .list-separator {
+        /* Mette un margine interno a destra così il testo del separatore non finisce mai nascosto sotto il bottone */
+        padding-right: 90px !important; 
+    }
 }

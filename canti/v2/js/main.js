@@ -81,6 +81,11 @@ function impostaFiltro(tipo, id, nomeTesto = "Esplora i Canti") {
     document.getElementById('titolo-sezione').textContent = tipo ? `Filtro: ${nomeTesto}` : "Esplora i Canti";
     document.getElementById('reset-filters').style.display = tipo ? 'block' : 'none';
     aggiornaListaCanti();
+    
+    const sidebar = document.getElementById('filterSidebar');
+    if (window.innerWidth <= 768 && sidebar.classList.contains('show-mobile')) {
+        toggleSidebar();
+    }
 }
 
 function aggiornaListaCanti() {

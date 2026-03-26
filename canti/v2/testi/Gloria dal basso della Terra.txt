@@ -1,7 +1,7 @@
 # Gloria dal basso della Terra
 
 ---
-momento:
+momento: gloria
 messe:
 ---
 

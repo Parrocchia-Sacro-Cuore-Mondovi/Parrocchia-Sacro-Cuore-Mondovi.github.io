@@ -113,7 +113,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Ave Maria (Ora pro nobis)",
-        "momento": "finale",
+        "momento": "fine",
         "messe": [],
         "testo_md": "> Rit.\n> A - ve Mari - a, a - ve.\n> A - ve Mari - a, a - ve.\n\nDonna dell'attesa e madre di speranza, ora pro nobis;\ndonna del sorriso e madre del silenzio, ora pro nobis;\ndonna di frontiera e madre dell'ardore, ora pro nobis;\ndonna del riposo e madre del sentiero, ora pro nobis. **Rit.**\n\nDonna del deserto e madre del respiro, ora pro nobis;\ndonna della sera e madre del ricordo, ora pro nobis;\ndonna del presente e madre del ritorno, ora pro nobis;\ndonna della terra e madre dell'amore, ora pro nobis. **Rit.**"
     },
@@ -125,7 +125,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Che gioia ci dà",
-        "momento": "finale",
+        "momento": "fine",
         "messe": [],
         "testo_md": "** Rit.1\nChe gioia ci dà averTi in mezzo a noi,\nesplode la vita: splende di luce la città.\nVogliamo gridare a tutto il mondo che\nnon siamo mai soli: sei sempre con noi.**\n\nCi hai cercato Tu e ci hai guidati nel cammino,\nci hai rialzato Tu quando non speravamo più\ned ognuno ormai Ti sente sempre più vicino,\nperché sappiamo che Tu cammini in mezzo a noi. **Rit.2**\n\n> Rit.2\n> Che gioia ci dà averTi in mezzo a noi,\n> esplode la vita: cantiamo la felicità.\n> Sei un fiume che avanza e porti via con te\n> le nostre paure. Chi Ti fermerà?\n\nStrappi gli argini e corri verso la pianura,\nsteppe aride, terre deserte inonderai:\ndove arriverai germoglierà una vita nuova\nche non appassirà mai perché Tu sei con noi.\n\n>\n> La la la…\n> …che gioia ci dà averTi in mezzo a noi,\n> esplode la vita: splende di luce la città.\n> Che gioia ci dà averTi in mezzo a noi,\n> esplode la vita: cantiamo di felicità."
     },
@@ -197,19 +197,19 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
-        "momento": "messe:",
+        "momento": "gloria",
         "messe": [],
         "testo_md": "**DONNE**\nGloria a Dio nell’alto dei Cieli\nE pace in terra agli uomini di buona volontà\nGloria a Dio nell’alto del Cieli\nGloria\n\n**UOMINI**\nGloria, Gloria a Dio nell’alto\nE pace agli uomini di buona volontà-à\nPace in terra\nGloria"
     },
     {
         "titolo": "Gloria a Dio",
-        "momento": "messe:",
+        "momento": "gloria",
         "messe": [],
         "testo_md": "> Rit.\n> Gloria a Dio,\n> nell’alto dei cieli (sia gloria, gloria).\n> Pace in terra\n> agli uomini di buona volontà.\n\nNoi Ti lodiamo, Ti benediciamo,\nTi adoriamo, Ti glorifichiamo,\nTi rendiamo grazie,\nper la Tua gloria immensa,\nSignore Dio, Re del Cielo,\nDio Padre onnipotente (e sia gloria, gloria, gloria). **Rit.**\n\nSignore, Figlio unigenito,\nGesù Cristo, Signore Dio\nagnello di Dio Figlio del Padre.\nTu che togli i peccati del mondo,\nabbi pietà di noi;\nTu che togli i peccati del mondo,\naccogli la nostra supplica;\nTu che siedi alla destra del Padre,\nabbi pietà di noi (e sia gloria, gloria, gloria). **Rit.**\n\nPerché Tu solo il Santo,\nTu solo il Signore,\nTu solo l’altissimo, Gesù Cristo\ncon lo Spirito Santo\nnella gloria di Dio Padre.\nAmen (Amen), amen, amen"
     },
     {
         "titolo": "Gloria dal basso della Terra",
-        "momento": "messe:",
+        "momento": "gloria",
         "messe": [],
         "testo_md": "Gloria dal basso della Terra,\ngloria dal più infame degli stermini.\nGloria nella carestia,\ngloria nella guerra più atroce.\nGloria, gloria, gloria,\nsolo Tu hai la forza con la Tua gloria\ndi asciugare le lacrime, di portare nella Tua gloria\nnell'alto dei Cieli i vinti della terra,\ni vinti della terra, i vinti della terra."
     },
@@ -233,7 +233,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Io credo: risorgerò",
-        "momento": "messe:",
+        "momento": "funerali",
         "messe": [],
         "testo_md": "> Rit.\n> Io credo: risorgerò\n> questo mio corpo\n> vedrà il Salvatore!\n\nPrima che io nascessi, mio Dio, tu mi conosci:\nricordati, Signore, che l'uomo è come l'erba,\ncome il fiore del campo. **Rit.**\n\nOra è nelle tue mani quest'anima che mi hai dato:\naccoglila, Signore, da sempre tu l'hai amata,\nè preziosa ai tuoi occhi. **Rit.**\n\nPadre, che mi hai formato a immagine del tuo volto:\nconserva in me, Signore, il segno della tua gloria,\nche risplenda in eterno. **Rit.**\n\nCristo, mio Redentore, risorto nella luce:\nio spero in te, Signore, hai vinto, mi hai liberato\ndalle tenebre eterne. **Rit.**\n\nSpirito della vita, che abiti nel mio cuore:\nrimani in me, Signore, rimani oltre la morte,\nper i secoli eterni. **Rit.**"
     },
@@ -276,7 +276,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Litanie blues (Uz)",
         "momento": "messe:",
-        "messe": [],
+        "messe": [
+            "sSanto"
+        ],
         "testo_md": "Signore pietà\n**Signore pietà**\nCristo pietà\n**Cristo pietà**\nSignore pietà\n**Signore pietà**\n\nSanta Maria, Madre di Dio\nSan Michele e San Gabriele\nSan Giuseppe, Sant’Andrea\nSanti Pietro e Paolo\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nSanto Stefano e San Lorenzo\nSanta Maria Maddalena\nSant’Agnese, Santa Cecilia\nSanti Martiri di Cristo\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nSan Gregorio Sant’Agostino\nSanti Cirillo e Metodio\nSan Martino San Benedetto\nSan Francesco d’Assisi\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nSan Giovanni, San Domenico\nSanta Caterina da Siena\nSanta Rita, Santa Chiara\nSanti e Sante tutte di Dio\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nNella tua misericordia\n**Salvaci, Signore**\nDa ogni male\n**Salvaci, Signore**\nDa ogni peccato\n**Salvaci, Signore**\nDalla morte eterna\n**Salvaci, Signore**\nPer la tua incarnazione\n**Salvaci, Signore**\nPer la tua morte e resurrezione\n**Salvaci, Signore**\nPer il dono dello spirito\n**Salvaci, Signore**\nPer i tuoi sacramenti\n**Salvaci, Signore**\nNoi peccatori, Ti preghiamo\n**Ascoltaci, Signore**\nPer i ragazzi del battesimo\n**Ascoltaci, Signore**\nCristo ascoltaci\n**Cristo ascoltaci**\nCristo esaudiscici\n**esaudiscici**\nCristo Ascoltaci\n**Cristo ascoltaci**\nCristo esaudiscici."
     },
     {
@@ -361,7 +363,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Come tu mi vuoi",
-        "momento": "messe:",
+        "momento": "comunione",
         "messe": [],
         "testo_md": "[SOL  DO  RE7  SOL  MI-  LA-7  RE4/7  SOL]\n\n[SOL]Eccomi Signor, [LA-/sol]vengo a Te mio Re\n[MI-]che si compia in me la [SOL/re]tua volon[RE]tà\n[SOL]Eccomi Signor, [LA-/sol]vengo a Te mio Dio\n[MI-]plasma il cuore mio e [SI-7]di Te vivrò\n[SOL]Se Tu lo [DO]vuoi Sign[RE]ore manda [MI-]me\n[LA-]e il tuo nome an[Si-  sol  re4  re]nuncerò.\n\n> Rit.\n> Come Tu mi [SOL]vuoi [RE/fa#]io sarò, dove Tu mi [MI-]vuoi [SI-7]io andrò.\n> Questa [DO]vita io voglio dona[SI-7]rla a [MI-]Te per dar [FA]gloria al tuo nome [DO]mio [RE4]Re.\n> [RE]Come Tu mi [DO7+]vuoi io [RE/fa#]sarò,    [SI7]dove Tu mi [MI-]vuoi io an[SI-7]drò.\n> Se mi [DO7+]guida il tuo [LA4]amore [SI7]paura non [MI-]ho,\n> per [LA-]sempre [DO]io sarò[RE4] come [RE]Tu mi [SOL]vuoi. [Do/sol  re7/sol  sol]\n\nEccomi Signor, vengo a Te mio Re\nche si compia in me la tua volontà\nEccomi Signor, vengo a Te mio Dio\nplasma il cuore mio e di Te vivrò\nTra le tue mani mai più vacillerò\ne strumento tuo sarò. **Rit.**"
     },
@@ -381,7 +383,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Grandi Cose",
-        "momento": "messe:",
+        "momento": "ingresso",
         "messe": [],
         "testo_md": "> Rit.\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ha fatto [FA]germogliare fiori [DO]dalle [SOL]rocce!\n> [DO]Grandi [SOL]cose ha fatto [RE-]il Sign[LA-]ore per noi:\n> [DO]ci ha riport[FA]ati liberi [DO]alla nostra [SOL]terra!\n> Ed [LA-]ora possiamo cant[RE-7]are, possiamo [MI-7]gridare\n> l'amore che [FA]Dio ha versato su [SOL]noi.\n\n[DO]Tu, che [SOL]sai strappar[RE-]e dalla[LA-] morte[DO],\nhai sollevato[FA] il nostro [DO]viso dalla [SOL]polvere;\n[DO]Tu, che [SOL]hai sent[RE-]ito il nostro[LA-] pianto[DO],\nnel nostro [FA]cuore hai messo un [DO]seme di [SOL]felicità.\n\n> …grandi cose ha fatto il Signore per noi."
     },
@@ -653,7 +655,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Vivere la vita",
-        "momento": "messe:",
+        "momento": "fine",
         "messe": [],
         "testo_md": "Vivere la vita con le gioie e coi dolori di ogni giorno:\nè quello che Dio vuole da te.\nVivere la vita e inabissarti nell'Amore\nè il tuo destino:\nè quello che Dio vuole da te.\n\n> Fare insieme agli altri la tua strada verso Lui,\n> correre con i fratelli tuoi...\n> Scoprirai allora il cielo dentro di te,\n> una scia di luce lascerai.\n\nVivere la vita è l'avventura più stupenda dell'amore:\nè quello che Dio vuole da te.\nVivere la vita e generare ogni momento il paradiso:\nè quello che Dio vuole da te.\n\n> Vivere perché ritorni al mondo l'unità\n> perché Dio sta nei fratelli tuoi...\n> Scoprirai allora il cielo dentro di te,\n> una scia di luce lascerai. (x2)"
     },

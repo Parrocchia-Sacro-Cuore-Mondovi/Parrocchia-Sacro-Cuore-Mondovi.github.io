@@ -46,7 +46,12 @@
 
     <div class="container">
         <aside class="sidebar" id="filterSidebar">
-            <h2>Filtra per Categoria</h2>
+            <div class="sidebar-header">
+                <h2>Filtra per Categoria</h2>
+                <button class="close-sidebar-btn" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
             
             <div class="filter-group">
                 <div class="filter-header"><strong>Momenti Liturgici</strong><i class="fa-solid fa-chevron-up"></i></div>
@@ -67,15 +72,18 @@
             <div class="content-header">
                 <div class="title-container">
                     <h2 id="titolo-sezione">Esplora i Canti</h2>
-                    <button class="filter-mobile-btn" onclick="toggleSidebar()">
-                        <i class="fa-solid fa-filter"></i> Filtri
-                    </button>
-                </div>
+                    </div>
 
                 <div class="search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Cerca un canto..." id="searchInput">
                 </div>
+            </div>
+
+            <div class="sticky-filter-wrapper">
+                <button class="filter-mobile-btn" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-filter"></i> Filtri
+                </button>
             </div>
 
             <div class="song-list" id="song-list-container">

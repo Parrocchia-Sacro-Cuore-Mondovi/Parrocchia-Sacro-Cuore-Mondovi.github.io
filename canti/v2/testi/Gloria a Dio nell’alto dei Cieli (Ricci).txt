@@ -1,7 +1,7 @@
 # Gloria a Dio nell’alto dei Cieli (Ricci)
 
 ---
-momento:
+momento: gloria
 messe:
 ---
 

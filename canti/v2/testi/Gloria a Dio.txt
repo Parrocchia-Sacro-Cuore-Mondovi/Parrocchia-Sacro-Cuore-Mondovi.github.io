@@ -1,7 +1,7 @@
 # Gloria a Dio
 
 ---
-momento:
+momento: gloria
 messe:
 ---
 
