@@ -1,11 +1,11 @@
-﻿# Come tu mi vuoi
+﻿# Come Tu mi vuoi
 
 ---
 momento: comunione
 messe:
 ---
 
-[SOL  DO  RE7  SOL  MI-  LA-7  RE4/7  SOL]
+Intro: [SOL  DO  RE7  SOL  MI-  LA-7  RE4/7  SOL]
 
 [SOL]Eccomi Signor, [LA-/sol]vengo a Te mio Re
 [MI-]che si compia in me la [SOL/re]Tua volon[RE]tà

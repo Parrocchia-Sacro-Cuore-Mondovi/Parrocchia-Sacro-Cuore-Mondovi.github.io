@@ -1,4 +1,4 @@
-﻿# Servire è Regnare
+﻿# Servire è regnare
 
 ---
 momento: comunione
@@ -6,7 +6,7 @@ messe:
  - gSanto
 ---
 
-Guardiamo a te che sei
+Guardiamo a Te che sei
 Maestro e Signore,
 chinato a terra stai,
 ci mostri che l’amore
@@ -21,7 +21,7 @@ che il più grande è chi più sa servire,
 chi si abbassa e chi si sa piegare,
 perché grande è soltanto l’amore.**
 
-E ti vediamo poi,
+E Ti vediamo poi,
 Maestro e Signore,
 che lavi i piedi a noi
 che siamo Tue creature;

@@ -1,4 +1,4 @@
-﻿#Benedici, O Signore
+﻿# Benedici
 
 ---
 momento: offertorio
@@ -27,8 +27,7 @@ Poi i colori dell'autunno
 coi grappoli maturi
 avremo ancora vino. **Rit2.**
 
-**Rit2.	
-Benedici o Signore
+**Rit2.	Benedici o Signore
 questa offerta che portiamo a Te.
 Facci uno come il vino
 che anche oggi hai dato a noi.**

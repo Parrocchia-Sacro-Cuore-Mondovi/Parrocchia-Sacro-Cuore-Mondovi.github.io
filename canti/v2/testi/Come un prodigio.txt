@@ -1,9 +1,8 @@
-﻿# Come un Prodigio
+﻿# Come un prodigio
 
 ---
 momento: comunione
 messe:
- - sSanto
 ---
 
 Signore Tu, mi scruti e conosci
@@ -36,4 +35,3 @@ ancora informe mi hanno visto i Tuoi occhi.
 I miei giorni erano fissati
 quando ancora non ne esisteva uno
 e tutto quanto era scritto nel Tuo libro. **Rit.**
-

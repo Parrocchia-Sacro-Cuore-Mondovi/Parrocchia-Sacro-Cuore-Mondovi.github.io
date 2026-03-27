@@ -3,7 +3,6 @@
 ---
 momento: comunione
 messe:
- - vSanto
 ---
 
 Lode al nome Tuo dalle terre più floride
@@ -33,4 +32,3 @@ Tu doni e porti via,
 Tu doni e porti via,
 ma sempre sceglierò
 di benedire Te. (x2)
-

@@ -1,4 +1,4 @@
-﻿# Si Accende una luce
+﻿# Si accende una luce
 
 ---
 momento: natale
@@ -35,5 +35,5 @@ Cristo, che nasce in povertà. **Rit.**
 (4a Domenica di Avvento: la candela degli angeli)
 Si accende una luce all’uomo quaggiù,
 presto verrà tra noi Gesù.
-Il coro celeste “Pace” dirà
+Il coro celeste: “Pace” dirà
 “a voi di buona volontà”. **Rit.**

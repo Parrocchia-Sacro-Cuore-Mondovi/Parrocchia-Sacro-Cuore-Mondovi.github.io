@@ -1,11 +1,10 @@
-﻿# Voglio Cantare al Signor
+﻿# Voglio cantare al Signor
 
 ---
 momento: pasqua
 messe:
  - sSanto
 ---
-
 
 **Rit.
 Voglio cantare al Signor e dare gloria a Lui.
