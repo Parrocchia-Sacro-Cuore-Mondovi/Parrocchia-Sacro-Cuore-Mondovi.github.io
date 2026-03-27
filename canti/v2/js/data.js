@@ -193,6 +193,12 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> [DO#-]Dall'aurora [MI]io cerco [FA#-]Te, [SI]\n> [DO#-]fino al tramonto [MI]Ti [FA#-]chiamo. [SI]\n> [DO#-]Ha sete [SOL#-]solo di [LA]Te\n> [SI]l'anima [DO#-]mia [SOL#-]come [LA]terra [SI]deserta.\n\n[DO#-]Non mi fermerò [MI]un [FA#-]solo [SI]istante,\n[DO#-]sempre canterò [MI]la [FA#-]Tua [SI]lode,\n[DO#-]perché sei il mio [SOL#-]Dio,\n[LA]il mio [SI]riparo\n[DO#-]mi proteggerai\n[SOL#-]all'omb[LA]ra delle Tue [SI4]ali.**Rit.**\n\nNon mi fermerò un solo istante,\nio racconterò le Tue opere\nperché sei il mio Dio\nunico bene,\nnulla mai potrà\nla notte contro di me. **Rit.**\n\n>\n> ...[DO#-]ha sete [SOL#-]solo di [LA]Te\n> [SI]l'anima [MI]mia [LA]come terra [SI]deser[MI]ta."
     },
     {
+        "titolo": "Dove Tu sei",
+        "momento": "comunione",
+        "messe": [],
+        "testo_md": "Dove Tu sei torna la vita.\nDove Tu passi fiorisce il deserto.\nDove Tu guardi si rischiara il cielo\ne in fondo al cuor torna il sereno.\nDove tu sei, dove tu sei. (x2)\n…dove Tu sei torna la vita."
+    },
+    {
         "titolo": "Dove due o tre",
         "momento": "ingresso",
         "messe": [],
@@ -643,12 +649,6 @@ const datiParrocchialiSalvati = {
         "testo_md": "Santo, Santo, Santo sei, Signore.\nDio dell’universo vieni in mezzo a noi.\nI Cieli e la terra sono pieni della Tua gloria.\nNel nome del Signore.\n\nSanto, Santo, Santo sei Signore.\nDio dell’universo vieni in mezzo a noi.\nOsanna nei Cieli. Benedetto Colui che viene\nnel nome del Signore,\nnel nome del Signor."
     },
     {
-        "titolo": "Santo è il Signore Dio",
-        "momento": "santo",
-        "messe": [],
-        "testo_md": "Santo è il Signore Dio (Santo è il Signore Dio),\nSanto è il Re dell’universo.\nQuando i cieli e la terra si riempirono di Te\nil Tuo nome come vento si levò. **Rit.**\n\n> Rit.\n> Osa-a-a-anna\n> Osa-a-a-anna\n\nBenedetto l’uomo che (Benedetto l’uomo che)\nche cammina per le strade di Dio\ne che viene nel nome Suo,\nnel nome del Signore. **Rit. (x2)**"
-    },
-    {
         "titolo": "Santo Gen",
         "momento": "santo",
         "messe": [],
@@ -673,12 +673,6 @@ const datiParrocchialiSalvati = {
         "momento": "natale",
         "messe": [],
         "testo_md": "Venite fedeli, l'angelo ci invita.\nVenite, venite a Betlemme.\n\n> Rit.\n> Nasce per noi Cristo Salvatore.\n> Venite adoriamo, venite adoriamo,\n> venite adoriamo il Signore Gesù.\n\nLa luce del mondo brilla in una grotta:\nla fede ci guida a Betlemme. **Rit.**\n\nLa notte risplende, tutto il mondo attende:\nseguiamo i pastori a Betlemme. **Rit.**\n\nIl Figlio di Dio, Re dell'universo,\nsi è fatto Bambino a Betlemme. **Rit.**\n\n\"Sia gloria nei Cieli, pace sulla terra\"\nun angelo annunzia a Betlemme. **Rit.**"
-    },
-    {
-        "titolo": "Vieni e Seguimi",
-        "momento": "fine",
-        "messe": [],
-        "testo_md": "Lascia che il mondo vada per la sua strada,\nlascia che l'uomo ritorni alla sua casa,\nlascia che la gente accumuli la sua fortuna:\nma tu, tu vieni e seguimi, tu, vieni e seguimi.\n\nLascia che la barca in mare spieghi la vela,\nlascia che trovi affetto chi segue il cuore,\nlascia che dall'albero cadano i frutti maturi:\nma tu, tu vieni e seguimi, tu, vieni e seguimi. **Rit.**\n\n> Rit.\n> E sarai luce per gli uomini\n> e sarai sale della terra\n> e nel mondo deserto aprirai\n> una strada nuova. (x2)\n> …e per questa strada va', va',\n> e non voltarti indietro, va'\n> e non voltarti indietro."
     },
     {
         "titolo": "Vieni qui tra noi",
