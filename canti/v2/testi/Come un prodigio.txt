@@ -3,6 +3,7 @@
 ---
 momento: comunione
 messe:
+ - sSanto
 ---
 
 Signore Tu, mi scruti e conosci

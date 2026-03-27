@@ -103,10 +103,13 @@ function aggiornaListaCanti() {
     else if (filtroAttuale.tipo === 'messa') cantiFiltrati = cantiFiltrati.filter(c => c.messe.includes(filtroAttuale.id));
 
     if (searchQuery) {
-        cantiFiltrati = cantiFiltrati.filter(c => 
-            c.titolo.toLowerCase().includes(searchQuery) || 
-            c.testo_md.toLowerCase().includes(searchQuery)
-        );
+        cantiFiltrati = cantiFiltrati.filter(c => {
+            const matchTitolo = c.titolo.toLowerCase().includes(searchQuery);
+            
+            const matchTesto = ricercaNelTestoAttiva ? c.testo_md.toLowerCase().includes(searchQuery) : false;
+            
+            return matchTitolo || matchTesto;
+        });
     }
 
     // 2. Ordinamento
@@ -178,6 +181,27 @@ function aggiornaListaCanti() {
             </div>`;
         targetContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
+}
+
+// Ricerca mirata
+let ricercaNelTestoAttiva = false;
+
+// Funzione richiamata quando si clicca il bottone del foglio
+function toggleRicercaTesto() {
+    ricercaNelTestoAttiva = !ricercaNelTestoAttiva; 
+    
+    const btn = document.getElementById('toggleTextSearchBtn');
+    if (ricercaNelTestoAttiva) {
+        btn.classList.add('active');
+        btn.title = "Ricerca nel testo ATTIVA";
+    } else {
+        btn.classList.remove('active');
+        btn.title = "Cerca anche all'interno del testo";
+    }
+
+    if (searchQuery.trim() !== '') {
+        aggiornaListaCanti();
+    }
 }
 
 // Menu Mobile

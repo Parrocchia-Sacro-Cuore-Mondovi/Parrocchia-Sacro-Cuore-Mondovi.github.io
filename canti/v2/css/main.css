@@ -781,3 +781,41 @@ footer {
         padding-right: 90px !important; 
     }
 }
+
+/* ============================================================
+   BOTTONE RICERCA NEL TESTO (SPOSTATO A DESTRA)
+   ============================================================ */
+.search-bar {
+    position: relative; /* Fondamentale per far funzionare l'absolute del bottone */
+}
+
+.btn-text-search {
+    position: absolute;
+    right: 15px; /* Lo fissa a destra con un po' di margine */
+    top: 50%;
+    transform: translateY(-50%); /* Lo centra perfettamente in verticale */
+    
+    background: none;
+    border: none;
+    color: #b2bec3; 
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 10; /* Assicura che sia cliccabile e sopra l'input */
+    transition: color 0.3s ease;
+}
+
+.btn-text-search:hover {
+    color: var(--primary-blue);
+}
+
+/* Quando la ricerca nel testo è ATTIVA */
+.btn-text-search.active {
+    color: var(--primary-blue);
+    font-size: 22px; /* Lo ingrandiamo usando il font-size invece del transform per non sballare l'allineamento verticale */
+}
+
+/* Evitiamo che scrivendo una parola lunga, il testo vada a finire sotto l'icona */
+.search-bar input {
+    padding-right: 45px !important; 
+}

@@ -175,7 +175,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Come un prodigio",
         "momento": "comunione",
-        "messe": [],
+        "messe": [
+            "sSanto"
+        ],
         "testo_md": "Signore Tu, mi scruti e conosci\nsai quando seggo e quando mi alzo.\nRiesci a vedere i miei pensieri\nsai quando io cammino e quando riposo.\nTi sono note tutte le mie vie.\nLa mia parola non è ancora sulla lingua\ne Tu, Signore, già la conosci tutta. **Rit.**\n\n> Rit.\n> Sei Tu che mi hai creato\n> e mi hai tessuto nel seno di mia madre.\n> Tu mi hai fatto come un prodigio,\n> le Tue opere sono stupende\n> e per questo Ti lodo.\n\nDi fronte e alle spalle Tu mi circondi\nponi su me la Tua mano.\nLa Tua saggezza, stupenda per me,\nè troppo alta e io non la comprendo.\nChe sia in cielo o agli inferi ci sei,\nnon si può mai fuggire dalla Tua presenza.\nOvunque la Tua mano guiderà la mia. **Rit.**\n\nE nel segreto Tu mi hai formato,\nmi hai intessuto dalla terra.\nNeanche le ossa ti eran nascoste,\nancora informe mi hanno visto i Tuoi occhi.\nI miei giorni erano fissati\nquando ancora non ne esisteva uno\ne tutto quanto era scritto nel Tuo libro. **Rit.**"
     },
     {
@@ -339,7 +341,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Lode al nome Tuo",
         "momento": "comunione",
-        "messe": [],
+        "messe": [
+            "vSanto"
+        ],
         "testo_md": "Lode al nome Tuo dalle terre più floride\ndove tutto sembra vivere, lode al nome Tuo.\nLode al nome Tuo dalle terre più aride\ndove tutto sembra sterile, lode al nome Tuo. **Rit.**\n\n> Rit.\n> Tornerò a lodarTi sempre per ogni dono Tuo\n> e quando scenderà la notte, sempre io dirò:\n> “Benedetto il nome del Signor,\n> lode al nome Tuo.\n> Benedetto il nome del Signor\n> il glorioso nome di Gesù”.\n\nLode al nome Tuo quando il sole splende su di me,\nquando tutto è incantevole, lode al nome Tuo.\nLode al nome Tuo quando io sto davanti a Te\ncon il cuore triste e fragile, lode al nome Tuo. **Rit.**\n\nTu doni e porti via,\nTu doni e porti via,\nma sempre sceglierò\ndi benedire Te. **Rit.**\n\nTu doni e porti via,\nTu doni e porti via,\nma sempre sceglierò\ndi benedire Te. (x2)"
     },
     {

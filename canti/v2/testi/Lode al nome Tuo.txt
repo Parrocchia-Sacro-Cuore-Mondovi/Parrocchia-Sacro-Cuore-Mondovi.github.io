@@ -3,6 +3,7 @@
 ---
 momento: comunione
 messe:
+ - vSanto
 ---
 
 Lode al nome Tuo dalle terre più floride
