@@ -3,6 +3,7 @@
 ---
 momento: offertorio
 messe:
+ - gSanto
  - sSanto
 ---
 

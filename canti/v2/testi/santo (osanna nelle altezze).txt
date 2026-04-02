@@ -3,6 +3,7 @@
 ---
 momento: santo
 messe:
+ - gSanto
  - sSanto
 ---
 

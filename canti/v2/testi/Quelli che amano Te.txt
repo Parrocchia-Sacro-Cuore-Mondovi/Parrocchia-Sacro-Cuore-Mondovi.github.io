@@ -2,7 +2,8 @@
 
 ---
 momento: offertorio
-messe:
+messe: 
+ - gSanto
 ---
 
 Ecco il frumento che noi Ti portiamo, (Il frumento)

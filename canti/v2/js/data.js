@@ -157,7 +157,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Chiamati per nome",
         "momento": "comunione",
-        "messe": [],
+        "messe": [
+            "gSanto"
+        ],
         "testo_md": "> Rit.\n> Veniamo da Te,\n> chiamati per nome.\n> Che festa, Signore, Tu cammini con noi.\n> Ci parli di Te,\n> per noi spezzi il pane,\n> Ti riconosciamo e il cuore arde: sei Tu!\n> E noi Tuo popolo\n> siamo qui.\n\nSiamo come terra ed argilla\ne la Tua Parola ci plasmerà,\nbrace pronta per la scintilla\ne il Tuo Spirito soffierà,\nc’infiammerà. **Rit.**\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n\n>\n> …E noi tuo popolo\n> siamo qui.\n> Siamo qui."
     },
     {
@@ -257,7 +259,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
         "momento": "gloria",
-        "messe": [],
+        "messe": [
+            "gSanto"
+        ],
         "testo_md": "**DONNE**\nGloria a Dio nell’alto dei Cieli\nE pace in terra agli uomini di buona volontà\nGloria a Dio nell’alto del Cieli\nGloria\n\n**UOMINI**\nGloria, Gloria a Dio nell’alto\nE pace agli uomini di buona volontà-à\nPace in terra\nGloria"
     },
     {
@@ -361,7 +365,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Lode a Dio",
         "momento": "alleluia",
-        "messe": [],
+        "messe": [
+            "gSanto"
+        ],
         "testo_md": "Lode a Dio (Ti offro il mio cuore),\nlode a Dio (e la mia voce),\nlode a Dio (dentro me),\nmio Dio (mio Dio),\nmio Re."
     },
     {
@@ -479,7 +485,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Quelli che amano Te",
         "momento": "offertorio",
-        "messe": [],
+        "messe": [
+            "gSanto"
+        ],
         "testo_md": "Ecco il frumento che noi Ti portiamo, (Il frumento)\npane della madre terra\ne del lavoro e sudore di tanti:\nquelli che amano Te.\n\nPortiamo il vino, frutto della vite, (Ecco il vino)\nsangue della madre terra\ne del lavoro e la gioia di tanti:\nquelli che amano Te. **Rit.**\n\n> Rit.\n> Insieme ai doni veniamo noi stessi\n> figli di tutta la terra\n> per riscaldarci attorno alla mensa\n> che hai preparato per noi. (tutto x2)\n> …per riscaldarci attorno alla mensa\n> che hai preparato per noi."
     },
     {
@@ -562,6 +570,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Santo (Osanna nelle altezze)",
         "momento": "santo",
         "messe": [
+            "gSanto",
             "sSanto"
         ],
         "testo_md": "Sa - nto, sa - nto,\ni Cieli e la terra sono pieni della Tua gloria.\nOsanna, osanna, osanna, osanna nelle altezze.\nBenedetto Colui che viene nel nome del Signore.\nOsanna, osanna, osanna, osanna nelle altezze.\nOsanna, osanna, osanna…"
@@ -654,6 +663,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Verbum panis",
         "momento": "offertorio",
         "messe": [
+            "gSanto",
             "sSanto"
         ],
         "testo_md": "Prima del tempo,\nprima ancora che la terra\ncominciasse a vivere,\nil Verbo era presso Dio.\nVenne nel mondo\ne per non abbandonarci\nin questo viaggio ci lasciò\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis.\n\nPrima del tempo,\nquando l'universo fu creato\ndall'oscurità,\nil Verbo era presso Dio.\nVenne nel mondo.\nNella Sua misericordia\nDio ha mandato il Figlio Suo:\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis."

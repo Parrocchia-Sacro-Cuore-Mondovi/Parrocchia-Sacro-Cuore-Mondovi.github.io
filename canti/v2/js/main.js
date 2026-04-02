@@ -78,6 +78,16 @@ function inizializzaSidebar() {
 
 function impostaFiltro(tipo, id, nomeTesto = "Esplora i Canti") {
     filtroAttuale = { tipo, id };
+
+    if (tipo === 'messa')
+    {
+        SpostaBtnFiltri(true);
+    }
+    else
+    {
+        SpostaBtnFiltri(false);
+    }
+
     document.getElementById('titolo-sezione').textContent = tipo ? `Filtro: ${nomeTesto}` : "Esplora i Canti";
     document.getElementById('reset-filters').style.display = tipo ? 'block' : 'none';
     aggiornaListaCanti();
@@ -99,8 +109,13 @@ function aggiornaListaCanti() {
     let cantiFiltrati = [...datiParrocchiali.canti];
 
     // 1. Filtri
-    if (filtroAttuale.tipo === 'momento') cantiFiltrati = cantiFiltrati.filter(c => c.momento === filtroAttuale.id);
-    else if (filtroAttuale.tipo === 'messa') cantiFiltrati = cantiFiltrati.filter(c => c.messe.includes(filtroAttuale.id));
+    if (filtroAttuale.tipo === 'momento') {
+        cantiFiltrati = cantiFiltrati.filter(c => c.momento === filtroAttuale.id);
+    } 
+    else if (filtroAttuale.tipo === 'messa') 
+    {
+        cantiFiltrati = cantiFiltrati.filter(c => c.messe.includes(filtroAttuale.id));
+    }
 
     if (searchQuery) {
         cantiFiltrati = cantiFiltrati.filter(c => {
@@ -235,8 +250,12 @@ function toggleNav() {
 
 const campoInput = document.getElementById('searchInput');
 
-campoInput.addEventListener('input', function() {
-    const condizione = campoInput.value.trim() !== "";
+function SpostaBtnFiltri(condizione) {
     const btnInput = document.getElementById('mobile-filtri-btn');
     btnInput.classList.toggle('ricerca-titolo', condizione);
+}
+
+campoInput.addEventListener('input', function() {
+    const condizione = campoInput.value.trim() !== "";
+    SpostaBtnFiltri(condizione);
 });

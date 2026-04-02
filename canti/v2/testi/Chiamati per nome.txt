@@ -3,6 +3,7 @@
 ---
 momento: comunione
 messe:
+ - gSanto
 ---
 
 **Rit.
