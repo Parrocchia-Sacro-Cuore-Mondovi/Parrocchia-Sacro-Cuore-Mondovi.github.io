@@ -359,6 +359,8 @@ footer {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
+}
+.ricerca-titolo {
     transform: translateY(-20px);
 }
 

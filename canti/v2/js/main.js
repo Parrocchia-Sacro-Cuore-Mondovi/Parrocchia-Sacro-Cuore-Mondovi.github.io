@@ -216,3 +216,14 @@ function toggleNav() {
     nav.classList.toggle('nav-open');
     overlay.classList.toggle('active');
 }
+
+
+// Fix tasto btn
+
+const campoInput = document.getElementById('searchInput');
+
+campoInput.addEventListener('input', function() {
+    const condizione = campoInput.value.trim() !== "";
+    const btnInput = document.getElementById('mobile-filtri-btn');
+    btnInput.classList.toggle('ricerca-titolo', condizione);
+});
