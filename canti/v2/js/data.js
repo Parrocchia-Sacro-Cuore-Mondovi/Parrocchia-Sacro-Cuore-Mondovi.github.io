@@ -16,7 +16,15 @@ const datiParrocchialiSalvati = {
         { "id": "quaresima", "nome": "Quaresima", "ordine": 14 },
         { "id": "natale", "nome": "Tempo di Natale", "ordine": 15 },
         { "id": "mariani", "nome": "Canti Mariani", "ordine": 16 },
-        { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true }
+        { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
+        { "id": "g1", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g2", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g3", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g4", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g5", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g6", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g7", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
+        { "id": "g8", "nome": "Giovedì Santo", "ordine": 17, "nascosto": true },
     ],
     "messe": [
         { "id": "gSanto", "nome": "Giovedì Santo" },
@@ -156,7 +164,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Chiamati per nome",
-        "momento": "comunione",
+        "momento": "g1",
         "messe": [
             "gSanto"
         ],
@@ -258,7 +266,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
-        "momento": "gloria",
+        "momento": "g2",
         "messe": [
             "gSanto",
             "sSanto"
@@ -365,7 +373,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Lode a Dio",
-        "momento": "alleluia",
+        "momento": "g3",
         "messe": [
             "gSanto"
         ],
@@ -453,7 +461,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Pane del cielo",
-        "momento": "offertorio",
+        "momento": "g8",
         "messe": [
             "gSanto"
         ],
@@ -485,7 +493,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Quelli che amano Te",
-        "momento": "offertorio",
+        "momento": "g6",
         "messe": [
             "gSanto"
         ],
@@ -551,7 +559,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Santo (2 voci)",
-        "momento": "santo",
+        "momento": "g5",
         "messe": [
             "gSanto"
         ],
@@ -611,7 +619,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Servire è regnare",
-        "momento": "comunione",
+        "momento": "g4",
         "messe": [
             "gSanto"
         ],
@@ -663,7 +671,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Verbum panis",
-        "momento": "offertorio",
+        "momento": "g7",
         "messe": [
             "gSanto",
             "sSanto"

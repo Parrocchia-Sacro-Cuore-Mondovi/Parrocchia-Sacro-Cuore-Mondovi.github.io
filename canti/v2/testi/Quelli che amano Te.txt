@@ -1,7 +1,7 @@
 ﻿# Quelli che amano Te
 
 ---
-momento: offertorio
+momento: g6
 messe: 
  - gSanto
 ---

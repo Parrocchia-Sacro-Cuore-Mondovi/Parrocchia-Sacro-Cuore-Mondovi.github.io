@@ -1,7 +1,7 @@
 ﻿# Lode a Dio
 
 ---
-momento: alleluia
+momento: g3
 messe:
  - gSanto
 ---

@@ -1,7 +1,7 @@
 ﻿# Santo (2 voci)
 
 ---
-momento: santo
+momento: g5
 messe:
  - gSanto
 ---

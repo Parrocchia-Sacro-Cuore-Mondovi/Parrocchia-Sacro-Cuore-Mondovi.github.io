@@ -1,7 +1,7 @@
 ﻿# Chiamati per nome
 
 ---
-momento: comunione
+momento: g1
 messe:
  - gSanto
 ---
