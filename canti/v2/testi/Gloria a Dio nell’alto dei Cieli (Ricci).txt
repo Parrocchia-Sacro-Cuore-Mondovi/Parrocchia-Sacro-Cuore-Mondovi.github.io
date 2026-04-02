@@ -4,6 +4,7 @@
 momento: gloria
 messe:
  - gSanto
+ - sSanto
 ---
 
 **DONNE**

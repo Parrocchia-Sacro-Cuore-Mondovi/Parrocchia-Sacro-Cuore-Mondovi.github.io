@@ -260,7 +260,8 @@ const datiParrocchialiSalvati = {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
         "momento": "gloria",
         "messe": [
-            "gSanto"
+            "gSanto",
+            "sSanto"
         ],
         "testo_md": "**DONNE**\nGloria a Dio nell’alto dei Cieli\nE pace in terra agli uomini di buona volontà\nGloria a Dio nell’alto del Cieli\nGloria\n\n**UOMINI**\nGloria, Gloria a Dio nell’alto\nE pace agli uomini di buona volontà-à\nPace in terra\nGloria"
     },
@@ -551,7 +552,9 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Santo (2 voci)",
         "momento": "santo",
-        "messe": [],
+        "messe": [
+            "gSanto"
+        ],
         "testo_md": "**Uomini**\nSanto il Signore Dio dell’universo.\nI Cieli e la terra sono pieni della Tua gloria.\nOsanna nell’alto dei Cieli e benedetto Colui che viene\nnel nome del Signore. Osanna, nell’alto dei Cieli.\n\n**Donne**\nE santo, santo, santo, il Signore della vita.\nE santo, santo, santo, il Signore della storia.\nNei Cieli e sulla terra risplende la Sua gloria.\nOsanna, osanna, osanna nel cielo sconfinato.\nOsanna, osanna, osanna nel canto del creato.\nE sia benedetto Colui che viene in nome di Dio."
     },
     {
@@ -570,7 +573,6 @@ const datiParrocchialiSalvati = {
         "titolo": "Santo (Osanna nelle altezze)",
         "momento": "santo",
         "messe": [
-            "gSanto",
             "sSanto"
         ],
         "testo_md": "Sa - nto, sa - nto,\ni Cieli e la terra sono pieni della Tua gloria.\nOsanna, osanna, osanna, osanna nelle altezze.\nBenedetto Colui che viene nel nome del Signore.\nOsanna, osanna, osanna, osanna nelle altezze.\nOsanna, osanna, osanna…"
