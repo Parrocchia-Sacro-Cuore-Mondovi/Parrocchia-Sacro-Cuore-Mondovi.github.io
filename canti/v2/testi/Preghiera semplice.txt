@@ -1,4 +1,4 @@
-﻿# Preghiera Semplice
+﻿# Preghiera semplice
 
 ---
 momento: pace

@@ -133,7 +133,20 @@ function aggiornaListaCanti() {
         let classeSeparatore = '';
 
         if (!searchQuery && !(filtroAttuale.tipo === 'messa')) { 
-            const primaLettera = canto.titolo.trim().charAt(0).toUpperCase();
+            let primaLettera = canto.titolo.trim().charAt(0).toLowerCase();
+
+            switch (primaLettera) {
+                case 'è':
+                    primaLettera = 'e';
+                    break;
+                case 'é':
+                    primaLettera = 'e';
+                    break;
+                default:
+                    break;
+            }
+            primaLettera = primaLettera.toUpperCase();
+
             if (primaLettera !== letteraAttuale) {
                 letteraAttuale = primaLettera;
                 creaNuovoGruppo = true;

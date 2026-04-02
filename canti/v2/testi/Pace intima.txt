@@ -1,4 +1,4 @@
-﻿# Pace Intima
+﻿# Pace intima
 
 ---
 momento: pace
