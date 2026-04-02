@@ -47,7 +47,7 @@ nav ul li a:hover {
     color: #E4C893; 
 } /* Effetto hover al passaggio del mouse */
 nav a.active {
-    border-bottom: 3px solid #192bfd;
+    border-bottom: 3px solid white;
 }
 nav ul li.active a { 
     border-bottom: 2px solid #E4C893; 
