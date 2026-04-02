@@ -42,39 +42,6 @@ header {
     color: var(--primary-blue);
 }
 
-.logo-text h1 {
-    font-size: 18px;
-    color: var(--text-dark);
-}
-
-.logo-text p {
-    font-size: 14px;
-    color: var(--text-light);
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 500;
-    font-size: 15px;
-    padding-bottom: 5px;
-}
-
-nav a.active {
-    color: var(--text-dark);
-    border-bottom: 3px solid var(--primary-blue);
-}
-
-nav a.risorse {
-    color: var(--primary-green);
-}
-
 /* --- Layout Principale --- */
 .container {
     display: flex;
@@ -392,6 +359,7 @@ footer {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
+    transform: translateY(-20px);
 }
 
 /* --- REGOLE PER MOBILE --- */
@@ -404,7 +372,7 @@ footer {
     .filter-mobile-btn {
         display: flex; /* Mostra il bottone solo su schermi piccoli */
         align-items: center;
-        gap: 6px;
+        gap: 10px;
     }
 
     /* --- POP-UP FILTRI (OVERLAY) --- */
@@ -483,7 +451,7 @@ footer {
         right: -300px; /* Nasconde la sidebar a destra */
         width: 280px;
         height: 100vh;
-        background-color: white;
+        background-color: #5476ff;
         z-index: 1001; /* Sopra a tutto */
         transition: right 0.3s ease-in-out;
         box-shadow: -2px 0 10px rgba(0,0,0,0.1);
@@ -491,7 +459,7 @@ footer {
     }
 
     nav.nav-open {
-        right: 0; /* Fa scivolare dentro la sidebar */
+        right: 0; 
     }
 
     nav ul {
@@ -628,7 +596,7 @@ footer {
     font-family: 'Roboto', sans-serif !important;
 }
 
-/* Opzionale: scurisce leggermente il grassetto per farlo risaltare di più */
+/* Opzionale: scurisce leggermente il grassetto per farlo risaltare di pi*/
 .lyrics strong .c::before,
 .lyrics b .c::before {
     font-weight: 700 !important;
@@ -773,6 +741,7 @@ footer {
         pointer-events: auto; /* Riattiva il click solo sul bottone */
         box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombra per staccarlo dallo sfondo */
         margin-right: 5px; /* Previene che tocchi il bordo destro dello schermo */
+        margin-bottom: 10px;
     }
 
     /* Salvagente per i separatori lunghi (es. "Offertorio") */

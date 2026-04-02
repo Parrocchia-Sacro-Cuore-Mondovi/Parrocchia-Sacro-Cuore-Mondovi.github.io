@@ -6,7 +6,7 @@ ul { list-style: none; }
 
 /* Stili specifici per la Navbar (Header) */
 header {
-    background-color: #4A769D; /* Colore di sfondo blu */
+    background-color: #5476ff; 
     color: white;
     padding: 1rem 2rem;
     display: flex;
@@ -15,16 +15,43 @@ header {
 }
 
 /* Area Logo */
-.logo-area { display: flex; align-items: center; gap: 1rem; }
-.logo-icon { font-size: 2.5rem; }
-.logo-text h1 { font-size: 1.2rem; line-height: 1.2; }
+.logo-area { 
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+}
+.logo-icon { 
+    font-size: 2.5rem; 
+}
+.logo-text h1 { 
+    font-size: 1.2rem; 
+    line-height: 1.2;
+}
+.logo-text p {
+    font-size: 14px;
+}
 .logo-text span { font-size: 0.9rem; font-weight: 400; opacity: 0.9; }
 
 /* Menu di navigazione centrale */
-nav ul { display: flex; gap: 1.5rem; font-weight: 600; font-size: 0.95rem; }
-nav ul li a { padding-bottom: 5px; transition: color 0.2s; }
-nav ul li a:hover { color: #E4C893; } /* Effetto hover al passaggio del mouse */
-nav ul li.active a { border-bottom: 2px solid #E4C893; } /* Sottolineatura dorata per la pagina attiva */
+nav ul { 
+    display: flex; 
+    gap: 1.5rem; 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+}
+nav ul li a { 
+    padding-bottom: 5px; 
+    transition: color 0.2s; 
+}
+nav ul li a:hover { 
+    color: #E4C893; 
+} /* Effetto hover al passaggio del mouse */
+nav a.active {
+    border-bottom: 3px solid #192bfd;
+}
+nav ul li.active a { 
+    border-bottom: 2px solid #E4C893; 
+} /* Sottolineatura dorata per la pagina attiva */
 
 /* Barra di ricerca */
 .search-bar { position: relative; }
