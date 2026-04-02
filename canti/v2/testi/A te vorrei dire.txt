@@ -5,6 +5,7 @@ momento: comunione
 messe:
 ---
 
+
 Se il sole non illuminasse più
 questo pallido pianeta,
 se il silenzio della morte
