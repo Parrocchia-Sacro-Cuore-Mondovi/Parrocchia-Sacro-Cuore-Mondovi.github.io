@@ -120,27 +120,55 @@ function aggiornaListaCanti() {
     }
 
     if (searchQuery) {
+        const queryPulita = pulisciTesto(searchQuery);
+        
         cantiFiltrati = cantiFiltrati.filter(c => {
-            const matchTitolo = pulisciTesto(c.titolo).includes(pulisciTesto(searchQuery));
+            const matchTitolo = pulisciTesto(c.titolo).includes(queryPulita);
             
-            const matchTesto = ricercaNelTestoAttiva 
-                ? pulisciTesto(c.testo_md).includes(pulisciTesto(searchQuery)) 
+            const matchTesto = ricercaNelTestoAttiva
+                ? pulisciTesto(c.testo_md).includes(queryPulita)
                 : false;
-
+                
             const nomeDelMomento = mappaMomenti[c.momento]?.nome || "";
-            const matchMomento = pulisciTesto(nomeDelMomento) === pulisciTesto(searchQuery);
-
+            const matchMomento = pulisciTesto(nomeDelMomento) === queryPulita;
+            
             return matchTitolo || matchTesto || matchMomento;
         });
     }
 
     // 2. Ordinamento
     cantiFiltrati.sort((a, b) => {
+        // CASO 1: L'utente sta visualizzando il filtro "messa"
         if (filtroAttuale.tipo === 'messa') {
             const ordineA = mappaMomenti[a.momento] ? mappaMomenti[a.momento].ordine : 999;
             const ordineB = mappaMomenti[b.momento] ? mappaMomenti[b.momento].ordine : 999;
             if (ordineA !== ordineB) return ordineA - ordineB;
+            return a.titolo.localeCompare(b.titolo);
         }
+
+        // CASO 2: L'utente ha usato la barra di ricerca
+        if (searchQuery) {
+            const queryPulita = pulisciTesto(searchQuery);
+            
+            const nomeMomentoA = mappaMomenti[a.momento]?.nome || "";
+            const nomeMomentoB = mappaMomenti[b.momento]?.nome || "";
+            
+            const aIsMomento = pulisciTesto(nomeMomentoA) === queryPulita;
+            const bIsMomento = pulisciTesto(nomeMomentoB) === queryPulita;
+
+            // Priorità: chi corrisponde al Momento cercato sale in cima
+            if (aIsMomento && !bIsMomento) return -1;
+            if (!aIsMomento && bIsMomento) return 1;
+
+            // Se entrambi corrispondono al momento (es. sono due canti di Comunione), 
+            // li ordiniamo tra loro in base all'ordine numerico del rito
+            if (aIsMomento && bIsMomento) {
+                const ordineA = mappaMomenti[a.momento] ? mappaMomenti[a.momento].ordine : 999;
+                const ordineB = mappaMomenti[b.momento] ? mappaMomenti[b.momento].ordine : 999;
+                if (ordineA !== ordineB) return ordineA - ordineB;
+            }
+        }
+
         return a.titolo.localeCompare(b.titolo);
     });
 
