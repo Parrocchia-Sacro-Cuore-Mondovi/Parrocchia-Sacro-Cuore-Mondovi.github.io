@@ -1,7 +1,7 @@
 ﻿# Maria Tu sei
 
 ---
-momento: mariani
+momento: s13
 messe:
  - sSanto
 ---

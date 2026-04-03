@@ -1,7 +1,7 @@
 ﻿# Litanie blues (Uz)
 
 ---
-momento: 
+momento: s6
 messe:
  - sSanto
 ---

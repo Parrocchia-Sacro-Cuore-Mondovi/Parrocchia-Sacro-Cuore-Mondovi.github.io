@@ -1,7 +1,7 @@
 ﻿# Acqua siamo noi
 
 ---
-momento: ingresso
+momento: s7
 messe:
  - sSanto
 ---

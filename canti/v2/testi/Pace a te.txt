@@ -1,7 +1,7 @@
 ﻿# Pace a te
 
 ---
-momento: pace
+momento: s10
 messe:
  - sSanto
 ---

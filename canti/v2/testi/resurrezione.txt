@@ -1,7 +1,7 @@
 ﻿# Resurrezione
 
 ---
-momento: fine
+momento: s14
 messe:
  - sSanto
 ---

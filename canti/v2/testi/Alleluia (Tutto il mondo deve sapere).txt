@@ -1,7 +1,7 @@
 ﻿# Alleluia (Tutto il mondo deve sapere)
 
 ---
-momento: alleluia
+momento: s5
 messe:
  - sSanto
 ---

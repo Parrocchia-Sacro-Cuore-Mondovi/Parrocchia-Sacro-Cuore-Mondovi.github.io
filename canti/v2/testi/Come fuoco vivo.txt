@@ -1,6 +1,6 @@
 ﻿# Come fuoco vivo
 ---
-momento: comunione
+momento: s2
 messe:
  - sSanto
 ---

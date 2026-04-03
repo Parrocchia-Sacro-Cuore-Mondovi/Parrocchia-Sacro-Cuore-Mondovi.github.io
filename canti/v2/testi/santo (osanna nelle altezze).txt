@@ -1,7 +1,7 @@
 ﻿# Santo (Osanna nelle altezze)
 
 ---
-momento: santo
+momento: s9
 messe:
  - sSanto
 ---

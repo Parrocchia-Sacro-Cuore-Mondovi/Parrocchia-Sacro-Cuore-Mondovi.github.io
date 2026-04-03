@@ -20,6 +20,20 @@ const datiParrocchialiSalvati = {
         { "id": "v1", "nome": "Venerdì Santo", "ordine": 18, "nascosto": true },
         { "id": "v2", "nome": "Venerdì Santo", "ordine": 19, "nascosto": true },
         { "id": "v3", "nome": "Venerdì Santo", "ordine": 20, "nascosto": true },
+        { "id": "s1", "nome": "Sabato Santo", "ordine": 21, "nascosto": true },
+        { "id": "s2", "nome": "Sabato Santo", "ordine": 22, "nascosto": true },
+        { "id": "s3", "nome": "Sabato Santo", "ordine": 23, "nascosto": true },
+        { "id": "s4", "nome": "Sabato Santo", "ordine": 24, "nascosto": true },
+        { "id": "s5", "nome": "Sabato Santo", "ordine": 25, "nascosto": true },
+        { "id": "s6", "nome": "Sabato Santo", "ordine": 26, "nascosto": true },
+        { "id": "s7", "nome": "Sabato Santo", "ordine": 27, "nascosto": true },
+        { "id": "s8", "nome": "Sabato Santo", "ordine": 28, "nascosto": true },
+        { "id": "s9", "nome": "Sabato Santo", "ordine": 29, "nascosto": true },
+        { "id": "s10", "nome": "Sabato Santo", "ordine": 30, "nascosto": true },
+        { "id": "s11", "nome": "Sabato Santo", "ordine": 31, "nascosto": true },
+        { "id": "s12", "nome": "Sabato Santo", "ordine": 32, "nascosto": true },
+        { "id": "s13", "nome": "Sabato Santo", "ordine": 33, "nascosto": true },
+        { "id": "s14", "nome": "Sabato Santo", "ordine": 34, "nascosto": true },
     ],
     "messe": [
         { "id": "gSanto", "nome": "Giovedì Santo" },
@@ -53,7 +67,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Acqua siamo noi",
-        "momento": "ingresso",
+        "momento": "s7",
         "messe": [
             "sSanto"
         ],
@@ -91,7 +105,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Alleluia (Tutto il mondo deve sapere)",
-        "momento": "alleluia",
+        "momento": "s5",
         "messe": [
             "sSanto"
         ],
@@ -173,7 +187,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Come fuoco vivo",
-        "momento": "comunione",
+        "momento": "s2",
         "messe": [
             "sSanto"
         ],
@@ -261,7 +275,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
-        "momento": "gloria",
+        "momento": "s3",
         "messe": [
             "gSanto",
             "sSanto"
@@ -348,7 +362,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Litanie blues (Uz)",
-        "momento": "messe:",
+        "momento": "s6",
         "messe": [
             "sSanto"
         ],
@@ -384,7 +398,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Luce",
-        "momento": "ingresso",
+        "momento": "s1",
         "messe": [
             "sSanto"
         ],
@@ -398,7 +412,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Maria Tu sei",
-        "momento": "mariani",
+        "momento": "s13",
         "messe": [
             "sSanto"
         ],
@@ -436,7 +450,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Pace a te",
-        "momento": "pace",
+        "momento": "s10",
         "messe": [
             "sSanto"
         ],
@@ -522,7 +536,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Resurrezione",
-        "momento": "fine",
+        "momento": "s14",
         "messe": [
             "sSanto"
         ],
@@ -574,7 +588,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Santo (Osanna nelle altezze)",
-        "momento": "santo",
+        "momento": "s9",
         "messe": [
             "sSanto"
         ],
@@ -600,7 +614,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Segni del Tuo amore",
-        "momento": "offertorio",
+        "momento": "s8",
         "messe": [
             "sSanto"
         ],
@@ -666,7 +680,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Verbum panis",
-        "momento": "offertorio",
+        "momento": "s12",
         "messe": [
             "gSanto",
             "sSanto"
@@ -675,7 +689,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Vi amo così",
-        "momento": "fine",
+        "momento": "s11",
         "messe": [
             "sSanto"
         ],
@@ -707,7 +721,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Voglio cantare al Signor",
-        "momento": "pasqua",
+        "momento": "s4",
         "messe": [
             "sSanto"
         ],
