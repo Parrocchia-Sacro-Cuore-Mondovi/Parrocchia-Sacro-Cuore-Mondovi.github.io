@@ -2,6 +2,8 @@ let datiParrocchiali = datiParrocchialiSalvati;
 let filtroAttuale = { tipo: null, id: null };
 let searchQuery = '';
 
+let btnFiltriSpostato = false;
+
 document.addEventListener('DOMContentLoaded', function() {
     // Ora i dati sono già dentro datiParrocchiali perché caricati da data.js
     inizializzaSidebar();
@@ -79,7 +81,7 @@ function inizializzaSidebar() {
 function impostaFiltro(tipo, id, nomeTesto = "Esplora i Canti") {
     filtroAttuale = { tipo, id };
 
-    if (tipo === 'messa')
+    if (tipo === 'messa' && !btnFiltriSpostato)
     {
         SpostaBtnFiltri(true);
     }
@@ -253,9 +255,10 @@ const campoInput = document.getElementById('searchInput');
 function SpostaBtnFiltri(condizione) {
     const btnInput = document.getElementById('mobile-filtri-btn');
     btnInput.classList.toggle('ricerca-titolo', condizione);
+    btnFiltriSpostato = condizione;
 }
 
 campoInput.addEventListener('input', function() {
     const condizione = campoInput.value.trim() !== "";
-    SpostaBtnFiltri(condizione);
+    if (!btnFiltriSpostato) SpostaBtnFiltri(condizione);
 });

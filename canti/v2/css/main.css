@@ -351,14 +351,6 @@ footer {
 /* Nascondi il bottone filtri su Desktop */
 .filter-mobile-btn {
     display: none;
-    background-color: var(--primary-blue);
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
 }
 .ricerca-titolo {
     transform: translateY(-20px);
@@ -372,9 +364,17 @@ footer {
     }
 
     .filter-mobile-btn {
-        display: flex; /* Mostra il bottone solo su schermi piccoli */
+        display: flex; 
         align-items: center;
-        gap: 10px;
+        justify-content: center;
+        background-color: #4285F4;
+        color: white;
+        border: none;
+        padding: 14px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     /* --- POP-UP FILTRI (OVERLAY) --- */
