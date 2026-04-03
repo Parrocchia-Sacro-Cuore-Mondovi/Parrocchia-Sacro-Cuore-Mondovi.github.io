@@ -1,7 +1,7 @@
 ﻿# Verbum panis
 
 ---
-momento: g7
+momento: offertorio
 messe:
  - gSanto
  - sSanto

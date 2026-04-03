@@ -1,7 +1,7 @@
 ﻿# Servire è regnare
 
 ---
-momento: g4
+momento: comunione
 messe: 
  - gSanto
 ---

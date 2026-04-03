@@ -121,11 +121,16 @@ function aggiornaListaCanti() {
 
     if (searchQuery) {
         cantiFiltrati = cantiFiltrati.filter(c => {
-            const matchTitolo = c.titolo.toLowerCase().includes(searchQuery);
+            const matchTitolo = pulisciTesto(c.titolo).includes(pulisciTesto(searchQuery));
             
-            const matchTesto = ricercaNelTestoAttiva ? c.testo_md.toLowerCase().includes(searchQuery) : false;
-            
-            return matchTitolo || matchTesto;
+            const matchTesto = ricercaNelTestoAttiva 
+                ? pulisciTesto(c.testo_md).includes(pulisciTesto(searchQuery)) 
+                : false;
+
+            const nomeDelMomento = mappaMomenti[c.momento]?.nome || "";
+            const matchMomento = pulisciTesto(nomeDelMomento) === pulisciTesto(searchQuery);
+
+            return matchTitolo || matchTesto || matchMomento;
         });
     }
 
@@ -211,6 +216,15 @@ function aggiornaListaCanti() {
             </div>`;
         targetContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
+}
+
+function pulisciTesto(testo) {
+    if (!testo) return ""; // Evita errori se il testo è vuoto o undefined
+    
+    return testo
+        .toLowerCase()                                   // 1. Tutto minuscolo
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // 2. Rimuove gli accenti
+        .replace(/\s+/g, "");                            // 3. Rimuove tutti gli spazi
 }
 
 // Ricerca mirata

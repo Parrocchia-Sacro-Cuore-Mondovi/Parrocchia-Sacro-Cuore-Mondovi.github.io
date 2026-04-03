@@ -1,7 +1,7 @@
 ﻿# Resto con Te
 
 ---
-momento: comunione
+momento: v3
 messe:
  - vSanto
 ---

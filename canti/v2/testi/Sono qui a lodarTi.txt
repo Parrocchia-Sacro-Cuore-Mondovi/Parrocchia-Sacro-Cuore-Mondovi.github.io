@@ -1,7 +1,7 @@
 ﻿# Sono qui a lodarTi
 
 ---
-momento: adorazione
+momento: v1
 messe:
  - vSanto
 ---
