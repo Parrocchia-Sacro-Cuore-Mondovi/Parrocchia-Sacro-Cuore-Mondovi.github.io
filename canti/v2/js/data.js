@@ -57,13 +57,13 @@ const datiParrocchialiSalvati = {
         "titolo": "Accendi la pace",
         "momento": "pace",
         "messe": [],
-        "testo_md": "La pace è il sogno più testardo,\nquello che non molla mai,\nquello che misure non ne ha.\nCi vuole un sacco di coraggio,\nquello di chi lotta e sa\nche per il suo sogno pagherà.\nImmensa com’è,\nviene a bussare da te\ne aspetta il tuo sì.\nVento e fuoco da lassù,\nma la torcia sei tu,\nla vela sei tu. **Rit.**\n\n> Rit.\n> Accendi la pace,\n> accendi la pace,\n> accendi la pace,\n> accendila,\n> dipende da te.\n\nTi chiede lacrime e fatiche,\nchiede di guardare in su,\nchiede il primo passo proprio a te,\nla spaccatura e la ferita\nchiede che la curi tu,\nchiede quel perdono proprio a te.\nAdesso lo sai:\nla pace costa perché vuole tutto da te,\nsconti proprio non ne fa\ne non nascerà mai\nse non nasce da te. **Rit.**\n\nFaro nell’oscurità,\npozzo nella siccità,\nè strada, è ponte,\nlega cuori e popoli.\nSe la semini vedrai\nil deserto fiorirà.\nLa pace contagia,\ncomincia qui.\n\n>\n> Accendi la pace,\n> accendi la pace, (e falle la strada sui tornanti ripidi)\n> accendi la pace, (custodiscila perché)\n> accendila, (lei si affida proprio a te)\n> dipende da te.\n> Rit.\n> Comincia qui."
+        "testo_md": "[la]La pace è il sogno più test[mi/lab]ardo,\n[la]quello che non molla mai,\n[si]quello che misure non ne ha.\n[la/reb]Ci vuole un sacco di cora[mi/lab]ggio,\n[la/reb]quello di chi lotta e sa\n[si]che per il suo sogno pagherà.\n[do#m7]Immensa com’è,[mi]\nviene a bussare da [F#m7]te\ned aspetta il tuo [do#m7]sì (aspetta il tuo sì[mi]).\nVento e fuoco da [la]lassù,\nma la torcia sei [F#m7]tu,\nla vela sei [la/si]tu. **Rit.**\n\n> Rit.\n> [si]Accendi la [la]pace[la/si],\n> [mi/sol#]accendi la pa[si]ce,\n> [Do#m7]accendi la [la]pace[si/la],\n> [mi/sol#]accendila,\n> [si]dipende da te.[do#m7]\n\n[la]Ti chiede lacrime e fat[mi/do#]iche, (ti [la] chiede lacrime)\nchiede di guardare in [si]su,\nchiede il primo passo proprio a [fa#m 4/7]te,\nla spaccatura e la ferita[mi/sol#]\n[la/do#]chiede che la curi tu,\n[si]chiede quel perdono pro[do#m7]prio a te.\nAdesso lo sa[mi]i:\nla pace costa [Fa#m7]perché vuole tutto da te[do#m7], (vuole tutto da te[mi])\nsconti proprio non ne fa[la]\ne non nascerà mai[fa#m7]\nse non nasce da te. [la/si] **Rit.**\n\nFaro nell’oscurità,\npozzo nella siccità,\nè strada, è ponte,\nlega cuori e popoli.\nSe la semini vedrai\nil deserto fiorirà.\nLa pace contagia,\ncomincia qui.\n\n>\n> [la]Accendi la pa[si/la  mi/sol#]ce,\n> accendi la p[si]ace, [do#m7](e falle la strada sui tornanti ripidi)\n> accendi la[la] pace[si/la], (custodis[mi/sol#]cila perché)\n> [mi/sol#]lei si affida proprio a te (accendila)\n> [si]dipende da te.[do#m7]\n> Rit.\n> Comincia qui."
     },
     {
         "titolo": "Accogli i nostri doni",
         "momento": "offertorio",
         "messe": [],
-        "testo_md": "Accogli, Signore, i nostri doni\nin questo misterioso incontro\ntra la nostra povertà\ne la Tua grandezza.\nNoi ti offriamo le cose\nche Tu stesso ci hai dato\ne Tu in cambio donaci,\ndonaci Te stesso. (x2)\n…accogli, Signore, i nostri doni."
+        "testo_md": "[Intro: do  la-  do  la-]\n\n[do]Accogli, Signore, i nostri [la-]doni\nin [do]questo misterioso inco[la-]ntro\n[fa]tra [sol]la nostra[do] povertà[la-]\n[re-]e la T[sol]ua gran[do]dezza. [sol]\n[la-]Noi ti offr[sol]iamo le[do] cose\n[la-]che Tu st[sol]esso ci [do]hai dato\ne[fa] Tu in ]sol]cambio [do]donaci,[la-]\n[re-]donaci Te[sol] stesso.[do] (x2) [sol]\n…accogli, Signore, i nostri doni."
     },
     {
         "titolo": "Acqua siamo noi",
@@ -177,7 +177,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "gSanto"
         ],
-        "testo_md": "> Rit.\n> Veniamo da Te,\n> chiamati per nome.\n> Che festa, Signore, Tu cammini con noi.\n> Ci parli di Te,\n> per noi spezzi il pane,\n> Ti riconosciamo e il cuore arde: sei Tu!\n> E noi Tuo popolo\n> siamo qui.\n\nSiamo come terra ed argilla\ne la Tua Parola ci plasmerà,\nbrace pronta per la scintilla\ne il Tuo Spirito soffierà,\nc’infiammerà. **Rit.**\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n\n>\n> …E noi tuo popolo\n> siamo qui.\n> Siamo qui."
+        "testo_md": "[Intro: MI SI MI LA DO# SI LA]\n\n> Rit.\n> [SI]Veniamo da [MI]Te,\n> chiamati per [SI]nome.\n> Che festa, Sign[MI]ore, Tu cammini con [LA]noi.\n> Ci parli di [MI]Te,\n> per noi spezzi il [SI]pane,\n> Ti riconos[MI]ciamo e il cuore arde: sei [LA]Tu!\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n>\n> [LA]Siamo come terra ed ar[DO#-7]gilla\n> e la [MI]Tua Parola ci plasm[SI]erà,\n> b[LA]race pronta per la sci[DO#-7]ntilla\n> e il Tuo[MI] Spirito soffier[LA]à,\n> c’infiamm[SI]erà. Rit.\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n\n>\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n> S[LA]iamo q[MI]ui."
     },
     {
         "titolo": "Cieli e terra nuova",
@@ -406,7 +406,7 @@ const datiParrocchialiSalvati = {
         "titolo": "L’amore è vita",
         "momento": "fine",
         "messe": [],
-        "testo_md": "Per strade diverse ci siamo incontrati\ne abbiamo percorso il medesimo cammino\ne ancora di più per sempre ci unirà\nl’amore che oggi è nato fra di noi. **Rit.**\n\n> Rit.\n> Per noi l’amore è vita un raggio di sole che\n> in questa unità con Te porta in terra il paradiso.\n> Nessuno mai potrà spezzare l’amore che ora fra noi\n> ha una nuova dimensione e questo resta,\n> è ciò che più vale per noi. (x2)\n\n>\n> …e questo resta, è ciò che più vale per noi."
+        "testo_md": "Per [RE]strade diverse [LA]ci siamo incontrati\ne abbiamo per[MI-]corso il medesimo ca[FA#]mmino\ne an[RE]cora di più [LA]per sempre ci unirà\nl’amore che og[MI-]gi è nato [FA#]fra di noi. **Rit.**\n\n> Rit.\n> Per noi l’amo[RE]re è vita un raggio di sole [LA]che\n> in questa uni[SI-]tà con Te porta [SOL]in terra il para[LA]diso.\n> [RE]Nessuno mai po[LA]trà spe[SOL]zzare l’am[RE]ore che ora fra [DO]noi [LA]\n> [RE]ha una nuova [LA]dimensione[SI-] e questo [SOL]resta, [(SOL#dim) (MI)]\n> è ciò c[RE]he più v[LA]ale per no[SI-]i. [SI+]\n\n**Per noi l’amore [MI]è vita un raggi[SI]o di sole [LA]che\nin questa unità[DO#-] con Te porta in [LA]terra il para[SI]diso.\n[MI]Nessuno mai potrà spezza[SI]re [LA]l’amore ch[MI]e ora [RE]fra noi[SI]\n[MI]ha una nuova [SI]dimensione[DO#-] e questo[LA] resta, [(LA#dim) FA#]\nè ci[MI]ò che [SI]più vale[DO#-] per noi.*\n\n>\n> …[LA MI SI LA MI]e questo resta, è ciò che più vale per noi."
     },
     {
         "titolo": "Maria Tu sei",
