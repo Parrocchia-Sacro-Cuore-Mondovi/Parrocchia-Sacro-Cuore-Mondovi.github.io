@@ -208,9 +208,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Come un prodigio",
         "momento": "comunione",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Signore Tu, mi scruti e conosci\nsai quando seggo e quando mi alzo.\nRiesci a vedere i miei pensieri\nsai quando io cammino e quando riposo.\nTi sono note tutte le mie vie.\nLa mia parola non è ancora sulla lingua\ne Tu, Signore, già la conosci tutta. **Rit.**\n\n> Rit.\n> Sei Tu che mi hai creato\n> e mi hai tessuto nel seno di mia madre.\n> Tu mi hai fatto come un prodigio,\n> le Tue opere sono stupende\n> e per questo Ti lodo.\n\nDi fronte e alle spalle Tu mi circondi\nponi su me la Tua mano.\nLa Tua saggezza, stupenda per me,\nè troppo alta e io non la comprendo.\nChe sia in cielo o agli inferi ci sei,\nnon si può mai fuggire dalla Tua presenza.\nOvunque la Tua mano guiderà la mia. **Rit.**\n\nE nel segreto Tu mi hai formato,\nmi hai intessuto dalla terra.\nNeanche le ossa ti eran nascoste,\nancora informe mi hanno visto i Tuoi occhi.\nI miei giorni erano fissati\nquando ancora non ne esisteva uno\ne tutto quanto era scritto nel Tuo libro. **Rit.**"
     },
     {
@@ -685,7 +683,7 @@ const datiParrocchialiSalvati = {
             "gSanto",
             "sSanto"
         ],
-        "testo_md": "Prima del tempo,\nprima ancora che la terra\ncominciasse a vivere,\nil Verbo era presso Dio.\nVenne nel mondo\ne per non abbandonarci\nin questo viaggio ci lasciò\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis.\n\nPrima del tempo,\nquando l'universo fu creato\ndall'oscurità,\nil Verbo era presso Dio.\nVenne nel mondo.\nNella Sua misericordia\nDio ha mandato il Figlio Suo:\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis."
+        "testo_md": "[INTRO: mi-(3) do7 re mi-]\n\n[mi-]Prima del te[re]mpo,\nprima an[mi-]cora che la t[re]erra\ncomin[mi-]ciasse a viv[re]ere,\n[mi-]il Verbo [re]era presso [mi-]Dio[re  mi-  re].\n[mi-]Venne nel mo[re]ndo\ne per n[mi-]on abbandon[re]arci\nin questo [mi-]viaggio ci las[re]ciò\n[mi-]tutto se st[re]esso come [mi-]pane.[re]\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n\n[sol]Qui [re]spezzi ancora il [do]pane in mezzo a [re]noi\ne chi[sol]unque mangerà[re  do] non avrà più [re]fame.\n[sol]Qui [re]vive la Tua [do]chiesa intorno a [re]Te\ndove [sol]ognuno troverà[re  do] la sua vera [re]casa.\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis.\n\nPrima del tempo,\nquando l'universo fu creato\ndall'oscurità,\nil Verbo era presso Dio.\nVenne nel mondo.\nNella Sua misericordia\nDio ha mandato il Figlio Suo:\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis."
     },
     {
         "titolo": "Vi amo così",
