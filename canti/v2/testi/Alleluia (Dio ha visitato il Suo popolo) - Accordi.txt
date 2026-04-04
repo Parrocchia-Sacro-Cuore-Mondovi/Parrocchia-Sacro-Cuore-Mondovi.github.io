@@ -1,0 +1,22 @@
+﻿# Alleluia (Dio ha visitato il Suo popolo)
+
+---
+momento: alleluia
+messe:
+---
+[do  sol  sol7  la-  fa  re-  sol  sol7]
+
+**Rit.
+[do]Alleluia, alleluia![sol fa] Alleluia, allel[la-]uia!
+[re-]Dio [do]ha visitato il Suo popolo,
+ha [fa]fatto meravi[sol]glie per noi,[la-] alle[fa  sol  do]luia!**
+
+Gli [la-]occhi dei ciechi vedono la luce,
+gli [do]orecchi sordi[sol] odono la voce:
+Dio[re-] ha fatto merav[mi-]iglie per noi,
+Dio ha [fa]fatto merav[sol]iglie per[sol7] noi! **Rit.**
+
+I cuori spenti vibrano d'amre,
+i volti tristi splendono di gioria:
+Dio ha fatto meraviglie per noi,
+Dio ha fatto meraviglie per noi!

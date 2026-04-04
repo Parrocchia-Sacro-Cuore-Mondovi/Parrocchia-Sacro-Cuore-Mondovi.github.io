@@ -1,27 +1,29 @@
-﻿# Alleluia (Forza venite gente)
+﻿# Alleluia (Laudato sii - Forza venite gente)
 
 ---
 momento: alleluia
 messe:
 ---
 
-Laudato sii mi Signore
-con tutte le Tue creature,
-specialmente frate sole
-che dà la luce al giorno e che ci illumina
-per Tua volontà
-raggiante e bello con grande splendore
+[Intro: RE DO DOL RE]
+
+[RE]Laudato sii mi Signo[DO]re
+[SOL]con tutte le Tue creature,[RE]
+[RE]specialmente frate so[DO]le
+[SOL]che dà la luce al giorno e che ci [RE]illumina
+per Tua volon[DO]tà
+raggiante e bello con grande splend[SOL]ore
 di Te è l'immagine
-altissimo, altissimo Signore.
-Laudato sii mi Signore
-per Sora Luna e le stelle luminose e belle. **Rit.**
+[RE]altissima, altissimo Signo[LA]re.
+[RE]Laudato sii mi Sign[DO]ore
+[RE]per Sora Luna e le stelle [RE]luminose e belle. **Rit.**
 
 **Rit.
-Alleluia, alleluia.
-alleluia, alleluia, alleluia.**
+[RE DO]Alleluia, [SOL]alleluia.
+[RE]alleluia, [DO]alleluia, all[SOL RE]eluia. [LA]**
 
-Laudato sii mi Signore
-per Sora Luna e le stelle luminose e belle
+[RE]Laudato sii mi Signo[DO]re
+[SOL]per Sora Luna e le stelle [RE]luminose e belle
 Laudato sii mi Signore
 per Sora Acqua tanto umile e preziosa.
 Laudato sii mi Signore
