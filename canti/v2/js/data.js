@@ -109,7 +109,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "sSanto"
         ],
-        "testo_md": "> Rit.\n> Alleluia, alleluia, alleluia,\n> alleluia, alleluia, alleluia.\n\nCome potrò raccontare? \nÈ una gioia che fa piangere e fa gridare: \nio l’ho visto con i miei occhi, era vivo, era Lui.\nE m’ha chiamata per nome: \nera la Sua voce, era il mio Signore! \nIo l’ho visto con i miei occhi, era lì, davanti a me. **Rit.**\n\nGli angeli ci hanno parlato \ndavanti a quel sepolcro spalancato:\n“Donne, il Signore è risorto; non cercatelo qui!”\nChe corsa senza respiro\nper gridare a tutti di quel mattino:\ntutto il mondo deve sapere che è rimasto qui tra noi. **Rit. (x2)**"
+        "testo_md": "> Rit.\n> Alleluia, alleluia, alleluia,\n> alleluia, alleluia, alleluia.\n\nCome potrò raccontare? \nÈ una gioia che fa piangere e fa gridare: \nio l’ho visto con i miei occhi, era vivo, era Lui.\nE m’ha chiamata per nome: \nera la Sua voce, era il mio Signore! \nIo l’ho visto con i miei occhi, era lì, davanti a me. **Rit.**\n\nGli angeli ci hanno parlato \ndavanti a quel sepolcro spalancato:\n“Donne, il Signore è risorto; non cercatelo qui!”\nChe corsa senza respiro\nper gridare a tutti di quel mattino:\ntutto il mondo deve sapere che è rimasto qui tra noi. **Rit. (x2)**\n\nAlba di un tempo diverso\nÈ ik mattino dei mattini per l'universo\nTUtto già profuma d'eterno\nC'è il Risorto fra noi\nE le sue piaghe e la gloria\nSono vive dentro la nostra storia\nSegni di un amore che resta\nQui per sempre, qui con noi **Rit.**"
     },
     {
         "titolo": "Alleluia (Verbum panis)",
