@@ -38,7 +38,8 @@ const datiParrocchialiSalvati = {
     "messe": [
         { "id": "gSanto", "nome": "Giovedì Santo" },
         { "id": "vSanto", "nome": "Venerdì Santo" },
-        { "id": "sSanto", "nome": "Sabato Santo" }
+        { "id": "sSanto", "nome": "Sabato Santo" },
+        { "id": "comunioni", "nome": "Comunioni" }
     ],
     "canti": [
     {
@@ -95,7 +96,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Alleluia (Laudato sii - Forza venite gente)",
         "momento": "alleluia",
         "messe": [],
-        "testo_md": "[Intro: RE DO DOL RE]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]con tutte le Tue creature,[RE]\n[RE]specialmente frate so[DO]le\n[SOL]che dà la luce al giorno e che ci [RE]illumina\nper Tua volon[DO]tà\nraggiante e bello con grande splend[SOL]ore\ndi Te è l'immagine\n[RE]altissima, altissimo Signo[LA]re.\n[RE]Laudato sii mi Sign[DO]ore\n[RE]per Sora Luna e le stelle [RE]luminose e belle. **Rit.**\n\n> Rit.\n> [RE DO]Alleluia, [SOL]alleluia.\n> [RE]alleluia, [DO]alleluia, all[SOL RE]eluia. [LA]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Luna e le stelle [RE]luminose e belle\nLaudato sii mi Signore\nper Sora Acqua tanto umile e preziosa.\nLaudato sii mi Signore\nper Frate Foco che ci illumina la notte.\nEd esso è bello robusto e forte,\nLaudato sii, laudato sii mi Signore\nper Frate Vento e per Sora Aria\nper le nuvole e il sereno\nper la pioggia e per il cielo.\nPer Sora nostra Madre Terra\nche ci nutre e ci governa\no altissimo Signore. **Rit.**\n\nLaudato sii mi Signore\nanche per Sora nostra Morte corporale.\nLaudato sii mi Signore\nper quelli che perdonano per il tuo amore.\nE per l'anima.\nPer Sora nostra Madre Terra\nche ci nutre e ci governa\no altissimo Signore. **Rit. (x2)**"
+        "testo_md": "[Intro: RE DO DOL RE]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]con tutte le Tue creature,[RE]\n[RE]specialmente frate so[DO]le\n[SOL]che dà la luce al giorno e che ci [RE]illumina\nper Tua volon[DO]tà\nraggiante e bello con grande splend[SOL]ore\ndi Te è l'immagine\n[RE]altissima, altissimo Signo[LA]re.\n[RE]Laudato sii mi Sign[DO]ore\n[RE]per Sora Luna e le stelle [RE]luminose e belle. **Rit.**\n\n> Rit.\n> [RE]A - [DO]lleluia, [SOL]a - lleluia.\n> [RE]a - lleluia, [DO]a - lleluia, all[SOL RE]eluia. [LA]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Luna e le stelle [RE]luminose e belle\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Acqua tanto umile [RE]e preziosa.\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Frate Foco che ci illumina [RE]la notte\ned esso è bello robusto e [DO]forte.\n[SOL]Laudato sii, laudato sii mi [RE]Signore\n[DO]per Frate Vento e per Sora Aria\n[SOL]per le nuvole e il sereno\n[RE]per la pioggia e per il cie[LA]lo.\n[DO]Per Sora nostra Madre Terra\n[SOL]che ci nutre e ci go[RE]verna\no altissimo Sign[LA]ore. [RE]**Rit.**\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]anche per Sora nostra Morte [RE]corporale.\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per quelli che perdonano per [RE]il tuo amore.\nE per l'anima.\n[DO]Per Sora nostra Madre [SOL]Terra\nche ci nutre e ci governa\n[RE]o altissimo Signore. [LA RE]**Rit. (x2)**"
     },
     {
         "titolo": "Alleluia (Passeranno i cieli)",
