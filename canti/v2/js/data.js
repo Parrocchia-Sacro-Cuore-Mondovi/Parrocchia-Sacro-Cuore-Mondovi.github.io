@@ -119,6 +119,14 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> Alleluia, alleluia.\n> Alleluia, alleluia. (x2)"
     },
     {
+        "titolo": "Alleluia, celebrate il Signore - Cioffi",
+        "momento": "alleluia",
+        "messe": [
+            "comunioni"
+        ],
+        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\r\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\r\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\r\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
+    },
+    {
         "titolo": "Altissimo",
         "momento": "comunione",
         "messe": [],
@@ -247,6 +255,14 @@ const datiParrocchialiSalvati = {
         "momento": "fine",
         "messe": [],
         "testo_md": "Io lo so Signore, che vengo da lontano,\nprima nel pensiero e poi nella Tua mano.\nIo mi rendo conto che Tu sei la mia vita\ne non mi sembra vero di chiamarTi così.\nPadre di ogni uomo e non Ti ho visto mai.\nSpirito di vita e nacqui da una donna.\nFiglio mio fratello e sono solo un uomo,\neppure, io capisco che Tu sei Verità. **Rit.1**\n\n> Rit.1\n> E imparerò a guardare tutto il mondo\n> con gli occhi trasparenti di un bambino\n> e insegnerò a chiamarti Padre Nostro\n> ad ogni figlio che diventa uomo. (x2)\n\nIo lo so Signore che Tu mi sei vicino,\nluce alla mia mente, guida al mio cammino,\nmano che sorregge, sguardo che perdona,\ne non mi sembra vero che Tu esista così. **Rit.2**\n\n> Rit.2\n> E accoglierò la vita come un dono\n> e avrò il coraggio di morire anch’io\n> e incontro a Te verrò col mio fratello\n> che non si sente amato da nessuno. (x2)"
+    },
+    {
+        "titolo": "È un giorno di festa - Cioffi",
+        "momento": "ingresso",
+        "messe": [
+            "comunioni"
+        ],
+        "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\r\n> Rit.\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\r\nTu ci chia[SOL]mi, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nalla men[SOL]sa [RE]\r\nche ac[LA]coglie. [SI-7]\r\nSei paro[SOL]la,\r\n[RE]pane del no[LA]stro cammi[SI-7]no,\r\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\r\n\r\nNoi veni[SOL]amo, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nper tro[SOL]varTi [RE]\r\ne a[LA]marTi. [SI-7]\r\nNoi fra[SOL]telli,\r\n[RE]noi una so[LA]la fami[SI-7]glia,\r\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\r\n\r\n> Rit. (con alzata)\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
     },
     {
         "titolo": "Ecco quel che abbiamo",
