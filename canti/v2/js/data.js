@@ -124,7 +124,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\r\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\r\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\r\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
+        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\n\n> Rit.\n>\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n>\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\n\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\n\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
     },
     {
         "titolo": "Altissimo",
@@ -230,7 +230,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Dall'aurora al tramonto",
         "momento": "ingresso",
         "messe": [],
-        "testo_md": "> Rit.\n> [DO#-]Dall'aurora [MI]io cerco [FA#-]Te, [SI]\n> [DO#-]fino al tramonto [MI]Ti [FA#-]chiamo. [SI]\n> [DO#-]Ha sete [SOL#-]solo di [LA]Te\n> [SI]l'anima [DO#-]mia [SOL#-]come [LA]terra [SI]deserta.\n\n[DO#-]Non mi fermerò [MI]un [FA#-]solo [SI]istante,\n[DO#-]sempre canterò [MI]la [FA#-]Tua [SI]lode,\n[DO#-]perché sei il mio [SOL#-]Dio,\n[LA]il mio [SI]riparo\n[DO#-]mi proteggerai\n[SOL#-]all'omb[LA]ra delle Tue [SI4]ali.**Rit.**\n\nNon mi fermerò un solo istante,\nio racconterò le Tue opere\nperché sei il mio Dio\nunico bene,\nnulla mai potrà\nla notte contro di me. **Rit.**\n\n>\n> ...[DO#-]ha sete [SOL#-]solo di [LA]Te\n> [SI]l'anima [MI]mia [LA]come terra [SI]deser[MI]ta."
+        "testo_md": "> Rit.\n> [DO#-]Dall'aurora [MI]io cerco [FA#-]Te, [SI]\n> [DO#-]fino al tramonto [MI]Ti [FA#-]chiamo. [SI]\n> [DO#-]Ha sete [SOL#-]solo di [LA]Te\n> [SI]l'anima [DO#-]mia [SOL#-]come [LA]terra [SI]deserta.\n\n[DO#-]Non mi fermerò [MI]un [FA#-]solo [SI]istante,\n[DO#-]sempre canterò [MI]la [FA#-]Tua [SI]lode,\n[DO#-]perché sei il mio [SOL#-]Dio,\n[LA]il mio [SI]riparo\n[DO#-]mi proteggerai\n[SOL#-]all'omb[LA]ra delle Tue [SI4]ali. **Rit.**\n\nNon mi fermerò un solo istante,\nio racconterò le Tue opere\nperché sei il mio Dio\nunico bene,\nnulla mai potrà\nla notte contro di me. **Rit.**\n\n>\n> ...[DO#-]ha sete [SOL#-]solo di [LA]Te\n> [SI]l'anima [MI]mia [LA]come terra [SI]deser[MI]ta."
     },
     {
         "titolo": "Dove Tu sei",
@@ -262,7 +262,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-        "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\r\n> Rit.\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\r\nTu ci chia[SOL]mi, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nalla men[SOL]sa [RE]\r\nche ac[LA]coglie. [SI-7]\r\nSei paro[SOL]la,\r\n[RE]pane del no[LA]stro cammi[SI-7]no,\r\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\r\n\r\nNoi veni[SOL]amo, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nper tro[SOL]varTi [RE]\r\ne a[LA]marTi. [SI-7]\r\nNoi fra[SOL]telli,\r\n[RE]noi una so[LA]la fami[SI-7]glia,\r\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\r\n\r\n> Rit. (con alzata)\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
+        "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\n\n> Rit.\n>\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n>\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n>\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n>\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\n\n\nTu ci chia[SOL]mi, [RE]\n\nSi[LA/DO]gnore, [SI-7]\n\nalla men[SOL]sa [RE]\n\nche ac[LA]coglie. [SI-7]\n\nSei paro[SOL]la,\n\n[RE]pane del no[LA]stro cammi[SI-7]no,\n\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\n\n\n\nNoi veni[SOL]amo, [RE]\n\nSi[LA/DO]gnore, [SI-7]\n\nper tro[SOL]varTi [RE]\n\ne a[LA]marTi. [SI-7]\n\nNoi fra[SOL]telli,\n\n[RE]noi una so[LA]la fami[SI-7]glia,\n\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\n\n\n\n> Rit. (con alzata)\n>\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n>\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n>\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n>\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
     },
     {
         "titolo": "Ecco quel che abbiamo",
@@ -413,11 +413,11 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Luce",
-        "momento": "s1",
+        "momento": "fine",
         "messe": [
             "sSanto"
         ],
-        "testo_md": "C’è il segreto della libertà, quella vera\nbatte dentro di te.\nCome risvegliarsi un mattino col sole\ndopo un lungo inverno.\nNel soffrire, mio Signore,\nho incontrato Te, Dio amore.\nNel perdono, nel gioire,\nho capito che sei luce per me. **Rit.**\n\n> Rit.\n> Signore sono qui per dirTi ancora sì, Luce.\n> Fammi scoppiare di gioia di vivere, Luce.\n> Fammi strumento per portare intorno a me, Luce.\n> E chi è vicino a me sappia che tutto in Te è Luce.\n\nVoglio ringraziarTi, Signore, per la vita\nche mi hai ridonato.\nSo che sei nell’amore degli amici che\nora ho incontrato.\nNel soffrire, mio Signore,\nho incontrato Te, Dio amore.\nNel perdono, nel gioire,\nho capito che sei luce per me. **Rit.**\n\nE con le lacrime agli occhi e le mie mani alzate verso Te, Gesù,\ncon la speranza nel cuore e la Tua luce in me paura non ho più. **Rit. (x2)**"
+        "testo_md": "[SOL]C’è il segreto [RE]della libertà, que[MI-]lla vera\nbatte den[DO]tro di [RE]te.\n[SOL]È come risvegliarsi [RE]un mattino col[MI-] sole\ndopo un [DO]lungo [RE]inverno. [SOL]\nNel soff[RE]rire, mio Signo[MI-]re,\nho incontrato [DO]Te, Dio a[RE]more. [SOL]\nNel per[RE]dono, nel gioi[MI-]re,\nho capito che [DO]sei luce per[RE] me. **Rit.**\n\n> Rit.\n> [SOL]Signore [RE]sono qui per [MI-]dirTi ancora sì, [DO]luce. [RE]\n> [SOL]Fammi scopp[RE]iare di gioia [MI-]di vivere, [DO]luce. [RE]\n> [SOL]Fammi strum[RE]ento per porta[MI-]re intorno a me, [DO]luce. [RE]\n> [SOL]E chi è vicino a [RE]me sappia [MI-]che tutto in Te è [DO]luce. [RE  (SOL  RE  MI-  DO  RE)]\n\n[SOL]Voglio ringrazi[RE]arTi, Signore, per[MI-] la vita\nche mi hai[DO] rido[RE]nato.\n[SOL]So che sei nell’a[RE]more degli ami[MI-]ci che\nora ho inco[DO]ntra[RE]to. [SOL]\nNel soffrire, [RE]mio Signore,\nho incontrato[DO] Te, Dio a[RE]more. [SOL]\nNel perdo[RE]no, nel gioire,\nho [MI-]capito che sei l[DO]uce per [RE]me. **Rit.**\n\n[SOL  RE  MI-]E con le lacrime a[DO]gli occhi e le mie [SOL]mani alzate verso Te, [RE]Gesù,\n[MI-]con la speranza nel [DO]cuore e la Tua luce in me paura [RE4]non ho[RE] più. **Rit. (x2)**"
     },
     {
         "titolo": "L’amore è vita",
@@ -443,7 +443,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Nasce il sole",
         "momento": "ingresso",
         "messe": [],
-        "testo_md": "> Rit.\n> E nasce il sole del nuovo giorno in cui tutto è cambiato per me.\n> E nasce il sole del nuovo giorno in cui ho incontrato Te!\n\nMagiche note si sono unite a mille colori nell’armonia.\nLa vita mi offre il suo sorriso,\nnasce l’amore anche per me! (x2) **Rit.**\n\nOra io libero posso andare ora che sei vicino a me.\nSazio nel Tuo la mia sete d’amore,\nnon Ti potrò tradire mai. (x2) **Rit. (x2)**"
+        "testo_md": "> Rit.\n> [MI]E nasce [SI]il sole di un nuovo[LA] giorno in cui tutto è [SI]cambiato [MI]per me.\n> E nasce [SI]il sole di un nuovo [LA]giorno in cui ho inco[DO]ntrato [MI]Te! (x2)\n\n[MI]Magiche note si so[LA]no unite a mille colo[SI]ri nell’ar[MI]monia.\nLa vita mi [SI]offre il suo so[LA]rriso,\nnasce l’amo[SI]re anche [MI]per me!\nLa vita mi [SI]offre il suo so[LA]rriso,\nnasce l’amo[SI]re anche [MI]per me! **Rit.**\n\nOra io libero posso andare ora che sei vicino a me.\nSazio nel Tuo la mia sete d’amore,\nnon Ti potrò tradire mai.\nSazio nel Tuo la mia sete d’amore,\nnon Ti potrò tradire mai. [DO  RE  SOL]**Rit. (con alzata)**\n\n> Rit. (con alzata)\n> [SOL]E nasce [RE]il sole di un nuovo[DO] giorno in cui tutto è [RE]cambiato [SOL]per me.\n> E nasce [RE]il sole di un nuovo [DO]giorno in cui ho inco[RE]ntrato [SOL]Te! (x2)"
     },
     {
         "titolo": "Nascerà",
@@ -466,10 +466,8 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Pace a te",
         "momento": "s10",
-        "messe": [
-            "sSanto"
-        ],
-        "testo_md": "Nel Signore ti do la pace\n\n> Rit.\n> [Do]Nel signore [fa]io ti do la p[do]ace, pace a [fa]te, pace a [do]te.\n> Nel Sig[la-]nore [fa]io ti do la p[do]ace, pace a [fa]te, p[sol]ace a [do]te.\n\nNel suo n[do]ome [fa]restermo u[do]niti, pace a[fa] te, pace a[do] te.\nNel suo [mi-]nome restermo un[la-]iti, pace a[fa] te, [sol]pace a[do] te. **Rit.**\n\nSiamo u[do]niti [fa]nella stessa [do]fede, pace a[fa] te, pace a[do] te.\nSiamo u[mi-]niti nella stessa f[la-]ede, pace a[fa] te, [sol]pace a[do] te. **Rit.**\n\n> E la pace sia con te\n[re  sol  la  sol  la  re]\n> [sol]E la pace[la] sia[sol] con[la] te[re]\n> [sol  la  sol  la  re]\n> Pace\tPace\n> [sol]Ogni giorno[la] sai[sol] con[la] te[re]\n> [sol  la  sol  la  re]\n> Pace\tPace\n> [sol]La sua [la]pace [sol]data [la]a [re]noi\n> [sol]Che dovunque [la]andrai[sol] p[sol]ort[la]erai[re] (3 volte)\n>\n> [sol]E la pace[la] sia[sol] con[la] te[re]"
+        "messe": [],
+        "testo_md": "Nel Signore ti do la pace\n\n> Rit.\n> [Do]Nel Signore [fa]io ti do' la p[do]ace, pace a [fa]te, pace a [do]te.\n> Nel Sig[la-]nore [fa]io ti do' la p[do]ace, pace a [fa]te, p[sol]ace a [do]te.\n\nNel Suo n[do]ome [fa]restermo u[do]niti, pace a[fa] te, pace a[do] te.\nNel Suo [mi-]nome restermo un[la-]iti, pace a[fa] te, [sol]pace a[do] te. **Rit.**\n\nSiamo u[do]niti [fa]nella stessa [do]fede, pace a[fa] te, pace a[do] te.\nSiamo u[mi-]niti nella stessa f[la-]ede, pace a[fa] te, [sol]pace a[do] te. **Rit.**\n\n> E la pace sia con te\n[re  sol  la  sol  la  re]\n> [sol]E la pace[la] sia[sol] con[la] te,[re]\n> [sol  la  sol  la  re]\n> pace,\tpace,\n> [sol]ogni giorno[la] sai[sol] con[la] te,[re]\n> [sol  la  sol  la  re]\n> pace,\tpace,\n> [sol]la Sua [la]pace [sol]data [la]a [re]noi\n> [sol]che dovunque [la]andrai[sol] p[sol]ort[la]erai[re] (3 volte)\n>\n> [sol]E la pace[la] sia[sol] con[la] te[re]"
     },
     {
         "titolo": "Pace intima",
@@ -480,16 +478,18 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Pace sia, pace a voi",
         "momento": "pace",
-        "messe": [],
-        "testo_md": "> Rit.\n> Pace sia, pace a voi, la Tua pace sarà\n> sulla terra come nei Cieli.\n> Pace sia, pace a voi, la Tua pace sarà\n> gioia nei nostri occhi, nei cuori.\n> Pace sia, pace a voi, la Tua pace sarà\n> luce limpida dei pensieri.\n> Pace sia, pace a voi, la Tua pace sarà\n> una casa per tutti.\n\nPace a voi: sia il Tuo dono visibile.\nPace a voi: la Tua eredità.\nPace a voi: come un canto all’unisono\nche sale dalle nostre città. **Rit.**"
+        "messe": [
+            "comunioni"
+        ],
+        "testo_md": "[Intro: RE  SOL  RE  LA4  RE/SOL/RE]\n> Rit.\n> Pace [RE]sia, pace a voi, la Tu[SOL]a pace sarà\n> sulla [SI-]Terra come [LA4]nei Cie[LA]li.\n> Pace [RE]sia, pace a voi, la Tua [SOL]pace sarà\n> gioia [FA]nei nostri[DO] occhi, nei [SOL]cuori.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> luce [SI-]limpida dei [LA4]pensieri.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> una[RE] casa per [LA4]tutti.  [RE/SOL/RE]\n\n[SOL]Pace a [RE]voi: [LA]sia il [SI-]Tuo dono visibile.\n[SOL]Pace a [RE]voi: [LA]la Tua [SI-]eredità.\n[SOL]Pace a [RE]voi: [LA]come [SI-]un canto all’unisono\n[DO2/5]che sale dalle nostre [LA4città. [LA] **Rit. [SI](con alzata)**\n\n> Rit. (con alzata)\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> sulla [DO#-]Terra come nei Cieli.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> gioia[SOL] nei nostri [RE]occhi, nei [LA]cuo[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> luce [DO#-]limpida dei pen[SI4]sie[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> una [MI]casa per [SI7]tutti. [MI  LA  MI]"
     },
     {
         "titolo": "Pane del cielo",
         "momento": "offertorio",
         "messe": [
-            "gSanto"
+            "comunioni"
         ],
-        "testo_md": "> Rit.\n> Pane del cielo sei Tu, Gesù,\n> via d’amore: Tu ci fai come Te.\n\nNo, non è rimasta fredda la terra: Tu sei rimasto con noi\nper nutrirci di Te, pane di vita, ed infiammare col Tuo Amore\ntutta l’umanità. **Rit.**\n\nSì, il cielo è qui su questa terra: Tu sei rimasto con noi,\nma ci porti con Te nella Tua casa dove vivremo insieme a Te\ntutta l’eternità. **Rit.**\n\nNo, la morte non può farci paura: Tu sei rimasto con noi.\nE chi vive di Te vive per sempre. Sei Dio con noi, sei Dio per noi,\nDio in mezzo a noi. **Rit.**"
+        "testo_md": "> Rit.\n> [DO]Pane del [MI-]cielo [FA]sei Tu, Gesù,[DO]\n> [LA-]via d’amo[RE-]re: [FA]Tu ci fai come [DO]Te.\n\n[FA]No, non è ri[RE-]masta fredda la terra[SOL]:\n[MI-]Tu sei ri[FA]masto co[DO]n noi [FA]\nper nutrir[DO]ci di [LA-]Te, pane [SOL]di vita,\ned[LA-] infiamma[SOL]re col Tuo [MI+]amore\n[SOL]tutta [FA]l’uma[DO]nità. **Rit.**\n\n[FA]Sì, il cielo è [RE-]qui su questa terra:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi,[FA]\nma ci porti[DO] con Te ne[LA-]lla Tu[SOL]a casa[LA-]\ndove vi[SOL]vremo insieme[MI+] a Te[SOL]\ntutta [FA]l’eter[DO]nità. **Rit.**\n\n[FA]No, la morte[RE-] non può farci paura:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi.[FA]\nE chi vive [DO]di Te v[LA-]ive per [SOL]sempre.[LA-]\nSei Dio [SOL]con noi, sei Dio [MI+]per noi,[SOL]\nDio [FA]in me[DO]zzo a noi. **Rit.**"
     },
     {
         "titolo": "Pane di vita",
@@ -519,9 +519,9 @@ const datiParrocchialiSalvati = {
         "titolo": "Quelli che amano Te",
         "momento": "offertorio",
         "messe": [
-            "gSanto"
+            "comunioni"
         ],
-        "testo_md": "Ecco il frumento che noi Ti portiamo, (Il frumento)\npane della madre terra\ne del lavoro e sudore di tanti:\nquelli che amano Te.\n\nPortiamo il vino, frutto della vite, (Ecco il vino)\nsangue della madre terra\ne del lavoro e la gioia di tanti:\nquelli che amano Te. **Rit.**\n\n> Rit.\n> Insieme ai doni veniamo noi stessi\n> figli di tutta la terra\n> per riscaldarci attorno alla mensa\n> che hai preparato per noi. (tutto x2)\n> …per riscaldarci attorno alla mensa\n> che hai preparato per noi."
+        "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi."
     },
     {
         "titolo": "Re dei re",
@@ -566,8 +566,10 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Rivestiti di luce",
         "momento": "fine",
-        "messe": [],
-        "testo_md": "E come adagio se ne va la nebbia\nportata via dal vento.\nQuasi come accade ad un bambino\nche apre gli occhi al mondo.\nOgni giorno è un giorno vivo\ndi un colore nuovo che\nè luce, è luce in me!\nImmensamente chiaro,\nquel raggio che al mattino\nillumina la mia anima,\ncol Suo amore è Dio che mi è vicino.\nFa di ogni giorno un giorno vivo\ndi un colore nuovo che\nè luce, è luce! **Rit.**\n\n> Rit.\n> Rivestiti di luce,\n> porta il sole attorno a te.\n> Rivestiti d’amore,\n> è l’amore che cerca te.\n> Rivestiti di pace,\n> la vita abbraccerai:\n> e la forza che non hai trovato mai\n> dalla Sua luce ti arriverà! (x2)\n\nDolcemente senza far rumore\nLui mi svela i misteri che aprono il cuore,\nun sorriso può portare la luce\ned aprire le porte del paradiso,\npuò far di ogni giorno un giorno diverso\ndi un colore nuovo che\nè luce, è luce. **Rit.**"
+        "messe": [
+            "comunioni"
+        ],
+        "testo_md": "[SOL]E come adagio se ne [LA-]va la nebbia\n[SOL]portata via dal ven[LA-]to.\nQua[SOL]si come accade ad[LA-] un bambino\n[SOL]che apre gli occhi al [SI7]mondo.\n[MI-]Ogni giorno è un gio[MI-7]rno vivo,\n[DO]ha un colore nuo[SOL]vo che\n[LA-]è luce, è [RE]luce in me! [SOL  LA-  SOL  LA-]\n[SOL]Immensamente chia[LA-]ro,\nquel raggio [SOL]che al mattino [LA-]\nill[SOL]umina la mia ani[LA-]ma,\ncol Suo amo[SOL]re è Dio che mi è vi[SI7]cino.\n[MI-]Fa’ di ogni giorno un[MI-7] giorno v[DO]ivo,\ndà un colore [SOL]nuovo che\n[LA-]è luce, è lu[RE]ce! **Rit.**\n\n> Rit.\n> [DO]Rivestiti di [SOL]luce,\n> porta[RE] il sole attorno[MI-] a te.\n> [DO]Rivestiti d’amo[SOL]re,\n> è l’am[RE]ore che cerca [MI-]te.\n> [DO]Rivestiti di [SOL]pace,\n> la vita[SI7] abbracce[MI-]rai:\n> e [LA7]la forza che non hai trovato mai\n> dalla[RE] Sua luce ti arriverà! (x2)\n\n[SOL]Dolcemente senza far[LA-] rumore\nLui mi[SOL] svela i misteri che [LA-]aprono il cuore,\n[SOL]un sorriso può porta[LA-]re la luce\ned [SOL]aprire le porte del pa[SI7]radiso,\n[MI-]può far di ogni giorno[MI-7] un gior[DO]no diverso\ndi un [SOL]colore nuovo che\n[LA-]è luce, è lu[RE]ce. **Rit.**"
     },
     {
         "titolo": "Salve Regina",
@@ -596,10 +598,12 @@ const datiParrocchialiSalvati = {
         "testo_md": "Santo, santo, santo sei, Signore.\nDio dell’universo vieni in mezzo a noi.\nI Cieli e la terra sono pieni della Tua gloria.\nNel nome del Signore.\n\nSanto, Santo, Santo sei Signore.\nDio dell’universo vieni in mezzo a noi.\nOsanna nei Cieli. Benedetto Colui che viene\nnel nome del Signore,\nnel nome del Signor."
     },
     {
-        "titolo": "Santo (Gen)",
+        "titolo": "Santo (Come fuoco vivo)",
         "momento": "santo",
-        "messe": [],
-        "testo_md": "> Rit.\n> Santo, santo, santo il Signore,\n> Dio dell'universo.\n> Santo, santo.\n> I Cieli e la terra sono pieni della Tua gloria.\n\nOsanna nell'alto dei Cieli.\nOsanna nell'alto dei Cieli. **Rit.**\n\nBenedetto Colui che viene\nnel nome del Signore.\nOsanna nell'alto dei Cieli.\nOsanna nell'alto dei Cieli.\nSanto, santo, sa-a-a-a-anto."
+        "messe": [
+            "comunioni"
+        ],
+        "testo_md": "[Intro: LA  SI  LA  SI]\n> Rit.\n> [LA]San[MI]to, sa[DO#-]nto[SI], sa[FA#-]nto il Sig[MI]nore,\n> [LA]Dio dell'univer[SI]so.\n> [LA]San[MI]to, sa[DO#-]nto[SI].\n> [FA#-]I Cieli e la T[MI]Terra sono [LA]pieni della Tua [FA#-]gloria.[MI]\n\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli. **Rit.**\n\n[SI]Benedetto Co[LA]lui che viene\nnel [MI]nome del [SI]Signore.\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli.\n[LA]San[MI]to, sa[DO#-]nto[SI], [LA]sa-a-a-a-anto[MI]."
     },
     {
         "titolo": "Santo (Osanna nelle altezze)",
@@ -608,18 +612,6 @@ const datiParrocchialiSalvati = {
             "sSanto"
         ],
         "testo_md": "Sa - nto, sa - nto,\ni Cieli e la terra sono pieni della Tua gloria.\nOsanna, osanna, osanna, osanna nelle altezze.\nBenedetto Colui che viene nel nome del Signore.\nOsanna, osanna, osanna, osanna nelle altezze.\nOsanna, osanna, osanna…"
-    },
-    {
-        "titolo": "Santo (Carrù)",
-        "momento": "santo",
-        "messe": [],
-        "testo_md": "Santo, Santo, Santo sei, Signore.\nDio dell’universo vieni in mezzo a noi.\nI Cieli e la terra sono pieni della Tua gloria.\nNel nome del Signore.\n\nSanto, Santo, Santo sei Signore.\nDio dell’universo vieni in mezzo a noi.\nOsanna nei Cieli. Benedetto Colui che viene\nnel nome del Signore,\nnel nome del Signor."
-    },
-    {
-        "titolo": "Santo (Gen)",
-        "momento": "santo",
-        "messe": [],
-        "testo_md": "> Rit.\n> Santo, santo, santo il Signore,\n> Dio dell'universo.\n> Santo, santo.\n> I Cieli e la terra sono pieni della Tua gloria.\n\nOsanna nell'alto dei Cieli.\nOsanna nell'alto dei Cieli. **Rit.**\n\nBenedetto colui che viene\nnel nome del Signore.\nOsanna nell'alto dei Cieli.\nOsanna nell'alto dei Cieli.\nSanto, santo, sa-a-a-a-anto."
     },
     {
         "titolo": "Santo è il Signore Dio",

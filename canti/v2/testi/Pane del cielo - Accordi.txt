@@ -1,0 +1,29 @@
+﻿# Pane del cielo
+
+---
+momento: offertorio
+messe:
+ - comunioni
+---
+
+**Rit.
+[DO]Pane del [MI-]cielo [FA]sei Tu, Gesù,[DO]
+[LA-]via d’amo[RE-]re: [FA]Tu ci fai come [DO]Te.**
+
+[FA]No, non è ri[RE-]masta fredda la terra[SOL]:
+[MI-]Tu sei ri[FA]masto co[DO]n noi [FA]
+per nutrir[DO]ci di [LA-]Te, pane [SOL]di vita,
+ed[LA-] infiamma[SOL]re col Tuo [MI+]amore
+[SOL]tutta [FA]l’uma[DO]nità. **Rit.**
+
+[FA]Sì, il cielo è [RE-]qui su questa terra:[SOL]
+[MI-]Tu sei ri[FA]masto con[DO] noi,[FA]
+ma ci porti[DO] con Te ne[LA-]lla Tu[SOL]a casa[LA-]
+dove vi[SOL]vremo insieme[MI+] a Te[SOL]
+tutta [FA]l’eter[DO]nità. **Rit.**
+
+[FA]No, la morte[RE-] non può farci paura:[SOL]
+[MI-]Tu sei ri[FA]masto con[DO] noi.[FA]
+E chi vive [DO]di Te v[LA-]ive per [SOL]sempre.[LA-]
+Sei Dio [SOL]con noi, sei Dio [MI+]per noi,[SOL]
+Dio [FA]in me[DO]zzo a noi. **Rit.**
