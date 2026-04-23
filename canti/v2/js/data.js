@@ -485,7 +485,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Pane del cielo",
-        "momento": "offertorio",
+        "momento": "comunione",
         "messe": [
             "comunioni"
         ],
