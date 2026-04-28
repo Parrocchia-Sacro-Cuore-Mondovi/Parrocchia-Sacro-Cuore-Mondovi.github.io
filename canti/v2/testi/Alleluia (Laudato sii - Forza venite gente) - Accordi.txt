@@ -5,7 +5,7 @@ momento: alleluia
 messe:
 ---
 
-[Intro: RE DO DOL RE]
+[Intro: RE DO SOL RE]
 
 [RE]Laudato sii mi Signo[DO]re
 [SOL]con tutte le Tue creature,[RE]
