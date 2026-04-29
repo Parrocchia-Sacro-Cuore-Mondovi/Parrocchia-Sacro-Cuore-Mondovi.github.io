@@ -96,11 +96,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Alleluia (Laudato sii - Forza venite gente)",
         "momento": "alleluia",
         "messe": [],
-<<<<<<< Updated upstream
-        "testo_md": "[Intro: RE DO DOL RE]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]con tutte le Tue creature,[RE]\n[RE]specialmente frate so[DO]le\n[SOL]che dà la luce al giorno e che ci [RE]illumina\nper Tua volon[DO]tà\nraggiante e bello con grande splend[SOL]ore\ndi Te è l'immagine\n[RE]altissima, altissimo Signo[LA]re.\n[RE]Laudato sii mi Sign[DO]ore\n[RE]per Sora Luna e le stelle [RE]luminose e belle. **Rit.**\n\n> Rit.\n> [RE]A - [DO]lleluia, [SOL]a - lleluia.\n> [RE]a - lleluia, [DO]a - lleluia, all[SOL RE]eluia. [LA]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Luna e le stelle [RE]luminose e belle\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Acqua tanto umile [RE]e preziosa.\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Frate Foco che ci illumina [RE]la notte\ned esso è bello robusto e [DO]forte.\n[SOL]Laudato sii, laudato sii mi [RE]Signore\n[DO]per Frate Vento e per Sora Aria\n[SOL]per le nuvole e il sereno\n[RE]per la pioggia e per il cie[LA]lo.\n[DO]Per Sora nostra Madre Terra\n[SOL]che ci nutre e ci go[RE]verna\no altissimo Sign[LA]ore. [RE]**Rit.**\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]anche per Sora nostra Morte [RE]corporale.\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per quelli che perdonano per [RE]il tuo amore.\nE per l'anima.\n[DO]Per Sora nostra Madre [SOL]Terra\nche ci nutre e ci governa\n[RE]o altissimo Signore. [LA RE]**Rit. (x2)**"
-=======
         "testo_md": "[Intro: RE DO SOL RE]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]con tutte le Tue creature,[RE]\n[RE]specialmente frate so[DO]le\n[SOL]che dà la luce al giorno e che ci [RE]illumina\nper Tua volon[DO]tà\nraggiante e bello con grande splend[SOL]ore\ndi Te è l'immagine\n[RE]altissima, altissimo Signo[LA]re.\n[RE]Laudato sii mi Sign[DO]ore\n[RE]per Sora Luna e le stelle [RE]luminose e belle. **Rit.**\n\n> Rit.\n> [RE]A - [DO]lleluia, [SOL]a - lleluia.\n> [RE]a - lleluia, [DO]a - lleluia, all[SOL RE]eluia. [LA]\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Luna e le stelle [RE]luminose e belle\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Sora Acqua tanto umile [RE]e preziosa.\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per Frate Foco che ci illumina [RE]la notte\ned esso è bello robusto e [DO]forte.\n[SOL]Laudato sii, laudato sii mi [RE]Signore\n[DO]per Frate Vento e per Sora Aria\n[SOL]per le nuvole e il sereno\n[RE]per la pioggia e per il cie[LA]lo.\n[DO]Per Sora nostra Madre Terra\n[SOL]che ci nutre e ci go[RE]verna\no altissimo Sign[LA]ore. [RE]**Rit.**\n\n[RE]Laudato sii mi Signo[DO]re\n[SOL]anche per Sora nostra Morte [RE]corporale.\n[RE]Laudato sii mi Signo[DO]re\n[SOL]per quelli che perdonano per [RE]il tuo amore.\nE per l'anima.\n[DO]Per Sora nostra Madre [SOL]Terra\nche ci nutre e ci governa\n[RE]o altissimo Signore. [LA RE]**Rit. (x2)**"
->>>>>>> Stashed changes
     },
     {
         "titolo": "Alleluia (Passeranno i cieli)",
@@ -128,11 +124,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-<<<<<<< Updated upstream
-        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\n\n> Rit.\n>\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n>\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\n\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\n\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
-=======
         "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\r\n\r\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\r\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\r\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
->>>>>>> Stashed changes
     },
     {
         "titolo": "Altissimo",
@@ -270,11 +262,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-<<<<<<< Updated upstream
-        "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\n\n> Rit.\n>\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n>\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n>\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n>\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\n\n\nTu ci chia[SOL]mi, [RE]\n\nSi[LA/DO]gnore, [SI-7]\n\nalla men[SOL]sa [RE]\n\nche ac[LA]coglie. [SI-7]\n\nSei paro[SOL]la,\n\n[RE]pane del no[LA]stro cammi[SI-7]no,\n\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\n\n\n\nNoi veni[SOL]amo, [RE]\n\nSi[LA/DO]gnore, [SI-7]\n\nper tro[SOL]varTi [RE]\n\ne a[LA]marTi. [SI-7]\n\nNoi fra[SOL]telli,\n\n[RE]noi una so[LA]la fami[SI-7]glia,\n\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\n\n\n\n> Rit. (con alzata)\n>\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n>\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n>\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n>\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
-=======
         "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\r\n\r\n> Rit.\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\r\nTu ci chia[SOL]mi, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nalla men[SOL]sa [RE]\r\nche ac[LA]coglie. [SI-7]\r\nSei paro[SOL]la,\r\n[RE]pane del no[LA]stro cammi[SI-7]no,\r\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\r\n\r\nNoi veni[SOL]amo, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nper tro[SOL]varTi [RE]\r\ne a[LA]marTi. [SI-7]\r\nNoi fra[SOL]telli,\r\n[RE]noi una so[LA]la fami[SI-7]glia,\r\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\r\n\r\n> Rit. (con alzata)\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
->>>>>>> Stashed changes
     },
     {
         "titolo": "Ecco quel che abbiamo",
