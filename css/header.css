@@ -1,0 +1,255 @@
+/* --- Stili Header Adattati --- */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #b4ffff;
+    border-bottom: 2px solid #1a4f76;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5%;
+}
+
+.logo-icon img {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-text h1 {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.1;
+}
+
+.logo-text p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Barra di navigazione stile mockup (Blu) */
+#mainNav {
+    background-color: #1a4f76; /* Blu dell'header */
+    width: 100%;
+}
+
+#mainNav ul {
+    list-style: none;
+    display: flex;
+    /* Allineamento centrale elementi nav-bar */
+    /* justify-content: center; */ 
+    padding: 0 5%;
+}
+
+#mainNav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    border: none;
+}
+
+#mainNav ul li a:hover,
+
+#mainNav ul li a.active {
+    background-color: #b35235; /* Arancione/Rosso del pulsante "Nome" nell'immagine */
+    border-bottom: none !important;
+}
+
+/* Elementi mobile nascosti su desktop */
+.hamburger-btn, .close-nav-btn, .nav-overlay {
+    display: none;
+}
+
+/* =========================================
+   MENU A TENDINA (DROPDOWN) - BASE
+   ========================================= */
+
+/* Il contenitore principale relativo per poter posizionare il sottomenu */
+.dropdown {
+    position: relative;
+    background-color: #1a4f76;
+}
+
+/* L'icona della freccetta (un po' più piccola e distanziata) */
+.dropdown-toggle i {
+    font-size: 0.8em;
+    margin-left: 5px;
+    display: inline-block; /* FONDAMENTALE: sblocca la possibilità di ruotarla! */
+    transition: transform 0.3s ease; /* Rende la rotazione morbida */
+}
+
+/* Il sottomenu nascosto di default */
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Nascondiamo il sottomenu */
+}
+
+/* I link dentro il sottomenu */
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
+    background-color: #1a4f76;
+}
+
+/* =========================================
+   COMPORTAMENTO DESKTOP (PC) - Mouse Hover
+   ========================================= */
+@media (min-width: 769px) {
+    .dropdown-menu {
+        position: absolute;
+        top: 100%; /* Si posiziona esattamente sotto "ATTIVITÀ" */
+        left: 0;
+        background-color: #1a4f76;
+        min-width: 200px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        border-radius: 0 0 8px 8px; /* Arrotonda solo gli angoli inferiori */
+        overflow: hidden;
+        z-index: 1000;
+        
+        /* Animazione morbida (opzionale ma bella) */
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+        display: block; /* Lo mettiamo a block ma invisibile per l'animazione */
+        visibility: hidden;
+    }
+
+    /* Quando il mouse passa sopra il contenitore principale (.dropdown) */
+    .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Gira la freccetta all'insù */
+    .dropdown:hover .dropdown-toggle i {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu li a:hover {
+        background-color: var(--sfondo-sito, #f4f7f6);
+        color: var(--rosso-mattone, #b35235);
+    }
+}
+
+/* --- Responsive Design Generale --- */
+@media (max-width: 992px) {
+    .main-container { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    /* Responsive Header Menu (Se non gestito da navbar.css) */
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+    }
+    
+    .hamburger-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #1a4f76;
+    }
+    
+    #mainNav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: #b4ffff;
+        z-index: 1000;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    }
+    
+    #mainNav.open { right: 0; }
+    
+    #mainNav ul {
+        flex-direction: column;
+        padding: 60px 0 0 0;
+    }
+    
+    #mainNav ul li a {
+        color: #333;
+        border-bottom: 1px solid #0066ff;
+    }
+    
+    .close-nav-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+    
+    .cards-grid { grid-template-columns: 1fr; }
+    
+    .hero-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* 1. STATO DI BASE: Il sottomenu DEVE essere nascosto */
+    .dropdown-menu {
+        display: none !important; /* <-- LA MAGIA È QUI: forza la chiusura! */
+        background-color: #b4ffff;
+        padding-left: 0; 
+    }
+
+    .dropdown-menu li {
+        background-color: transparent !important; 
+    }
+
+    .dropdown-menu li a {
+        background-color: transparent !important; 
+        color: #333333 !important; 
+        padding: 12px 20px 12px 40px !important; 
+        border-bottom: 1px solid #e5e5e5 !important; 
+        font-size: 0.9rem; 
+        display: block; /* Assicura che i link prendano tutta la riga */
+    }
+    
+    /* 2. STATO ATTIVO: Mostra il menu SOLO quando tocchi la voce */
+    .dropdown.active .dropdown-menu {
+        display: block !important; /* Annulla il "none" di sopra */
+        position: static !important;
+    }
+    
+    /* Gira la freccetta */
+    .dropdown.active .dropdown-toggle i {
+        transform: rotate(180deg);
+    }
+}

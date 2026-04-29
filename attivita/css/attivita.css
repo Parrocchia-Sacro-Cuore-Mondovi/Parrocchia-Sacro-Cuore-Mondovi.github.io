@@ -1,0 +1,185 @@
+/* ============================================================
+   Stili Specifici per la Pagina Attività e Gruppi
+   ============================================================ */
+
+/* --- Resets e Stili Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Estensioni Hero (Eredita da main.css ma cambiamo immagine) --- */
+.hero-section.hero-attivita {
+    /* Suggerimento: Usa una foto della comunità/gruppi qui */
+    background-image: url('/attivita/img/attivita_bg.png'); 
+    background-position: center;
+}
+
+/* --- Estensioni Layout Principale --- */
+.main-container.container-attivita {
+    /* Manteniamo il layout stretto a destra come richiesto */
+    grid-template-columns: 3fr 1fr; 
+    gap: 3rem;
+}
+
+/* --- Blocco Introduzione --- */
+.intro-block {
+    margin-bottom: 3rem;
+    color: #444;
+}
+
+.intro-block h2 {
+    font-size: 1.8rem;
+    color: #1a4f76; /* Blu principale header per i titoli */
+    margin-bottom: 0.5rem;
+}
+
+.intro-block p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* --- Griglia dei Gruppi (Più densa della home) --- */
+.groups-grid {
+    display: grid;
+    /* 3 colonne su desktop, 2 su tablet, 1 su mobile */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* --- Stile Card Gruppo (Più piccola e orientata al testo) --- */
+.group-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none; /* È un link */
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Icona più piccola e allineata in alto a sinistra o centro */
+.group-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.group-card h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.group-card p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Spinge i meta-dati in basso */
+}
+
+/* Meta-dati (orario, luogo) */
+.group-meta {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 10px;
+}
+
+/* --- Riutilizzo Colori Card (coerenza con home) --- */
+.card-green { background-color: #8bc24a; }
+.card-purple { background-color: #8e44ad; }
+.card-orange { background-color: #f18c22; }
+
+/* --- Sidebar Specifiche --- */
+.groups-sidebar .widget-title {
+    color: #1a4f76;
+}
+
+.groups-sidebar .news-widget {
+    background-color: #b1f1f1;
+    border: 1px solid #5b9191;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Widget con testo allineato a destra come richiesto precedentemente */
+.groups-sidebar .featured-widget,
+.groups-sidebar .join-widget {
+    text-align: right;
+}
+
+.featured-widget .news-item h3 {
+    color: #b84d33; /* Usiamo il colore rosso mattone per evidenziare */
+}
+
+.featured-widget .news-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.featured-widget hr {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.join-widget p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    display: inline-block; /* Per allinearlo a destra */
+    margin-top: 10px;
+}
+
+/* --- Responsive Design Specifico --- */
+@media (max-width: 992px) {
+    /* Sidebar sotto la griglia se lo schermo è medio */
+    .main-container.container-attivita {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet */
+    }
+
+    .sidebar.groups-sidebar {
+        order: 1;
+    }
+    .attivita-main-content {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .groups-grid {
+        grid-template-columns: 1fr; /* 1 colonna su smartphone */
+    }
+    
+    .hero-section.hero-attivita {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

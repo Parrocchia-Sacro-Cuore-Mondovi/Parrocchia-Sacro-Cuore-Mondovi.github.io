@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attività e Gruppi - Parrocchia S.Cuore di Gesù</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/attivita/css/attivita.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="/canti/v2/img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
+        
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="/main.html">HOME</a></li>
+                <li><a href="/canti/v2/">CANTI</a></li>
+                <li class="dropdown">
+                    <a href="/attivita/" class="dropdown-toggle active">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    
+                    <!-- IL SOTTOMENU -->
+                    <ul class="dropdown-menu">
+                        <li><a href="/attivita/oratorio/">Oratorio</a></li>
+                        <li><a href="/attivita/campeggi/">Campeggi</a></li>
+                    </ul>
+                </li>
+                </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+    
+    <section class="hero-section hero-attivita">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>SCOPRI I NOSTRI<br>GRUPPI E ATTIVITÀ</h1>
+            <p>La nostra parrocchia è viva grazie all'impegno di tanti. Trova il gruppo adatto a te e unisciti alla nostra comunità.</p>
+        </div>
+    </section>
+
+    <main class="main-container container-attivita">
+        
+        <section class="attivita-main-content">
+            <!-- <div class="intro-block">
+                <h2>Crescere insieme nella fede e nel servizio</h2>
+                <p>Offriamo diverse opportunità di incontro, formazione e servizio per tutte le età, dai più piccoli agli adulti. Esplora le nostre categorie.</p>
+            </div> -->
+            <div class="groups-grid">
+                
+                <a href="/attivita/oratorio/" class="group-card card-green">
+                    <div class="group-icon"><i class="fa-solid fa-volleyball"></i></div>
+                    <h3>Oratorio</h3>
+                    <p>Oratorio settimanale per bambini e ragazzi.</p>
+                    <span class="group-meta"><i class="fa-regular fa-clock"></i> Sabato 14.30-18.00 + messa</span>
+                </a>
+
+                <a href="/attivita/campeggi/" class="group-card card-green">
+                    <div class="group-icon"><i class="fa-solid fa-campground"></i></div>
+                    <h3>Campeggi della Parrocchia</h3>
+                    <p>Partecipa anche tu ai campeggi per tutte le età.</p>
+                    <span class="group-meta"><i class="fa-regular fa-calendar-days"></i>Estate 2026</span>
+                </a>
+
+                <a href="#" class="group-card card-green card-disabled">
+                    <div class="group-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                    <h3>Festa Patronale</h3>
+                    <p>Descrizione.</p>
+                    <span class="group-meta"><i class="fa-regular fa-clock"></i> Venerdì 21:00</span>
+                </a>
+
+                <a href="#" class="group-card card-purple card-disabled">
+                    <div class="group-icon"><i class="fa-solid fa-people-roof"></i></i></div>
+                    <h3>Catechismo</h3>
+                    <p>Descrizione.</p>
+                    <span class="group-meta"><i class="fa-regular fa-calendar-days"></i> Prove: Martedì 21:00</span>
+                </a>
+
+                <a href="#" class="group-card card-purple card-disabled">
+                    <div class="group-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+                    <h3>Giovanissimi</h3>
+                    <p>Desc.</p>
+                    <span class="group-meta"><i class="fa-solid fa-user-plus"></i> Aperto a nuovi membri</span>
+                </a>
+
+                <a href="#" class="group-card card-orange card-disabled">
+                    <div class="group-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Raccolta Fondi</h3>
+                    <p>Desc.</p>
+                    <span class="group-meta"><i class="fa-solid fa-location-dot"></i> Sede parrocchiale</span>
+                </a>
+
+            </div> 
+        </section>
+
+        <aside class="sidebar groups-sidebar">
+            <div class="featured-widget news-widget">
+                <h2 class="widget-title">IN EVIDENZA (WIP)</h2>
+                <div class="news-item">
+                    <h3>Iscrizioni Catechismo 2024/25</h3>
+                    <p>Aperte le iscrizioni per il nuovo anno pastorale. Moduli disponibili in segreteria.</p>
+                    <span class="news-date">Scadenza: 15 Settembre</span>
+                </div>
+            </div>
+
+            <div class="join-widget news-widget">
+                <h2 class="widget-title">VUOI UNIRTI? (WIP)</h2>
+                <p>Sei interessato a un gruppo o vuoi proporre una nuova attività?</p>
+                <p>Contatta la segreteria parrocchiale o parla direttamente con il Parroco dopo le celebrazioni.</p>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" class="btn-primary btn-sm">Contattaci</a>
+            </div>
+
+        </aside>
+
+    </main>
+    <script src="/js/header.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrocchia S.Cuore di Gesù - Mondovì</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="/canti/v2/img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
+        
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="/main.html" class="active">HOME</a></li>
+                <li><a href="/canti/v2/">CANTI</a></li>
+                <li class="dropdown">
+                    <a href="/attivita/" class="dropdown-toggle">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    
+                    <!-- IL SOTTOMENU -->
+                    <ul class="dropdown-menu">
+                        <li><a href="/attivita/oratorio/">Oratorio</a></li>
+                        <li><a href="/attivita/campeggi/">Campeggi</a></li>
+                    </ul>
+                </li>
+                </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>BENVENUTI NELLA<br>NOSTRA COMUNITÀ</h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur <br> elit, sed do eiusmod tempor.</p> -->
+            <!-- <button class="btn-primary">SCOPRI DI PIU</button> -->
+        </div>
+    </section>
+
+    <main class="main-container">
+        <section class="cards-grid">
+            <div class="card card-orari">
+                <div class="orari-content">
+                    <h2 class="orari-title">ORARI SANTE MESSE</h2>
+                    <ul class="orari-list">
+                        <li>
+                            <span class="orari-day">Lunedì</span>
+                            <span class="orari-time">Santuario - 15:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Martedì</span>
+                            <span class="orari-time">Parrocchia - 10:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Mercoledì</span>
+                            <span class="orari-time">Parrocchia - 18:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Giovedì</span>
+                            <span class="orari-time">Parrocchia - 18:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Venerdì</span>
+                            <span class="orari-time">Santuario - 18:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Sabato</span>
+                            <span class="orari-time">Parrocchia - 10:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Domenica</span>
+                            <span class="orari-time">Parrocchia - 10:30</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="orari-footer">
+                    <a href="#">Orari sante messe <i class="fa-solid fa-caret-right"></i></a>
+                </div> -->
+            </div>
+
+            <a href="/attivita/" class="card card-green">
+                <i class="fa-solid fa-users card-icon"></i>
+                <h2>ATTIVITÀ & GRUPPI</h2>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> -->
+            </a>
+
+            <a href="/canti/v2/" class="card card-purple">
+                <i class="fa-solid fa-hands-praying card-icon"></i>
+                <h2>Canti per le<br>celebrazioni</h2>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p> -->
+            </a>
+
+            <a href="#" class="card card-orange card-disabled">
+                <i class="fa-solid fa-hand-holding-heart card-icon"></i>
+                <h2>DONAZIONI &<br>VOLONTARIATO</h2>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p> -->
+            </a>
+        </section>
+
+        <aside class="sidebar">
+            <div class="news-widget">
+                <h2 class="widget-title">ULTIME NOTIZIE</h2>
+                
+                <div id="newsGrid">
+                    
+                </div>
+                <div class="pagination-container" id="paginationControls">
+                    <button id="prevLocandine" class="pag-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="nextLocandine" class="pag-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/news.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,16 +1,16 @@
-﻿# Alleluia, celebrate il Signore - Cioffi
-
----
-momento: alleluia
-messe:
-- comunioni
----
-
-[Intro: MI  SI  DO#-  SI  LA  SI / MI]
-
-**Rit.
-Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,
-alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.**
-
-Cele[LA]brate il Si[SI]gnore perché è [DO#-]buono,
-perché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**
+﻿# Alleluia, celebrate il Signore - Cioffi
+
+---
+momento: alleluia
+messe:
+- comunioni
+---
+
+[Intro: MI  SI  DO#-  SI  LA  SI / MI]
+
+**Rit.
+Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,
+alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.**
+
+Cele[LA]brate il Si[SI]gnore perché è [DO#-]buono,
+perché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**

@@ -1,0 +1,135 @@
+/* --- Resets e Stili Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Nuovo Layout "Dashboard" --- */
+.main-container {
+    display: flex;               /* Annulla la vecchia griglia a due colonne */
+    flex-direction: column;      /* Impila tutto verticalmente */
+    gap: 3rem;                   /* Spazio tra la Hero, il Banner e le Card */
+    padding: 3rem 5%;            /* Margini ai lati (5%) per non attaccarsi ai bordi del monitor */
+    width: 100%;                 /* Forza a prendere tutta la larghezza */
+    max-width: 1400px;           /* Limite massimo per schermi giganti (puoi toglierlo se vuoi che si allarghi all'infinito) */
+    margin: 0 auto;              /* Centra il tutto */
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spazio verticale tra Hero, Immagine e Griglia bottoni */
+}
+
+/* --- Hero trasformata in Card --- */
+.hero-card {
+    position: relative;
+    border-radius: 16px; /* Angoli arrotondati come le altre card */
+    overflow: hidden;
+    min-height: 350px; /* Altezza dinamica come avevamo detto */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 40px; /* Padding interno invece che % per non sballare il testo */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombra per staccarla dallo sfondo */
+}
+
+/* --- Background Imgs */
+/* .hero-card.elementari {
+    background-image: url('/attivita/campeggi/img/elementari_bg.png');
+} */
+/* .hero-card.medie {
+    background-image: url('/attivita/campeggi/img/medie_bg.png');
+} */
+/* .hero-card.giovanissimi {
+    background-image: url('/attivita/campeggi/img/giovanissimi_bg.png');
+} */
+
+.hero-card .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    z-index: 1;
+}
+
+.hero-card .hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.hero-content h1 { 
+    font-size: 2.2rem; 
+    margin-bottom: 1rem; 
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* --- Seconda Immagine (Locandina) --- */
+.banner-locandina {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra la locandina nello schermo */
+    align-items: center;
+}
+
+.banner-locandina img {
+    max-width: 100%; /* Fondamentale: impedisce alla foto di uscire dallo schermo sui cellulari */
+    width: 80%; /* Larghezza ideale per PC (puoi aumentarla o diminuirla a piacere) */
+    height: auto; /* LA MAGIA: calcola l'altezza da sola senza tagliare nulla! */
+    border-radius: 16px; /* Mantiene gli angoli arrotondati coerenti col sito */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Aggiunge una bella ombra */
+}
+
+/* --- Separatore Elegante --- */
+.elegant-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #b35235; /* Usa l'arancione/rosso scuro dei tuoi bottoni */
+    font-size: 1.2rem;
+    margin: 40px 0; /* Spazio: 40px sopra e 40px sotto il separatore */
+    width: 100%;
+}
+
+/* Crea la linea di SINISTRA */
+.elegant-separator::before {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #34abeb; /* Colore grigio chiaro per la linea */
+    margin-right: 20px; /* Spazio tra la linea e l'icona */
+}
+
+/* Crea la linea di DESTRA */
+.elegant-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #34abeb;
+    margin-left: 20px; /* Spazio tra l'icona e la linea */
+}
+
+/* --- Adattamento per i Cellulari --- */
+@media (max-width: 992px) {
+    .main-container.dashboard-layout {
+        grid-template-columns: 1fr; /* Torna a colonna singola */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Decidiamo l'ordine su mobile: prima i contenuti visivi, poi le news? */
+    .content-area { order: 1; }
+    .elegant-separator { order: 2; }
+
+    
+    .hero-card { padding: 30px 20px; }
+    .hero-content h1 { font-size: 1.8rem; }
+}

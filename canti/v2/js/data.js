@@ -1,47 +1,47 @@
 const datiParrocchialiSalvati = {
-    "momenti": [
-        { "id": "ingresso", "nome": "Ingresso", "ordine": 1 },
-        { "id": "gloria", "nome": "Gloria", "ordine": 2 },
-        { "id": "alleluia", "nome": "Alleluia", "ordine": 3 },
-        { "id": "offertorio", "nome": "Offertorio", "ordine": 4 },
-        { "id": "santo", "nome": "Santo", "ordine": 5 },
-        { "id": "pace", "nome": "Pace", "ordine": 6 },
-        { "id": "comunione", "nome": "Comunione", "ordine": 7 },
-        { "id": "fine", "nome": "Fine", "ordine": 8 },
-        { "id": "adorazione", "nome": "Adorazione", "ordine": 9 },
-        { "id": "cresime", "nome": "Cresime", "ordine": 10 },
-        { "id": "funerali", "nome": "Funerali", "ordine": 11 },
-        { "id": "matrimoni", "nome": "Matrimoni", "ordine": 12 },
-        { "id": "pasqua", "nome": "Tempo Pasquale", "ordine": 13 },
-        { "id": "quaresima", "nome": "Quaresima", "ordine": 14 },
-        { "id": "natale", "nome": "Tempo di Natale", "ordine": 15 },
-        { "id": "mariani", "nome": "Canti Mariani", "ordine": 16 },
-        { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
-        { "id": "v1", "nome": "Venerdì Santo", "ordine": 18, "nascosto": true },
-        { "id": "v2", "nome": "Venerdì Santo", "ordine": 19, "nascosto": true },
-        { "id": "v3", "nome": "Venerdì Santo", "ordine": 20, "nascosto": true },
-        { "id": "s1", "nome": "Sabato Santo", "ordine": 21, "nascosto": true },
-        { "id": "s2", "nome": "Sabato Santo", "ordine": 22, "nascosto": true },
-        { "id": "s3", "nome": "Sabato Santo", "ordine": 23, "nascosto": true },
-        { "id": "s4", "nome": "Sabato Santo", "ordine": 24, "nascosto": true },
-        { "id": "s5", "nome": "Sabato Santo", "ordine": 25, "nascosto": true },
-        { "id": "s6", "nome": "Sabato Santo", "ordine": 26, "nascosto": true },
-        { "id": "s7", "nome": "Sabato Santo", "ordine": 27, "nascosto": true },
-        { "id": "s8", "nome": "Sabato Santo", "ordine": 28, "nascosto": true },
-        { "id": "s9", "nome": "Sabato Santo", "ordine": 29, "nascosto": true },
-        { "id": "s10", "nome": "Sabato Santo", "ordine": 30, "nascosto": true },
-        { "id": "s11", "nome": "Sabato Santo", "ordine": 31, "nascosto": true },
-        { "id": "s12", "nome": "Sabato Santo", "ordine": 32, "nascosto": true },
-        { "id": "s13", "nome": "Sabato Santo", "ordine": 33, "nascosto": true },
-        { "id": "s14", "nome": "Sabato Santo", "ordine": 34, "nascosto": true },
-    ],
-    "messe": [
-        { "id": "gSanto", "nome": "Giovedì Santo" },
-        { "id": "vSanto", "nome": "Venerdì Santo" },
-        { "id": "sSanto", "nome": "Sabato Santo" },
-        { "id": "comunioni", "nome": "Comunioni" }
-    ],
-    "canti": [
+            "momenti": [
+                { "id": "ingresso", "nome": "Ingresso", "ordine": 1 },
+                { "id": "gloria", "nome": "Gloria", "ordine": 2 },
+                { "id": "alleluia", "nome": "Alleluia", "ordine": 3 },
+                { "id": "offertorio", "nome": "Offertorio", "ordine": 4 },
+                { "id": "santo", "nome": "Santo", "ordine": 5 },
+                { "id": "pace", "nome": "Pace", "ordine": 6 },
+                { "id": "comunione", "nome": "Comunione", "ordine": 7 },
+                { "id": "fine", "nome": "Fine", "ordine": 8 },
+                { "id": "adorazione", "nome": "Adorazione", "ordine": 9 },
+                { "id": "cresime", "nome": "Cresime", "ordine": 10 },
+                { "id": "funerali", "nome": "Funerali", "ordine": 11 },
+                { "id": "matrimoni", "nome": "Matrimoni", "ordine": 12 },
+                { "id": "pasqua", "nome": "Tempo Pasquale", "ordine": 13 },
+                { "id": "quaresima", "nome": "Quaresima", "ordine": 14 },
+                { "id": "natale", "nome": "Tempo di Natale", "ordine": 15 },
+                { "id": "mariani", "nome": "Canti Mariani", "ordine": 16 },
+                { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
+                { "id": "v1", "nome": "Venerdì Santo", "ordine": 18, "nascosto": true },
+                { "id": "v2", "nome": "Venerdì Santo", "ordine": 19, "nascosto": true },
+                { "id": "v3", "nome": "Venerdì Santo", "ordine": 20, "nascosto": true },
+                { "id": "s1", "nome": "Sabato Santo", "ordine": 21, "nascosto": true },
+                { "id": "s2", "nome": "Sabato Santo", "ordine": 22, "nascosto": true },
+                { "id": "s3", "nome": "Sabato Santo", "ordine": 23, "nascosto": true },
+                { "id": "s4", "nome": "Sabato Santo", "ordine": 24, "nascosto": true },
+                { "id": "s5", "nome": "Sabato Santo", "ordine": 25, "nascosto": true },
+                { "id": "s6", "nome": "Sabato Santo", "ordine": 26, "nascosto": true },
+                { "id": "s7", "nome": "Sabato Santo", "ordine": 27, "nascosto": true },
+                { "id": "s8", "nome": "Sabato Santo", "ordine": 28, "nascosto": true },
+                { "id": "s9", "nome": "Sabato Santo", "ordine": 29, "nascosto": true },
+                { "id": "s10", "nome": "Sabato Santo", "ordine": 30, "nascosto": true },
+                { "id": "s11", "nome": "Sabato Santo", "ordine": 31, "nascosto": true },
+                { "id": "s12", "nome": "Sabato Santo", "ordine": 32, "nascosto": true },
+                { "id": "s13", "nome": "Sabato Santo", "ordine": 33, "nascosto": true },
+                { "id": "s14", "nome": "Sabato Santo", "ordine": 34, "nascosto": true },
+            ],
+            "messe": [
+                { "id": "gSanto", "nome": "Giovedì Santo" },
+                { "id": "vSanto", "nome": "Venerdì Santo" },
+                { "id": "sSanto", "nome": "Sabato Santo" },
+                { "id": "comunioni", "nome": "Comunioni" }
+            ],
+            "canti": [
     {
         "titolo": "A te vorrei dire",
         "momento": "comunione",
@@ -124,7 +124,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\r\n\r\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\r\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\r\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
+        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\n\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
     },
     {
         "titolo": "Altissimo",
@@ -262,7 +262,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-        "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\r\n\r\n> Rit.\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\r\nTu ci chia[SOL]mi, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nalla men[SOL]sa [RE]\r\nche ac[LA]coglie. [SI-7]\r\nSei paro[SOL]la,\r\n[RE]pane del no[LA]stro cammi[SI-7]no,\r\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\r\n\r\nNoi veni[SOL]amo, [RE]\r\nSi[LA/DO]gnore, [SI-7]\r\nper tro[SOL]varTi [RE]\r\ne a[LA]marTi. [SI-7]\r\nNoi fra[SOL]telli,\r\n[RE]noi una so[LA]la fami[SI-7]glia,\r\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\r\n\r\n> Rit. (con alzata)\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
+        "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\n\n> Rit.\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\nTu ci chia[SOL]mi, [RE]\nSi[LA/DO]gnore, [SI-7]\nalla men[SOL]sa [RE]\nche ac[LA]coglie. [SI-7]\nSei paro[SOL]la,\n[RE]pane del no[LA]stro cammi[SI-7]no,\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\n\nNoi veni[SOL]amo, [RE]\nSi[LA/DO]gnore, [SI-7]\nper tro[SOL]varTi [RE]\ne a[LA]marTi. [SI-7]\nNoi fra[SOL]telli,\n[RE]noi una so[LA]la fami[SI-7]glia,\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\n\n> Rit. (con alzata)\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
     },
     {
         "titolo": "Ecco quel che abbiamo",
@@ -741,4 +741,4 @@ const datiParrocchialiSalvati = {
         "testo_md": "Tutte le stelle della notte,\nle nebulose le comete,\nil sole su una ragnatela:\nè tutto vostro e voi siete di Dio.\n\nTutte le rose della vita,\nil grano i prati i fili d’erba,\nil mare i fiumi le montagne:\nè tutto vostro e voi siete di Dio.\n\nTutte le musiche e le danze,\ni grattacieli le astronavi,\ni quadri i libri le culture:\nè tutto vostro e voi siete di Dio.\n\nTutte le volte che perdono,\nquando sorrido e quando piango,\nquando mi accorgo di chi sono:\nè tutto vostro e voi siete di Dio,\nè tutto nostro e noi siamo di Dio."
     }
 ]
-};
+        };

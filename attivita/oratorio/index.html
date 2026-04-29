@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attività e Gruppi - Parrocchia S.Cuore di Gesù</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/attivita/oratorio/css/style.css">
+
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="/canti/v2/img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
+        
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="/main.html">HOME</a></li>
+                <li><a href="/canti/v2/">CANTI</a></li>
+                <li class="dropdown">
+                    <a href="/attivita/" class="dropdown-toggle active">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    
+                    <!-- IL SOTTOMENU -->
+                    <ul class="dropdown-menu">
+                        <li><a href="/attivita/oratorio/" class="active">Oratorio</a></li>
+                        <li><a href="/attivita/campeggi/">Campeggi</a></li>
+                    </ul>
+                </li>
+                </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+    
+    <section class="hero-section hero-oratorio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>oratorio<br>altipiano</h1>
+            <p>Un luogo per crescere, giocare e sognare insieme. <br> Partecipa anche tu!</p>
+        </div>
+    </section>
+
+    <main class="main-container">
+        
+        <!-- Sezione di sinistra: Box Orizzontali -->
+        <section class="cards-section">
+            
+            <div class="card horizontal-card card-red">
+                <div class="card-icon-container">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="card-text-content">
+                    <h3>PROSSIMI EVENTI ORATORIALI</h3>
+                    
+                    <div class="event-list" id="event-list">
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Card 1: Grande Orizzontale (In Evidenza) -->
+            <!-- <div class="card horizontal-card card-purple">
+                <div class="card-icon-container">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="card-text-content">
+                    <h3>IN EVIDENZA: FESTA DELL'ORATORIO</h3>
+                    <p>Ti aspettiamo domenica prossima per una giornata all'insegna del gioco, della preghiera e della condivisione. Non mancare al grande pranzo comunitario in cortile!</p>
+                    <a href="#" class="btn-action">Scopri il programma</a>
+                </div>
+            </div> -->
+
+            <!-- Card 2: Iscrizioni Attive con Menù a comparsa -->
+            <div class="card horizontal-card card-green" id="card-iscrizioni">
+                <!-- Intestazione cliccabile -->
+                <div class="card-header" id="toggle-iscrizioni">
+                    <div class="header-left">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <div class="header-title">
+                            <h3>ISCRIZIONI ATTIVE</h3>
+                            <p>Clicca qui per visualizzare gli eventi aperti</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon" id="iscrizioni-expand"></i>
+                </div>
+
+                <!-- Menù a tendina (nascosto di default) -->
+                <div class="iscrizioni-menu" id="menu-iscrizioni">
+                    <ul class="iscrizioni-list" id="iscrizioni-list">
+                        <li>
+                            <div class="iscrizione-info">
+                                <h4>Cena Condivisa di Fine Mese</h4>
+                                <span><i class="fa-regular fa-calendar"></i> Sabato 30 Novembre - Salone Oratorio</span>
+                            </div>
+                            <a href="#" class="btn-iscriviti">Iscriviti</a>
+                        </li>
+                        <li>
+                            <div class="iscrizione-info">
+                                <h4>Gita in Montagna (Gruppo Medie)</h4>
+                                <span><i class="fa-regular fa-calendar"></i> Domenica 8 Dicembre - Partenza ore 7:30</span>
+                            </div>
+                            <a href="#" class="btn-iscriviti">Iscriviti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sezione di destra: Sidebar Locandine -->
+        <aside class="sidebar-locandine">
+            <h2>LE NOSTRE<br>LOCANDINE</h2>
+            
+            <div class="locandine-grid" id="locandineGrid">
+
+            </div>
+            <div class="pagination-container" id="paginationControls">
+                <button id="prevLocandine" class="pag-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="nextLocandine" class="pag-btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </aside>
+
+    </main>
+    <!-- Modale per ingrandire le locandine -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="enlargedImg">
+    </div>
+    <script src="/js/header.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

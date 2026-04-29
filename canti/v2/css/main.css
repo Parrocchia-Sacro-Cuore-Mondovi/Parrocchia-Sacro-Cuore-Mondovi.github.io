@@ -5,42 +5,45 @@
     --text-dark: #333;
     --text-light: #666;
     --bg-body: #f8f9fc;
-    --bg-white: #ffffff;
+    /* --bg-white: #b4ffff; */
+    --bg-white: white;
     --border-color: #e0e0e0;
 }
 
+/* --- Resets e Stili Base --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: var(--bg-body);
-    color: var(--text-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    /* background-color: #b4ffff; */
 }
 
-/* --- Header --- */
-header {
-    background-color: var(--bg-white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    border-bottom: 2px solid #b3d4ff;
+/* Barra di ricerca */
+.search-bar { position: relative; }
+.search-bar input {
+    padding: 0.6rem 1rem 0.6rem 2.5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-family: 'Inter', sans-serif;
+    /* background-color: #b4ffff; */
+}
+.search-bar i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    /* background-color: #b4ffff; */
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-icon {
-    font-size: 40px;
-    color: var(--primary-blue);
-}
 
 /* --- Layout Principale --- */
 .container {
@@ -143,28 +146,6 @@ header {
 
 .content-header h2 {
     font-size: 22px;
-}
-
-.search-bar {
-    position: relative;
-    width: 300px;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 10px 15px 10px 35px;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    font-size: 14px;
-    outline: none;
-}
-
-.search-bar i {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-light);
 }
 
 /* --- Lista Canti --- */
@@ -281,11 +262,6 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: 12px;
-}
-
-.logo-parrocchia {
-    height: 50px;
-    width: auto;
 }
 
 .song-card {
@@ -407,6 +383,7 @@ footer {
     .sidebar.show-mobile {
         opacity: 1;
         visibility: visible;
+        /* background-color: #b4ffff; */
     }
 
     .close-sidebar-btn {
@@ -429,80 +406,7 @@ footer {
     }
 }
 
-/* NAVBAR da mobile*/
-/* --- Desktop: Nascondi i bottoni mobile --- */
-.hamburger-btn, .close-nav-btn {
-    display: none;
-}
 
-/* --- Mobile (Max 768px) --- */
-@media (max-width: 768px) {
-    .hamburger-btn {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: var(--text-dark);
-        cursor: pointer;
-    }
-
-    /* Trasformazione del NAV in Sidebar */
-    nav {
-        position: fixed;
-        top: 0;
-        right: -300px; /* Nasconde la sidebar a destra */
-        width: 280px;
-        height: 100vh;
-        background-color: #5476ff;
-        z-index: 1001; /* Sopra a tutto */
-        transition: right 0.3s ease-in-out;
-        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-        padding: 60px 20px;
-    }
-
-    nav.nav-open {
-        right: 0; 
-    }
-
-    nav ul {
-        flex-direction: column; /* Lista verticale */
-        gap: 20px;
-    }
-
-    nav a {
-        font-size: 18px;
-        display: block;
-        padding: 10px 0;
-    }
-
-    /* Bottone di chiusura dentro la sidebar */
-    .close-nav-btn {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    /* Overlay scuro dietro la sidebar */
-    .nav-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba(0,0,0,0.5);
-        z-index: 1000;
-    }
-
-    .nav-overlay.active {
-        display: block;
-    }
-}
 
 /* --- BOTTONI --- */
 .btn-chord {
@@ -687,7 +591,7 @@ footer {
     top: 0;
     
     /* ATTENZIONE QUI: usiamo --bg-body così ha lo stesso colore dello sfondo e copre i canti che scorrono sotto! */
-    background-color: var(--bg-body); 
+    background-color: white; 
     z-index: 10;
     
     padding: 10px 5px 5px 5px;
@@ -695,6 +599,7 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* background-color: #b4ffff; */
 }
 
 .letter-separator { color: var(--primary-blue); border-bottom: 2px solid var(--primary-blue); }
@@ -789,4 +694,16 @@ footer {
 /* Evitiamo che scrivendo una parola lunga, il testo vada a finire sotto l'icona */
 .search-bar input {
     padding-right: 45px !important; 
+}
+
+#reset-filters {
+    display: none; 
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 15px;
+    border-radius: 6px; 
+    /* border: 1px solid var(--primary-blue); 
+    background: #b4ffff;  */
+    color: var(--primary-blue); 
+    cursor: pointer;
 }

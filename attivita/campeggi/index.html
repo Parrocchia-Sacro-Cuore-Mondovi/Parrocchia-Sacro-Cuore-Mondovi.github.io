@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Campeggi - S.Cuore Mondovì</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/attivita/campeggi/css/campeggi.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="/canti/v2/img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
+        
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="/main.html">HOME</a></li>
+                <li><a href="/canti/v2/">CANTI</a></li>
+                <li class="dropdown">
+                    <a href="/attivita/" class="dropdown-toggle active">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    
+                    <!-- IL SOTTOMENU -->
+                    <ul class="dropdown-menu">
+                        <li><a href="/attivita/oratorio/">Oratorio</a></li>
+                        <li><a href="/attivita/campeggi/" class="active">Campeggi</a></li>
+                    </ul>
+                </li>
+                </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="content-area elementari">
+            <section class="hero-card elementari">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>CAMPEGGIO<br>ELEMENTARI</h1>
+                    <p>
+                        Rivolto ai bambini dalla seconda alla quarta elementare <br><br>
+                        <strong>Dal 29 giugno al 5 luglio 2026</strong>
+                    </p>
+                    <!-- <button class="btn-primary">SCOPRI DI PIÙ</button> -->
+                </div>
+            </section>
+            <!-- Locandina-->
+            <div class="banner-locandina">
+                <img src="/attivita/campeggi/img/elementari_locandina.png_nope" alt="Locandina Campeggio Elementari">
+            </div>
+
+            <!-- Griglia dei bottoni (sotto le due immagini) -->
+            <section class="cards-grid">
+                <!-- Inserisci qui le tue 4 card (Orari, Attività, Sacramenti, Donazioni) -->
+                <!-- Esempio: -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" class="card card-green">
+                    <i class="fa-solid fa-camera card-icon"></i>
+                    <h2>Foto 2024</h2>
+                    <p>Dai un'occhiata alle foto del campeggio</p>
+                </a>
+                <a href="#" class="card card-purple">
+                    <i class="fa-solid fa-clipboard card-icon"></i>
+                    <h2>Iscrizioni 2026</h2>
+                    <p>Partecipa anche tu al campeggio!</p>
+                </a>
+            </section>
+            <div class="elegant-separator">
+                <i class="fa-solid fa-cross"></i>
+            </div>  
+        </div>
+        
+        <div class="content-area medie">
+            <section class="hero-card medie">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Campeggio<br>MEDIE</h1>
+                    <p>
+                        Rivolto ai bambini dalla quinta elementare alla seconda media <br><br>
+                        <strong>Dal 20 al 26 luglio 2026</strong>
+                    </p>
+                    <!-- <button class="btn-primary">SCOPRI DI PIÙ</button> -->
+                </div>
+            </section>
+            <!-- Locandina-->
+            <div class="banner-locandina">
+                <!-- Inserisci qui il percorso della tua locandina verticale -->
+                <img src="/attivita/campeggi/img/medie_locandina.png" alt="Locandina Campeggio Medie">
+            </div>
+
+            <!-- Griglia dei bottoni (sotto le due immagini) -->
+            <section class="cards-grid">
+                <!-- Inserisci qui le tue 4 card (Orari, Attività, Sacramenti, Donazioni) -->
+                <!-- Esempio: -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" class="card card-green">
+                    <i class="fa-solid fa-camera card-icon"></i>
+                    <h2>Foto 2025</h2>
+                    <p>Dai un'occhiata alle foto del campeggio</p>
+                </a>
+                <a href="#" class="card card-purple card-disabled">
+                    <i class="fa-solid fa-clipboard card-icon"></i>
+                    <h2>Iscrizioni 2026</h2>
+                    <p>Partecipa anche tu al campeggio!</p>
+                </a>
+            </section>
+            <div class="elegant-separator">
+                <i class="fa-solid fa-cross"></i>
+            </div>  
+        </div>
+        
+        <div class="content-area giovanissimi">
+            <section class="hero-card giovanissimi">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Campeggio<br>Giovanissimi</h1>
+                    <p>
+                        Rivolto ai ragazzi dalla terza media alla quinta superiore <br><br>
+                        <strong>Dal 26 luglio al 2 agosto 2026</strong>
+                    </p>
+                    <!-- <button class="btn-primary">SCOPRI DI PIÙ</button> -->
+                </div>
+            </section>
+            <!-- Locandina-->
+            <div class="banner-locandina">
+                <!-- Inserisci qui il percorso della tua locandina verticale -->
+                <img src="/attivita/img/campeggi/giovanissimi_locandina.png" alt="Locandina Campeggio Giovanissimi">
+            </div>
+
+            <!-- Griglia dei bottoni (sotto le due immagini) -->
+            <section class="cards-grid">
+                <!-- Inserisci qui le tue 4 card (Orari, Attività, Sacramenti, Donazioni) -->
+                <!-- Esempio: -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" class="card card-green">
+                    <i class="fa-solid fa-camera card-icon"></i>
+                    <h2>Foto 2025</h2>
+                    <p>Dai un'occhiata alle foto del campeggio</p>
+                </a>
+                <a href="#" class="card card-purple card-disabled">
+                    <i class="fa-solid fa-clipboard card-icon"></i>
+                    <h2>Iscrizioni 2026</h2>
+                    <p>Partecipa anche tu al campeggio!</p>
+                </a>
+            </section>
+            <div class="elegant-separator">
+                <i class="fa-solid fa-cross"></i>
+            </div>  
+        </div>
+
+    </main>
+
+    <script src="/js/header.js"></script>
+</body>
+</html>

@@ -1,37 +1,37 @@
-﻿# È un giorno di festa - Cioffi
-
----
-momento: ingresso
-messe:
-- comunioni
----
-
-[Intro: MI-7  RE/FA#  SOL/LA  LA]
-
-**Rit.
-[LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]
-can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]
-È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]
-sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]**
-
-Tu ci chia[SOL]mi, [RE]
-Si[LA/DO]gnore, [SI-7]
-alla men[SOL]sa [RE]
-che ac[LA]coglie. [SI-7]
-Sei paro[SOL]la,
-[RE]pane del no[LA]stro cammi[SI-7]no,
-[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**
-
-Noi veni[SOL]amo, [RE]
-Si[LA/DO]gnore, [SI-7]
-per tro[SOL]varTi [RE]
-e a[LA]marTi. [SI-7]
-Noi fra[SOL]telli,
-[RE]noi una so[LA]la fami[SI-7]glia,
-[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**
-
-**Rit. (con alzata)
-È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,
-can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]
-È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]
-sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]**
+﻿# È un giorno di festa - Cioffi
+
+---
+momento: ingresso
+messe:
+- comunioni
+---
+
+[Intro: MI-7  RE/FA#  SOL/LA  LA]
+
+**Rit.
+[LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]
+can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]
+È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]
+sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]**
+
+Tu ci chia[SOL]mi, [RE]
+Si[LA/DO]gnore, [SI-7]
+alla men[SOL]sa [RE]
+che ac[LA]coglie. [SI-7]
+Sei paro[SOL]la,
+[RE]pane del no[LA]stro cammi[SI-7]no,
+[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**
+
+Noi veni[SOL]amo, [RE]
+Si[LA/DO]gnore, [SI-7]
+per tro[SOL]varTi [RE]
+e a[LA]marTi. [SI-7]
+Noi fra[SOL]telli,
+[RE]noi una so[LA]la fami[SI-7]glia,
+[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**
+
+**Rit. (con alzata)
+È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,
+can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]
+È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]
+sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]**

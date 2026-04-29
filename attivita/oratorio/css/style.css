@@ -1,0 +1,410 @@
+/* Stili Generali e Container Principale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b4ffff; /* Colore di sfondo azzurro chiaro */
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Griglia dei Box (Cards) */
+.cards-section {
+    flex: 1; /* Occupa il 66% dello spazio rispetto alla sidebar */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Spazio tra le card orizzontali */
+}
+
+.card {
+    border-radius: 12px;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Colori Specifici delle Card */
+.card-red { background-color: #b35945; }
+.card-green { background-color: #8bbf4a; }
+.card-purple { background-color: #8e47b3; }
+.card-orange { background-color: #f28f30; }
+
+.hero-section.hero-oratorio {
+    /* Suggerimento: Usa una foto della comunità/gruppi qui */
+    /* background-image: url('/attivita/oratorio/img/oratorio_bg.png');  */
+    background-position: center;
+}
+.hero-content h1 {
+    text-transform: uppercase;
+}
+
+/* --- Stili Navigazione Locandine --- */
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #1a4d66;
+}
+
+.pag-btn {
+    background-color: white;
+    border: 2px solid #1a4d66;
+    color: #1a4d66;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pag-btn:hover {
+    background-color: #1a4d66;
+    color: white;
+    transform: scale(1.1);
+}
+
+.pag-btn:disabled {
+    opacity: 0.3; /* Rende il bottone semi-trasparente */
+    cursor: default; /* Cambia il cursore per far capire che non è cliccabile */
+    border-color: #999; /* Opzionale: grigetto per il bordo */
+    color: #999; /* Opzionale: grigetto per l'icona */
+    box-shadow: none; /* Toglie l'ombra */
+    transform: none; /* Evita che si ingrandisca anche se ci passi sopra */
+}
+/* Animazione per il cambio pagina */
+.locandina-item.fade-in {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Stili per le Card Orizzontali --- */
+.horizontal-card {
+    display: flex;
+    flex-direction: row; /* Elementi affiancati */
+    align-items: center;
+    text-align: left;
+    padding: 0; /* Tolgo il padding generale per gestirlo internamente */
+    overflow: hidden; /* Mantiene gli angoli arrotondati */
+}
+
+/* Specifico per la Card 1 (In Evidenza) */
+.card-icon-container {
+    padding: 40px;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text-content {
+    padding: 30px;
+    flex: 1;
+}
+
+.card-text-content h3 { margin-top: 0; }
+.card-text-content p { margin-bottom: 20px; font-size: 1.05rem; }
+
+.btn-action {
+    display: inline-block;
+    background-color: white;
+    color: #8e47b3; /* Colore viola che richiama la card */
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-action:hover { background-color: #f0f0f0; }
+
+/* Specifico per la Card 2 (Iscrizioni - Verde) */
+#card-iscrizioni {
+    flex-direction: column; /* Impila l'header e il menu */
+    align-items: stretch;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-header:hover { background: rgba(0,0,0,0.05); }
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-left i { font-size: 2.5rem; }
+.header-title h3 { margin: 0; }
+.header-title p { margin: 5px 0 0 0; font-size: 0.9rem; opacity: 0.9; }
+
+.toggle-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease; /* Animazione rotazione freccia */
+}
+
+.toggle-icon.ruotata { transform: rotate(180deg); }
+
+/* Menù a tendina Iscrizioni */
+.iscrizioni-menu {
+    max-height: 0; /* Nascosto di default */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; /* Animazione di apertura */
+    background-color: #f9f9f9; /* Sfondo chiaro per contrastare col verde */
+    color: #333;
+}
+
+.iscrizioni-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.iscrizioni-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.iscrizioni-list li:last-child { border-bottom: none; }
+
+.iscrizione-info h4 { margin: 0 0 5px 0; font-size: 1.1rem; color: #1a4d66; }
+.iscrizione-info span { font-size: 0.85rem; color: #666; }
+
+.btn-iscriviti {
+    background-color: #8bbf4a; /* Verde per richiamare la sezione */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-iscriviti:hover { background-color: #76a33f; }
+
+/* Adattamento per mobile */
+@media (max-width: 768px) {
+    .horizontal-card { flex-direction: column; text-align: center; }
+    .card-icon-container { width: 100%; padding: 20px; box-sizing: border-box;}
+    .iscrizioni-list li { flex-direction: column; align-items: flex-start; gap: 15px; }
+}
+
+/* Stili specifici per la lista eventi (Card Rossa) */
+.event-list {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.event-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 10px;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+}
+
+.event-date strong { font-size: 1.4rem; }
+.event-date span { font-size: 0.8rem; opacity: 0.9; }
+
+.event-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-desc strong { font-size: 1rem; margin-bottom: 3px; }
+.event-desc span { font-size: 0.85rem; opacity: 0.9; font-weight: 300; }
+
+/* Stili specifici per la lista attività (Card Verde) */
+.activity-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.activity-list li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.activity-list li::before {
+    content: "•";
+    color: white;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Sidebar Locandine */
+.sidebar-locandine {
+    flex: 1; /* Occupa circa il 33% dello spazio */
+    text-align: center;
+    color: #1a4d66; /* Blu scuro per il testo */
+}
+
+.sidebar-locandine h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.locandine-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.locandina-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.locandina-item img:hover {
+    transform: scale(1.05); /* Effetto zoom al passaggio del mouse */
+}
+
+/* --- Stili per la Modale (Lightbox) --- */
+.modal {
+    display: none; /* Nascosta di default */
+    position: fixed;
+    z-index: 1000; /* Assicura che stia sopra a tutto il resto */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Sfondo nero semi-trasparente */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh; /* Usa al massimo il 90% dell'altezza dello schermo */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease; /* Animazione fluida di comparsa */
+}
+
+/* Animazione per l'immagine */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Pulsante di chiusura (la "X") */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Media Queries per la Responsività (Mobile e Tablet) */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .cards-section, .sidebar-locandine {
+        width: 100%;
+        flex: none;
+    }
+    
+    .sidebar-locandine {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-section {
+        grid-template-columns: 1fr; /* Una colonna singola su schermi piccoli */
+    }
+    .locandine-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+}
