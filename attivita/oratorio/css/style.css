@@ -235,6 +235,12 @@ body {
     .horizontal-card { flex-direction: column; text-align: center; }
     .card-icon-container { width: 100%; padding: 20px; box-sizing: border-box;}
     .iscrizioni-list li { flex-direction: column; align-items: flex-start; gap: 15px; }
+
+    #locandineGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
 }
 
 /* Stili specifici per la lista eventi (Card Rossa) */
