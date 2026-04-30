@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attività e Gruppi - Parrocchia S.Cuore di Gesù</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="/canti/v2/img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
+        
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="/main.html">HOME</a></li>
+                <!-- <li><a href="/canti/v2/">CANTI</a></li> -->
+                <li class="dropdown">
+                    <a href="/attivita/" class="dropdown-toggle">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- IL SOTTOMENU -->
+                    <ul class="dropdown-menu">
+                        <li><a href="/attivita/oratorio/" class="active">Oratorio</a></li>
+                        <li><a href="/attivita/campeggi/">Campeggi</a></li>
+                    </ul>
+                </li>
+                <li><a href="/amico/" class="active">Amico</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+    
+    <div class="archivio-container">
+        <!-- COLONNA 1: LOCANDINE -->
+        <div class="archivio-colonna">
+            <h2 class="archivio-titolo">Foglietto Settimanale</h2>
+            
+            <!-- Qui il JS inietterà le immagini -->
+            <div id="griglia-locandine" class="archivio-griglia">
+
+            </div>
+            
+            <!-- Pulsanti Paginazione -->
+            <div class="paginazione">
+                <button id="btn-prev-locandine" class="btn-pag"><i class="fa-solid fa-chevron-left"></i> Indietro</button>
+                <span id="num-pag-locandine">Pagina 1</span>
+                <button id="btn-next-locandine" class="btn-pag">Avanti <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- COLONNA 2: BOLLETTINI (PDF) -->
+        <div class="archivio-colonna">
+            <h2 class="archivio-titolo">Bollettini Parrocchiali</h2>
+            
+            <!-- Qui il JS inietterà le Card dei PDF -->
+            <div id="griglia-bollettini" class="archivio-griglia">
+
+            </div>
+            
+            <!-- Pulsanti Paginazione -->
+            <div class="paginazione">
+                <button id="btn-prev-bollettini" class="btn-pag"><i class="fa-solid fa-chevron-left"></i> Indietro</button>
+                <span id="num-pag-bollettini">Pagina 1</span>
+                <button id="btn-next-bollettini" class="btn-pag">Avanti <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-immagine" class="image-modal">
+        <!-- Pulsante di chiusura -->
+        <span class="chiudi-modal-img">&times;</span>
+        <!-- Il tag img vuoto che riempiremo con JS -->
+        <img class="image-modal-content" id="img-modale-src" src="" alt="Locandina Ingrandita">
+    </div>
+
+    <script src="/js/header.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

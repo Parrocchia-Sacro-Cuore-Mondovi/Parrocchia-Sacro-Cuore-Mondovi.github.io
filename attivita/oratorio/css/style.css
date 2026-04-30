@@ -17,7 +17,7 @@ body {
 
 /* Griglia dei Box (Cards) */
 .cards-section {
-    flex: 1; /* Occupa il 66% dello spazio rispetto alla sidebar */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     gap: 25px; /* Spazio tra le card orizzontali */
@@ -32,6 +32,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card-text-content {
+    text-decoration: none;
 }
 
 .card h3 {
@@ -51,12 +55,6 @@ body {
     font-size: 3rem;
     margin-bottom: 10px;
 }
-
-/* Colori Specifici delle Card */
-.card-red { background-color: #b35945; }
-.card-green { background-color: #8bbf4a; }
-.card-purple { background-color: #8e47b3; }
-.card-orange { background-color: #f28f30; }
 
 .hero-section.hero-oratorio {
     /* Suggerimento: Usa una foto della comunità/gruppi qui */

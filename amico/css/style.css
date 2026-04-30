@@ -1,0 +1,146 @@
+/* Il layout a 2 colonne */
+.archivio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Due colonne larghe uguali */
+    gap: 40px; /* Spazio tra le due colonne */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Su cellulare (sotto i 768px), le colonne diventano 1 sola! */
+@media (max-width: 768px) {
+    .archivio-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.archivio-titolo {
+    text-align: center;
+    color: var(--rosso-mattone, #b35235);
+    margin-bottom: 20px;
+}
+
+.archivio-griglia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 400px; /* Evita che la pagina "salti" troppo quando cambi pagina */
+}
+
+/* Immagini delle locandine */
+.archivio-griglia img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Stile dei pulsanti di paginazione */
+.paginazione {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.btn-pag {
+    background-color: var(--verde-parrocchia, #2a5a41);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pag:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   GRIGLIA LOCANDINE (Layout 2x2)
+   ========================================= */
+#griglia-locandine {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 colonne di uguale larghezza */
+    gap: 15px; /* Spazio tra le immagini */
+    align-items: start; /* Le allinea in alto se hanno altezze diverse */
+}
+
+/* Stile delle locandine */
+#griglia-locandine img {
+    width: 100%; /* Si adatta perfettamente alla sua metà di colonna */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Su cellulare: Manteniamo le 2 colonne così le foto restano piccole! */
+@media (max-width: 768px) {
+    #griglia-locandine {
+        grid-template-columns: repeat(2, 1fr); /* Rimangono affiancate 2 a 2 */
+        gap: 10px; /* Riduciamo un pochino lo spazio tra loro */
+    }
+}
+
+/* =========================================
+   MODALE IMMAGINI (Lightbox)
+   ========================================= */
+.image-modal {
+    display: none; /* Nascosto di default */
+    position: fixed;
+    z-index: 3000; /* Ancora più "sopra" di tutto il resto */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Sfondo quasi completamente nero */
+}
+
+/* L'immagine al centro */
+.image-modal-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centratura perfetta assoluta */
+    max-width: 90%;
+    max-height: 90vh; /* Non supera mai il 90% dell'altezza dello schermo */
+    object-fit: contain; /* Mantiene le proporzioni senza tagliare nulla */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* La X per chiudere */
+.chiudi-modal-img {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 3001;
+    transition: color 0.3s;
+}
+
+.chiudi-modal-img:hover {
+    color: var(--rosso-mattone, #b35235);
+}
+
+/* =========================================
+   EFFETTO HOVER SULLE LOCANDINE
+   ========================================= */
+
+/* 1. Stato di base: prepariamo l'animazione morbida */
+.img-cliccabile {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 2. Stato Hover: quando ci passi sopra col mouse */
+.img-cliccabile:hover {
+    transform: translateY(-8px); /* Solleva l'immagine verso l'alto di 8 pixel */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* L'ombra si allarga per dare il senso di profondità */
+}

@@ -135,6 +135,7 @@ a.card:hover {
     filter: brightness(1.05); /* Rende il colore leggermente più luminoso */
 }
 
+.card-red { background-color: #b35945; }
 .card-blue { background-color: #409ed5; }
 .card-green { background-color: #8bc24a; }
 .card-purple { background-color: #8e44ad; }
