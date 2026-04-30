@@ -75,7 +75,6 @@
 /* Il contenitore principale relativo per poter posizionare il sottomenu */
 .dropdown {
     position: relative;
-    background-color: #1a4f76;
 }
 
 /* L'icona della freccetta (un po' più piccola e distanziata) */
