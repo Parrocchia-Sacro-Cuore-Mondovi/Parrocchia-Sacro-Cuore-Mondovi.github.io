@@ -22,7 +22,7 @@ const eventiDb = [
         "data": "9/05",
         "ore": "19:30",
         "titolo": "Oratorio Serale",
-        "desc": "Per i ragazzi della quinta elementare alla seconda media"
+        "desc": "Per i ragazzi dalla prima alla terza media"
     }
 ];
 
