@@ -151,10 +151,16 @@ const datiParrocchialiSalvati = {
         "testo_md": "> Rit.\n> A - ve Mari - a, a - ve.\n> A - ve Mari - a, a - ve.\n\nDonna dell'attesa e madre di speranza, ora pro nobis;\ndonna del sorriso e madre del silenzio, ora pro nobis;\ndonna di frontiera e madre dell'ardore, ora pro nobis;\ndonna del riposo e madre del sentiero, ora pro nobis. **Rit.**\n\nDonna del deserto e madre del respiro, ora pro nobis;\ndonna della sera e madre del ricordo, ora pro nobis;\ndonna del presente e madre del ritorno, ora pro nobis;\ndonna della terra e madre dell'amore, ora pro nobis. **Rit.**"
     },
     {
+        "titolo": "Beato il cuore - Inno GMG 2016",
+        "momento": "messe:",
+        "messe": [],
+        "testo_md": "Sei sceso dalla Tua immensità in nostro aiuto:\n\nMisericordia scorre da Te sopra tutti noi.\n\nPersi in un mondo d’oscurità lì Tu ci trovi:\n\nnelle Tue braccia ci stringi e poi dai la vita per noi. **Rit.**\n\n\n\n> Rit.\n>\n> Beato è il cuore che perdona!\n>\n> Misericordia riceverà da Dio in cielo! (x2)\n>\n>\n>\n> Solo il perdono riporterà pace nel mondo,\n>\n> solo il perdono ci svelerà come figli Tuoi.\n>\n> Col sangue in croce hai pagato Tu le nostre povertà.\n>\n> Se noi ci amiamo e restiamo in Te il mondo crederà! Rit.\n\n\n\nLe nostre angosce ed ansietà gettiamo ogni attimo in Te:\n\namore che non abbandona mai, vivi in mezzo a noi! **Rit.**"
+    },
+    {
         "titolo": "Benedici",
         "momento": "offertorio",
         "messe": [],
-        "testo_md": "[Si-]Nebbia e freddo, giorni lunghi e [La]amari\nmentre il seme muo[Si-]re.\n[Re]Poi il prodigio antico e sempre [La]nuovo\ndel primo filo d'[Sol7+]erba.\nE nel [Re]vento dell'[La]estate\nonde[Si-]ggiano le spighe:\nav[La]remo ancora[Fa#] pane[Si]. **Rit1.**\n\n> Rit1.\n> [Mi]Bene[Si]dici, [Mi]o Sig[Si]nore,\n> [La]questa offe[Mi]rta che port[Fa#4]iamo a [Fa#]Te.\n> [Mi]Facci u[Si]no [Sol#-]come il p[Re#-]ane\n> c[Do#]he anche o[Mi]ggi hai d[Si]ato a noi.\n\nNei filari dopo il lungo inverno\nfremono le viti.\nLa rugiada avvolge nel silenzio\ni primi tralci verdi.\nPoi i colori dell'autunno\ncoi grappoli maturi\navremo ancora vino. **Rit2.**\n\n> Rit2.\tBenedici o Signore\n> questa offerta che portiamo a Te.\n> Facci uno come il vino\n> che anche oggi hai dato a noi."
+        "testo_md": "[Si-]Nebbia e freddo, giorni lunghi e [La]amari\nmentre il seme muo[Si-]re.\n[Re]Poi il prodigio antico e sempre [La]nuovo\ndel primo filo d'[Sol7+]erba.\nE nel [Re]vento dell'[La]estate\nonde[Si-]ggiano le spighe:\nav[La]remo ancora[Fa#] pane[Si]. **Rit1.**\n\n> Rit1.\n> [Mi]Bene[Si]dici, [Mi]o Sig[Si]nore,\n> [La]questa offe[Mi]rta che port[Fa#4]iamo a [Fa#]Te.\n> [Mi]Facci u[Si]no [Sol#-]come il p[Re#-]ane\n> c[Do#]he anche o[Mi]ggi hai d[Si]ato a noi.\n\nNei filari dopo il lungo inverno\nfremono le viti.\nLa rugiada avvolge nel silenzio\ni primi tralci verdi.\nPoi i colori dell'autunno\ncoi grappoli maturi\navremo ancora vino. **Rit2.**\n\n> Rit2.\n> Benedici o Signore\n> questa offerta che portiamo a Te.\n> Facci uno come il vino\n> che anche oggi hai dato a noi."
     },
     {
         "titolo": "Camminerò",
@@ -219,6 +225,12 @@ const datiParrocchialiSalvati = {
         "momento": "comunione",
         "messe": [],
         "testo_md": "Signore Tu, mi scruti e conosci\nsai quando seggo e quando mi alzo.\nRiesci a vedere i miei pensieri\nsai quando io cammino e quando riposo.\nTi sono note tutte le mie vie.\nLa mia parola non è ancora sulla lingua\ne Tu, Signore, già la conosci tutta. **Rit.**\n\n> Rit.\n> Sei Tu che mi hai creato\n> e mi hai tessuto nel seno di mia madre.\n> Tu mi hai fatto come un prodigio,\n> le Tue opere sono stupende\n> e per questo Ti lodo.\n\nDi fronte e alle spalle Tu mi circondi\nponi su me la Tua mano.\nLa Tua saggezza, stupenda per me,\nè troppo alta e io non la comprendo.\nChe sia in cielo o agli inferi ci sei,\nnon si può mai fuggire dalla Tua presenza.\nOvunque la Tua mano guiderà la mia. **Rit.**\n\nE nel segreto Tu mi hai formato,\nmi hai intessuto dalla terra.\nNeanche le ossa ti eran nascoste,\nancora informe mi hanno visto i Tuoi occhi.\nI miei giorni erano fissati\nquando ancora non ne esisteva uno\ne tutto quanto era scritto nel Tuo libro. **Rit.**"
+    },
+    {
+        "titolo": "Con Te camminerò",
+        "momento": "matrimoni",
+        "messe": [],
+        "testo_md": "Mi hai chiamato ed ora sono qui:\n\nla mia vita ormai, Signore,\n\ntrova senso solo in Te.\n\nCerco nel profondo e Tu ci sei:\n\nguardo intorno e poi Ti trovo accanto a me. **Rit.**\n\n\n\n> Rit.\n>\n> Insieme a Te camminerò:\n>\n> in ogni volto, in ogni pianto\n>\n> io Ti riconoscerò.\n>\n> Ti seguirò ovunque andrai.\n>\n> Io con Te camminerò.\n\n\n\nCome servo sei venuto qui\n\nper chi è solo e chi è ferito,\n\nper chi vive in povertà.\n\nOra, oh Signore, manda me:\n\nsegno del Tuo amore per l’umanità. **Rit.**\n\n\n\nTu sei qui, sei con noi,\n\nsempre accanto a noi.\n\n\n\nNel dolore di chi non ha più una casa:\n\nTu sei lì.\n\nNel silenzio di chi ha perso ogni speranza:\n\nTu sei lì.\n\nNei rimpianti, nei miei dubbi\n\ne nel buio delle mie fragilità:\n\nTu sei lì. **Rit. (con alzata)**\n\n\n\n> Rit. (con alzata)\n>\n> And I will walk on holy ground:\n>\n> I’ll hear Your voice, I’ll see Your face,\n>\n> I will find You in the crowd.\n>\n> Lord, I will go where You will lead me.\n>\n> I will walk on holy ground.\n\n\n\n>\n>\n> Io con Te camminerò."
     },
     {
         "titolo": "C’è fretta nell’aria (Ha pressa no ar) - Inno GMG 2023",
@@ -310,6 +322,12 @@ const datiParrocchialiSalvati = {
         "testo_md": "Gloria dal basso della Terra,\ngloria dal più infame degli stermini.\nGloria nella carestia,\ngloria nella guerra più atroce.\nGloria, gloria, gloria,\nsolo Tu hai la forza con la Tua gloria\ndi asciugare le lacrime, di portare nella Tua gloria\nnell'alto dei Cieli i vinti della terra,\ni vinti della terra, i vinti della terra."
     },
     {
+        "titolo": "Gloria nell'alto dei Cieli",
+        "momento": "gloria",
+        "messe": [],
+        "testo_md": "> Rit.\n>\n> Gloria, gloria a Dio.\n>\n> Gloria, gloria nell’alto dei Cieli.\n>\n> Pace in terra agli uomini amati dal Signor.\n>\n> Gloria!\n\n\n\nNoi Ti lodiamo, Ti benediciamo,\n\nTi adoriamo, glorifichiamo Te,\n\nTi rendiamo grazie per la Tua immensa gloria.\n\nSignore Dio, gloria!\n\nRe del Cielo, gloria!\n\nDio Padre, Dio onnipotente, gloria!\n\n\n\nSignore, Figlio unigenito, Gesù Cristo,\n\nSignore, Agnello di Dio, Figlio del Padre.\n\nTu che togli i peccati del mondo, abbi pietà di noi;\n\nTu che togli i peccati del mondo, accogli la nostra supplica;\n\nTu che siedi alla destra del Padre, abbi pietà di noi.\n\n\n\nPerché Tu solo il santo, il Signore,\n\nTu solo l’Altissimo, Cristo Gesù\n\ncon lo Spirito Santo nella gloria del Padre. **Rit.**"
+    },
+    {
         "titolo": "Grandi cose",
         "momento": "ingresso",
         "messe": [],
@@ -350,6 +368,12 @@ const datiParrocchialiSalvati = {
         "momento": "pace",
         "messe": [],
         "testo_md": "E la pace sia con te,\npace, pace,\nogni giorno sia con te,\npace, pace.\nLa Sua pace data a noi,\nche dovunque andrai porterai. (x3)\n…e la pace sia con te."
+    },
+    {
+        "titolo": "La parabola del seminatore",
+        "momento": "matrimoni",
+        "messe": [],
+        "testo_md": "Sai che un seme seminato fra i sassi\n\nnasce subito e radici non ha\n\ne così al primo raggio di sole tutto brucerà.\n\nCosì accoglier la parola con gioia\n\nse non sei costante non servirà:\n\nbasta un soffio un po′ più forte di vento\n\ne tutto crollerà. **Rit.**\n\n\n\n> Rit.\n>\n> Ma Tu, Signore, fa di me la terra buona:\n>\n> Tu coltivami e semina nel cuore la Parola.\n>\n> Signore, fa di me la terra buona:\n>\n> Fammi crescere e portare il frutto della Tua Parola\n>\n> in me, in me.\n\n\n\nSai che un seme messo lungo la strada\n\ncibo per gli uccelli diventerà;\n\nquello invece andato in mezzo alle spine soffocherà.\n\nCosì il male può rubarti dal cuore\n\nquel che il Padre ha messo dentro di te\n\no le spine degli affanni del mondo soffocarlo. **Rit.**\n\n\n\nSai che un seme seminato fra i sassi nasce subito e radici non ha,\n\nma con Te qualsiasi piccolo seme frutto porterà."
     },
     {
         "titolo": "La stella polare",
@@ -426,6 +450,12 @@ const datiParrocchialiSalvati = {
         "testo_md": "Per [RE]strade diverse [LA]ci siamo incontrati\ne abbiamo per[MI-]corso il medesimo ca[FA#]mmino\ne an[RE]cora di più [LA]per sempre ci unirà\nl’amore che og[MI-]gi è nato [FA#]fra di noi. **Rit.**\n\n> Rit.\n> Per noi l’amo[RE]re è vita un raggio di sole [LA]che\n> in questa uni[SI-]tà con Te porta [SOL]in terra il para[LA]diso.\n> [RE]Nessuno mai po[LA]trà spe[SOL]zzare l’am[RE]ore che ora fra [DO]noi [LA]\n> [RE]ha una nuova [LA]dimensione[SI-] e questo [SOL]resta, [(SOL#dim) (MI)]\n> è ciò c[RE]he più v[LA]ale per no[SI-]i. [SI+]\n\n> Rit. (con alzata)\n> Per noi l’amore [MI]è vita un raggi[SI]o di sole [LA]che\n> in questa unità[DO#-] con Te porta in [LA]terra il para[SI]diso.\n> [MI]Nessuno mai potrà spezza[SI]re [LA]l’amore ch[MI]e ora [RE]fra noi[SI]\n> [MI]ha una nuova [SI]dimensione[DO#-] e questo[LA] resta, [(LA#dim) FA#]\n> è ci[MI]ò che [SI]più vale[DO#-] per noi.\n\n>\n> …[LA MI SI LA MI]e questo resta, è ciò che più vale per noi."
     },
     {
+        "titolo": "Madre di Dio - Reale",
+        "momento": "canti mariani",
+        "messe": [],
+        "testo_md": "Dio mi pensò,\n\ne fu sera e fu mattina,\n\ne con un soffio mi creò.\n\nE dentro me\n\nabita un cuore di bambino\n\nche chiede amore\n\ne ha nostalgia di Te. **Rit.**\n\n\n\n> Rit.\n>\n> Tu che sei madre,\n>\n> madre di questa umanità.\n>\n> Tu che sei donna,\n>\n> dolcezza nella tua umiltà.\n>\n> Tu che sei amica meravigliosa.\n>\n> Tu che sei sposa di Dio.\n>\n> Tu che intercedi per me presso Dio.\n>\n>\n>\n> Insegnami ad essere uomo,\n>\n> insegnami ad essere buono,\n>\n> insegnami ad essere amico,\n>\n> insegnami la tua umiltà,\n>\n> insegnami ad essere sposo,\n>\n> insegnami ad essere padre,\n>\n> insegnami ad esser sincero,\n>\n> insegnami ad essere un figlio di Dio\n>\n> con Te.\n>\n>\n>\n> Dio mi pensò,\n>\n> e fu sera e fu mattina,\n>\n> e con un soffio mi creò.\n>\n> E dentro me,\n>\n> abita un cuore di bambina\n>\n> che chiede amore\n>\n> e ha nostalgia di Te. Rit.\n\n\n\nInsegnami ad essere donna,\n\ninsegnami ad essere buona,\n\ninsegnami ad essere amica,\n\ninsegnami la tua umiltà,\n\ninsegnami ad essere sposa,\n\ninsegnami ad essere madre,\n\ninsegnami ad esser sincera...\n\n\n\n*Finale\n\n...insegnaci ad essere figli di Dio,\n\ndi Dio, di Dio con Te.**"
+    },
+    {
         "titolo": "Maria Tu sei",
         "momento": "s13",
         "messe": [
@@ -481,7 +511,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-        "testo_md": "[Intro: RE  SOL  RE  LA4  RE/SOL/RE]\n> Rit.\n> Pace [RE]sia, pace a voi, la Tu[SOL]a pace sarà\n> sulla [SI-]Terra come [LA4]nei Cie[LA]li.\n> Pace [RE]sia, pace a voi, la Tua [SOL]pace sarà\n> gioia [FA]nei nostri[DO] occhi, nei [SOL]cuori.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> luce [SI-]limpida dei [LA4]pensieri.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> una[RE] casa per [LA4]tutti.  [RE/SOL/RE]\n\n[SOL]Pace a [RE]voi: [LA]sia il [SI-]Tuo dono visibile.\n[SOL]Pace a [RE]voi: [LA]la Tua [SI-]eredità.\n[SOL]Pace a [RE]voi: [LA]come [SI-]un canto all’unisono\n[DO2/5]che sale dalle nostre [LA4città. [LA] **Rit. [SI](con alzata)**\n\n> Rit. (con alzata)\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> sulla [DO#-]Terra come nei Cieli.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> gioia[SOL] nei nostri [RE]occhi, nei [LA]cuo[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> luce [DO#-]limpida dei pen[SI4]sie[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> una [MI]casa per [SI7]tutti. [MI  LA  MI]"
+        "testo_md": "[Intro: RE  SOL  RE  LA4  RE/SOL/RE]\n> Rit.\n> Pace [RE]sia, pace a voi, la Tu[SOL]a pace sarà\n> sulla [SI-]Terra com'è [LA4]nei Cie[LA]li.\n> Pace [RE]sia, pace a voi, la Tua [SOL]pace sarà\n> gioia [FA]nei nostri[DO] occhi, nei [SOL]cuori.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> luce [SI-]limpida dei [LA4]pensieri.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> una[RE] casa per [LA4]tutti.  [RE/SOL/RE]\n\n[SOL]Pace a [RE]voi: [LA]sia il [SI-]Tuo dono visibile.\n[SOL]Pace a [RE]voi: [LA]la Tua [SI-]eredità.\n[SOL]Pace a [RE]voi: [LA]come [SI-]un canto all’unisono\n[DO2/5]che sale dalle nostre [LA4città. [LA] **Rit.[SI]**\n\nPace a voi: sia un'impronta nei secoli.\nPace a voi: segno d'unità.\nPace a voi: sia l'abbraccio tra i popoli,\nla Tua promessa all'umanità. **Rit. (con alzata)**\n\n> Rit. (con alzata)\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> sulla [DO#-]Terra com'è nei Cieli.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> gioia[SOL] nei nostri [RE]occhi, nei [LA]cuo[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> luce [DO#-]limpida dei pen[SI4]sie[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> una [MI]casa per [SI7]tutti. [MI  LA  MI]"
     },
     {
         "titolo": "Pane del cielo",
@@ -575,7 +605,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Salve Regina",
         "momento": "mariani",
         "messe": [],
-        "testo_md": ">\n> Salve Regina, madre di misericordia.\n> Vita, dolcezza, speranza nostra.\n> Salve, salve Regina! (2 v)\n\nA te ricorriamo, esuli figli di Eva,\na te sospiriamo, piangenti,\nin questa valle di lacrime.\nAvvocata nostra, volgi a noi gli occhi tuoi;\nmostraci, dopo questo esilio,\nil frutto del tuo seno, Gesù.\n\n>\n> Salve Regina, madre di misericordia.\n> O clemente, o pia, o dolce vergine Maria.\n> Salve Regina!\n> Salve Regina, salve, salve!"
+        "testo_md": ">\n> Salve Regina, madre di misericordia.\n> Vita, dolcezza, speranza nostra.\n> Salve, salve Regina! (x2)\n\nA te ricorriamo, esuli figli di Eva,\na te sospiriamo, piangenti,\nin questa valle di lacrime.\nAvvocata nostra, volgi a noi gli occhi tuoi;\nmostraci, dopo questo esilio,\nil frutto del tuo seno, Gesù.\n\n>\n> Salve Regina, madre di misericordia.\n> O clemente, o pia, o dolce vergine Maria.\n> Salve Regina!\n> Salve Regina, salve, salve!"
     },
     {
         "titolo": "Santa Maria del cammino",
@@ -603,7 +633,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "comunioni"
         ],
-        "testo_md": "[Intro: LA  SI  LA  SI]\n> Rit.\n> [LA]San[MI]to, sa[DO#-]nto[SI], sa[FA#-]nto il Sig[MI]nore,\n> [LA]Dio dell'univer[SI]so.\n> [LA]San[MI]to, sa[DO#-]nto[SI].\n> [FA#-]I Cieli e la T[MI]Terra sono [LA]pieni della Tua [FA#-]gloria.[MI]\n\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli. **Rit.**\n\n[SI]Benedetto Co[LA]lui che viene\nnel [MI]nome del [SI]Signore.\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli.\n[LA]San[MI]to, sa[DO#-]nto[SI], [LA]sa-a-a-a-anto[MI]."
+        "testo_md": "[Intro: LA  SI  LA  SI]\n> Rit.\n> [LA]San[MI]to, sa[DO#-]nto[SI], sa[FA#-]nto il Sig[MI]nore,\n> [LA]Dio dell'univer[SI]so.\n> [LA]San[MI]to, sa[DO#-]nto[SI].\n> [FA#-]I Cieli e la T[MI]erra sono [LA]pieni della Tua [FA#-]gloria.[MI]\n\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli. **Rit.**\n\n[SI]Benedetto Co[LA]lui che viene\nnel [MI]nome del [SI]Signore.\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli.\n[LA]San[MI]to, sa[DO#-]nto[SI], [LA]sa-a-a-a-anto[MI]."
     },
     {
         "titolo": "Santo (Osanna nelle altezze)",
@@ -678,6 +708,18 @@ const datiParrocchialiSalvati = {
         "momento": "natale",
         "messe": [],
         "testo_md": "Tu scendi dalle stelle,\no Re del Cielo,\ne vieni in una grotta\nal freddo al gelo,\ne vieni in una grotta\nal freddo al gelo.\n\nO Bambino, mio Divino,\nio Ti vedo qui a tremar.\nO Dio Beato.\nAh, quanto Ti costò\nl'avermi amato!\nAh, quanto Ti costò\nl'avermi amato!\n\nA Te, che sei del mondo\nil Creatore,\nmancano panni e fuoco\no mio Signore!\nMancano panni e fuoco\no mio Signore!\n\nCaro eletto Pargoletto\nquanto questa povertà\npiù mi innamora!\nGiacché Ti fece amor\npovero ancora!\nGiacché Ti fece amor\npovero ancora!"
+    },
+    {
+        "titolo": "Tu sei - Paolo Spoladore",
+        "momento": "messe:",
+        "messe": [],
+        "testo_md": "Tu sei la prima stella del mattino,\n\nTu sei la nostra grande nostalgia,\n\nTu sei il cielo chiaro dopo la paura,\n\ndopo la paura d'esserci perduti\n\ne tornerà la vita in questo mare. **Rit.**\n\n\n\n> Rit.\n>\n> Soffierà, soffierà il vento forte della vita,\n>\n> soffierà sulle vele e le gonfierà di Te.\n>\n> Soffierà, soffierà il vento forte della vita,\n>\n> soffierà sulle vele e le gonfierà di Te.\n\n\n\nTu sei l'unico volto della pace,\n\nTu sei speranza nelle nostre mani,\n\nTu sei il vento nuovo sulle nostre ali,\n\nsulle nostre ali soffierà la vita\n\ne gonfierà le vele per questo mare. **Rit.**"
+    },
+    {
+        "titolo": "Tutto è possibile",
+        "momento": "matrimoni",
+        "messe": [],
+        "testo_md": "**Uomini:** Questo è il luogo che Dio ha scelto per te,\n\nquesto è il tempo pensato per te,\n\nquella che vedi è la strada che Lui traccerà,\n\nquello che senti l'amore che mai finirà. **Rit.**\n\n\n\n> Rit.\n>\n> E andremo e annunceremo che\n>\n> in Lui tutto è possibile.\n>\n> E andremo e annunceremo che\n>\n> nulla ci può vincere\n>\n> perché abbiamo udito le Sue parole,\n>\n> perché abbiam veduto vite cambiare,\n>\n> perché abbiamo visto l'amore vincere.\n>\n> Sì, abbiamo visto l'amore vincere!\n>\n>\n>\n> Donne: Questo è il momento che Dio ha atteso per te,\n>\n> questo è il sogno che ha fatto su te,\n>\n> quella che vedi è la strada tracciata per te,\n>\n> Quello che senti, l'amore che ti accompagnerà. Rit.\n\n\n\n>\n>\n> Questo è il tempo che Dio ha scelto per te,\n>\n> questo è il sogno che ha fatto su te."
     },
     {
         "titolo": "Venite fedeli",
