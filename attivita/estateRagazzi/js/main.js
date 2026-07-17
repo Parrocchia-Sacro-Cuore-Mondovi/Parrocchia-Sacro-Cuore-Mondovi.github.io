@@ -1,69 +1,100 @@
 // --- Aggiunta locandine ---
 
 const gridLocandine = document.getElementById('locandineGrid');
-
 gridLocandine.innerHTML = '';
 
-for (let _loc of locandineDb) {
-    const locHTML = `
-        <div class="locandina-item">
-            <img src="/attivita/estateRagazzi/img/locandine/${_loc.nome}" alt="Locandina ${_loc.data}">
-        </div>
-    `;
-    // gridLocandine.insertAdjacentHTML('beforeend', locHTML);
-    gridLocandine.insertAdjacentHTML('afterbegin', locHTML);
+if (typeof locandineDb !== 'undefined' && locandineDb.length !== 0) {
+    for (let _loc of locandineDb) {
+        const locHTML = `
+            <div class="locandina-item">
+                <img src="/attivita/estateRagazzi/img/locandine/${_loc.nome}" alt="Locandina ${_loc.data}">
+            </div>
+        `;
+        // gridLocandine.insertAdjacentHTML('beforeend', locHTML);
+        gridLocandine.insertAdjacentHTML('afterbegin', locHTML);
+    }
 }
 
 // --- Aggiunta eventi
 const eventList = document.getElementById('event-list');
+const eventCard = document.getElementById('card-eventi');
 eventList.innerHTML = '';
-
-for (let event of eventiDb) {
-    const eventHTML = `
-        <div class="event-item">
-            <div class="event-date"><strong>${event.data}</strong><span>ore ${event.ore}</span></div>
-            <div class="event-desc"><strong>${event.titolo}</strong><span>${event.desc}</span></div>
-        </div>
-    `;
-    eventList.insertAdjacentHTML('beforeend', eventHTML);
+if (typeof eventiDb === 'undefined' || eventiDb.length === 0) {
+    eventCard.classList.add('card-disabled');
+    // Rimando all'oratorio se non ci sono eventi programmati
+    // const eventHTML = `
+    //     <div class="event-item">
+    //         <div class="event-desc">
+    //             <strong>Non ci sono eventi programmati</strong>
+    //             <a href="/attivita/oratorio/" class="btn-iscriviti">
+    //                 <span>Ci vediamo in oratorio!</span>
+    //             </a>
+    //         </div>
+    //     </div>
+    // `;
+    // eventList.insertAdjacentHTML('beforeend', eventHTML);
+} else {
+    eventCard.classList.remove('card-disabled');
+    for (let event of eventiDb) {
+        const eventHTML = `
+            <div class="event-item">
+                <div class="event-date"><strong>${event.data}</strong><span>ore ${event.ore}</span></div>
+                <div class="event-desc"><strong>${event.titolo}</strong><span>${event.desc}</span></div>
+            </div>
+        `;
+        eventList.insertAdjacentHTML('beforeend', eventHTML);
+    }
 }
 
 // --- Aggiunta Iscrizioni ---
 const iscrizioniList = document.getElementById('iscrizioni-list');
 iscrizioniList.innerHTML = '';
+const iscrizioniCard = document.getElementById('card-iscrizioni');
 
-for (let form of iscrizioniDb) {
-    // let link = 
-    const formHTML = `
-        <li>
-            <div class="iscrizione-info">
-                <h4>${form.titolo}</h4>
-                <span><i class="fa-regular fa-calendar"></i> ${form.desc}</span>
-            </div>
-            <a href="${(form.link === '') ? '#' : form.link}" class="btn-iscriviti">Iscriviti</a>
-        </li>
-    `;
-    iscrizioniList.insertAdjacentHTML('beforeend', formHTML) 
+if (typeof iscrizioniDb === 'undefined' || iscrizioniDb.length === 0) {
+    iscrizioniCard.classList.add('card-disabled');
+}
+else {
+    iscrizioniCard.classList.remove('card-disabled');
+    for (let form of iscrizioniDb) {
+        // let link = 
+        const formHTML = `
+            <li>
+                <div class="iscrizione-info">
+                    <h4>${form.titolo}</h4>
+                    <span><i class="fa-regular fa-calendar"></i> ${form.desc}</span>
+                </div>
+                <a href="${(form.link === '') ? '#' : form.link}" class="btn-iscriviti">Iscriviti</a>
+            </li>
+        `;
+        iscrizioniList.insertAdjacentHTML('beforeend', formHTML) 
+    }
 }
 
 // --- Aggiunta Documenti ---
 const documentiList = document.getElementById('documenti-list');
 documentiList.innerHTML = '';
+const documentiCard = document.getElementById('card-documenti');
 
-for (let form of documentiDb) {
-    // let link = 
-    const formHTML = `
-        <li>
-            <div class="documenti-info">
-                <h4>${form.titolo}</h4>
-                <span><i class="fa-regular fa-calendar"></i> ${form.desc}</span>
-            </div>
-            <a href="${(form.link === '') ? '#' : form.link}" download="${form.titolo}.pdf" class="btn-scarica">Scarica</a>
-        </li>
-    `;
-    documentiList.insertAdjacentHTML('beforeend', formHTML) 
+if (typeof documentiDb === 'undefined' || documentiDb.length === 0) {
+    documentiCard.classList.add('card-disabled');
 }
-
+else {
+    documentiCard.classList.remove('card-disabled');
+    for (let form of documentiDb) {
+        // let link = 
+        const formHTML = `
+            <li>
+                <div class="documenti-info">
+                    <h4>${form.titolo}</h4>
+                    <span><i class="fa-regular fa-calendar"></i> ${form.desc}</span>
+                </div>
+                <a href="${(form.link === '') ? '#' : form.link}" download="${form.titolo}.pdf" class="btn-scarica">Scarica</a>
+            </li>
+        `;
+        documentiList.insertAdjacentHTML('beforeend', formHTML) 
+    }
+}
 
 //- Zoom locandina
 // Selezioniamo gli elementi necessari

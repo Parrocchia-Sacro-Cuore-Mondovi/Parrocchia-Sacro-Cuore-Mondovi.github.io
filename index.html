@@ -1,127 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Parrocchia Santuario del Sacro Cuore di Gesù</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Parrocchia S.Cuore di Gesù</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="/canti/v2/img/logo2_b.png" alt="LOGO" class="logo-parrocchia">
+            </div>
+            <div class="logo-text">
+                <h1>Parrocchia S.Cuore di Gesù</h1>
+                <p>Mondovì</p>
+            </div>
+        </div>
         
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container px-lg-5">
-                <a class="navbar-brand" href="#!">Parrocchia S. Cuore di Gesù</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Pagina principale</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Informazioni</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/canti">Canti</a></li>
+        <button class="hamburger-btn" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <nav id="mainNav">
+            <button class="close-nav-btn" onclick="toggleNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+                <li><a href="/" class="active">HOME</a></li>
+                <li><a href="/canti/v2/">CANTI</a></li>
+                <li class="dropdown">
+                    <a href="/attivita/" class="dropdown-toggle">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    
+                    <!-- IL SOTTOMENU -->
+                    <ul class="dropdown-menu">
+                        <li class="link-generale-mobile"><a href="/attivita/">Tutte le attività</a></li>
+                        <li><a href="/attivita/oratorio/">Oratorio</a></li>
+                        <!-- <li><a href="/attivita/campeggi/">Campeggi</a></li> -->
+                        <li><a href="/attivita/estateRagazzi/">Estate Ragazzi</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="/amico/">Amico</a></li> -->
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>BENVENUTI NELLA<br>NOSTRA COMUNITÀ</h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur <br> elit, sed do eiusmod tempor.</p> -->
+            <!-- <button class="btn-primary">SCOPRI DI PIU</button> -->
+        </div>
+    </section>
+
+    <main class="main-container">
+        <section class="cards-grid">
+            <!-- Orari Sante Messe -->
+            <!-- <div class="card card-orari">
+                <div class="orari-content">
+                    <h2 class="orari-title">ORARI SANTE MESSE</h2>
+                    <ul class="orari-list">
+                        <li>
+                            <span class="orari-day">Lunedì</span>
+                            <span class="orari-time">Santuario - 15:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Martedì</span>
+                            <span class="orari-time">Parrocchia - 10:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Mercoledì</span>
+                            <span class="orari-time">Parrocchia - 18:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Giovedì</span>
+                            <span class="orari-time">Parrocchia - 18:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Venerdì</span>
+                            <span class="orari-time">Santuario - 18:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Sabato</span>
+                            <span class="orari-time">Parrocchia - 10:30</span>
+                        </li>
+                        <li>
+                            <span class="orari-day">Domenica</span>
+                            <span class="orari-time">Parrocchia - 10:30</span>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-3">
-            <div class="container px-lg-3">
-                <div class="p-2 p-lg-3 bg-light rounded-3 text-center">
-                    <div class="m-2 m-lg-3">
-                        <!-- <h1 class="display-5 fw-bold">A warm welcome!</h1> -->
-                        <h2 class="fw-bold">Parrocchia Santuario del Sacro Cuore di Gesù</h2>
-                        <p class="fs-6">Piazza Monteregale – 12084 Mondovì (CN) – parrocchia@sacrocuoremondovi.it</p>
-                        <a class="btn btn-primary btn-sm" href="#!">Informazioni</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
-                <div class="row gx-lg-5">
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                <h2 class="fs-5"><a class="page-link" href="/canti">Canti per le celebrazioni</a></h2>
-                                <!-- <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                <h2 class="fs-5"><a class="page-link" href="/canti/v2">Canti 2026</a></h2>
-                                <!-- <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
-                                <h2 class="fs-4 fw-bold">Free to download</h2>
-                                <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
-                                <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
-                                <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
-                                <h2 class="fs-4 fw-bold">Feature boxes</h2>
-                                <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                                <h2 class="fs-4 fw-bold">Simple clean code</h2>
-                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                                <h2 class="fs-4 fw-bold">A name you trust</h2>
-                                <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-                </div>
-            </div>
+            </div> -->
+
+            <!-- Attività e Gruppi -->
+            <a href="/attivita/" class="card card-green">
+                <i class="fa-solid fa-users card-icon"></i>
+                <h2>ATTIVITÀ & GRUPPI</h2>
+            </a>
+
+            <!-- Canti per le Celebrazioni -->
+            <a href="/canti/v2/" class="card card-purple">
+                <i class="fa-solid fa-music card-icon"></i>
+                <h2>Canti per le<br>celebrazioni</h2>
+            </a>
+
+            <!-- Appuntamenti settimanali e Amico -->
+            <!-- <a href="/amico/" class="card card-blue">
+                <i class="fa-solid fa-file card-icon"></i>
+                <h2>Appuntamenti settimanali e<br>Amico</h2>
+            </a> -->
+
+            <!-- Donazioni e Volontariato -->
+            <!-- <a href="#" class="card card-orange card-disabled">
+                <i class="fa-solid fa-hand-holding-heart card-icon"></i>
+                <h2>DONAZIONI &<br>VOLONTARIATO</h2>
+            </a> -->
         </section>
-        <!-- Footer-->
-        <footer class="py-2 bg-primary">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Parrocchia Santuario del Sacro Cuore di Gesù (Mondovì) 2021 - C.F.:84009770045</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+        <aside class="sidebar">
+            <div class="news-widget">
+                <h2 class="widget-title">ULTIME NOTIZIE</h2>
+                
+                <div id="newsGrid">
+                    
+                </div>
+                <div class="pagination-container" id="paginationControls">
+                    <button id="prevLocandine" class="pag-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="nextLocandine" class="pag-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/news.js"></script>
+    <script src="/js/main.js"></script>
+</body>
 </html>

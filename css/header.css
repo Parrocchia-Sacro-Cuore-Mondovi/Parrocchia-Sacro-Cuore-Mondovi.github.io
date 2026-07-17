@@ -229,7 +229,7 @@
     /* 1. STATO DI BASE: Il sottomenu DEVE essere nascosto */
     .dropdown-menu {
         display: none !important; /* <-- LA MAGIA È QUI: forza la chiusura! */
-        background-color: #b4ffff;
+        background-color: #ffffff;
         padding-left: 0; 
     }
 

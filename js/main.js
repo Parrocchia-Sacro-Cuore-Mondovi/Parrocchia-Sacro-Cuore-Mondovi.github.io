@@ -3,22 +3,32 @@ const newsContainer = document.getElementById('newsGrid');
 newsContainer.innerHTML = '';
 
 for (let _news of notizieDb) {
+    
+    let htmlData = '';
+    if (_news.data && _news.data.trim() !== '') {
+        htmlData = `<span class="news-date">${_news.data}</span>`;
+    }
+
     let htmlLink = '';
     if (_news.link && _news.link.trim() !== '') {
-        // Se c'è, creiamo il link HTML (apre in una nuova scheda)
-        htmlLink = `<a href="${_news.link}" class="news-link" target="_blank" rel="noopener noreferrer">Scopri di più</a>`;
+        let testoDelLink = (_news.testo_link && _news.testo_link.trim() !== '') ? _news.testo_link : 'Scopri di più';
+        
+        htmlLink = `
+            <div style="margin-top: 10px; width: 100%;">
+                <a href="${_news.link}" class="news-link" target="_blank" rel="noopener noreferrer">${testoDelLink}</a>
+            </div>
+        `;
     }
 
     const newsHTML = `
         <div class="news-item">
             <h3>${_news.titolo}</h3>
-            <span class="news-date">${_news.data}</span>
+            ${htmlData}
             ${htmlLink}
         </div>
     `;
     newsContainer.insertAdjacentHTML('beforeend', newsHTML);
 }
-
 // --- Gestione Paginazione Notizie ---
 const itemsPerPage = 5;
 let currentPage = 1;
