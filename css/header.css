@@ -2,7 +2,7 @@
 .main-header {
     display: flex;
     flex-direction: column;
-    background-color: #b4ffff;
+    background-color: #ffffff;
     border-bottom: 2px solid #1a4f76;
 }
 
@@ -143,6 +143,11 @@
         background-color: var(--sfondo-sito, #f4f7f6);
         color: var(--rosso-mattone, #b35235);
     }
+
+    .link-generale-mobile {
+        display: none !important;
+    }
+
 }
 
 /* --- Responsive Design Generale --- */
@@ -250,5 +255,14 @@
     /* Gira la freccetta */
     .dropdown.active .dropdown-toggle i {
         transform: rotate(180deg);
+    }
+
+    .link-generale-mobile {
+        display: block !important;
+    }
+    
+    /* (Opzionale) Lo facciamo in grassetto per fargli capire che è la pagina principale della sezione */
+    .link-generale-mobile a {
+        font-weight: bold;
     }
 }

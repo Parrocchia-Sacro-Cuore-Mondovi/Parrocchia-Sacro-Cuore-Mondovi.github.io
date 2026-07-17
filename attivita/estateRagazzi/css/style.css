@@ -155,6 +155,11 @@
     align-items: stretch;
 }
 
+#card-documenti {
+    flex-direction: column; /* Impila l'header e il menu */
+    align-items: stretch;
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -196,16 +201,6 @@
     list-style: none;
     margin: 0;
     padding: 20px 30px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    
-    /* (Opzionale) Aggiungi anche questo se vuoi 
-       una riga nera a separare l'intestazione verde dal menu bianco */
-    border-top: 2px solid black;
-
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;    
 }
 
 .iscrizioni-list li {
@@ -234,6 +229,66 @@
 
 .btn-iscriviti:hover { background-color: #76a33f; }
 
+.iscrizioni-list, .documenti-list {
+    /* Mantiene le tue regole originali */
+    list-style: none;
+    margin: 0;
+    padding: 20px 30px;
+    
+    /* I nuovi bordi neri */
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    
+    /* (Opzionale) Aggiungi anche questo se vuoi 
+       una riga nera a separare l'intestazione verde dal menu bianco */
+    border-top: 2px solid black;
+
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Menù a tendina Documenti */
+.documenti-menu {
+    max-height: 0; /* Nascosto di default */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; /* Animazione di apertura */
+    background-color: #f9f9f9; /* Sfondo chiaro per contrastare col verde */
+    color: #333;
+}
+
+.documenti-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.documenti-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.documenti-list li:last-child { border-bottom: none; }
+
+.documenti-info h4 { margin: 0 0 5px 0; font-size: 1.1rem; color: #1a4d66; }
+.documenti-info span { font-size: 0.85rem; color: #666; }
+
+.btn-scarica {
+    background-color: #8bbf4a; /* Verde per richiamare la sezione */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-scarica:hover { background-color: #76a33f; }
+
 /* Adattamento per mobile */
 @media (max-width: 768px) {
     .horizontal-card { flex-direction: column; text-align: center; }
@@ -244,7 +299,7 @@
     }
 
     /* MODIFICA: Manteniamo gli elementi affiancati su mobile */
-    .iscrizioni-list li { 
+    .iscrizioni-list li, .documenti-list li { 
         flex-direction: row; 
         align-items: center; 
         justify-content: space-between;
@@ -252,8 +307,8 @@
     }
 
     /* MODIFICA: Riduciamo la dimensione del testo e del bottone per farli stare su una riga */
-    .iscrizione-info h4 { font-size: 0.95rem; }
-    .btn-iscriviti { padding: 6px 12px; font-size: 0.8rem; }
+    .iscrizione-info h4, .documenti-info h4 { font-size: 0.95rem; }
+    .btn-iscriviti, .btn-scarica { padding: 6px 12px; font-size: 0.8rem; }
 
     #locandineGrid {
         grid-template-columns: repeat(2, 1fr);
