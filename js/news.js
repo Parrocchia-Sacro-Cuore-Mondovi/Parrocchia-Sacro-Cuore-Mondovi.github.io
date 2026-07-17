@@ -5,35 +5,8 @@ const notizieDb = [
         "link": "/attivita/estateRagazzi"
     },
     {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
-    },
-    {
-        "titolo": "Prova",
-        "data": "Prova"
+        "titolo": "Canale WhatsApp della Parrocchia",
+        "data": "Usciti!",
+        "link": "https://whatsapp.com/channel/0029Vb7pfAtHwXb8zl7Wrn2T"
     }
 ];
