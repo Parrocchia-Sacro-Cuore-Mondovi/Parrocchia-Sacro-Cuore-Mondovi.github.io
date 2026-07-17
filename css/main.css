@@ -11,6 +11,25 @@ body {
     line-height: 1.6;
 }
 
+.news-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #1a4f76;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover {
+    color: #b35235; /* O il colore che usi per l'hover nel tuo sito */
+    text-decoration: underline;
+}
+
+.news-link i {
+    margin-left: 5px;
+}
+
 /* --- Hero Section --- */
 .hero-section {
     position: relative;

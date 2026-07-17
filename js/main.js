@@ -1,17 +1,23 @@
 // --- Aggiunta notizie ---
-
 const newsContainer = document.getElementById('newsGrid');
 newsContainer.innerHTML = '';
+
 for (let _news of notizieDb) {
+    let htmlLink = '';
+    if (_news.link && _news.link.trim() !== '') {
+        // Se c'è, creiamo il link HTML (apre in una nuova scheda)
+        htmlLink = `<a href="${_news.link}" class="news-link" target="_blank" rel="noopener noreferrer">Scopri di più</a>`;
+    }
+
     const newsHTML = `
         <div class="news-item">
             <h3>${_news.titolo}</h3>
             <span class="news-date">${_news.data}</span>
+            ${htmlLink}
         </div>
     `;
     newsContainer.insertAdjacentHTML('beforeend', newsHTML);
 }
-
 
 // --- Gestione Paginazione Notizie ---
 const itemsPerPage = 5;
