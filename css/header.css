@@ -140,7 +140,7 @@
     }
 
     .dropdown-menu li a:hover {
-        background-color: var(--sfondo-sito, #f4f7f6);
+        background-color: var(--sfondo-sito, #ffffff);
         color: var(--rosso-mattone, #b35235);
     }
 
@@ -179,7 +179,7 @@
         right: -300px;
         width: 250px;
         height: 100vh;
-        background-color: #b4ffff;
+        background-color: #ffffff;
         z-index: 1000;
         transition: right 0.3s ease;
         box-shadow: -2px 0 5px rgba(0,0,0,0.2);
