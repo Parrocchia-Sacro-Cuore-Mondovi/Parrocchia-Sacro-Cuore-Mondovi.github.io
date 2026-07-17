@@ -1,0 +1,145 @@
+/* =========================================
+   BASE E STRUTTURA (WRAPPER & STICKY FOOTER)
+   ========================================= */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex: 1; /* Questo spinge il footer verso il basso */
+}
+
+/* =========================================
+   FOOTER (CHIARO E STICKY) - CONTENUTI CENTRATI
+   ========================================= */
+.main-footer {
+    display: block !important; /* Disattiva ogni griglia/flexbox ereditata */
+    width: 100% !important;
+    clear: both !important;
+    background-color: #ffffff; 
+    color: #1a4f76; 
+    padding: 50px 0 0 0;
+    border-top: 2px solid #1a4f76;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: auto; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    text-align: center; /* CENTRA IL TESTO E GLI ELEMENTI INLINE */
+}
+
+.footer-col h3 {
+    color: #1a4f76;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-col h3::after {
+    background-color: #b35235; 
+    height: 3px;
+    width: 40px;
+    display: block;
+    content: '';
+    margin: 8px auto 0 auto; /* CENTRA LA LINEETTA DECORATIVA */
+}
+
+.footer-col p, .footer-col ul li a {
+    color: #333333; 
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.footer-col ul li a:hover {
+    color: #1a4f76;
+    transform: scale(1.05); /* Effetto hover modificato per non "storcere" il testo centrato */
+}
+
+.footer-col i {
+    margin-right: 8px;
+    color: #1a4f76; 
+    width: 20px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center; /* CENTRA I BOTTONI SOCIAL */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1a4f76; 
+    color: #ffffff;
+    border-radius: 50%; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon i { margin-right: 0; color: inherit; }
+.social-icon:hover { background-color: #b35235; transform: translateY(-5px); }
+
+.footer-bottom {
+    display: block !important; /* Forza il blocco ad andare a capo */
+    width: 100% !important;
+    background-color: #edfcfc; 
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box; /* Assicura che il padding non lo allarghi troppo */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* Fix Footer Mobile */
+@media (max-width: 768px) {
+    .footer-container { flex-direction: column; gap: 20px; }
+    .footer-col { margin-bottom: 10px; }
+}
