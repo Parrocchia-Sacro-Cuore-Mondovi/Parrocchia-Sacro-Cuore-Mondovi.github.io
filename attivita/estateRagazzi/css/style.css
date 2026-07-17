@@ -52,7 +52,7 @@
 
 .hero-section.hero-oratorio {
     /* Suggerimento: Usa una foto della comunità/gruppi qui */
-    /* background-image: url('/attivita/oratorio/img/oratorio_bg.png');  */
+    background-image: url('/attivita/estateRagazzi/img/oratorio_bg.png'); 
     background-position: center;
 }
 .hero-content h1 {
