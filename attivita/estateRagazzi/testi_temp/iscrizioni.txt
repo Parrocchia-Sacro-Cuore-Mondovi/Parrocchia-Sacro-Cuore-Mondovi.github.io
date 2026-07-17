@@ -1,5 +1,5 @@
 ﻿---
-titolo: Oratorio Serale Medie
-desc: Sabato 9 Maggio - 19:30/22:00
-link: https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D
+titolo: Iscrizioni Estate Ragazzi 2026
+desc: 31 agosto - 11 settembre 2026
+link: https://forms.gle/u8ayMuttz2nVUiUH6
 ---

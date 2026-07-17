@@ -713,7 +713,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Tu sei - Paolo Spoladore",
         "momento": "messe:",
         "messe": [],
-        "testo_md": "Tu sei la prima stella del mattino,\n\nTu sei la nostra grande nostalgia,\n\nTu sei il cielo chiaro dopo la paura,\n\ndopo la paura d'esserci perduti\n\ne tornerà la vita in questo mare. **Rit.**\n\n\n\n> Rit.\n>\n> Soffierà, soffierà il vento forte della vita,\n>\n> soffierà sulle vele e le gonfierà di Te.\n>\n> Soffierà, soffierà il vento forte della vita,\n>\n> soffierà sulle vele e le gonfierà di Te.\n\n\n\nTu sei l'unico volto della pace,\n\nTu sei speranza nelle nostre mani,\n\nTu sei il vento nuovo sulle nostre ali,\n\nsulle nostre ali soffierà la vita\n\ne gonfierà le vele per questo mare. **Rit.**"
+        "testo_md": "Tu sei la prima stella del mattino,\r\nTu sei la nostra grande nostalgia,\r\nTu sei il cielo chiaro dopo la paura,\r\ndopo la paura d'esserci perduti\r\ne tornerà la vita in questo mare.\r\n\r\nTu sei l'unico volto della pace,\r\nTu sei speranza nelle nostre mani,\r\nTu sei il vento nuovo sulle nostre ali,\r\nsulle nostre ali soffierà la vita\r\ne gonfierà le vele su questo mare. **Rit.**\r\n\r\n> Rit.\n> Soffierà, soffierà il vento forte della vita,\n> soffierà sulle vele e le gonfierà di Te.\n> Soffierà, soffierà il vento forte della vita,\n> soffierà sulle vele e le gonfierà di Te. (x2)"
     },
     {
         "titolo": "Tutto è possibile",

@@ -1,0 +1,10 @@
+﻿---
+titolo: Autorizzazioni Estate Ragazzi 2026
+desc: Estate Ragazzi 2026
+link: /attivita/estateRagazzi/pdf/2026_autorizzazioni.pdf
+---
+---
+titolo: Patto di responsabilità parrocchia e famiglie (2026-2027)
+desc: 2026-2027
+link: /attivita/estateRagazzi/pdf/patto_resp_2026-2027.pdf
+---

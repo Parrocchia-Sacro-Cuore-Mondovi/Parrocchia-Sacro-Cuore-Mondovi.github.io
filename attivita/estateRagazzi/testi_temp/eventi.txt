@@ -1,6 +1,18 @@
 ﻿---
-data: 9/05
-ore: 19:30
-titolo: Oratorio Serale
-desc: Per i ragazzi dalla prima alla terza media
+data: 3/09
+ore: 7:45/19:00
+titolo: Gita al parco acquatico "Cupole Lido"
+desc: Iscrizioni entro lunedì 31 agosto
+---
+---
+data: 9/09
+ore: 7:45/19:00
+titolo: Gita al parco avventura "Gran Paradiso"
+desc: Iscrizioni entro martedì 2 settembre
+---
+---
+data: 11/09
+ore: 14:30/21:00
+titolo: Festa di fine Estate Ragazzi
+desc: Iscrizioni entro lunedì 7 settembre
 ---
