@@ -2,19 +2,27 @@ const fogliettiDb = [];
 
 const bollettiniDb = [
     {
-        "titolo": "Quaresima-Pasqua 2025",
+        "titolo": "Marzo 2025",
         "file": "2025_03.pdf"
     },
     {
-        "titolo": "Autunno 2025",
+        "titolo": "Giugno 2025",
+        "file": "2025_06.pdf"
+    },
+    {
+        "titolo": "Settembre 2025",
         "file": "2025_09.pdf"
     },
     {
-        "titolo": "Pasqua 2026",
+        "titolo": "Dicembre 2025",
+        "file": "2025_12.pdf"
+    },
+    {
+        "titolo": "Marzo 2026",
         "file": "2026_04.pdf"
     },
     {
-        "titolo": "Estate 2026",
+        "titolo": "Giugno 2026",
         "file": "2026_06.pdf"
     }
 ];
