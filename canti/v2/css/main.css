@@ -157,6 +157,7 @@ body {
 
 .song-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: var(--bg-white);
     padding: 12px 20px;
@@ -262,11 +263,6 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: 12px;
-}
-
-.song-card {
-    display: flex;
-    flex-direction: column;
 }
 
 .song-header {
@@ -480,32 +476,23 @@ footer {
     display: none !important;
 }
 
-/* --- BOTTONI --- */
-.btn-chord {
-    background-color: transparent;
-    color: var(--primary-blue);
-    border: 1px solid var(--primary-blue);
-    border-radius: 6px;
-    padding: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn-chord.chords-visible { color: white; background-color: var(--primary-blue); }
-.btn-chord.chords-hidden { color: #888; border-color: #ccc; }
-
 /* FORZA IL GRASSETTO SUI DISPOSITIVI MOBILE */
 .lyrics strong,
 .lyrics b {
     font-weight: 700 !important;
     font-family: 'Roboto', sans-serif !important;
+
+    /* Il trucco magico per i dispositivi mobile che ignorano il font-weight */
+    /* Usiamo 'currentColor' così prende in automatico il colore del testo in cui si trova */
+    -webkit-text-stroke: 0.3px currentColor !important;
 }
 
 /* Opzionale: scurisce leggermente il grassetto per farlo risaltare di pi*/
+/* Assicura che anche gli accordi sopra le parole in grassetto siano ben marcati */
 .lyrics strong .c::before,
 .lyrics b .c::before {
     font-weight: 700 !important;
+    -webkit-text-stroke: 0.3px var(--primary-blue) !important;
 }
 .lyrics strong .c,
 .lyrics b .c {
@@ -516,13 +503,14 @@ footer {
    STILE RITORNELLI 
    ============================================================ */
 .lyrics blockquote {
-    margin: 2px 0 2px 25px !important; 
+    margin: 2px 0 2px 25px !important;
     padding: 0 !important;
     border: none !important;         /* Rimuove TUTTI i bordi */
     border-left: none !important;    /* Assicura che il bordo sinistro sia morto */
     box-shadow: none !important;     /* Previene ombreggiature di default */
-    background: transparent !important; 
-    line-height: 1.3 !important; 
+    background: transparent !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important; /* Forza tutto il ritornello in grassetto! */
 }
 
 /* Azzera i margini dei paragrafi interni */
@@ -549,18 +537,7 @@ footer {
     white-space: nowrap !important;
 }
 
-.lyrics blockquote {
-    margin: 2px 0 2px 25px !important; 
-    padding: 0 !important;
-    border: none !important;
-    border-left: none !important;
-    box-shadow: none !important;
-    background: transparent !important; 
-    line-height: 1.3 !important; 
-    font-weight: 700 !important; /* Forza tutto il ritornello in grassetto! */
-}
-
-.lyrics blockquote, 
+.lyrics blockquote,
 .lyrics blockquote p,
 .lyrics blockquote .keep-together {
     font-family: 'Roboto', sans-serif !important;
@@ -569,12 +546,6 @@ footer {
 }
 
 /* --- Lista Canti e Gruppi --- */
-.song-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
 .song-group {
     display: flex;
     flex-direction: column;
@@ -604,23 +575,6 @@ footer {
 
 .letter-separator { color: var(--primary-blue); border-bottom: 2px solid var(--primary-blue); }
 .moment-separator { color: var(--primary-green); border-bottom: 2px solid var(--primary-green); }
-
-.lyrics strong,
-.lyrics b {
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 700 !important;
-    
-    /* Il trucco magico per i dispositivi mobile che ignorano il font-weight */
-    /* Usiamo 'currentColor' così prende in automatico il colore del testo in cui si trova */
-    -webkit-text-stroke: 0.3px currentColor !important; 
-}
-
-/* Assicura che anche gli accordi sopra le parole in grassetto siano ben marcati */
-.lyrics strong .c::before,
-.lyrics b .c::before {
-    font-weight: 700 !important;
-    -webkit-text-stroke: 0.3px var(--primary-blue) !important;
-}
 
 /* ============================================================
    BOTTONE FILTRI STICKY (SOLO MOBILE)
@@ -661,10 +615,6 @@ footer {
 /* ============================================================
    BOTTONE RICERCA NEL TESTO (SPOSTATO A DESTRA)
    ============================================================ */
-.search-bar {
-    position: relative; /* Fondamentale per far funzionare l'absolute del bottone */
-}
-
 .btn-text-search {
     position: absolute;
     right: 15px; /* Lo fissa a destra con un po' di margine */

@@ -150,11 +150,6 @@
 
 }
 
-/* --- Responsive Design Generale --- */
-@media (max-width: 992px) {
-    .main-container { grid-template-columns: 1fr; }
-}
-
 @media (max-width: 768px) {
     /* Responsive Header Menu (Se non gestito da navbar.css) */
     .main-header {
@@ -219,13 +214,6 @@
         z-index: 999;
     }
     
-    .cards-grid { grid-template-columns: 1fr; }
-    
-    .hero-section {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
     /* 1. STATO DI BASE: Il sottomenu DEVE essere nascosto */
     .dropdown-menu {
         display: none !important; /* <-- LA MAGIA È QUI: forza la chiusura! */
