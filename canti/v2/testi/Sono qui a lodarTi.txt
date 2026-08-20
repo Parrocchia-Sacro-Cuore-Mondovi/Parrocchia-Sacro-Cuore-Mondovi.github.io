@@ -1,7 +1,7 @@
 ﻿# Sono qui a lodarTi
 
 ---
-momento: v1
+momento:
 messe:
  - vSanto
 ---

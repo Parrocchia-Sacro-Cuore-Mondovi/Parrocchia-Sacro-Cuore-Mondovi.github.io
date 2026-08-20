@@ -17,23 +17,6 @@ const datiParrocchialiSalvati = {
                 { "id": "natale", "nome": "Tempo di Natale", "ordine": 15 },
                 { "id": "mariani", "nome": "Canti Mariani", "ordine": 16 },
                 { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
-                { "id": "v1", "nome": "Venerdì Santo", "ordine": 18, "nascosto": true },
-                { "id": "v2", "nome": "Venerdì Santo", "ordine": 19, "nascosto": true },
-                { "id": "v3", "nome": "Venerdì Santo", "ordine": 20, "nascosto": true },
-                { "id": "s1", "nome": "Sabato Santo", "ordine": 21, "nascosto": true },
-                { "id": "s2", "nome": "Sabato Santo", "ordine": 22, "nascosto": true },
-                { "id": "s3", "nome": "Sabato Santo", "ordine": 23, "nascosto": true },
-                { "id": "s4", "nome": "Sabato Santo", "ordine": 24, "nascosto": true },
-                { "id": "s5", "nome": "Sabato Santo", "ordine": 25, "nascosto": true },
-                { "id": "s6", "nome": "Sabato Santo", "ordine": 26, "nascosto": true },
-                { "id": "s7", "nome": "Sabato Santo", "ordine": 27, "nascosto": true },
-                { "id": "s8", "nome": "Sabato Santo", "ordine": 28, "nascosto": true },
-                { "id": "s9", "nome": "Sabato Santo", "ordine": 29, "nascosto": true },
-                { "id": "s10", "nome": "Sabato Santo", "ordine": 30, "nascosto": true },
-                { "id": "s11", "nome": "Sabato Santo", "ordine": 31, "nascosto": true },
-                { "id": "s12", "nome": "Sabato Santo", "ordine": 32, "nascosto": true },
-                { "id": "s13", "nome": "Sabato Santo", "ordine": 33, "nascosto": true },
-                { "id": "s14", "nome": "Sabato Santo", "ordine": 34, "nascosto": true },
             ],
             "messe": [
                 { "id": "gSanto", "nome": "Giovedì Santo" },
@@ -68,7 +51,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Acqua siamo noi",
-        "momento": "s7",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -106,7 +89,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Alleluia (Tutto il mondo deve sapere)",
-        "momento": "s5",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -192,7 +175,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "gSanto"
         ],
-        "testo_md": "[Intro: MI SI MI LA DO# SI LA]\n\n> Rit.\n> [SI]Veniamo da [MI]Te,\n> chiamati per [SI]nome.\n> Che festa, Sign[MI]ore, Tu cammini con [LA]noi.\n> Ci parli di [MI]Te,\n> per noi spezzi il [SI]pane,\n> Ti riconos[MI]ciamo e il cuore arde: sei [LA]Tu!\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n>\n> [LA]Siamo come terra ed ar[DO#-7]gilla\n> e la [MI]Tua Parola ci plasm[SI]erà,\n> b[LA]race pronta per la sci[DO#-7]ntilla\n> e il Tuo[MI] Spirito soffier[LA]à,\n> c’infiamm[SI]erà. Rit.\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n\n>\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n> S[LA]iamo q[MI]ui."
+        "testo_md": "[Intro: MI SI MI LA DO# SI LA]\n\n> Rit.\n> [SI]Veniamo da [MI]Te,\n> chiamati per [SI]nome.\n> Che festa, Sign[MI]ore, Tu cammini con [LA]noi.\n> Ci parli di [MI]Te,\n> per noi spezzi il [SI]pane,\n> Ti riconos[MI]ciamo e il cuore arde: sei [LA]Tu!\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui. [SI]\n>\n> [LA] Siamo come terra ed ar[DO#-7]gilla\n> e la [MI]Tua Parola ci plasm[SI]erà,\n> b[LA]race pronta per la sci[DO#-7]ntilla\n> e il Tuo[MI] Spirito soffier[LA]à,\n> c’infiamm[SI]erà. Rit.\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n\n>\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n> S[LA]iamo q[MI]ui."
     },
     {
         "titolo": "Cieli e terra nuova",
@@ -202,7 +185,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Come fuoco vivo",
-        "momento": "s2",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -302,7 +285,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
-        "momento": "s3",
+        "momento": "messe:",
         "messe": [
             "gSanto",
             "sSanto"
@@ -325,7 +308,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Gloria nell'alto dei Cieli",
         "momento": "gloria",
         "messe": [],
-        "testo_md": "> Rit.\n>\n> Gloria, gloria a Dio.\n>\n> Gloria, gloria nell’alto dei Cieli.\n>\n> Pace in terra agli uomini amati dal Signor.\n>\n> Gloria!\n\n\n\nNoi Ti lodiamo, Ti benediciamo,\n\nTi adoriamo, glorifichiamo Te,\n\nTi rendiamo grazie per la Tua immensa gloria.\n\nSignore Dio, gloria!\n\nRe del Cielo, gloria!\n\nDio Padre, Dio onnipotente, gloria!\n\n\n\nSignore, Figlio unigenito, Gesù Cristo,\n\nSignore, Agnello di Dio, Figlio del Padre.\n\nTu che togli i peccati del mondo, abbi pietà di noi;\n\nTu che togli i peccati del mondo, accogli la nostra supplica;\n\nTu che siedi alla destra del Padre, abbi pietà di noi.\n\n\n\nPerché Tu solo il santo, il Signore,\n\nTu solo l’Altissimo, Cristo Gesù\n\ncon lo Spirito Santo nella gloria del Padre. **Rit.**"
+        "testo_md": "> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini amati dal Signor.\n> Gloria!\n\r\nNoi Ti lodiamo, Ti benediciamo,\r\nTi adoriamo, glorifichiamo Te,\r\nTi rendiamo grazie per la Tua immensa gloria.\r\nSignore Dio, gloria! (Signore Dio)\r\nRe del Cielo, gloria! (Re del Cielo, gloria!)\r\nDio Padre, Dio onnipotente, gloria! (Dio Padre, gloria!)\r\n\r\nSignore, Figlio unigenito, Gesù Cristo, (oooo)\r\nSignore, Agnello di Dio, Figlio del Padre. (oooo)\r\nTu che togli i peccati del mondo, abbi pietà di noi; (oooo... abbi pietà di noi)\r\nTu che togli i peccati del mondo, accogli la nostra supplica; (oooo... accogli la nostra supplica)\r\nTu che siedi alla destra del Padre, abbi pietà di noi. (oooo... abbi pietà di noi)\r\n\r\nPerché Tu solo il santo, il Signore, (Gesù Cristo)\r\nTu solo l’Altissimo, Cristo Gesù (con il Santo Spirito)\r\ncon lo Spirito Santo nella gloria del Padre. (nella gloria, gloria del Padre) **Rit.**\r\n\r\n> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini... amati dal Signor. (...di pace)\n> Gloria!"
     },
     {
         "titolo": "Grandi cose",
@@ -401,7 +384,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Litanie blues (Uz)",
-        "momento": "s6",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -429,7 +412,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Lode al nome Tuo",
-        "momento": "v2",
+        "momento": "messe:",
         "messe": [
             "vSanto"
         ],
@@ -457,7 +440,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Maria Tu sei",
-        "momento": "s13",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -495,7 +478,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Pace a te",
-        "momento": "s10",
+        "momento": "messe:",
         "messe": [],
         "testo_md": "Nel Signore ti do la pace\n\n> Rit.\n> [Do]Nel Signore [fa]io ti do' la p[do]ace, pace a [fa]te, pace a [do]te.\n> Nel Sig[la-]nore [fa]io ti do' la p[do]ace, pace a [fa]te, p[sol]ace a [do]te.\n\nNel Suo n[do]ome [fa]restermo u[do]niti, pace a[fa] te, pace a[do] te.\nNel Suo [mi-]nome restermo un[la-]iti, pace a[fa] te, [sol]pace a[do] te. **Rit.**\n\nSiamo u[do]niti [fa]nella stessa [do]fede, pace a[fa] te, pace a[do] te.\nSiamo u[mi-]niti nella stessa f[la-]ede, pace a[fa] te, [sol]pace a[do] te. **Rit.**\n\n> E la pace sia con te\n[re  sol  la  sol  la  re]\n> [sol]E la pace[la] sia[sol] con[la] te,[re]\n> [sol  la  sol  la  re]\n> pace,\tpace,\n> [sol]ogni giorno[la] sai[sol] con[la] te,[re]\n> [sol  la  sol  la  re]\n> pace,\tpace,\n> [sol]la Sua [la]pace [sol]data [la]a [re]noi\n> [sol]che dovunque [la]andrai[sol] p[sol]ort[la]erai[re] (3 volte)\n>\n> [sol]E la pace[la] sia[sol] con[la] te[re]"
     },
@@ -573,7 +556,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Resto con Te",
-        "momento": "v3",
+        "momento": "messe:",
         "messe": [
             "vSanto"
         ],
@@ -581,7 +564,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Resurrezione",
-        "momento": "s14",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -637,7 +620,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Santo (Osanna nelle altezze)",
-        "momento": "s9",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -651,7 +634,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Segni del Tuo amore",
-        "momento": "s8",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
@@ -685,7 +668,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Sono qui a lodarTi",
-        "momento": "v1",
+        "momento": "messe:",
         "messe": [
             "vSanto"
         ],
@@ -729,7 +712,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Verbum panis",
-        "momento": "s12",
+        "momento": "messe:",
         "messe": [
             "gSanto",
             "sSanto"
@@ -738,11 +721,11 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Vi amo così",
-        "momento": "s11",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],
-        "testo_md": "C’è una novità nella nostra storia:\nDio che si fa uomo e porta il cielo sulla terra.\nCon la nostra vita Si rivela\nnello spirito che soffia verità.\nC’è una novità: che la morte è vinta\ne la gioia in cuore a tutto il mondo poi racconta.\nAnnunciando ancora la Parola\nche ci aiuta a ritornare insieme qui. **Rit.**\n\n> Rit.\n> Vi amo così e vi amerò\n> come vi ho amati, con voi resterò!\n> E via da qui ognuno sarà\n> il testimone della Carità,\n> il testimone di me, Verità.\n\nC’è una novità: Cristo è la speranza\nche da noi dilaga, fino ai confini della terra,\nfigli della Chiesa, madre e amica,\nche rivela la promessa ancora qui. **Rit.**\n\nSenti nel vento\nil grido del mondo,\nche si alza e arriva qui fino a noi,\nchiede da sempre lo sai\ndi esserci.\n\n>\n> …e via da qui ognuno sarà\n> il testimone della Carità,\n> il testimone di me, Verità."
+        "testo_md": "C’è una novità nella nostra storia:\nDio che Si fa uomo e porta il cielo sulla terra.\nCon la nostra vita Si rivela\nnello spirito che soffia verità.\nC’è una novità: che la morte è vinta\ne la gioia in cuore a tutto il mondo poi racconta.\nAnnunciando ancora la Parola\nche ci aiuta a ritornare insieme qui. **Rit.**\n\n> Rit.\n> Vi amo così e vi amerò\n> come vi ho amati, con voi resterò!\n> E via da qui ognuno sarà\n> il testimone della carità,\n> il testimone di me, verità.\n\nC’è una novità: Cristo è la speranza\nche da noi dilaga, fino ai confini della terra,\nfigli della Chiesa, madre e amica,\nche rivela la promessa ancora qui. **Rit.**\n\nSenti nel vento\nil grido del mondo,\nche si alza e arriva qui fino a noi,\nchiede da sempre lo sai\ndi esserci.\n\n>\n> ... e via da qui ognuno sarà\n> il testimone della carità,\n> il testimone di me, verità.\n\n>\n> …e via da qui ognuno sarà\n> il testimone della carità,\n> il testimone di me, verità."
     },
     {
         "titolo": "Vieni e seguimi",
@@ -770,7 +753,7 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Voglio cantare al Signor",
-        "momento": "s4",
+        "momento": "messe:",
         "messe": [
             "sSanto"
         ],

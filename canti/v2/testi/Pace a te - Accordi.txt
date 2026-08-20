@@ -1,7 +1,7 @@
 ﻿# Pace a te
 
 ---
-momento: s10
+momento:
 messe:
 ---
 

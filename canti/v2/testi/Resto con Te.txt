@@ -1,7 +1,7 @@
 ﻿# Resto con Te
 
 ---
-momento: v3
+momento:
 messe:
  - vSanto
 ---

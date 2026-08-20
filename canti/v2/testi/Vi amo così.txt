@@ -1,13 +1,13 @@
 ﻿# Vi amo così
 
 ---
-momento: s11
+momento:
 messe:
  - sSanto
 ---
 
 C’è una novità nella nostra storia:
-Dio che si fa uomo e porta il cielo sulla terra.
+Dio che Si fa uomo e porta il cielo sulla terra.
 Con la nostra vita Si rivela
 nello spirito che soffia verità.
 C’è una novità: che la morte è vinta
@@ -19,8 +19,8 @@ che ci aiuta a ritornare insieme qui. **Rit.**
 Vi amo così e vi amerò
 come vi ho amati, con voi resterò!
 E via da qui ognuno sarà
-il testimone della Carità,
-il testimone di me, Verità.**
+il testimone della carità,
+il testimone di me, verità.**
 
 C’è una novità: Cristo è la speranza
 che da noi dilaga, fino ai confini della terra,
@@ -34,6 +34,11 @@ chiede da sempre lo sai
 di esserci.
 
 **Finale
+... e via da qui ognuno sarà
+il testimone della carità,
+il testimone di me, verità.**
+
+**Finale
 …e via da qui ognuno sarà
-il testimone della Carità,
-il testimone di me, Verità.**
+il testimone della carità,
+il testimone di me, verità.**
