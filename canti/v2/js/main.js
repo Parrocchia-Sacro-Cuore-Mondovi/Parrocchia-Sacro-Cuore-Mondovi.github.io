@@ -140,6 +140,17 @@ function aggiornaListaCanti() {
     cantiFiltrati.sort((a, b) => {
         // CASO 1: L'utente sta visualizzando il filtro "messa"
         if (filtroAttuale.tipo === 'messa') {
+            const numA = a.ordineMesse ? a.ordineMesse[filtroAttuale.id] : undefined;
+            const numB = b.ordineMesse ? b.ordineMesse[filtroAttuale.id] : undefined;
+            const haNumA = numA !== undefined && numA !== null;
+            const haNumB = numB !== undefined && numB !== null;
+
+            // I canti con un numero custom per questa messa vengono prima, ordinati per numero crescente
+            if (haNumA && haNumB) return numA - numB;
+            if (haNumA && !haNumB) return -1;
+            if (!haNumA && haNumB) return 1;
+
+            // Nessuno dei due ha un numero custom: fallback all'ordinamento attuale (ordine del momento, poi alfabetico)
             const ordineA = mappaMomenti[a.momento] ? mappaMomenti[a.momento].ordine : 999;
             const ordineB = mappaMomenti[b.momento] ? mappaMomenti[b.momento].ordine : 999;
             if (ordineA !== ordineB) return ordineA - ordineB;

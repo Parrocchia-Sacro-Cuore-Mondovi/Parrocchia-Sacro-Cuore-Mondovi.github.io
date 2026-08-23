@@ -3,7 +3,6 @@
 ---
 momento: alleluia
 messe:
-- comunioni
 ---
 
 [Intro: MI  SI  DO#-  SI  LA  SI / MI]

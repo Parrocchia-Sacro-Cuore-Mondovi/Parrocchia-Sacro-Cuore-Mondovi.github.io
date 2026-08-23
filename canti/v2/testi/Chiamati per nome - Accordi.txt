@@ -3,7 +3,6 @@
 ---
 momento: comunione
 messe:
- - gSanto
 ---
 
 [Intro: MI SI MI LA DO# SI LA]

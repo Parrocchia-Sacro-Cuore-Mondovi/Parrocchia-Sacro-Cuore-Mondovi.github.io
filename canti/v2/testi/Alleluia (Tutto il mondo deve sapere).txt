@@ -1,9 +1,9 @@
 ﻿# Alleluia (Tutto il mondo deve sapere)
 
 ---
-momento:
+momento: alleluia
 messe:
- - sSanto
+ - matrimonioSara - 4
 ---
 
 **Rit.

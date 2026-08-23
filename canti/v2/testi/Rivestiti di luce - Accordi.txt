@@ -3,7 +3,6 @@
 ---
 momento: fine
 messe:
-- comunioni
 ---
 
 [SOL]E come adagio se ne [LA-]va la nebbia

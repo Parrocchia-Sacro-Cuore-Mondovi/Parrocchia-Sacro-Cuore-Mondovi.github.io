@@ -19,10 +19,7 @@ const datiParrocchialiSalvati = {
                 { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
             ],
             "messe": [
-                { "id": "gSanto", "nome": "Giovedì Santo" },
-                { "id": "vSanto", "nome": "Venerdì Santo" },
-                { "id": "sSanto", "nome": "Sabato Santo" },
-                { "id": "comunioni", "nome": "Comunioni" }
+                { "id": "matrimonioSara", "nome": "Matrimonio" },
             ],
             "canti": [
     {
@@ -52,9 +49,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Acqua siamo noi",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Acqua siamo noi dall’antica sorgente veniamo,\nfiumi siamo noi se i ruscelli si mettono insieme,\nmari siamo noi se i torrenti si danno la mano,\nvita nuova c’è se Gesù è in mezzo a noi. **Rit.**\n\n> Rit.\n> E allora diamoci la mano\n> e tutti insieme camminiamo\n> ed un oceano di pace nascerà.\n> E l’egoismo cancelliamo\n> un cuore limpido sentiamo\n> e Dio che bagna\n> del suo amor l’umanità.\n\nSu nel cielo c’è Dio Padre che vive per l’uomo,\ncrea tutti noi e ci ama di amore infinito,\nfigli siamo noi e fratelli di Cristo Signore,\nvita nuova c’è quando Lui è in mezzo a noi. **Rit.**\n\nNuova umanità oggi nasce da chi crede in Lui,\nnuovi siamo noi se l’amore è la legge di vita,\nfigli siamo noi se non siamo divisi da niente,\nvita eterna c’è quando Lui è dentro a noi. **Rit.**"
     },
     {
@@ -89,11 +84,14 @@ const datiParrocchialiSalvati = {
     },
     {
         "titolo": "Alleluia (Tutto il mondo deve sapere)",
-        "momento": "messe:",
+        "momento": "alleluia",
         "messe": [
-            "sSanto"
+            "matrimonioSara"
         ],
-        "testo_md": "> Rit.\n> Alleluia, alleluia, alleluia,\n> alleluia, alleluia, alleluia.\n\nCome potrò raccontare? \nÈ una gioia che fa piangere e fa gridare: \nio l’ho visto con i miei occhi, era vivo, era Lui.\nE m’ha chiamata per nome: \nera la Sua voce, era il mio Signore! \nIo l’ho visto con i miei occhi, era lì, davanti a me. **Rit.**\n\nGli angeli ci hanno parlato \ndavanti a quel sepolcro spalancato:\n“Donne, il Signore è risorto; non cercatelo qui!”\nChe corsa senza respiro\nper gridare a tutti di quel mattino:\ntutto il mondo deve sapere che è rimasto qui tra noi. **Rit.**\n\nAlba di un tempo diverso,\nè il mattino dei mattini per l'universo,\ntutto già profuma d'eterno:\nc'è il Risorto fra noi.\nE le Sue piaghe e la gloria\nsono vive dentro la nostra storia\nsegni di un amore che resta\nqui per sempre, qui con noi. **Rit.**"
+        "testo_md": "> Rit.\n> Alleluia, alleluia, alleluia,\n> alleluia, alleluia, alleluia.\n\nCome potrò raccontare? \nÈ una gioia che fa piangere e fa gridare: \nio l’ho visto con i miei occhi, era vivo, era Lui.\nE m’ha chiamata per nome: \nera la Sua voce, era il mio Signore! \nIo l’ho visto con i miei occhi, era lì, davanti a me. **Rit.**\n\nGli angeli ci hanno parlato \ndavanti a quel sepolcro spalancato:\n“Donne, il Signore è risorto; non cercatelo qui!”\nChe corsa senza respiro\nper gridare a tutti di quel mattino:\ntutto il mondo deve sapere che è rimasto qui tra noi. **Rit.**\n\nAlba di un tempo diverso,\nè il mattino dei mattini per l'universo,\ntutto già profuma d'eterno:\nc'è il Risorto fra noi.\nE le Sue piaghe e la gloria\nsono vive dentro la nostra storia\nsegni di un amore che resta\nqui per sempre, qui con noi. **Rit.**",
+        "ordineMesse": {
+            "matrimonioSara": 4
+        }
     },
     {
         "titolo": "Alleluia (Verbum panis)",
@@ -104,16 +102,19 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Alleluia, celebrate il Signore - Cioffi",
         "momento": "alleluia",
-        "messe": [
-            "comunioni"
-        ],
+        "messe": [],
         "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\n\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
     },
     {
         "titolo": "Altissimo",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "Altissimo, onnipotente, buon Signore,\nTue son le lodi, la gloria, l’onore ed ogni benedizione\nche a Te solo e al Tuo nome Altissimo possiamo elevare\ne nessun uomo può credersi degno di poterTi nominare.\nLaudato sii, mi Signore con tutte le Tue creature,\nspecialmente per frate sole così bello e radioso\ncon la sua luce illumini il giorno ed illumini noi\ne con grande splendore ci parla di Te Signore. **Rit.**\n\n> Rit.\n> Lodate e benedite il Signore,\n> ringraziate e servite con grande umiltà,\n> lodate, lodate, benedite il Signore con grande umiltà,\n> ringraziate e servite, con grande umiltà.\n\nLaudato sii, mi Signore per sora luna e le stelle\nle hai formate nel cielo così chiare, preziose e belle,\nper frate vento, per l’aria, il sereno ed ogni tempo,\ncosì la vita Tu cresci e sostieni in ogni Tua creatura.\nLaudato sii, mi signore per sora acqua così preziosa\nper frate fuoco giocoso e potente che ci illumina la notte.\nLaudato sii, mi Signore per sora nostra madre la terra\nci sostiene, governa e ci dona fiori, frutti ed erba. **Rit.**\n\nLaudato sii, mi Signore per quelli che per il Tuo Amore,\nperdonano e sopportano in pace ogni persecuzione\nche sora morte ha trovato viventi nella Tua volontà,\nda Te Altissimo un giorno saranno da Te incoronati. **Rit.**"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Altissimo, onnipotente, buon Signore,\nTue son le lodi, la gloria, l’onore ed ogni benedizione\nche a Te solo e al Tuo nome Altissimo possiamo elevare\ne nessun uomo può credersi degno di poterTi nominare.\nLaudato sii, mi Signore con tutte le Tue creature,\nspecialmente per frate sole così bello e radioso\ncon la sua luce illumini il giorno ed illumini noi\ne con grande splendore ci parla di Te Signore. **Rit.**\n\n> Rit.\n> Lodate e benedite il Signore,\n> ringraziate e servite con grande umiltà,\n> lodate, lodate, benedite il Signore con grande umiltà,\n> ringraziate e servite, con grande umiltà.\n\nLaudato sii, mi Signore per sora luna e le stelle\nle hai formate nel cielo così chiare, preziose e belle,\nper frate vento, per l’aria, il sereno ed ogni tempo,\ncosì la vita Tu cresci e sostieni in ogni Tua creatura.\nLaudato sii, mi signore per sora acqua così preziosa\nper frate fuoco giocoso e potente che ci illumina la notte.\nLaudato sii, mi Signore per sora nostra madre la terra\nci sostiene, governa e ci dona fiori, frutti ed erba. **Rit.**\n\nLaudato sii, mi Signore per quelli che per il Tuo Amore,\nperdonano e sopportano in pace ogni persecuzione\nche sora morte ha trovato viventi nella Tua volontà,\nda Te Altissimo un giorno saranno da Te incoronati. **Rit.**",
+        "ordineMesse": {
+            "matrimonioSara": 12
+        }
     },
     {
         "titolo": "Antica, eterna danza",
@@ -136,8 +137,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Beato il cuore - Inno GMG 2016",
         "momento": "messe:",
-        "messe": [],
-        "testo_md": "Sei sceso dalla Tua immensità in nostro aiuto:\nMisericordia scorre da Te sopra tutti noi.\nPersi in un mondo d’oscurità lì Tu ci trovi:\nnelle Tue braccia ci stringi e poi dai la vita per noi. **Rit.**\n\n> Rit.\n> Beato è il cuore che perdona!\n> Misericordia riceverà da Dio in cielo! (x2)\n\nSolo il perdono riporterà pace nel mondo,\nsolo il perdono ci svelerà come figli Tuoi.\nCol sangue in croce hai pagato Tu le nostre povertà.\nSe noi ci amiamo e restiamo in Te il mondo crederà! **Rit.**\n\nLe nostre angosce ed ansietà gettiamo ogni attimo in Te:\namore che non abbandona mai, vivi in mezzo a noi! **Rit.**"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Sei sceso dalla Tua immensità in nostro aiuto:\nMisericordia scorre da Te sopra tutti noi.\nPersi in un mondo d’oscurità lì Tu ci trovi:\nnelle Tue braccia ci stringi e poi dai la vita per noi. **Rit.**\n\n> Rit.\n> Beato è il cuore che perdona!\n> Misericordia riceverà da Dio in cielo! (x2)\n\nSolo il perdono riporterà pace nel mondo,\nsolo il perdono ci svelerà come figli Tuoi.\nCol sangue in croce hai pagato Tu le nostre povertà.\nSe noi ci amiamo e restiamo in Te il mondo crederà! **Rit.**\n\nLe nostre angosce ed ansietà gettiamo ogni attimo in Te:\namore che non abbandona mai, vivi in mezzo a noi! **Rit.**",
+        "ordineMesse": {
+            "matrimonioSara": 9
+        }
     },
     {
         "titolo": "Benedici",
@@ -172,9 +178,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Chiamati per nome",
         "momento": "comunione",
-        "messe": [
-            "gSanto"
-        ],
+        "messe": [],
         "testo_md": "[Intro: MI SI MI LA DO# SI LA]\n\n> Rit.\n> [SI]Veniamo da [MI]Te,\n> chiamati per [SI]nome.\n> Che festa, Sign[MI]ore, Tu cammini con [LA]noi.\n> Ci parli di [MI]Te,\n> per noi spezzi il [SI]pane,\n> Ti riconos[MI]ciamo e il cuore arde: sei [LA]Tu!\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.   [SI]\n\n[LA]Siamo come terra ed ar[DO#-7]gilla\ne la [MI]Tua Parola ci plasm[SI]erà,\nb[LA]race pronta per la sci[DO#-7]ntilla\ne il Tuo[MI] Spirito soffier[LA]à,\nc’infiamm[SI]erà. **Rit.**\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n>\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n> S[LA]iamo q[MI]ui."
     },
     {
@@ -186,9 +190,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Come fuoco vivo",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "[LA  MI  LA  MI  RE  MI  RE  LA]\n\n> Rit.\n> Come [LA]fuoco [MI]vivo si [FA#-]accende in noi\n> un'immen[SI-7]sa fel[MI]icità[LA]\n> che mai [RE]più ness[MI]uno ci [LA]toglierà[RE]\n> perché Tu sei ritor[LA]nato. [MI]\n> Chi pot[LA]rà tac[MI]ere, da[FA#-] ora in poi,\n> che sei [SI-7]Tu in cam[MI]mino con [LA]noi,\n> che la [RE]morte è [MI]vinta per [LA]sempre, [RE]che\n> ci[SI-7] hai ridonato la [MI4]vita.[MI]\n\n[FA#-]Spezzi il pane dava[RE]nti a [LA]noi\nmentre il sole è al [MI4]tramon[MI]to:\n[MI-]ora gli occhi Ti vedono,\n[RE]sei Tu! Resta con [MI]noi. **Rit.**\n\nE per sempre Ti mostrerai\nin quel gesto d'amore:\nmani che ancora spezzano\npane d'eternità. **Rit.**"
     },
     {
@@ -206,14 +208,24 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Come un prodigio",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "Signore Tu, mi scruti e conosci\nsai quando seggo e quando mi alzo.\nRiesci a vedere i miei pensieri\nsai quando io cammino e quando riposo.\nTi sono note tutte le mie vie.\nLa mia parola non è ancora sulla lingua\ne Tu, Signore, già la conosci tutta. **Rit.**\n\n> Rit.\n> Sei Tu che mi hai creato\n> e mi hai tessuto nel seno di mia madre.\n> Tu mi hai fatto come un prodigio,\n> le Tue opere sono stupende\n> e per questo Ti lodo.\n\nDi fronte e alle spalle Tu mi circondi\nponi su me la Tua mano.\nLa Tua saggezza, stupenda per me,\nè troppo alta e io non la comprendo.\nChe sia in cielo o agli inferi ci sei,\nnon si può mai fuggire dalla Tua presenza.\nOvunque la Tua mano guiderà la mia. **Rit.**\n\nE nel segreto Tu mi hai formato,\nmi hai intessuto dalla terra.\nNeanche le ossa ti eran nascoste,\nancora informe mi hanno visto i Tuoi occhi.\nI miei giorni erano fissati\nquando ancora non ne esisteva uno\ne tutto quanto era scritto nel Tuo libro. **Rit.**"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Signore Tu, mi scruti e conosci\nsai quando seggo e quando mi alzo.\nRiesci a vedere i miei pensieri\nsai quando io cammino e quando riposo.\nTi sono note tutte le mie vie.\nLa mia parola non è ancora sulla lingua\ne Tu, Signore, già la conosci tutta. **Rit.**\n\n> Rit.\n> Sei Tu che mi hai creato\n> e mi hai tessuto nel seno di mia madre.\n> Tu mi hai fatto come un prodigio,\n> le Tue opere sono stupende\n> e per questo Ti lodo.\n\nDi fronte e alle spalle Tu mi circondi\nponi su me la Tua mano.\nLa Tua saggezza, stupenda per me,\nè troppo alta e io non la comprendo.\nChe sia in cielo o agli inferi ci sei,\nnon si può mai fuggire dalla Tua presenza.\nOvunque la Tua mano guiderà la mia. **Rit.**\n\nE nel segreto Tu mi hai formato,\nmi hai intessuto dalla terra.\nNeanche le ossa ti eran nascoste,\nancora informe mi hanno visto i Tuoi occhi.\nI miei giorni erano fissati\nquando ancora non ne esisteva uno\ne tutto quanto era scritto nel Tuo libro. **Rit.**",
+        "ordineMesse": {
+            "matrimonioSara": 3
+        }
     },
     {
         "titolo": "Con Te camminerò",
         "momento": "matrimoni",
-        "messe": [],
-        "testo_md": "Mi hai chiamato ed ora sono qui:\nla mia vita ormai, Signore,\ntrova senso solo in Te.\nCerco nel profondo e Tu ci sei:\nguardo intorno e poi Ti trovo accanto a me. **Rit.**\n\n> Rit.\n> Insieme a Te camminerò:\n> in ogni volto, in ogni pianto\n> io Ti riconoscerò.\n> Ti seguirò ovunque andrai.\n> Io con Te camminerò.\n\nCome servo sei venuto qui\nper chi è solo e chi è ferito,\nper chi vive in povertà.\nOra, oh Signore, manda me:\nsegno del Tuo amore per l’umanità. **Rit.**\n\nTu sei qui, sei con noi,\nsempre accanto a noi.\n\nNel dolore di chi non ha più una casa:\nTu sei lì.\nNel silenzio di chi ha perso ogni speranza:\nTu sei lì.\nNei rimpianti, nei miei dubbi\ne nel buio delle mie fragilità:\nTu sei lì. **Rit. (con alzata)**\n\n> Rit. (con alzata)\n> And I will walk on holy ground:\n> I’ll hear Your voice, I’ll see Your face,\n> I will find You in the crowd.\n> Lord, I will go where You will lead me.\n> I will walk on holy ground.\n\n>\n> Io con Te camminerò."
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Mi hai chiamato ed ora sono qui:\nla mia vita ormai, Signore,\ntrova senso solo in Te.\nCerco nel profondo e Tu ci sei:\nguardo intorno e poi Ti trovo accanto a me. **Rit.**\n\n> Rit.\n> Insieme a Te camminerò:\n> in ogni volto, in ogni pianto\n> io Ti riconoscerò.\n> Ti seguirò ovunque andrai.\n> Io con Te camminerò.\n\nCome servo sei venuto qui\nper chi è solo e chi è ferito,\nper chi vive in povertà.\nOra, oh Signore, manda me:\nsegno del Tuo amore per l’umanità. **Rit.**\n\nTu sei qui, sei con noi,\nsempre accanto a noi.\n\nNel dolore di chi non ha più una casa:\nTu sei lì.\nNel silenzio di chi ha perso ogni speranza:\nTu sei lì.\nNei rimpianti, nei miei dubbi\ne nel buio delle mie fragilità:\nTu sei lì. **Rit. (con alzata)**\n\n> Rit. (con alzata)\n> And I will walk on holy ground:\n> I’ll hear Your voice, I’ll see Your face,\n> I will find You in the crowd.\n> Lord, I will go where You will lead me.\n> I will walk on holy ground.\n\n>\n> Io con Te camminerò.",
+        "ordineMesse": {
+            "matrimonioSara": 1
+        }
     },
     {
         "titolo": "C’è fretta nell’aria (Ha pressa no ar) - Inno GMG 2023",
@@ -254,9 +266,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "È un giorno di festa - Cioffi",
         "momento": "ingresso",
-        "messe": [
-            "comunioni"
-        ],
+        "messe": [],
         "testo_md": "[Intro: MI-7  RE/FA#  SOL/LA  LA]\n\n> Rit.\n> [LA]È un [RE]giorno di fe[LA/DO#]sta, è il gior[SI-7]no per noi, [SOL]\n> can[RE]tare l’amo[SI-7]re che vie[SOL]ne da Lui. [LA]\n> È un [RE]giorno di gio[LA/DO#]ia, la gio[SI-7]ia per noi, [SOL]\n> sco[MI-]prirsi Suoi fi[RE/FA#]gli e ama[SOL/LA]ti da Lui. [RE]\n\nTu ci chia[SOL]mi, [RE]\nSi[LA/DO]gnore, [SI-7]\nalla men[SOL]sa [RE]\nche ac[LA]coglie. [SI-7]\nSei paro[SOL]la,\n[RE]pane del no[LA]stro cammi[SI-7]no,\n[SOL]fonte d’ete[MI-]rnità. [SOL  LA]**Rit.**\n\nNoi veni[SOL]amo, [RE]\nSi[LA/DO]gnore, [SI-7]\nper tro[SOL]varTi [RE]\ne a[LA]marTi. [SI-7]\nNoi fra[SOL]telli,\n[RE]noi una so[LA]la fami[SI-7]glia,\n[SOL]un corpo so[MI-]lo in Te. [SOL  LA]**Rit. (con alzata)**\n\n> Rit. (con alzata)\n> È un [MI]giorno di fe[SI]sta, è il gio[DO#-7]rno per no[LA]i,\n> can[MI]tare l’amo[DO#-7]re che vie[LA]ne da Lui. [SI]\n> È un [MI]giorno di gio[SI]ia, la gio[DO#-7]ia per noi, [LA]\n> sco[FA#-]prirsi Suoi fi[MI]gli e ama[LA (SI)]ti da Lui. [MI]"
     },
     {
@@ -286,10 +296,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
         "momento": "gloria",
-        "messe": [
-            "gSanto",
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "**DONNE**\nGloria a Dio nell’alto dei Cieli\nE pace in terra agli uomini di buona volontà\nGloria a Dio nell’alto del Cieli\nGloria\n\n**UOMINI**\nGloria, Gloria a Dio nell’alto\nE pace agli uomini di buona volontà-à\nPace in terra\nGloria"
     },
     {
@@ -307,8 +314,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Gloria nell'alto dei Cieli",
         "momento": "gloria",
-        "messe": [],
-        "testo_md": "> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini amati dal Signor.\n> Gloria!\n\nNoi Ti lodiamo, Ti benediciamo,\nTi adoriamo, glorifichiamo Te,\nTi rendiamo grazie per la Tua immensa gloria.\nSignore Dio, gloria! (Signore Dio)\nRe del Cielo, gloria! (Re del Cielo, gloria!)\nDio Padre, Dio onnipotente, gloria! (Dio Padre, gloria!)\n\nSignore, Figlio unigenito, Gesù Cristo, (oooo)\nSignore, Agnello di Dio, Figlio del Padre. (oooo)\nTu che togli i peccati del mondo, abbi pietà di noi; (oooo... abbi pietà di noi)\nTu che togli i peccati del mondo, accogli la nostra supplica; (oooo... accogli la nostra supplica)\nTu che siedi alla destra del Padre, abbi pietà di noi. (oooo... abbi pietà di noi)\n\nPerché Tu solo il santo, il Signore, (Gesù Cristo)\nTu solo l’Altissimo, Cristo Gesù (con il Santo Spirito)\ncon lo Spirito Santo nella gloria del Padre. (nella gloria, gloria del Padre) **Rit.**\n\n> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini... amati dal Signor. (...di pace)\n> Gloria!"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini amati dal Signor.\n> Gloria!\n\nNoi Ti lodiamo, Ti benediciamo,\nTi adoriamo, glorifichiamo Te,\nTi rendiamo grazie per la Tua immensa gloria.\nSignore Dio, gloria! (Signore Dio)\nRe del Cielo, gloria! (Re del Cielo, gloria!)\nDio Padre, Dio onnipotente, gloria! (Dio Padre, gloria!)\n\nSignore, Figlio unigenito, Gesù Cristo, (oooo)\nSignore, Agnello di Dio, Figlio del Padre. (oooo)\nTu che togli i peccati del mondo, abbi pietà di noi; (oooo... abbi pietà di noi)\nTu che togli i peccati del mondo, accogli la nostra supplica; (oooo... accogli la nostra supplica)\nTu che siedi alla destra del Padre, abbi pietà di noi. (oooo... abbi pietà di noi)\n\nPerché Tu solo il santo, il Signore, (Gesù Cristo)\nTu solo l’Altissimo, Cristo Gesù (con il Santo Spirito)\ncon lo Spirito Santo nella gloria del Padre. (nella gloria, gloria del Padre) **Rit.**\n\n> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini... amati dal Signor. (...di pace)\n> Gloria!",
+        "ordineMesse": {
+            "matrimonioSara": 2
+        }
     },
     {
         "titolo": "Grandi cose",
@@ -325,8 +337,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Il canto dell'amore",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "Se dovrai attraversare il deserto,\nnon temere Io sarò con te.\nSe dovrai camminare nel fuoco,\nla sua fiamma non ti brucerà.\nSeguirai la Mia luce nella notte,\nsentirai la Mia forza nel cammino.\nIo sono il tuo Dio, il Signore.\n\nSono Io che ti ho fatto e plasmato,\nti ho chiamato per nome.\nIo da sempre ti ho conosciuto\ne ti ho dato il mio amore\nperché tu sei prezioso ai Miei occhi,\nvali più del più grande dei tesori.\nIo sarò con te dovunque andrai.\n\nNon pensare alle cose di ieri,\ncose nuove fioriscono già.\nAprirò nel deserto sentieri,\ndarò acqua nell’aridità\nperché tu sei prezioso ai Miei occhi,\nvali più del più grande dei tesori.\nIo sarò con te dovunque andrai, dovunque andrai.\n\nIo ti sarò accanto, sarò con te.\nPer tutto il tuo viaggio sarò con te. (x3)"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Se dovrai attraversare il deserto,\nnon temere Io sarò con te.\nSe dovrai camminare nel fuoco,\nla sua fiamma non ti brucerà.\nSeguirai la Mia luce nella notte,\nsentirai la Mia forza nel cammino.\nIo sono il tuo Dio, il Signore.\n\nSono Io che ti ho fatto e plasmato,\nti ho chiamato per nome.\nIo da sempre ti ho conosciuto\ne ti ho dato il mio amore\nperché tu sei prezioso ai Miei occhi,\nvali più del più grande dei tesori.\nIo sarò con te dovunque andrai.\n\nNon pensare alle cose di ieri,\ncose nuove fioriscono già.\nAprirò nel deserto sentieri,\ndarò acqua nell’aridità\nperché tu sei prezioso ai Miei occhi,\nvali più del più grande dei tesori.\nIo sarò con te dovunque andrai, dovunque andrai.\n\nIo ti sarò accanto, sarò con te.\nPer tutto il tuo viaggio sarò con te. (x3)",
+        "ordineMesse": {
+            "matrimonioSara": 13
+        }
     },
     {
         "titolo": "Invochiamo la Tua presenza",
@@ -355,8 +372,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "La parabola del seminatore - Reale",
         "momento": "matrimoni",
-        "messe": [],
-        "testo_md": "Sai che un seme seminato fra i sassi\nnasce subito e radici non ha\ne così al primo raggio di sole tutto brucerà.\nCosì accoglier la parola con gioia\nse non sei costante non servirà:\nbasta un soffio un po′ più forte di vento\ne tutto crollerà. **Rit.**\n\n> Rit.\n> Ma Tu, Signore, fa di me la terra buona:\n> Tu coltivami e semina nel cuore la Parola.\n> Signore, fa di me la terra buona:\n> Fammi crescere e portare il frutto della Tua Parola\n> in me, in me.\n\nSai che un seme messo lungo la strada\ncibo per gli uccelli diventerà;\nquello invece andato in mezzo alle spine soffocherà.\nCosì il male può rubarti dal cuore\nquel che il Padre ha messo dentro di te\no le spine degli affanni del mondo soffocarlo. **Rit.**\n\nSai che un seme seminato fra i sassi nasce subito e radici non ha,\nma con Te qualsiasi piccolo seme frutto porterà."
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Sai che un seme seminato fra i sassi\nnasce subito e radici non ha\ne così al primo raggio di sole tutto brucerà.\nCosì accoglier la parola con gioia\nse non sei costante non servirà:\nbasta un soffio un po′ più forte di vento\ne tutto crollerà. **Rit.**\n\n> Rit.\n> Ma Tu, Signore, fa di me la terra buona:\n> Tu coltivami e semina nel cuore la Parola.\n> Signore, fa di me la terra buona:\n> Fammi crescere e portare il frutto della Tua Parola\n> in me, in me.\n\nSai che un seme messo lungo la strada\ncibo per gli uccelli diventerà;\nquello invece andato in mezzo alle spine soffocherà.\nCosì il male può rubarti dal cuore\nquel che il Padre ha messo dentro di te\no le spine degli affanni del mondo soffocarlo. **Rit.**\n\nSai che un seme seminato fra i sassi nasce subito e radici non ha,\nma con Te qualsiasi piccolo seme frutto porterà.",
+        "ordineMesse": {
+            "matrimonioSara": 10
+        }
     },
     {
         "titolo": "La stella polare",
@@ -385,9 +407,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Litanie blues (Uz)",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Signore pietà\n**Signore pietà**\nCristo pietà\n**Cristo pietà**\nSignore pietà\n**Signore pietà**\n\nSanta Maria, Madre di Dio\nSan Michele e San Gabriele\nSan Giuseppe, Sant’Andrea\nSanti Pietro e Paolo\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nSanto Stefano e San Lorenzo\nSanta Maria Maddalena\nSant’Agnese, Santa Cecilia\nSanti Martiri di Cristo\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nSan Gregorio, Sant’Agostino\nSanti Cirillo e Metodio\nSan Martino, San Benedetto\nSan Francesco d’Assisi\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nSan Giovanni, San Domenico\nSanta Caterina da Siena\nSanta Rita, Santa Chiara\nSanti e Sante tutte di Dio\n\n**Pregate per noi (Pregate)\nPregate per noi\nPregate per noi (Pregate)\nPregate per noi**\n\nNella tua misericordia\n**Salvaci, Signore**\nDa ogni male\n**Salvaci, Signore**\nDa ogni peccato\n**Salvaci, Signore**\nDalla morte eterna\n**Salvaci, Signore**\nPer la tua incarnazione\n**Salvaci, Signore**\nPer la tua morte e resurrezione\n**Salvaci, Signore**\nPer il dono dello spirito\n**Salvaci, Signore**\nPer i tuoi sacramenti\n**Salvaci, Signore**\nNoi peccatori, Ti preghiamo\n**Ascoltaci, Signore**\nPer i ragazzi del battesimo\n**Ascoltaci, Signore**\nCristo ascoltaci\n**Cristo ascoltaci**\nCristo esaudiscici\n**esaudiscici**\nCristo Ascoltaci\n**Cristo ascoltaci**\nCristo esaudiscici."
     },
     {
@@ -405,25 +425,19 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Lode a Dio",
         "momento": "alleluia",
-        "messe": [
-            "gSanto"
-        ],
+        "messe": [],
         "testo_md": "Lode a Dio (Ti offro il mio cuore),\nlode a Dio (e la mia voce),\nlode a Dio (dentro me),\nmio Dio (mio Dio),\nmio Re."
     },
     {
         "titolo": "Lode al nome Tuo",
         "momento": "messe:",
-        "messe": [
-            "vSanto"
-        ],
+        "messe": [],
         "testo_md": "Lode al nome Tuo dalle terre più floride\ndove tutto sembra vivere, lode al nome Tuo.\nLode al nome Tuo dalle terre più aride\ndove tutto sembra sterile, lode al nome Tuo. **Rit.**\n\n> Rit.\n> Tornerò a lodarTi sempre per ogni dono Tuo\n> e quando scenderà la notte, sempre io dirò:\n> “Benedetto il nome del Signor,\n> lode al nome Tuo.\n> Benedetto il nome del Signor\n> il glorioso nome di Gesù”.\n\nLode al nome Tuo quando il sole splende su di me,\nquando tutto è incantevole, lode al nome Tuo.\nLode al nome Tuo quando io sto davanti a Te\ncon il cuore triste e fragile, lode al nome Tuo. **Rit.**\n\nTu doni e porti via,\nTu doni e porti via,\nma sempre sceglierò\ndi benedire Te. **Rit.**\n\nTu doni e porti via,\nTu doni e porti via,\nma sempre sceglierò\ndi benedire Te. (x2)"
     },
     {
         "titolo": "Luce",
         "momento": "fine",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "[SOL]C’è il segreto [RE]della libertà, que[MI-]lla vera\nbatte den[DO]tro di [RE]te.\n[SOL]È come risvegliarsi [RE]un mattino col[MI-] sole\ndopo un [DO]lungo [RE]inverno. [SOL]\nNel soff[RE]rire, mio Signo[MI-]re,\nho incontrato [DO]Te, Dio a[RE]more. [SOL]\nNel per[RE]dono, nel gioi[MI-]re,\nho capito che [DO]sei luce per[RE] me. **Rit.**\n\n> Rit.\n> [SOL]Signore [RE]sono qui per [MI-]dirTi ancora sì, [DO]luce. [RE]\n> [SOL]Fammi scopp[RE]iare di gioia [MI-]di vivere, [DO]luce. [RE]\n> [SOL]Fammi strum[RE]ento per porta[MI-]re intorno a me, [DO]luce. [RE]\n> [SOL]E chi è vicino a [RE]me sappia [MI-]che tutto in Te è [DO]luce. [RE  (SOL  RE  MI-  DO  RE)]\n\n[SOL]Voglio ringrazi[RE]arTi, Signore, per[MI-] la vita\nche mi hai[DO] rido[RE]nato.\n[SOL]So che sei nell’a[RE]more degli ami[MI-]ci che\nora ho inco[DO]ntra[RE]to. [SOL]\nNel soffrire, [RE]mio Signore,\nho incontrato[DO] Te, Dio a[RE]more. [SOL]\nNel perdo[RE]no, nel gioire,\nho [MI-]capito che sei l[DO]uce per [RE]me. **Rit.**\n\n[SOL  RE  MI-]E con le lacrime a[DO]gli occhi e le mie [SOL]mani alzate verso Te, [RE]Gesù,\n[MI-]con la speranza nel [DO]cuore e la Tua luce in me paura [RE4]non ho[RE] più. **Rit. (x2)**"
     },
     {
@@ -435,15 +449,18 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Madre di Dio - Reale",
         "momento": "canti mariani",
-        "messe": [],
-        "testo_md": "Dio mi pensò,\ne fu sera e fu mattina,\ne con un soffio mi creò.\nE dentro me\nabita un cuore di bambino\nche chiede amore\ne ha nostalgia di Te. **Rit.**\n\n> Rit.\n> Tu che sei madre,\n> madre di questa umanità.\n> Tu che sei donna,\n> dolcezza nella tua umiltà.\n> Tu che sei amica meravigliosa.\n> Tu che sei sposa di Dio.\n> Tu che intercedi per me presso Dio.\n>\n> Insegnami ad essere uomo,\n> insegnami ad essere buono,\n> insegnami ad essere amico,\n> insegnami la tua umiltà,\n> insegnami ad essere sposo,\n> insegnami ad essere padre,\n> insegnami ad esser sincero,\n> insegnami ad essere un figlio di Dio\n> con Te.\n>\n> Dio mi pensò,\n> e fu sera e fu mattina,\n> e con un soffio mi creò.\n> E dentro me,\n> abita un cuore di bambina\n> che chiede amore\n> e ha nostalgia di Te. Rit.\n\nInsegnami ad essere donna,\ninsegnami ad essere buona,\ninsegnami ad essere amica,\ninsegnami la tua umiltà,\ninsegnami ad essere sposa,\ninsegnami ad essere madre,\ninsegnami ad esser sincera...\n\n*Finale\n...insegnaci ad essere figli di Dio,\ndi Dio, di Dio con Te.**"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "Dio mi pensò,\ne fu sera e fu mattina,\ne con un soffio mi creò.\nE dentro me\nabita un cuore di bambino\nche chiede amore\ne ha nostalgia di Te. **Rit.**\n\n> Rit.\n> Tu che sei madre,\n> madre di questa umanità.\n> Tu che sei donna,\n> dolcezza nella tua umiltà.\n> Tu che sei amica meravigliosa.\n> Tu che sei sposa di Dio.\n> Tu che intercedi per me presso Dio.\n>\n> Insegnami ad essere uomo,\n> insegnami ad essere buono,\n> insegnami ad essere amico,\n> insegnami la tua umiltà,\n> insegnami ad essere sposo,\n> insegnami ad essere padre,\n> insegnami ad esser sincero,\n> insegnami ad essere un figlio di Dio\n> con Te.\n>\n> Dio mi pensò,\n> e fu sera e fu mattina,\n> e con un soffio mi creò.\n> E dentro me,\n> abita un cuore di bambina\n> che chiede amore\n> e ha nostalgia di Te. Rit.\n\nInsegnami ad essere donna,\ninsegnami ad essere buona,\ninsegnami ad essere amica,\ninsegnami la tua umiltà,\ninsegnami ad essere sposa,\ninsegnami ad essere madre,\ninsegnami ad esser sincera...\n\n*Finale\n...insegnaci ad essere figli di Dio,\ndi Dio, di Dio con Te.**",
+        "ordineMesse": {
+            "matrimonioSara": 11
+        }
     },
     {
         "titolo": "Maria Tu sei",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Maria tu sei, la vita per me\nsei la speranza, la gioia, l'amore, tutto sei.\nMaria tu sai quello che vuoi,\nsai con che forza d'amore in cielo mi porterai. **Rit.**\n\n> Rit.\n> Maria ti do il mio cuore per sempre se vuoi,\n> tu dammi l'amore che non passa mai.\n> Rimani con me e andiamo nel mondo insieme,\n> la tua presenza sarà goccia di paradiso per l'umanità.\n\nMaria con te sempre vivrò.\nIn ogni momento giocando, cantando, ti amerò.\nSeguendo i tuoi passi in te io avrò\nla luce che illumina i giorni e le notti dell'anima. **Rit.**\n\n> …rimani con me e andiamo nel mondo insieme,\n> la tua presenza sarà goccia di paradiso per l'umanità."
     },
     {
@@ -491,17 +508,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Pace sia, pace a voi",
         "momento": "pace",
-        "messe": [
-            "comunioni"
-        ],
+        "messe": [],
         "testo_md": "[Intro: RE  SOL  RE  LA4  RE/SOL/RE]\n> Rit.\n> Pace [RE]sia, pace a voi, la Tu[SOL]a pace sarà\n> sulla [SI-]Terra com'è [LA4]nei Cie[LA]li.\n> Pace [RE]sia, pace a voi, la Tua [SOL]pace sarà\n> gioia [FA]nei nostri[DO] occhi, nei [SOL]cuori.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> luce [SI-]limpida dei [LA4]pensieri.[LA]\n> [RE]Pace sia, pace a voi, [SOL]la Tua pace sarà\n> una[RE] casa per [LA4]tutti.  [RE/SOL/RE]\n\n[SOL]Pace a [RE]voi: [LA]sia il [SI-]Tuo dono visibile.\n[SOL]Pace a [RE]voi: [LA]la Tua [SI-]eredità.\n[SOL]Pace a [RE]voi: [LA]come [SI-]un canto all’unisono\n[DO2/5]che sale dalle nostre [LA4città. [LA] **Rit.[SI]**\n\nPace a voi: sia un'impronta nei secoli.\nPace a voi: segno d'unità.\nPace a voi: sia l'abbraccio tra i popoli,\nla Tua promessa all'umanità. **Rit. (con alzata)**\n\n> Rit. (con alzata)\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> sulla [DO#-]Terra com'è nei Cieli.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> gioia[SOL] nei nostri [RE]occhi, nei [LA]cuo[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> luce [DO#-]limpida dei pen[SI4]sie[SI]ri.\n> Pace [MI]sia, pace a voi, la Tua [LA]pace sarà\n> una [MI]casa per [SI7]tutti. [MI  LA  MI]"
     },
     {
         "titolo": "Pane del cielo",
         "momento": "comunione",
-        "messe": [
-            "comunioni"
-        ],
+        "messe": [],
         "testo_md": "> Rit.\n> [DO]Pane del [MI-]cielo [FA]sei Tu, Gesù,[DO]\n> [LA-]via d’amo[RE-]re: [FA]Tu ci fai come [DO]Te.\n\n[FA]No, non è ri[RE-]masta fredda la terra[SOL]:\n[MI-]Tu sei ri[FA]masto co[DO]n noi [FA]\nper nutrir[DO]ci di [LA-]Te, pane [SOL]di vita,\ned[LA-] infiamma[SOL]re col Tuo [MI+]amore\n[SOL]tutta [FA]l’uma[DO]nità. **Rit.**\n\n[FA]Sì, il cielo è [RE-]qui su questa terra:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi,[FA]\nma ci porti[DO] con Te ne[LA-]lla Tu[SOL]a casa[LA-]\ndove vi[SOL]vremo insieme[MI+] a Te[SOL]\ntutta [FA]l’eter[DO]nità. **Rit.**\n\n[FA]No, la morte[RE-] non può farci paura:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi.[FA]\nE chi vive [DO]di Te v[LA-]ive per [SOL]sempre.[LA-]\nSei Dio [SOL]con noi, sei Dio [MI+]per noi,[SOL]\nDio [FA]in me[DO]zzo a noi. **Rit.**"
     },
     {
@@ -525,16 +538,24 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Preghiera semplice",
         "momento": "pace",
-        "messe": [],
-        "testo_md": "> Rit.\n> Fai di me\n> strumento della pace\n> della tua pace, sì\n> strumento fai di me.\n\nDove è odio, ch'io porti l'amore.\nDove è offesa, ch'io porti il perdono.\nL'unità dove c'è la discordia.\nDove è dubbio, ch'io porti la fede\ned il vero dove regna l'errore\ne speranza a chi più non spera.\nDove è il pianto, ch'io porti la gioia.\nDove è buio, ch'io porti la luce. **Rit.**\n\nFa’ che non cerchi di essere io\nconsolato, capito ed amato,\nma che io cerchi di dare, mio Dio,\nconsolare, capire ed amare.\nPerché è dando che poi si riceve,\nperdonando, che si è perdonati\ne morendo che poi si risorge\na una vita che dura per sempre. **Rit.**"
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "> Rit.\n> Fai di me\n> strumento della pace\n> della tua pace, sì\n> strumento fai di me.\n\nDove è odio, ch'io porti l'amore.\nDove è offesa, ch'io porti il perdono.\nL'unità dove c'è la discordia.\nDove è dubbio, ch'io porti la fede\ned il vero dove regna l'errore\ne speranza a chi più non spera.\nDove è il pianto, ch'io porti la gioia.\nDove è buio, ch'io porti la luce. **Rit.**\n\nFa’ che non cerchi di essere io\nconsolato, capito ed amato,\nma che io cerchi di dare, mio Dio,\nconsolare, capire ed amare.\nPerché è dando che poi si riceve,\nperdonando, che si è perdonati\ne morendo che poi si risorge\na una vita che dura per sempre. **Rit.**",
+        "ordineMesse": {
+            "matrimonioSara": 8
+        }
     },
     {
         "titolo": "Quelli che amano Te",
         "momento": "offertorio",
         "messe": [
-            "comunioni"
+            "matrimonioSara"
         ],
-        "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi."
+        "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi.",
+        "ordineMesse": {
+            "matrimonioSara": 6
+        }
     },
     {
         "titolo": "Re dei re",
@@ -557,17 +578,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Resto con Te",
         "momento": "messe:",
-        "messe": [
-            "vSanto"
-        ],
+        "messe": [],
         "testo_md": "Seme gettato nel mondo,\nFiglio donato alla terra,\nil Tuo silenzio custodirò.\nIn ciò che vive e che muore\nvedo il Tuo volto d'amore:\nsei il mio Signore e sei il mio Dio. **Rit.1**\n\n> Rit.1\n> Io lo so che Tu sfidi la mia morte,\n> io lo so che Tu abiti il mio buio.\n> Nell'attesa del giorno che verrà\n> resto con Te.\n\nNube di mandorlo in fiore\ndentro gli inverni del cuore\nè questo pane che Tu ci dai.\nVena di cielo profondo\ndentro le notti del mondo\nè questo vino che Tu ci dai. **Rit.1 + Rit.2**\n\n> Rit2.\n> Tu sei Re di stellate immensità\n> e sei Tu il futuro che verrà,\n> sei l’amore che muove ogni realtà\n> e Tu sei qui,\n> resto con Te."
     },
     {
         "titolo": "Resurrezione",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Che gioia ci hai dato, Signore del cielo,\nSignore del grande universo.\nChe gioia ci hai dato, vestito di luce,\nvestito di gloria infinita,\nvestito di gloria infinita.\nVederTi risorto, vederTi Signore,\nil cuore sta per impazzire.\nTu sei ritornato, Tu sei qui fra noi\ne adesso Ti avremo per sempre,\ne adesso Ti avremo per sempre.\nChi cercate, donne, quaggiù,\nchi cercate, donne, quaggiù,\nquello ch’era morto non è qui.\nÈ risorto, sì, come aveva detto anche a voi.\nVoi gridate a tutti che è risorto Lui,\na tutti che è risorto Lui.\nTu hai vinto il mondo Gesù,\nTu hai vinto il mondo Gesù,\nliberiamo la felicità.\nE la morte, no, non esiste più,\nl’hai vinta Tu e hai salvato\ntutti noi, uomini con Te,\ntutti noi, uomini con Te."
     },
     {
@@ -579,9 +596,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Rivestiti di luce",
         "momento": "fine",
-        "messe": [
-            "comunioni"
-        ],
+        "messe": [],
         "testo_md": "[SOL]E come adagio se ne [LA-]va la nebbia\n[SOL]portata via dal ven[LA-]to.\nQua[SOL]si come accade ad[LA-] un bambino\n[SOL]che apre gli occhi al [SI7]mondo.\n[MI-]Ogni giorno è un gio[MI-7]rno vivo,\n[DO]ha un colore nuo[SOL]vo che\n[LA-]è luce, è [RE]luce in me! [SOL  LA-  SOL  LA-]\n[SOL]Immensamente chia[LA-]ro,\nquel raggio [SOL]che al mattino [LA-]\nill[SOL]umina la mia ani[LA-]ma,\ncol Suo amo[SOL]re è Dio che mi è vi[SI7]cino.\n[MI-]Fa’ di ogni giorno un[MI-7] giorno v[DO]ivo,\ndà un colore [SOL]nuovo che\n[LA-]è luce, è lu[RE]ce! **Rit.**\n\n> Rit.\n> [DO]Rivestiti di [SOL]luce,\n> porta[RE] il sole attorno[MI-] a te.\n> [DO]Rivestiti d’amo[SOL]re,\n> è l’am[RE]ore che cerca [MI-]te.\n> [DO]Rivestiti di [SOL]pace,\n> la vita[SI7] abbracce[MI-]rai:\n> e [LA7]la forza che non hai trovato mai\n> dalla[RE] Sua luce ti arriverà! (x2)\n\n[SOL]Dolcemente senza far[LA-] rumore\nLui mi[SOL] svela i misteri che [LA-]aprono il cuore,\n[SOL]un sorriso può porta[LA-]re la luce\ned [SOL]aprire le porte del pa[SI7]radiso,\n[MI-]può far di ogni giorno[MI-7] un gior[DO]no diverso\ndi un [SOL]colore nuovo che\n[LA-]è luce, è lu[RE]ce. **Rit.**"
     },
     {
@@ -600,9 +615,12 @@ const datiParrocchialiSalvati = {
         "titolo": "Santo (2 voci)",
         "momento": "santo",
         "messe": [
-            "gSanto"
+            "matrimonioSara"
         ],
-        "testo_md": "**Uomini**\nSanto il Signore Dio dell’universo.\nI Cieli e la terra sono pieni della Tua gloria.\nOsanna nell’alto dei Cieli e benedetto Colui che viene\nnel nome del Signore. Osanna, nell’alto dei Cieli.\n\n**Donne**\nE santo, santo, santo, il Signore della vita.\nE santo, santo, santo, il Signore della storia.\nNei Cieli e sulla terra risplende la Sua gloria.\nOsanna, osanna, osanna nel cielo sconfinato.\nOsanna, osanna, osanna nel canto del creato.\nE sia benedetto Colui che viene in nome di Dio."
+        "testo_md": "**Uomini**\nSanto il Signore Dio dell’universo.\nI Cieli e la terra sono pieni della Tua gloria.\nOsanna nell’alto dei Cieli e benedetto Colui che viene\nnel nome del Signore. Osanna, nell’alto dei Cieli.\n\n**Donne**\nE santo, santo, santo, il Signore della vita.\nE santo, santo, santo, il Signore della storia.\nNei Cieli e sulla terra risplende la Sua gloria.\nOsanna, osanna, osanna nel cielo sconfinato.\nOsanna, osanna, osanna nel canto del creato.\nE sia benedetto Colui che viene in nome di Dio.",
+        "ordineMesse": {
+            "matrimonioSara": 7
+        }
     },
     {
         "titolo": "Santo (Carrù)",
@@ -613,17 +631,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Santo (Come fuoco vivo)",
         "momento": "santo",
-        "messe": [
-            "comunioni"
-        ],
+        "messe": [],
         "testo_md": "[Intro: LA  SI  LA  SI]\n> Rit.\n> [LA]San[MI]to, sa[DO#-]nto[SI], sa[FA#-]nto il Sig[MI]nore,\n> [LA]Dio dell'univer[SI]so.\n> [LA]San[MI]to, sa[DO#-]nto[SI].\n> [FA#-]I Cieli e la T[MI]erra sono [LA]pieni della Tua [FA#-]gloria.[MI]\n\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli. **Rit.**\n\n[SI]Benedetto Co[LA]lui che viene\nnel [MI]nome del [SI]Signore.\n[LA]Osanna nell'[SI]alto dei [LA]Cieli[SI].\nOsan[FA#-]na nell'alto dei [LA]Cieli.\n[LA]San[MI]to, sa[DO#-]nto[SI], [LA]sa-a-a-a-anto[MI]."
     },
     {
         "titolo": "Santo (Osanna nelle altezze)",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Sa - nto, sa - nto,\ni Cieli e la terra sono pieni della Tua gloria.\nOsanna, osanna, osanna, osanna nelle altezze.\nBenedetto Colui che viene nel nome del Signore.\nOsanna, osanna, osanna, osanna nelle altezze.\nOsanna, osanna, osanna…"
     },
     {
@@ -635,9 +649,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Segni del Tuo amore",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "Mille e mille grani nelle spighe d'oro\nmandano fragranza e danno gioia al cuore.\nQuando macinati, fanno un pane solo:\npane quotidiano, dono Tuo, Signore. **Rit.**\n\n> Rit.\n> Ecco il pane e il vino, segni del Tuo amore.\n> Ecco questa offerta, accoglila Signore.\n> Tu di mille e mille cuori fai un cuore solo,\n> un corpo solo in Te\n> e il Figlio Tuo verrà, vivrà\n> ancora in mezzo a noi.\n\nMille grappoli maturi sotto il sole,\nfesta della terra, donano vigore.\nQuando da ogni perla stilla il vino nuovo:\nvino della gioia, dono Tuo, Signore. **Rit. (x2)**"
     },
     {
@@ -649,9 +661,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Servire è regnare",
         "momento": "comunione",
-        "messe": [
-            "gSanto"
-        ],
+        "messe": [],
         "testo_md": "Guardiamo a Te che sei\nMaestro e Signore,\nchinato a terra stai,\nci mostri che l’amore\nè cingersi il grembiule,\nsapersi inginocchiare,\nc’insegni che amare è servire. **Rit.**\n\n> Rit.\n> Fa’ che impariamo,\n> Signore, da Te,\n> che il più grande è chi più sa servire,\n> chi si abbassa e chi si sa piegare,\n> perché grande è soltanto l’amore.\n\nE Ti vediamo poi,\nMaestro e Signore,\nche lavi i piedi a noi\nche siamo Tue creature;\ne cinto del grembiule,\nche è il manto Tuo regale,\nc’insegni che servire è regnare. **Rit.**"
     },
     {
@@ -669,9 +679,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Sono qui a lodarTi",
         "momento": "messe:",
-        "messe": [
-            "vSanto"
-        ],
+        "messe": [],
         "testo_md": "Luce del mondo nel buio del cuore,\nvieni ed illuminami.\nTu mia sola speranza di vita,\nresta per sempre con me. **Rit.**\n\n> Rit.\n> Sono qui a lodarTi, qui per adorarTi\n> qui per dirTi che Tu sei il mio Dio.\n> E solo Tu sei santo, sei meraviglioso,\n> degno e glorioso sei per me.\n\nRe della storia e Re nella gloria,\nsei sceso in terra fra noi.\nCon umiltà il Tuo trono hai lasciato\nper dimostrarci il Tuo amor. **Rit.**\n\n>\n> Io mai saprò quanto Ti costò\n> lì sulla Croce morir per me. (x2) Rit."
     },
     {
@@ -701,8 +709,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Tutto è possibile",
         "momento": "matrimoni",
-        "messe": [],
-        "testo_md": "**Uomini:** Questo è il luogo che Dio ha scelto per te,\r\nquesto è il tempo pensato per te,\r\nquella che vedi è la strada che Lui traccerà,\r\nquello che senti l'amore che mai finirà. **Rit.**\r\n\r\n> Rit.\n> E andremo e annunceremo che\n> in Lui tutto è possibile.\n> E andremo e annunceremo che\n> nulla ci può vincere\n> perché abbiamo udito le Sue parole,\n> perché abbiam veduto vite cambiare,\n> perché abbiamo visto l'amore vincere.\n> Sì, abbiamo visto l'amore vincere!\n\r\n**Donne:** Questo è il momento che Dio ha atteso per te,\r\nquesto è il sogno che ha fatto su te,\r\nquella che vedi è la strada tracciata per te,\r\nQuello che senti, l'amore che ti accompagnerà. **Rit.**\r\n\r\n>\n> Questo è il tempo che Dio ha scelto per te,\n> questo è il sogno che ha fatto su te."
+        "messe": [
+            "matrimonioSara"
+        ],
+        "testo_md": "**Uomini:** Questo è il luogo che Dio ha scelto per te,\nquesto è il tempo pensato per te,\nquella che vedi è la strada che Lui traccerà,\nquello che senti l'amore che mai finirà. **Rit.**\n\n> Rit.\n> E andremo e annunceremo che\n> in Lui tutto è possibile.\n> E andremo e annunceremo che\n> nulla ci può vincere\n> perché abbiamo udito le Sue parole,\n> perché abbiam veduto vite cambiare,\n> perché abbiamo visto l'amore vincere.\n> Sì, abbiamo visto l'amore vincere!\n\n**Donne:** Questo è il momento che Dio ha atteso per te,\nquesto è il sogno che ha fatto su te,\nquella che vedi è la strada tracciata per te,\nQuello che senti, l'amore che ti accompagnerà. **Rit.**\n\n>\n> Questo è il tempo che Dio ha scelto per te,\n> questo è il sogno che ha fatto su te.",
+        "ordineMesse": {
+            "matrimonioSara": 5
+        }
     },
     {
         "titolo": "Venite fedeli",
@@ -713,18 +726,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Verbum panis",
         "momento": "messe:",
-        "messe": [
-            "gSanto",
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "[INTRO: mi-(3) do7 re mi-]\n\n[mi-]Prima del te[re]mpo,\nprima an[mi-]cora che la t[re]erra\ncomin[mi-]ciasse a viv[re]ere,\n[mi-]il Verbo [re]era presso [mi-]Dio[re  mi-  re].\n[mi-]Venne nel mo[re]ndo\ne per n[mi-]on abbandon[re]arci\nin questo [mi-]viaggio ci las[re]ciò\n[mi-]tutto se st[re]esso come [mi-]pane.[re]\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n\n[sol]Qui [re]spezzi ancora il [do]pane in mezzo a [re]noi\ne chi[sol]unque mangerà[re  do] non avrà più [re]fame.\n[sol]Qui [re]vive la Tua [do]chiesa intorno a [re]Te\ndove [sol]ognuno troverà[re  do] la sua vera [re]casa.\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis.\n\nPrima del tempo,\nquando l'universo fu creato\ndall'oscurità,\nil Verbo era presso Dio.\nVenne nel mondo.\nNella Sua misericordia\nDio ha mandato il Figlio Suo:\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis."
     },
     {
         "titolo": "Vi amo così",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "C’è una novità nella nostra storia:\nDio che Si fa uomo e porta il cielo sulla terra.\nCon la nostra vita Si rivela\nnello spirito che soffia verità.\nC’è una novità: che la morte è vinta\ne la gioia in cuore a tutto il mondo poi racconta.\nAnnunciando ancora la Parola\nche ci aiuta a ritornare insieme qui. **Rit.**\n\n> Rit.\n> Vi amo così e vi amerò\n> come vi ho amati, con voi resterò!\n> E via da qui ognuno sarà\n> il testimone della carità,\n> il testimone di me, verità.\n\nC’è una novità: Cristo è la speranza\nche da noi dilaga, fino ai confini della terra,\nfigli della Chiesa, madre e amica,\nche rivela la promessa ancora qui. **Rit.**\n\nSenti nel vento\nil grido del mondo,\nche si alza e arriva qui fino a noi,\nchiede da sempre lo sai\ndi esserci.\n\n>\n> ... e via da qui ognuno sarà\n> il testimone della carità,\n> il testimone di me, verità."
     },
     {
@@ -754,9 +762,7 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Voglio cantare al Signor",
         "momento": "messe:",
-        "messe": [
-            "sSanto"
-        ],
+        "messe": [],
         "testo_md": "> Rit.\n> Voglio cantare al Signor e dare gloria a Lui.\n> Voglio cantare per sempre al Signor. (x2)\n\nCavallo e cavaliere ha gettato nel mare.\nEgli è il mio Dio e Lo voglio esaltare.\nChi è come Te, lassù nei cieli, o Signor.\nChi è come Te, lassù, maestoso in santità! **Rit.**\n\nLa destra del Signore ha annientato il nemico,\nle sue schiere ha riversato in fondo al mare.\nSull’asciutto tutto il Suo popolo passò,\ncon timpani e con danze al Signore inneggiò. **Rit.**\n\nCon la Tua potenza Israele hai salvato,\nper la Tua promessa una terra gli hai dato.\nPer i Suoi prodigi al Signore canterò,\ncon un canto nuovo il Suo nome esalterò. **Rit.**"
     },
     {

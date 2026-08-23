@@ -3,7 +3,6 @@
 ---
 momento: pace
 messe:
-- comunioni
 ---
 
 [Intro: RE  SOL  RE  LA4  RE/SOL/RE]

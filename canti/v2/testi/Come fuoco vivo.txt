@@ -2,7 +2,6 @@
 ---
 momento:
 messe:
- - sSanto
 ---
 
 [LA  MI  LA  MI  RE  MI  RE  LA]

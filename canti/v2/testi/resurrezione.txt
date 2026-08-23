@@ -3,7 +3,6 @@
 ---
 momento:
 messe:
- - sSanto
 ---
 
 Che gioia ci hai dato, Signore del cielo,

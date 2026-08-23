@@ -3,7 +3,6 @@
 ---
 momento: santo
 messe:
-- comunioni
 ---
 
 [Intro: LA  SI  LA  SI]

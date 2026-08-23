@@ -3,6 +3,7 @@
 ---
 momento: comunione
 messe:
+ - matrimonioSara - 12
 ---
 
 Altissimo, onnipotente, buon Signore,

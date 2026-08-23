@@ -3,7 +3,6 @@
 ---
 momento: ingresso
 messe:
-- comunioni
 ---
 
 [Intro: MI-7  RE/FA#  SOL/LA  LA]

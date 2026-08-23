@@ -3,7 +3,6 @@
 ---
 momento: fine
 messe:
- - sSanto
 ---
 
 [SOL]C’è il segreto [RE]della libertà, que[MI-]lla vera

@@ -3,7 +3,6 @@
 ---
 momento:
 messe:
- - vSanto
 ---
 
 Luce del mondo nel buio del cuore,

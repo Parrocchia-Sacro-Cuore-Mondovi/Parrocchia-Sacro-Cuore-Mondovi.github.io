@@ -3,7 +3,6 @@
 ---
 momento:
 messe:
- - sSanto
 ---
 
 **Rit.
