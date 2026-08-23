@@ -541,8 +541,44 @@ footer {
 .lyrics blockquote p,
 .lyrics blockquote .keep-together {
     font-family: 'Roboto', sans-serif !important;
-    font-weight: 700 !important; 
+    font-weight: 700 !important;
     color: #2c3e50 !important; /* Un grigio-blu scuro elegante per farlo risaltare in ogni caso */
+}
+
+/* --- Foglio per l'esportazione PDF del canto --- */
+.pdf-export-wrapper {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.pdf-export-sheet {
+    width: 720px;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pdf-export-sheet .lyrics {
+    line-height: 1.35 !important; /* leggermente più stretto che a schermo: fa stare più canti in una pagina A4 */
+}
+
+/* Elimina lo spazio residuo in fondo (altrimenti in bilico può finire da solo su una pagina extra) */
+.pdf-export-sheet .lyrics > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+.pdf-export-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.pdf-export-sheet .lyrics {
+    padding-top: 10px !important;
 }
 
 /* --- Lista Canti e Gruppi --- */

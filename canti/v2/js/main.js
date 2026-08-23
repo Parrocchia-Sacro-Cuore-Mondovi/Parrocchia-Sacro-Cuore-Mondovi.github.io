@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
             chordsToggleBtn.classList.toggle('chords-hidden');
         }
 
+        // Download PDF del canto
+        const pdfBtn = e.target.closest('.pdf-download-btn');
+        if (pdfBtn) {
+            e.stopPropagation();
+            const card = pdfBtn.closest('.song-card');
+            scaricaPdfCanto(card, pdfBtn.dataset.titolo);
+        }
+
         // Accordion Filtri Sidebar
         const filterHeader = e.target.closest('.filter-header');
         if (filterHeader) {
@@ -243,6 +251,7 @@ function aggiornaListaCanti() {
                     <div class="song-category">${nomeMomento}</div>
                     <div class="song-actions">
                         ${haAccordi ? `<button class="btn-chord chords-hidden chords-toggle-btn"><i class="fa-solid fa-music"></i></button>` : ''}
+                        <button class="btn-chord chords-hidden pdf-download-btn" title="Scarica PDF" data-titolo="${canto.titolo.replace(/"/g, '&quot;')}"><i class="fa-solid fa-download"></i></button>
                         <button class="btn-go btn-green toggle-btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
@@ -255,6 +264,41 @@ function aggiornaListaCanti() {
             </div>`;
         targetContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
+}
+
+// --- DOWNLOAD PDF DEL CANTO ---
+
+function scaricaPdfCanto(card, titolo) {
+    const lyricsHtml = card.querySelector('.lyrics').innerHTML;
+
+    const sheet = document.createElement('div');
+    sheet.className = 'pdf-export-sheet';
+    sheet.innerHTML = `
+        <div class="pdf-export-title">${titolo}</div>
+        <div class="lyrics">${lyricsHtml}</div>
+    `;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'pdf-export-wrapper';
+    wrapper.appendChild(sheet);
+    document.body.appendChild(wrapper);
+
+    const nomeFile = titolo
+        .normalize('NFD').replace(/[̀-ͯ]/g, '') // via accenti per un nome file più sicuro
+        .replace(/[\\/:*?"<>|]/g, '')
+        .trim() + '.pdf';
+
+    html2pdf()
+        .set({
+            margin: 15,
+            filename: nomeFile,
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['css', 'legacy'] }
+        })
+        .from(sheet)
+        .save()
+        .finally(() => wrapper.remove());
 }
 
 function pulisciTesto(testo) {
