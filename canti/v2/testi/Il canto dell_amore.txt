@@ -3,7 +3,7 @@
 ---
 momento: comunione
 messe:
- - matrimonioSara - 13
+ - matrimonio - 13
 ---
 
 Se dovrai attraversare il deserto,

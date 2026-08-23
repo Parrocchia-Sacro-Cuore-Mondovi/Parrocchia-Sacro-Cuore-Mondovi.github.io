@@ -35,7 +35,7 @@ body {
     position: relative;
     height: 35vw;
     min-height: 350px;
-    background-image: url('/img/bg2.jpeg');
+    background-image: url('/img/bg2.webp');
     background-size: cover;
     background-position: center;
     display: flex;

@@ -3,7 +3,7 @@
 ---
 momento: alleluia
 messe:
- - matrimonioSara - 4
+ - matrimonio - 4
 ---
 
 **Rit.

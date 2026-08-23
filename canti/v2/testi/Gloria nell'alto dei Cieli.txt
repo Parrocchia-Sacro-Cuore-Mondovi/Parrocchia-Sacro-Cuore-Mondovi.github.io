@@ -3,7 +3,7 @@
 ---
 momento: gloria
 messe:
- - matrimonioSara - 2
+ - matrimonio - 2
 ---
 
 **Rit.

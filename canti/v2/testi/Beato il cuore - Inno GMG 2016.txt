@@ -3,7 +3,7 @@
 ---
 momento:
 messe:
- - matrimonioSara - 9
+ - matrimonio - 9
 ---
 
 Sei sceso dalla Tua immensità in nostro aiuto:

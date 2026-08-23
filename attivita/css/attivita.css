@@ -9,7 +9,7 @@ body {
 /* --- Estensioni Hero (Eredita da main.css ma cambiamo immagine) --- */
 .hero-section.hero-attivita {
     /* Suggerimento: Usa una foto della comunità/gruppi qui */
-    background-image: url('/attivita/img/attivita_bg.png'); 
+    background-image: url('/attivita/img/attivita_bg.webp'); 
     background-position: center;
 }
 

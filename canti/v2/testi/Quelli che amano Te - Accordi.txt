@@ -3,7 +3,7 @@
 ---
 momento: offertorio
 messe:
- - matrimonioSara - 6
+ - matrimonio - 6
 ---
 
 [Intro: RE  RE4  RE  RE4]
