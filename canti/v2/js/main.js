@@ -39,14 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
             chordsToggleBtn.classList.toggle('chords-hidden');
         }
 
-        // Download PDF del canto
-        const pdfBtn = e.target.closest('.pdf-download-btn');
-        if (pdfBtn) {
-            e.stopPropagation();
-            const card = pdfBtn.closest('.song-card');
-            scaricaPdfCanto(card, pdfBtn.dataset.titolo);
-        }
-
         // Accordion Filtri Sidebar
         const filterHeader = e.target.closest('.filter-header');
         if (filterHeader) {
@@ -59,6 +51,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const pdfMessaBtn = document.getElementById('pdf-download-messa-btn');
     if (pdfMessaBtn) pdfMessaBtn.addEventListener('click', () => scaricaPdfMessa(pdfMessaBtn.dataset.nomeMessa));
+
+    // Finestra di selezione canti
+    const apriSelezioneBtn = document.getElementById('apri-selezione-btn');
+    if (apriSelezioneBtn) apriSelezioneBtn.addEventListener('click', apriSelezione);
+
+    const chiudiSelezioneBtn = document.getElementById('selezione-chiudi-btn');
+    if (chiudiSelezioneBtn) chiudiSelezioneBtn.addEventListener('click', chiudiSelezione);
+
+    const selezioneOverlay = document.getElementById('selezione-overlay');
+    if (selezioneOverlay) {
+        selezioneOverlay.addEventListener('click', (e) => {
+            if (e.target === selezioneOverlay) chiudiSelezione();
+        });
+    }
+
+    const selezioneSearch = document.getElementById('selezione-search');
+    if (selezioneSearch) {
+        selezioneSearch.addEventListener('input', (e) => popolaListaSelezione(e.target.value));
+    }
+
+    const selezioneTuttiBtn = document.getElementById('selezione-tutti-btn');
+    if (selezioneTuttiBtn) {
+        selezioneTuttiBtn.addEventListener('click', () => {
+            document.querySelectorAll('#selezione-lista input[type="checkbox"]').forEach(cb => {
+                if (!cb.checked) { cb.checked = true; cb.dispatchEvent(new Event('change')); }
+            });
+        });
+    }
+
+    const selezioneNessunoBtn = document.getElementById('selezione-nessuno-btn');
+    if (selezioneNessunoBtn) {
+        selezioneNessunoBtn.addEventListener('click', () => {
+            document.querySelectorAll('#selezione-lista input[type="checkbox"]').forEach(cb => {
+                if (cb.checked) { cb.checked = false; cb.dispatchEvent(new Event('change')); }
+            });
+        });
+    }
+
+    const scaricaZipBtn = document.getElementById('selezione-scarica-zip-btn');
+    if (scaricaZipBtn) {
+        scaricaZipBtn.addEventListener('click', () => {
+            const canti = ottieniCantiSelezionati();
+            if (canti.length === 0) return;
+            eseguiConCaricamento(scaricaZipBtn, () => generaEScaricaZip(canti, 'Canti.zip'));
+        });
+    }
+
+    const scaricaUnicoBtn = document.getElementById('selezione-scarica-unico-btn');
+    if (scaricaUnicoBtn) {
+        scaricaUnicoBtn.addEventListener('click', () => {
+            const canti = ottieniCantiSelezionati();
+            if (canti.length === 0) return;
+            eseguiConCaricamento(scaricaUnicoBtn, () => generaEScaricaPdfUnico(canti, 'Canti selezionati.pdf'));
+        });
+    }
 });
 
 // --- FUNZIONI DI INTERFACCIA ---
@@ -116,6 +163,17 @@ function impostaFiltro(tipo, id, nomeTesto = "Esplora i Canti") {
     if (window.innerWidth <= 768 && sidebar.classList.contains('show-mobile')) {
         toggleSidebar();
     }
+}
+
+// Converte il testo_md di un canto nell'HTML renderizzato (markdown + accordi),
+// esattamente come mostrato sul sito. Riusata sia per la lista dei canti sia per
+// la generazione dei PDF nella finestra di selezione.
+function renderizzaLyrics(testoMd) {
+    let testoConAccordi = testoMd.replace(/(\S*\[[^\]]+\]\S*)/g, '<span class="keep-together">$1</span>');
+    testoConAccordi = testoConAccordi.replace(/\[([^\]]+)\]/g, (match, accordo) => {
+        return `<span class="c" data-v="${accordo}"></span>`;
+    });
+    return marked.parse(testoConAccordi, { breaks: true });
 }
 
 function aggiornaListaCanti() {
@@ -246,13 +304,7 @@ function aggiornaListaCanti() {
         const targetContainer = currentGroup ? currentGroup : container;
 
         const haAccordi = canto.testo_md.includes('[');
-
-        let testoConAccordi = canto.testo_md.replace(/(\S*\[[^\]]+\]\S*)/g, '<span class="keep-together">$1</span>');
-        testoConAccordi = testoConAccordi.replace(/\[([^\]]+)\]/g, (match, accordo) => {
-            return `<span class="c" data-v="${accordo}"></span>`;
-        });
-        
-        const testoHtml = marked.parse(testoConAccordi, { breaks: true });
+        const testoHtml = renderizzaLyrics(canto.testo_md);
 
         const cardHTML = `
             <div class="song-card">
@@ -261,7 +313,6 @@ function aggiornaListaCanti() {
                     <div class="song-category">${nomeMomento}</div>
                     <div class="song-actions">
                         ${haAccordi ? `<button class="btn-chord chords-hidden chords-toggle-btn"><i class="fa-solid fa-music"></i></button>` : ''}
-                        <button class="btn-chord chords-hidden pdf-download-btn" title="Scarica PDF" data-titolo="${canto.titolo.replace(/"/g, '&quot;')}"><i class="fa-solid fa-download"></i></button>
                         <button class="btn-go btn-green toggle-btn"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
@@ -389,12 +440,6 @@ async function generaPdfCanto(titolo, lyricsHtml) {
     return pdfCanto.save();
 }
 
-async function scaricaPdfCanto(card, titolo) {
-    const lyricsHtml = card.querySelector('.lyrics').innerHTML;
-    const bytes = await generaPdfCanto(titolo, lyricsHtml);
-    scaricaBytesPdf(bytes, nomeFilePdf(titolo) + '.pdf');
-}
-
 // --- DOWNLOAD PDF DI TUTTI I CANTI DI UNA MESSA (in ordine) ---
 
 function creaBloccoCanto(titolo, lyricsHtml) {
@@ -407,14 +452,10 @@ function creaBloccoCanto(titolo, lyricsHtml) {
     return blocco;
 }
 
-async function scaricaPdfMessa(nomeMessa) {
-    const cards = document.querySelectorAll('#song-list-container .song-card');
-    if (cards.length === 0) return;
-
-    const canti = Array.from(cards).map(card => ({
-        titolo: card.querySelector('.song-title').textContent.trim(),
-        lyricsHtml: card.querySelector('.lyrics').innerHTML
-    }));
+// Genera un unico PDF a partire da un elenco di canti {titolo, lyricsHtml} — impacchettando
+// insieme quelli brevi che stanno nella stessa pagina — e lo scarica con il nome indicato.
+async function generaEScaricaPdfUnico(canti, nomeFile) {
+    if (canti.length === 0) return;
 
     // Misuriamo l'altezza di ogni canto per decidere quali impacchettare insieme.
     const sheetMisura = document.createElement('div');
@@ -470,7 +511,118 @@ async function scaricaPdfMessa(nomeMessa) {
     }
 
     const bytesFinali = await pdfFinale.save();
-    scaricaBytesPdf(bytesFinali, nomeFilePdf(nomeMessa) + ' - Scaletta.pdf');
+    scaricaBytesPdf(bytesFinali, nomeFile);
+}
+
+// Genera un file .zip con un PDF separato per ogni canto dell'elenco {titolo, lyricsHtml}.
+async function generaEScaricaZip(canti, nomeFileZip) {
+    if (canti.length === 0) return;
+
+    const zip = new JSZip();
+    const nomiUsati = new Set();
+    for (const { titolo, lyricsHtml } of canti) {
+        const bytes = await generaPdfCanto(titolo, lyricsHtml);
+        let nomeFile = nomeFilePdf(titolo) + '.pdf';
+        let contatore = 2;
+        while (nomiUsati.has(nomeFile)) {
+            nomeFile = `${nomeFilePdf(titolo)} (${contatore}).pdf`;
+            contatore++;
+        }
+        nomiUsati.add(nomeFile);
+        zip.file(nomeFile, bytes);
+    }
+
+    const zipBlob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(zipBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = nomeFileZip;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+}
+
+async function scaricaPdfMessa(nomeMessa) {
+    const cards = document.querySelectorAll('#song-list-container .song-card');
+    if (cards.length === 0) return;
+
+    const canti = Array.from(cards).map(card => ({
+        titolo: card.querySelector('.song-title').textContent.trim(),
+        lyricsHtml: card.querySelector('.lyrics').innerHTML
+    }));
+
+    await generaEScaricaPdfUnico(canti, nomeFilePdf(nomeMessa) + ' - Scaletta.pdf');
+}
+
+// --- FINESTRA DI SELEZIONE: scegli uno o più canti da scaricare (ZIP o PDF unico) ---
+
+let cantiSelezionati = new Set(); // titoli dei canti selezionati nella finestra
+
+function apriSelezione() {
+    document.getElementById('selezione-overlay').style.display = 'flex';
+    const searchInput = document.getElementById('selezione-search');
+    searchInput.value = '';
+    popolaListaSelezione('');
+    aggiornaContatoreSelezione();
+}
+
+function chiudiSelezione() {
+    document.getElementById('selezione-overlay').style.display = 'none';
+}
+
+function popolaListaSelezione(query) {
+    const lista = document.getElementById('selezione-lista');
+    lista.innerHTML = '';
+    const queryPulita = pulisciTesto(query);
+
+    [...datiParrocchiali.canti]
+        .sort((a, b) => a.titolo.localeCompare(b.titolo))
+        .filter(c => !queryPulita || pulisciTesto(c.titolo).includes(queryPulita))
+        .forEach(canto => {
+            const id = 'sel-' + canto.titolo.replace(/[^a-zA-Z0-9]/g, '_');
+            const riga = document.createElement('div');
+            riga.className = 'selezione-riga';
+            riga.innerHTML = `
+                <input type="checkbox" id="${id}" ${cantiSelezionati.has(canto.titolo) ? 'checked' : ''}>
+                <label for="${id}">${canto.titolo}</label>
+            `;
+            riga.querySelector('input').addEventListener('change', (e) => {
+                if (e.target.checked) cantiSelezionati.add(canto.titolo);
+                else cantiSelezionati.delete(canto.titolo);
+                aggiornaContatoreSelezione();
+            });
+            lista.appendChild(riga);
+        });
+}
+
+function aggiornaContatoreSelezione() {
+    const n = cantiSelezionati.size;
+    document.getElementById('selezione-contatore').textContent =
+        n === 0 ? 'Nessun canto selezionato' : (n === 1 ? '1 canto selezionato' : `${n} canti selezionati`);
+    document.getElementById('selezione-scarica-zip-btn').disabled = n === 0;
+    document.getElementById('selezione-scarica-unico-btn').disabled = n === 0;
+}
+
+function ottieniCantiSelezionati() {
+    return datiParrocchiali.canti
+        .filter(c => cantiSelezionati.has(c.titolo))
+        .sort((a, b) => a.titolo.localeCompare(b.titolo))
+        .map(c => ({ titolo: c.titolo, lyricsHtml: renderizzaLyrics(c.testo_md) }));
+}
+
+// Disabilita il bottone e mostra un'icona di caricamento mentre "azione" è in corso
+// (la generazione di più PDF può richiedere qualche secondo).
+async function eseguiConCaricamento(bottone, azione) {
+    const htmlOriginale = bottone.innerHTML;
+    bottone.disabled = true;
+    bottone.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Generazione...';
+    try {
+        await azione();
+    } finally {
+        bottone.innerHTML = htmlOriginale;
+        bottone.disabled = cantiSelezionati.size === 0;
+    }
 }
 
 function pulisciTesto(testo) {

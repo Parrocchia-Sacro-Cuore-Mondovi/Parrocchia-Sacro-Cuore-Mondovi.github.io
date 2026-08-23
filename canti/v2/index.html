@@ -25,6 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="/css/header.css">
@@ -98,6 +99,9 @@
             <div class="content-header">
                 <div class="title-container">
                     <h2 id="titolo-sezione">Esplora i canti</h2>
+                    <button id="apri-selezione-btn" class="btn-pdf-messa" title="Scegli uno o più canti da scaricare">
+                        <i class="fa-solid fa-download"></i> Scarica canti
+                    </button>
                     <button id="pdf-download-messa-btn" class="btn-pdf-messa" title="Scarica PDF con tutti i canti di questa messa" style="display:none;">
                         <i class="fa-solid fa-download"></i> Scarica PDF messa
                     </button>
@@ -161,6 +165,39 @@
         </div>
     </footer>
     
+    <div id="selezione-overlay" class="selezione-overlay" style="display:none;">
+        <div class="selezione-modal">
+            <div class="selezione-header">
+                <h3>Seleziona i canti da scaricare</h3>
+                <button id="selezione-chiudi-btn" class="selezione-chiudi-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="selezione-search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Cerca un canto..." id="selezione-search">
+            </div>
+
+            <div class="selezione-azioni-rapide">
+                <button id="selezione-tutti-btn">Seleziona tutti</button>
+                <button id="selezione-nessuno-btn">Deseleziona tutti</button>
+            </div>
+
+            <div class="selezione-lista" id="selezione-lista"></div>
+
+            <div class="selezione-footer">
+                <span id="selezione-contatore">0 canti selezionati</span>
+                <div class="selezione-footer-btns">
+                    <button id="selezione-scarica-zip-btn" class="btn-pdf-messa" disabled title="Un file PDF per ogni canto, in un unico .zip">
+                        <i class="fa-solid fa-file-zipper"></i> Scarica ZIP
+                    </button>
+                    <button id="selezione-scarica-unico-btn" class="btn-pdf-messa" disabled title="Un unico file PDF con tutti i canti scelti">
+                        <i class="fa-solid fa-file-pdf"></i> Scarica PDF unico
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="/canti/v2/js/data.js"></script>
     <script src="/canti/v2/js/main.js"></script>
     <script src="/js/header.js"></script>
