@@ -33,13 +33,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // --- 4. LA FUNZIONE MAGICA PER I BOLLETTINI (PDF) ---
+    // Il nome file è "AAAA_MM.pdf": ordinandolo al contrario per stringa otteniamo
+    // automaticamente il più recente per primo (funziona perché l'anno è a 4 cifre
+    // e il mese a 2, zero-padded).
+    const bollettiniOrdinati = [...bollettiniDb].sort((a, b) => b.file.localeCompare(a.file));
+
     function aggiornaBollettini() {
         const griglia = document.getElementById('griglia-bollettini');
         griglia.innerHTML = '';
-        
+
         const inizio = (pagBollettini - 1) * MAX_BOLLETTINI;
         const fine = inizio + MAX_BOLLETTINI;
-        const elementiDaMostrare = bollettiniDb.slice(inizio, fine);
+        const elementiDaMostrare = bollettiniOrdinati.slice(inizio, fine);
 
         for (let pdf of elementiDaMostrare) {
             // href="pdf/${pdf.file}"
@@ -53,12 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </a>
             `;
-            griglia.insertAdjacentHTML('afterbegin', htmlCard);
+            // "beforeend" mantiene l'ordine dell'array (il più recente resta in cima);
+            // "afterbegin" lo avrebbe invertito dentro ogni pagina.
+            griglia.insertAdjacentHTML('beforeend', htmlCard);
         }
 
         document.getElementById('num-pag-bollettini').innerText = `Pagina ${pagBollettini}`;
         document.getElementById('btn-prev-bollettini').disabled = (pagBollettini === 1);
-        document.getElementById('btn-next-bollettini').disabled = (fine >= bollettiniDb.length);
+        document.getElementById('btn-next-bollettini').disabled = (fine >= bollettiniOrdinati.length);
     }
 
     // --- 5. EVENTI CLICK DEI PULSANTI ---
