@@ -276,46 +276,12 @@ function aggiornaListaCanti() {
     });
 }
 
-// --- DOWNLOAD PDF DEL CANTO ---
+// --- DOWNLOAD PDF DEI CANTI ---
 
 // Aspetta che il browser abbia completato almeno un ciclo di layout+paint
 // prima di catturare il contenuto (utile soprattutto su dispositivi mobili più lenti).
 function attendiRenderPronto() {
     return new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
-}
-
-async function scaricaPdfCanto(card, titolo) {
-    const lyricsHtml = card.querySelector('.lyrics').innerHTML;
-
-    const sheet = document.createElement('div');
-    sheet.className = 'pdf-export-sheet';
-    sheet.innerHTML = `
-        <div class="pdf-export-title">${titolo}</div>
-        <div class="lyrics">${lyricsHtml}</div>
-    `;
-
-    // Aggiunto in coda al body, nel flusso normale del documento (nessun trucco
-    // di ritaglio tipo overflow:hidden/max-height:0): su alcuni browser mobile
-    // un contenuto "ad altezza zero" non viene renderizzato correttamente,
-    // producendo un PDF vuoto. Restando fuori dallo schermo in fondo alla pagina
-    // (l'utente non è quasi mai scrollato fin lì) si evita comunque il flash visivo.
-    document.body.appendChild(sheet);
-
-    const nomeFile = nomeFilePdf(titolo) + '.pdf';
-
-    await attendiRenderPronto();
-
-    html2pdf()
-        .set({
-            margin: 15,
-            filename: nomeFile,
-            html2canvas: { scale: 2, useCORS: true },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak: { mode: ['css'], avoid: ['p', 'blockquote', 'li'] }
-        })
-        .from(sheet)
-        .save()
-        .finally(() => sheet.remove());
 }
 
 function nomeFilePdf(testo) {
@@ -325,72 +291,186 @@ function nomeFilePdf(testo) {
         .trim();
 }
 
+function scaricaBytesPdf(bytes, nomeFile) {
+    const blob = new Blob([bytes], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = nomeFile;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+}
+
+// Altezza utile di una pagina A4 (con i margini usati sotto), misurata empiricamente
+// in pixel CSS: sono indipendenti dal pixel-ratio del dispositivo, a differenza della
+// paginazione automatica interna di html2pdf. Quella si è dimostrata inaffidabile tra
+// dispositivi diversi (su alcuni telefoni produce pagine vuote o tagli a metà riga),
+// quindi qui decidiamo noi dove tagliare, e ogni pagina generata con html2pdf è sempre
+// già "giusta" (nessuna divisione interna da fargli gestire).
+const ALTEZZA_PAGINA_PX = 1000;
+
+// Genera il PDF (una singola pagina, sempre) di un elemento .pdf-export-sheet già
+// pronto, e restituisce i byte grezzi. Usiamo html2canvas + jsPDF direttamente
+// (non il livello "alto" di html2pdf.js): quest'ultimo ha una sua euristica di
+// impaginazione automatica che, anche disattivata esplicitamente, in certi casi
+// aggiunge comunque una pagina vuota di troppo. Piazzando noi stessi l'immagine
+// su un'unica pagina jsPDF non c'è alcun modo che ne venga creata una in più.
+async function generaPdfSemplice(sheet) {
+    document.body.appendChild(sheet);
+    await attendiRenderPronto();
+
+    const canvas = await html2canvas(sheet, { scale: 2, useCORS: true });
+    sheet.remove();
+
+    const margine = 15; // mm
+    const larghezzaPaginaMm = 210; // A4
+    const larghezzaUtileMm = larghezzaPaginaMm - margine * 2;
+    const altezzaImgMm = (canvas.height * larghezzaUtileMm) / canvas.width;
+
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
+    doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', margine, margine, larghezzaUtileMm, altezzaImgMm);
+
+    return doc.output('arraybuffer');
+}
+
+// Genera il PDF di UN canto, anche su più pagine se necessario. Misuriamo l'altezza
+// di ogni verso/ritornello (in pixel CSS) e decidiamo noi i punti di interruzione;
+// ogni pagina viene poi generata singolarmente e le uniamo con pdf-lib.
+async function generaPdfCanto(titolo, lyricsHtml) {
+    const sheetMisura = document.createElement('div');
+    sheetMisura.className = 'pdf-export-sheet';
+    document.body.appendChild(sheetMisura);
+
+    sheetMisura.innerHTML = `<div class="pdf-export-title">${titolo}</div>`;
+    const altezzaTitolo = sheetMisura.firstElementChild.offsetHeight;
+
+    const lyricsMisura = document.createElement('div');
+    lyricsMisura.className = 'lyrics';
+    sheetMisura.innerHTML = '';
+    sheetMisura.appendChild(lyricsMisura);
+    lyricsMisura.innerHTML = lyricsHtml;
+    const elementiHtml = Array.from(lyricsMisura.children).map(el => el.outerHTML);
+    const altezze = elementiHtml.map(html => {
+        lyricsMisura.innerHTML = html;
+        return lyricsMisura.firstElementChild.offsetHeight;
+    });
+    sheetMisura.remove();
+
+    const pagine = [];
+    let paginaCorrente = [];
+    let spazioRimanente = ALTEZZA_PAGINA_PX - altezzaTitolo;
+    elementiHtml.forEach((html, i) => {
+        const altezza = altezze[i];
+        if (paginaCorrente.length && altezza > spazioRimanente) {
+            pagine.push(paginaCorrente);
+            paginaCorrente = [];
+            spazioRimanente = ALTEZZA_PAGINA_PX;
+        }
+        paginaCorrente.push(html);
+        spazioRimanente -= altezza;
+    });
+    pagine.push(paginaCorrente);
+
+    const { PDFDocument } = PDFLib;
+    const pdfCanto = await PDFDocument.create();
+    for (let i = 0; i < pagine.length; i++) {
+        const sheet = document.createElement('div');
+        sheet.className = 'pdf-export-sheet';
+        sheet.innerHTML = (i === 0 ? `<div class="pdf-export-title">${titolo}</div>` : '')
+            + `<div class="lyrics">${pagine[i].join('')}</div>`;
+        const bytes = await generaPdfSemplice(sheet);
+        const pdfParziale = await PDFDocument.load(bytes);
+        const copiate = await pdfCanto.copyPages(pdfParziale, pdfParziale.getPageIndices());
+        copiate.forEach(p => pdfCanto.addPage(p));
+    }
+    return pdfCanto.save();
+}
+
+async function scaricaPdfCanto(card, titolo) {
+    const lyricsHtml = card.querySelector('.lyrics').innerHTML;
+    const bytes = await generaPdfCanto(titolo, lyricsHtml);
+    scaricaBytesPdf(bytes, nomeFilePdf(titolo) + '.pdf');
+}
+
 // --- DOWNLOAD PDF DI TUTTI I CANTI DI UNA MESSA (in ordine) ---
 
-// Altezza utile di una pagina A4 (con i margini usati qui sotto), misurata empiricamente:
-// oltre questo valore html2pdf passa a una pagina successiva.
-const ALTEZZA_PAGINA_PX = 1000;
+function creaBloccoCanto(titolo, lyricsHtml) {
+    const blocco = document.createElement('div');
+    blocco.className = 'pdf-export-song-block';
+    blocco.innerHTML = `
+        <div class="pdf-export-title">${titolo}</div>
+        <div class="lyrics">${lyricsHtml}</div>
+    `;
+    return blocco;
+}
 
 async function scaricaPdfMessa(nomeMessa) {
     const cards = document.querySelectorAll('#song-list-container .song-card');
     if (cards.length === 0) return;
 
-    const sheet = document.createElement('div');
-    sheet.className = 'pdf-export-sheet';
+    const canti = Array.from(cards).map(card => ({
+        titolo: card.querySelector('.song-title').textContent.trim(),
+        lyricsHtml: card.querySelector('.lyrics').innerHTML
+    }));
 
-    const blocchi = [];
-    cards.forEach((card) => {
-        const titolo = card.querySelector('.song-title').textContent.trim();
-        const lyricsHtml = card.querySelector('.lyrics').innerHTML;
-
-        const blocco = document.createElement('div');
-        blocco.className = 'pdf-export-song-block';
-        blocco.innerHTML = `
-            <div class="pdf-export-title">${titolo}</div>
-            <div class="lyrics">${lyricsHtml}</div>
-        `;
-        sheet.appendChild(blocco);
-        blocchi.push(blocco);
+    // Misuriamo l'altezza di ogni canto per decidere quali impacchettare insieme.
+    const sheetMisura = document.createElement('div');
+    sheetMisura.className = 'pdf-export-sheet';
+    document.body.appendChild(sheetMisura);
+    const altezze = canti.map(({ titolo, lyricsHtml }) => {
+        sheetMisura.innerHTML = '';
+        sheetMisura.appendChild(creaBloccoCanto(titolo, lyricsHtml));
+        return sheetMisura.firstElementChild.offsetHeight + 25; // + margin-bottom del blocco
     });
+    sheetMisura.remove();
 
-    document.body.appendChild(sheet);
-
-    // Decidiamo NOI dove mettere le interruzioni di pagina (misurando l'altezza reale
-    // di ogni canto), invece di affidarci all'euristica "avoid" di html2pdf: su canti
-    // che comunque non stanno in una pagina, quell'euristica orfanizza il titolo da solo
-    // in fondo alla pagina precedente invece di spostare tutto il blocco.
-    // Impacchettiamo solo tra canti che stanno singolarmente in una pagina: per un
-    // canto più lungo di una pagina non sappiamo con certezza dove finisce (dipende
-    // da come "avoid" sposta i punti di taglio interni), quindi dopo un canto così
-    // forziamo comunque una pagina nuova per il successivo, per sicurezza.
+    // Raggruppiamo i canti brevi consecutivi che stanno insieme in una pagina.
+    // Ogni canto più lungo di una pagina va per conto proprio nel suo gruppo
+    // (lo gestisce generaPdfCanto, che si occupa da sé delle sue pagine interne).
+    const gruppi = [];
+    let gruppoCorrente = [];
     let spazioRimanente = 0;
-    blocchi.forEach((blocco, i) => {
-        const altezza = blocco.offsetHeight + 25; // + margin-bottom del blocco (non incluso in offsetHeight)
+    canti.forEach((canto, i) => {
+        const altezza = altezze[i];
         const staInUnaPagina = altezza <= ALTEZZA_PAGINA_PX;
-
-        if (i > 0 && staInUnaPagina && altezza <= spazioRimanente) {
+        if (staInUnaPagina && altezza <= spazioRimanente) {
+            gruppoCorrente.push(canto);
             spazioRimanente -= altezza;
         } else {
-            if (i > 0) blocco.classList.add('pdf-export-page-break');
+            if (gruppoCorrente.length) gruppi.push(gruppoCorrente);
+            gruppoCorrente = [canto];
             spazioRimanente = staInUnaPagina ? (ALTEZZA_PAGINA_PX - altezza) : 0;
         }
     });
+    if (gruppoCorrente.length) gruppi.push(gruppoCorrente);
 
-    const nomeFile = nomeFilePdf(nomeMessa) + ' - Scaletta.pdf';
+    const { PDFDocument } = PDFLib;
+    const pdfFinale = await PDFDocument.create();
 
-    await attendiRenderPronto();
+    for (const gruppo of gruppi) {
+        let bytesGruppo;
+        if (gruppo.length === 1) {
+            // Canto da solo nel suo gruppo (troppo lungo per stare con altri, o
+            // semplicemente l'ultimo rimasto): generaPdfCanto gestisce bene entrambi i casi.
+            bytesGruppo = await generaPdfCanto(gruppo[0].titolo, gruppo[0].lyricsHtml);
+        } else {
+            // Più canti brevi impacchettati: stanno insieme in una sola pagina,
+            // nessuna interruzione interna da gestire.
+            const sheet = document.createElement('div');
+            sheet.className = 'pdf-export-sheet';
+            gruppo.forEach(({ titolo, lyricsHtml }) => sheet.appendChild(creaBloccoCanto(titolo, lyricsHtml)));
+            bytesGruppo = await generaPdfSemplice(sheet);
+        }
+        const pdfParziale = await PDFDocument.load(bytesGruppo);
+        const pagine = await pdfFinale.copyPages(pdfParziale, pdfParziale.getPageIndices());
+        pagine.forEach(p => pdfFinale.addPage(p));
+    }
 
-    html2pdf()
-        .set({
-            margin: 15,
-            filename: nomeFile,
-            html2canvas: { scale: 2, useCORS: true },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak: { mode: ['css'], before: '.pdf-export-page-break', avoid: ['p', 'blockquote', 'li'] }
-        })
-        .from(sheet)
-        .save()
-        .finally(() => sheet.remove());
+    const bytesFinali = await pdfFinale.save();
+    scaricaBytesPdf(bytesFinali, nomeFilePdf(nomeMessa) + ' - Scaletta.pdf');
 }
 
 function pulisciTesto(testo) {

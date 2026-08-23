@@ -3,6 +3,7 @@
 ---
 momento: santo
 messe:
+ - gSanto - 5
  - matrimonio - 7
 ---
 

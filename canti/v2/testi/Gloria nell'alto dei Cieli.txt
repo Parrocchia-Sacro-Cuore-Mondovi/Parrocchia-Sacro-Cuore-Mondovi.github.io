@@ -3,6 +3,7 @@
 ---
 momento: gloria
 messe:
+ - gSanto - 2
  - matrimonio - 2
 ---
 

@@ -19,6 +19,7 @@ const datiParrocchialiSalvati = {
                 { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
             ],
             "messe": [
+                { "id": "gSanto", "nome": "Giovedì Santo" },
                 { "id": "matrimonio", "nome": "Matrimonio" },
             ],
             "canti": [
@@ -178,8 +179,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Chiamati per nome",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "[Intro: MI SI MI LA DO# SI LA]\n\n> Rit.\n> [SI]Veniamo da [MI]Te,\n> chiamati per [SI]nome.\n> Che festa, Sign[MI]ore, Tu cammini con [LA]noi.\n> Ci parli di [MI]Te,\n> per noi spezzi il [SI]pane,\n> Ti riconos[MI]ciamo e il cuore arde: sei [LA]Tu!\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.   [SI]\n\n[LA]Siamo come terra ed ar[DO#-7]gilla\ne la [MI]Tua Parola ci plasm[SI]erà,\nb[LA]race pronta per la sci[DO#-7]ntilla\ne il Tuo[MI] Spirito soffier[LA]à,\nc’infiamm[SI]erà. **Rit.**\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n>\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n> S[LA]iamo q[MI]ui."
+        "messe": [
+            "gSanto"
+        ],
+        "testo_md": "[Intro: MI SI MI LA DO# SI LA]\n\n> Rit.\n> [SI]Veniamo da [MI]Te,\n> chiamati per [SI]nome.\n> Che festa, Sign[MI]ore, Tu cammini con [LA]noi.\n> Ci parli di [MI]Te,\n> per noi spezzi il [SI]pane,\n> Ti riconos[MI]ciamo e il cuore arde: sei [LA]Tu!\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.   [SI]\n\n[LA]Siamo come terra ed ar[DO#-7]gilla\ne la [MI]Tua Parola ci plasm[SI]erà,\nb[LA]race pronta per la sci[DO#-7]ntilla\ne il Tuo[MI] Spirito soffier[LA]à,\nc’infiamm[SI]erà. **Rit.**\n\nSiamo come semi nel solco,\ncome vigna che il suo frutto darà,\ngrano del Signore risorto,\nla Tua messe che fiorirà\nd’eternità. **Rit.**\n>\n> E noi Tuo [DO#-]popo[SI]lo\n> siamo [LA]qui.[SI]\n> S[LA]iamo q[MI]ui.",
+        "ordineMesse": {
+            "gSanto": 1
+        }
     },
     {
         "titolo": "Cieli e terra nuova",
@@ -315,10 +321,12 @@ const datiParrocchialiSalvati = {
         "titolo": "Gloria nell'alto dei Cieli",
         "momento": "gloria",
         "messe": [
+            "gSanto",
             "matrimonio"
         ],
         "testo_md": "> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini amati dal Signor.\n> Gloria!\n\nNoi Ti lodiamo, Ti benediciamo,\nTi adoriamo, glorifichiamo Te,\nTi rendiamo grazie per la Tua immensa gloria.\nSignore Dio, gloria! (Signore Dio)\nRe del Cielo, gloria! (Re del Cielo, gloria!)\nDio Padre, Dio onnipotente, gloria! (Dio Padre, gloria!)\n\nSignore, Figlio unigenito, Gesù Cristo, (oooo)\nSignore, Agnello di Dio, Figlio del Padre. (oooo)\nTu che togli i peccati del mondo, abbi pietà di noi; (oooo... abbi pietà di noi)\nTu che togli i peccati del mondo, accogli la nostra supplica; (oooo... accogli la nostra supplica)\nTu che siedi alla destra del Padre, abbi pietà di noi. (oooo... abbi pietà di noi)\n\nPerché Tu solo il santo, il Signore, (Gesù Cristo)\nTu solo l’Altissimo, Cristo Gesù (con il Santo Spirito)\ncon lo Spirito Santo nella gloria del Padre. (nella gloria, gloria del Padre) **Rit.**\n\n> Rit.\n> Gloria, gloria a Dio.\n> Gloria, gloria nell’alto dei Cieli.\n> Pace in terra agli uomini... amati dal Signor. (...di pace)\n> Gloria!",
         "ordineMesse": {
+            "gSanto": 2,
             "matrimonio": 2
         }
     },
@@ -425,8 +433,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Lode a Dio",
         "momento": "alleluia",
-        "messe": [],
-        "testo_md": "Lode a Dio (Ti offro il mio cuore),\nlode a Dio (e la mia voce),\nlode a Dio (dentro me),\nmio Dio (mio Dio),\nmio Re."
+        "messe": [
+            "gSanto"
+        ],
+        "testo_md": "Lode a Dio (Ti offro il mio cuore),\nlode a Dio (e la mia voce),\nlode a Dio (dentro me),\nmio Dio (mio Dio),\nmio Re.",
+        "ordineMesse": {
+            "gSanto": 3
+        }
     },
     {
         "titolo": "Lode al nome Tuo",
@@ -514,8 +527,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Pane del cielo",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "> Rit.\n> [DO]Pane del [MI-]cielo [FA]sei Tu, Gesù,[DO]\n> [LA-]via d’amo[RE-]re: [FA]Tu ci fai come [DO]Te.\n\n[FA]No, non è ri[RE-]masta fredda la terra[SOL]:\n[MI-]Tu sei ri[FA]masto co[DO]n noi [FA]\nper nutrir[DO]ci di [LA-]Te, pane [SOL]di vita,\ned[LA-] infiamma[SOL]re col Tuo [MI+]amore\n[SOL]tutta [FA]l’uma[DO]nità. **Rit.**\n\n[FA]Sì, il cielo è [RE-]qui su questa terra:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi,[FA]\nma ci porti[DO] con Te ne[LA-]lla Tu[SOL]a casa[LA-]\ndove vi[SOL]vremo insieme[MI+] a Te[SOL]\ntutta [FA]l’eter[DO]nità. **Rit.**\n\n[FA]No, la morte[RE-] non può farci paura:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi.[FA]\nE chi vive [DO]di Te v[LA-]ive per [SOL]sempre.[LA-]\nSei Dio [SOL]con noi, sei Dio [MI+]per noi,[SOL]\nDio [FA]in me[DO]zzo a noi. **Rit.**"
+        "messe": [
+            "gSanto"
+        ],
+        "testo_md": "> Rit.\n> [DO]Pane del [MI-]cielo [FA]sei Tu, Gesù,[DO]\n> [LA-]via d’amo[RE-]re: [FA]Tu ci fai come [DO]Te.\n\n[FA]No, non è ri[RE-]masta fredda la terra[SOL]:\n[MI-]Tu sei ri[FA]masto co[DO]n noi [FA]\nper nutrir[DO]ci di [LA-]Te, pane [SOL]di vita,\ned[LA-] infiamma[SOL]re col Tuo [MI+]amore\n[SOL]tutta [FA]l’uma[DO]nità. **Rit.**\n\n[FA]Sì, il cielo è [RE-]qui su questa terra:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi,[FA]\nma ci porti[DO] con Te ne[LA-]lla Tu[SOL]a casa[LA-]\ndove vi[SOL]vremo insieme[MI+] a Te[SOL]\ntutta [FA]l’eter[DO]nità. **Rit.**\n\n[FA]No, la morte[RE-] non può farci paura:[SOL]\n[MI-]Tu sei ri[FA]masto con[DO] noi.[FA]\nE chi vive [DO]di Te v[LA-]ive per [SOL]sempre.[LA-]\nSei Dio [SOL]con noi, sei Dio [MI+]per noi,[SOL]\nDio [FA]in me[DO]zzo a noi. **Rit.**",
+        "ordineMesse": {
+            "gSanto": 8
+        }
     },
     {
         "titolo": "Pane di vita",
@@ -550,10 +568,12 @@ const datiParrocchialiSalvati = {
         "titolo": "Quelli che amano Te",
         "momento": "offertorio",
         "messe": [
+            "gSanto",
             "matrimonio"
         ],
         "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi.",
         "ordineMesse": {
+            "gSanto": 6,
             "matrimonio": 6
         }
     },
@@ -615,10 +635,12 @@ const datiParrocchialiSalvati = {
         "titolo": "Santo (2 voci)",
         "momento": "santo",
         "messe": [
+            "gSanto",
             "matrimonio"
         ],
         "testo_md": "**Uomini**\nSanto il Signore Dio dell’universo.\nI Cieli e la terra sono pieni della Tua gloria.\nOsanna nell’alto dei Cieli e benedetto Colui che viene\nnel nome del Signore. Osanna, nell’alto dei Cieli.\n\n**Donne**\nE santo, santo, santo, il Signore della vita.\nE santo, santo, santo, il Signore della storia.\nNei Cieli e sulla terra risplende la Sua gloria.\nOsanna, osanna, osanna nel cielo sconfinato.\nOsanna, osanna, osanna nel canto del creato.\nE sia benedetto Colui che viene in nome di Dio.",
         "ordineMesse": {
+            "gSanto": 5,
             "matrimonio": 7
         }
     },
@@ -661,8 +683,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Servire è regnare",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "Guardiamo a Te che sei\nMaestro e Signore,\nchinato a terra stai,\nci mostri che l’amore\nè cingersi il grembiule,\nsapersi inginocchiare,\nc’insegni che amare è servire. **Rit.**\n\n> Rit.\n> Fa’ che impariamo,\n> Signore, da Te,\n> che il più grande è chi più sa servire,\n> chi si abbassa e chi si sa piegare,\n> perché grande è soltanto l’amore.\n\nE Ti vediamo poi,\nMaestro e Signore,\nche lavi i piedi a noi\nche siamo Tue creature;\ne cinto del grembiule,\nche è il manto Tuo regale,\nc’insegni che servire è regnare. **Rit.**"
+        "messe": [
+            "gSanto"
+        ],
+        "testo_md": "Guardiamo a Te che sei\nMaestro e Signore,\nchinato a terra stai,\nci mostri che l’amore\nè cingersi il grembiule,\nsapersi inginocchiare,\nc’insegni che amare è servire. **Rit.**\n\n> Rit.\n> Fa’ che impariamo,\n> Signore, da Te,\n> che il più grande è chi più sa servire,\n> chi si abbassa e chi si sa piegare,\n> perché grande è soltanto l’amore.\n\nE Ti vediamo poi,\nMaestro e Signore,\nche lavi i piedi a noi\nche siamo Tue creature;\ne cinto del grembiule,\nche è il manto Tuo regale,\nc’insegni che servire è regnare. **Rit.**",
+        "ordineMesse": {
+            "gSanto": 4
+        }
     },
     {
         "titolo": "Servo per amore",
@@ -726,8 +753,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Verbum panis",
         "momento": "messe:",
-        "messe": [],
-        "testo_md": "[INTRO: mi-(3) do7 re mi-]\n\n[mi-]Prima del te[re]mpo,\nprima an[mi-]cora che la t[re]erra\ncomin[mi-]ciasse a viv[re]ere,\n[mi-]il Verbo [re]era presso [mi-]Dio[re  mi-  re].\n[mi-]Venne nel mo[re]ndo\ne per n[mi-]on abbandon[re]arci\nin questo [mi-]viaggio ci las[re]ciò\n[mi-]tutto se st[re]esso come [mi-]pane.[re]\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n\n[sol]Qui [re]spezzi ancora il [do]pane in mezzo a [re]noi\ne chi[sol]unque mangerà[re  do] non avrà più [re]fame.\n[sol]Qui [re]vive la Tua [do]chiesa intorno a [re]Te\ndove [sol]ognuno troverà[re  do] la sua vera [re]casa.\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis.\n\nPrima del tempo,\nquando l'universo fu creato\ndall'oscurità,\nil Verbo era presso Dio.\nVenne nel mondo.\nNella Sua misericordia\nDio ha mandato il Figlio Suo:\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis."
+        "messe": [
+            "gSanto"
+        ],
+        "testo_md": "[INTRO: mi-(3) do7 re mi-]\n\n[mi-]Prima del te[re]mpo,\nprima an[mi-]cora che la t[re]erra\ncomin[mi-]ciasse a viv[re]ere,\n[mi-]il Verbo [re]era presso [mi-]Dio[re  mi-  re].\n[mi-]Venne nel mo[re]ndo\ne per n[mi-]on abbandon[re]arci\nin questo [mi-]viaggio ci las[re]ciò\n[mi-]tutto se st[re]esso come [mi-]pane.[re]\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n\n[sol]Qui [re]spezzi ancora il [do]pane in mezzo a [re]noi\ne chi[sol]unque mangerà[re  do] non avrà più [re]fame.\n[sol]Qui [re]vive la Tua [do]chiesa intorno a [re]Te\ndove [sol]ognuno troverà[re  do] la sua vera [re]casa.\n\n>\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis factum est.\n> [mi-]Verbum caro factum est.\n> [mi-]Verbum panis.\n\nPrima del tempo,\nquando l'universo fu creato\ndall'oscurità,\nil Verbo era presso Dio.\nVenne nel mondo.\nNella Sua misericordia\nDio ha mandato il Figlio Suo:\ntutto se stesso come pane.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis factum est.\n\nQui spezzi ancora il pane in mezzo a noi\ne chiunque mangerà non avrà più fame.\nQui vive la Tua chiesa intorno a Te\ndove ognuno troverà la sua vera casa.\n\n>\n> Verbum caro factum est.\n> Verbum panis factum est.\n> Verbum caro factum est.\n> Verbum panis.",
+        "ordineMesse": {
+            "gSanto": 7
+        }
     },
     {
         "titolo": "Vi amo così",

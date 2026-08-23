@@ -3,6 +3,7 @@
 ---
 momento:
 messe:
+ - gSanto - 7
 ---
 
 [INTRO: mi-(3) do7 re mi-]

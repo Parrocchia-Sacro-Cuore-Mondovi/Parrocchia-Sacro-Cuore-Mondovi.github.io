@@ -3,6 +3,7 @@
 ---
 momento: offertorio
 messe:
+ - gSanto - 6
  - matrimonio - 6
 ---
 

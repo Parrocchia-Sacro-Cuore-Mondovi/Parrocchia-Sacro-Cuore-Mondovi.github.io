@@ -2,7 +2,8 @@
 
 ---
 momento: comunione
-messe: 
+messe:
+ - gSanto - 4
 ---
 
 Guardiamo a Te che sei

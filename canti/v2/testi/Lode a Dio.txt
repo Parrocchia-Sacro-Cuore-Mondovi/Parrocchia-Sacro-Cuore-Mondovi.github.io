@@ -3,6 +3,7 @@
 ---
 momento: alleluia
 messe:
+ - gSanto - 3
 ---
 
 Lode a Dio (Ti offro il mio cuore),
