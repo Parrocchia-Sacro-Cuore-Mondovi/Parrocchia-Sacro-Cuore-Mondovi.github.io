@@ -56,6 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const resetBtn = document.getElementById('reset-filters');
     if(resetBtn) resetBtn.addEventListener('click', () => impostaFiltro(null, null));
+
+    const pdfMessaBtn = document.getElementById('pdf-download-messa-btn');
+    if (pdfMessaBtn) pdfMessaBtn.addEventListener('click', () => scaricaPdfMessa(pdfMessaBtn.dataset.nomeMessa));
 });
 
 // --- FUNZIONI DI INTERFACCIA ---
@@ -100,6 +103,13 @@ function impostaFiltro(tipo, id, nomeTesto = "Esplora i Canti") {
 
     document.getElementById('titolo-sezione').textContent = tipo ? `Filtro: ${nomeTesto}` : "Esplora i Canti";
     document.getElementById('reset-filters').style.display = tipo ? 'block' : 'none';
+
+    const pdfMessaBtn = document.getElementById('pdf-download-messa-btn');
+    if (pdfMessaBtn) {
+        pdfMessaBtn.style.display = (tipo === 'messa') ? 'flex' : 'none';
+        pdfMessaBtn.dataset.nomeMessa = nomeTesto;
+    }
+
     aggiornaListaCanti();
     
     const sidebar = document.getElementById('filterSidebar');
@@ -268,7 +278,13 @@ function aggiornaListaCanti() {
 
 // --- DOWNLOAD PDF DEL CANTO ---
 
-function scaricaPdfCanto(card, titolo) {
+// Aspetta che il browser abbia completato almeno un ciclo di layout+paint
+// prima di catturare il contenuto (utile soprattutto su dispositivi mobili più lenti).
+function attendiRenderPronto() {
+    return new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+}
+
+async function scaricaPdfCanto(card, titolo) {
     const lyricsHtml = card.querySelector('.lyrics').innerHTML;
 
     const sheet = document.createElement('div');
@@ -278,15 +294,16 @@ function scaricaPdfCanto(card, titolo) {
         <div class="lyrics">${lyricsHtml}</div>
     `;
 
-    const wrapper = document.createElement('div');
-    wrapper.className = 'pdf-export-wrapper';
-    wrapper.appendChild(sheet);
-    document.body.appendChild(wrapper);
+    // Aggiunto in coda al body, nel flusso normale del documento (nessun trucco
+    // di ritaglio tipo overflow:hidden/max-height:0): su alcuni browser mobile
+    // un contenuto "ad altezza zero" non viene renderizzato correttamente,
+    // producendo un PDF vuoto. Restando fuori dallo schermo in fondo alla pagina
+    // (l'utente non è quasi mai scrollato fin lì) si evita comunque il flash visivo.
+    document.body.appendChild(sheet);
 
-    const nomeFile = titolo
-        .normalize('NFD').replace(/[̀-ͯ]/g, '') // via accenti per un nome file più sicuro
-        .replace(/[\\/:*?"<>|]/g, '')
-        .trim() + '.pdf';
+    const nomeFile = nomeFilePdf(titolo) + '.pdf';
+
+    await attendiRenderPronto();
 
     html2pdf()
         .set({
@@ -294,11 +311,86 @@ function scaricaPdfCanto(card, titolo) {
             filename: nomeFile,
             html2canvas: { scale: 2, useCORS: true },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak: { mode: ['css', 'legacy'] }
+            pagebreak: { mode: ['css'], avoid: ['p', 'blockquote', 'li'] }
         })
         .from(sheet)
         .save()
-        .finally(() => wrapper.remove());
+        .finally(() => sheet.remove());
+}
+
+function nomeFilePdf(testo) {
+    return testo
+        .normalize('NFD').replace(/[̀-ͯ]/g, '') // via accenti per un nome file più sicuro
+        .replace(/[\\/:*?"<>|]/g, '')
+        .trim();
+}
+
+// --- DOWNLOAD PDF DI TUTTI I CANTI DI UNA MESSA (in ordine) ---
+
+// Altezza utile di una pagina A4 (con i margini usati qui sotto), misurata empiricamente:
+// oltre questo valore html2pdf passa a una pagina successiva.
+const ALTEZZA_PAGINA_PX = 1000;
+
+async function scaricaPdfMessa(nomeMessa) {
+    const cards = document.querySelectorAll('#song-list-container .song-card');
+    if (cards.length === 0) return;
+
+    const sheet = document.createElement('div');
+    sheet.className = 'pdf-export-sheet';
+
+    const blocchi = [];
+    cards.forEach((card) => {
+        const titolo = card.querySelector('.song-title').textContent.trim();
+        const lyricsHtml = card.querySelector('.lyrics').innerHTML;
+
+        const blocco = document.createElement('div');
+        blocco.className = 'pdf-export-song-block';
+        blocco.innerHTML = `
+            <div class="pdf-export-title">${titolo}</div>
+            <div class="lyrics">${lyricsHtml}</div>
+        `;
+        sheet.appendChild(blocco);
+        blocchi.push(blocco);
+    });
+
+    document.body.appendChild(sheet);
+
+    // Decidiamo NOI dove mettere le interruzioni di pagina (misurando l'altezza reale
+    // di ogni canto), invece di affidarci all'euristica "avoid" di html2pdf: su canti
+    // che comunque non stanno in una pagina, quell'euristica orfanizza il titolo da solo
+    // in fondo alla pagina precedente invece di spostare tutto il blocco.
+    // Impacchettiamo solo tra canti che stanno singolarmente in una pagina: per un
+    // canto più lungo di una pagina non sappiamo con certezza dove finisce (dipende
+    // da come "avoid" sposta i punti di taglio interni), quindi dopo un canto così
+    // forziamo comunque una pagina nuova per il successivo, per sicurezza.
+    let spazioRimanente = 0;
+    blocchi.forEach((blocco, i) => {
+        const altezza = blocco.offsetHeight + 25; // + margin-bottom del blocco (non incluso in offsetHeight)
+        const staInUnaPagina = altezza <= ALTEZZA_PAGINA_PX;
+
+        if (i > 0 && staInUnaPagina && altezza <= spazioRimanente) {
+            spazioRimanente -= altezza;
+        } else {
+            if (i > 0) blocco.classList.add('pdf-export-page-break');
+            spazioRimanente = staInUnaPagina ? (ALTEZZA_PAGINA_PX - altezza) : 0;
+        }
+    });
+
+    const nomeFile = nomeFilePdf(nomeMessa) + ' - Scaletta.pdf';
+
+    await attendiRenderPronto();
+
+    html2pdf()
+        .set({
+            margin: 15,
+            filename: nomeFile,
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['css'], before: '.pdf-export-page-break', avoid: ['p', 'blockquote', 'li'] }
+        })
+        .from(sheet)
+        .save()
+        .finally(() => sheet.remove());
 }
 
 function pulisciTesto(testo) {

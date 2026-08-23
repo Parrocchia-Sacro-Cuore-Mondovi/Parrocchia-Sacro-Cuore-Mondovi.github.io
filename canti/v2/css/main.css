@@ -225,6 +225,25 @@ body {
 .btn-green { background-color: var(--primary-green); }
 .btn-blue { background-color: var(--primary-blue); }
 
+.btn-pdf-messa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-pdf-messa:hover {
+    opacity: 0.9;
+}
+
 /* --- Footer --- */
 footer {
     background-color: var(--bg-white);
@@ -546,11 +565,6 @@ footer {
 }
 
 /* --- Foglio per l'esportazione PDF del canto --- */
-.pdf-export-wrapper {
-    overflow: hidden;
-    max-height: 0;
-}
-
 .pdf-export-sheet {
     width: 720px;
     background: #fff;
@@ -566,6 +580,17 @@ footer {
 /* Elimina lo spazio residuo in fondo (altrimenti in bilico può finire da solo su una pagina extra) */
 .pdf-export-sheet .lyrics > *:last-child {
     margin-bottom: 0 !important;
+}
+
+/* Blocco di un singolo canto dentro la scaletta di una messa: i canti brevi
+   si impacchettano sulla stessa pagina invece di sprecare un foglio ciascuno. */
+.pdf-export-song-block {
+    margin-bottom: 25px;
+    padding-top: 15px;
+}
+
+.pdf-export-song-block:not(:first-child) {
+    border-top: 1px solid #ddd;
 }
 
 .pdf-export-title {
