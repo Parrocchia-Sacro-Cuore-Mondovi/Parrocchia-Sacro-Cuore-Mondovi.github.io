@@ -45,7 +45,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Accogli i nostri doni",
         "momento": "offertorio",
         "messe": [],
-        "testo_md": "[Intro: do  la-  do  la-]\n\n[do]Accogli, Signore, i nostri [la-]doni\nin [do]questo misterioso inco[la-]ntro\n[fa]tra [sol]la nostra[do] povertà[la-]\n[re-]e la T[sol]ua gran[do]dezza. [sol]\n[la-]Noi ti offr[sol]iamo le[do] cose\n[la-]che Tu st[sol]esso ci [do]hai dato\ne[fa] Tu in ]sol]cambio [do]donaci,[la-]\n[re-]donaci Te[sol] stesso.[do] (x2) [sol]\n…accogli, Signore, i nostri doni."
+        "testo_md": "[Intro: do  la-  do  la-]\n\n[do]Accogli, Signore, i nostri [la-]doni\nin [do]questo misterioso inco[la-]ntro\n[fa]tra [sol]la nostra[do] povertà[la-]\n[re-]e la T[sol]ua gran[do]dezza. [sol]\n[la-]Noi ti offr[sol]iamo le[do] cose\n[la-]che Tu st[sol]esso ci [do]hai dato\ne[fa] Tu in [sol]cambio [do]donaci,[la-]\n[re-]donaci Te[sol] stesso.[do] (x2) [sol]\n…accogli, Signore, i nostri doni."
     },
     {
         "titolo": "Acqua siamo noi",
@@ -465,7 +465,7 @@ const datiParrocchialiSalvati = {
         "messe": [
             "matrimonio"
         ],
-        "testo_md": "Dio mi pensò,\ne fu sera e fu mattina,\ne con un soffio mi creò.\nE dentro me\nabita un cuore di bambino\nche chiede amore\ne ha nostalgia di Te. **Rit.**\n\n> Rit.\n> Tu che sei madre,\n> madre di questa umanità.\n> Tu che sei donna,\n> dolcezza nella tua umiltà.\n> Tu che sei amica meravigliosa.\n> Tu che sei sposa di Dio.\n> Tu che intercedi per me presso Dio.\n>\n> Insegnami ad essere uomo,\n> insegnami ad essere buono,\n> insegnami ad essere amico,\n> insegnami la tua umiltà,\n> insegnami ad essere sposo,\n> insegnami ad essere padre,\n> insegnami ad esser sincero,\n> insegnami ad essere un figlio di Dio\n> con Te.\n>\n> Dio mi pensò,\n> e fu sera e fu mattina,\n> e con un soffio mi creò.\n> E dentro me,\n> abita un cuore di bambina\n> che chiede amore\n> e ha nostalgia di Te. Rit.\n\nInsegnami ad essere donna,\ninsegnami ad essere buona,\ninsegnami ad essere amica,\ninsegnami la tua umiltà,\ninsegnami ad essere sposa,\ninsegnami ad essere madre,\ninsegnami ad esser sincera...\n\n*Finale\n...insegnaci ad essere figli di Dio,\ndi Dio, di Dio con Te.**",
+        "testo_md": "Dio mi pensò,\r\ne fu sera e fu mattina,\r\ne con un soffio mi creò.\r\nE dentro me\r\nabita un cuore di bambino\r\nche chiede amore\r\ne ha nostalgia di Te. **Rit.**\r\n\r\n> Rit.\n> Tu che sei madre,\n> madre di questa umanità.\n> Tu che sei donna,\n> dolcezza nella tua umiltà.\n> Tu che sei amica meravigliosa.\n> Tu che sei sposa di Dio.\n> Tu che intercedi per me presso Dio.\n\r\nInsegnami ad essere uomo,\r\ninsegnami ad essere buono,\r\ninsegnami ad essere amico,\r\ninsegnami la tua umiltà,\r\ninsegnami ad essere sposo,\r\ninsegnami ad essere padre,\r\ninsegnami ad esser sincero,\r\ninsegnami ad essere un figlio di Dio\r\ncon Te.\r\n\r\nDio mi pensò,\r\ne fu sera e fu mattina,\r\ne con un soffio mi creò.\r\nE dentro me,\r\nabita un cuore di bambina\r\nche chiede amore\r\ne ha nostalgia di Te. **Rit.**\r\n\r\nInsegnami ad essere donna,\r\ninsegnami ad essere buona,\r\ninsegnami ad essere amica,\r\ninsegnami la tua umiltà,\r\ninsegnami ad essere sposa,\r\ninsegnami ad essere madre,\r\ninsegnami ad esser sincera...\r\n\r\n*Finale\r\n...insegnaci ad essere figli di Dio,\r\ndi Dio, di Dio con Te.**",
         "ordineMesse": {
             "matrimonio": 11
         }

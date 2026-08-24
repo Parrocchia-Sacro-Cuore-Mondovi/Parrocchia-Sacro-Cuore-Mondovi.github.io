@@ -593,6 +593,68 @@ footer {
     border-top: 1px solid #ddd;
 }
 
+/* Modalità a due colonne: usata quando un canto (o l'insieme di più canti) non
+   entra in una pagina anche comprimendo il testo. Il titolo "sfonda" le colonne
+   (column-span: all) restando su tutta la larghezza, il testo sotto si dispone
+   automaticamente in due colonne bilanciate. */
+.pdf-export-sheet.due-colonne {
+    column-count: 2;
+    column-gap: 28px;
+    /* column-fill resta "balance" (il default): senza un'altezza esplicita sul
+       foglio, "auto" riempirebbe solo la prima colonna lasciando vuota la seconda.
+       Chi genera più pagine (canti insieme) fissa un'altezza e passa a "auto" via
+       stile inline, per riempire le colonne in sequenza invece che bilanciarle. */
+}
+
+.pdf-export-sheet.due-colonne .pdf-export-title {
+    column-span: all;
+}
+
+.pdf-export-sheet.due-colonne .pdf-export-song-block {
+    break-inside: avoid;
+}
+
+/* La linea separatrice tra un canto e l'altro, combinata con le colonne CSS, in
+   alcuni casi viene disegnata da html2canvas nel punto sbagliato (sovrapposta al
+   testo del canto precedente). Il titolo blu è già un separatore visivo chiaro:
+   disattiviamo il bordo solo in modalità a due colonne. */
+.pdf-export-sheet.due-colonne .pdf-export-song-block:not(:first-child) {
+    border-top: none;
+}
+
+.pdf-export-sheet.due-colonne p,
+.pdf-export-sheet.due-colonne blockquote,
+.pdf-export-sheet.due-colonne li {
+    break-inside: avoid;
+}
+
+/* Modalità a due colonne "manuale": usata per la pagina combinata di più canti
+   (più canti insieme, scaletta messa o selezione multipla). A differenza di
+   .due-colonne (basata su column-count/column-span del browser, usata solo per
+   comprimere UN singolo canto), qui la divisione tra le due colonne è decisa
+   interamente in JS misurando in anticipo l'altezza di ogni blocco: le due
+   colonne sono quindi due contenitori distinti affiancati con flexbox, non
+   colonne CSS. Con column-span:all + column-fill:auto il browser può spezzare/
+   ribilanciare in un punto leggermente diverso da quello calcolato in JS,
+   facendo "sparire" un blocco oltre il bordo catturato da html2canvas: con due
+   contenitori normali non c'è nessuna euristica del browser che possa
+   disallinearsi dalle nostre misure.  */
+.pdf-export-sheet.due-colonne-manuale {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.pdf-export-sheet.due-colonne-manuale .pdf-export-colonna {
+    width: 326px;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+.pdf-export-sheet.due-colonne-manuale .pdf-export-song-block:not(:first-child) {
+    border-top: none;
+}
+
 .pdf-export-title {
     font-size: 1.6rem;
     font-weight: 700;
@@ -870,3 +932,17 @@ footer {
         flex-direction: column;
     }
 }
+.pdf-export-document-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--primary-blue);
+    font-family: var(--font-principale);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
