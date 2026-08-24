@@ -60,29 +60,16 @@
 }
 
 /* =========================================
-   GRIGLIA LOCANDINE (Layout 2x2)
+   GRIGLIA LOCANDINE
    ========================================= */
-#griglia-locandine {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crea 2 colonne di uguale larghezza */
-    gap: 15px; /* Spazio tra le immagini */
-    align-items: start; /* Le allinea in alto se hanno altezze diverse */
-}
+/* Ora sono card (non più immagini in griglia), ereditano il layout da .archivio-griglia */
 
-/* Stile delle locandine */
+/* Stile delle eventuali immagini (se servono ancora in futuro) */
 #griglia-locandine img {
-    width: 100%; /* Si adatta perfettamente alla sua metà di colonna */
+    width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-/* Su cellulare: Manteniamo le 2 colonne così le foto restano piccole! */
-@media (max-width: 768px) {
-    #griglia-locandine {
-        grid-template-columns: repeat(2, 1fr); /* Rimangono affiancate 2 a 2 */
-        gap: 10px; /* Riduciamo un pochino lo spazio tra loro */
-    }
 }
 
 /* =========================================
@@ -143,4 +130,46 @@
 .img-cliccabile:hover {
     transform: translateY(-8px); /* Solleva l'immagine verso l'alto di 8 pixel */
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* L'ombra si allarga per dare il senso di profondità */
+}
+
+/* =========================================
+   STILI PER LE CARD ORIZZONTALI (PDF)
+   ========================================= */
+.horizontal-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-icon-container {
+    padding: 20px 30px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1); /* Leggero sfondo scuro per l'icona */
+}
+
+.card-text-content {
+    padding: 20px 30px;
+    flex: 1;
+}
+
+.card-text-content h2 { margin: 0; font-size: 1.2rem; }
+
+@media (max-width: 480px) {
+    .horizontal-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-icon-container {
+        width: 100%;
+        padding: 15px;
+    }
+    .card-text-content {
+        padding: 15px;
+    }
 }

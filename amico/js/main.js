@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     // --- 2. CONFIGURAZIONE ---
-    const MAX_LOCANDINE = 4;
+    const MAX_LOCANDINE = 2;
     const MAX_BOLLETTINI = 4;
     
     let pagLocandine = 1;
     let pagBollettini = 1;
 
-    // --- 3. LA FUNZIONE MAGICA PER LE LOCANDINE ---
+    // I foglietti sono immagini convertite, i nomi file sono es "2026_08_24.png"
+    // Li ordiniamo per nome (il più recente per primo)
+    const fogliettiOrdinati = [...fogliettiDb].sort((a, b) => b.localeCompare(a));
+
+    // --- 3. LA FUNZIONE MAGICA PER LE LOCANDINE (IMMAGINI) ---
     function aggiornaLocandine() {
         const griglia = document.getElementById('griglia-locandine');
         griglia.innerHTML = ''; // Svuota la griglia
@@ -15,21 +19,20 @@ document.addEventListener("DOMContentLoaded", function() {
         // Calcola da dove a dove "tagliare" la lista
         const inizio = (pagLocandine - 1) * MAX_LOCANDINE;
         const fine = inizio + MAX_LOCANDINE;
-        const elementiDaMostrare = fogliettiDb.slice(inizio, fine);
+        const elementiDaMostrare = fogliettiOrdinati.slice(inizio, fine);
 
-        // Genera l'HTML
-        for (let img of elementiDaMostrare) {
-            // Creiamo SOLO l'immagine, aggiungendo una classe e il cursore
+        // Genera l'HTML (immagini cliccabili per il modal)
+        for (let img_file of elementiDaMostrare) {
             const htmlLocandina = `
-                <img src="img/foglietti/${img}" alt="Locandina" class="img-cliccabile" style="cursor: pointer;">
+                <img src="img/foglietti/${img_file}" alt="Foglietto Domenicale" class="img-cliccabile" style="cursor: pointer;">
             `;
-            griglia.insertAdjacentHTML('afterbegin', htmlLocandina);
+            griglia.insertAdjacentHTML('beforeend', htmlLocandina);
         }
 
         // Gestisce i bottoni (li spegne se sei all'inizio o alla fine)
         document.getElementById('num-pag-locandine').innerText = `Pagina ${pagLocandine}`;
         document.getElementById('btn-prev-locandine').disabled = (pagLocandine === 1);
-        document.getElementById('btn-next-locandine').disabled = (fine >= fogliettiDb.length);
+        document.getElementById('btn-next-locandine').disabled = (fine >= fogliettiOrdinati.length);
     }
 
     // --- 4. LA FUNZIONE MAGICA PER I BOLLETTINI (PDF) ---

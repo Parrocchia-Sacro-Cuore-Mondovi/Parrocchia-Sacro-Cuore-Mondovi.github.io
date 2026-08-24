@@ -1,4 +1,6 @@
-const fogliettiDb = [];
+const fogliettiDb = [
+    "2026_08_23.png"
+];
 
 const bollettiniDb = [
     {
