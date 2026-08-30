@@ -1,5 +1,6 @@
 const fogliettiDb = [
-    "2026_08_23.png"
+    "2026_08_23.png",
+    "2026_08_30.png"
 ];
 
 const bollettiniDb = [
