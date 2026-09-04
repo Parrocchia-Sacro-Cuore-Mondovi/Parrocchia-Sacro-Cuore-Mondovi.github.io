@@ -24,12 +24,6 @@ const documentiDb = [
 
 const eventiDb = [
     {
-        "data": "3/09",
-        "ore": "7:45/19:00",
-        "titolo": "Gita al parco acquatico \"Cupole Lido\"",
-        "desc": "Iscrizioni entro lunedì 31 agosto"
-    },
-    {
         "data": "9/09",
         "ore": "7:45/19:00",
         "titolo": "Gita al parco avventura \"Gran Paradiso\"",
