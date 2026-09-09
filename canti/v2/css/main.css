@@ -155,6 +155,11 @@ body {
     gap: 12px;
 }
 
+/* --- Barra di scorrimento rapido A-Z (solo mobile, vedi media query sotto) --- */
+.az-nav {
+    display: none;
+}
+
 .song-card {
     display: flex;
     flex-direction: column;
@@ -731,7 +736,47 @@ footer {
     /* Salvagente per i separatori lunghi (es. "Offertorio") */
     .list-separator {
         /* Mette un margine interno a destra così il testo del separatore non finisce mai nascosto sotto il bottone */
-        padding-right: 90px !important; 
+        padding-right: 90px !important;
+    }
+
+    /* ============================================================
+       BARRA DI SCORRIMENTO RAPIDO A-Z (SOLO MOBILE)
+       ============================================================ */
+    .az-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 75vh;
+        overflow-y: auto;
+        z-index: 500; /* Sotto al menu mobile (999-1000), sopra al resto */
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 12px;
+        padding: 6px 3px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .az-nav.nascosta {
+        display: none;
+    }
+
+    .az-nav button {
+        background: none;
+        border: none;
+        padding: 1.5px 4px;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: var(--primary-blue);
+        cursor: pointer;
+    }
+
+    .az-nav button:disabled {
+        color: #ccc;
+        cursor: default;
     }
 }
 

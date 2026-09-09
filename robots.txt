@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /_canti/
+Disallow: /testi_temp/
+Disallow: /attivita/oratorio/testi_temp/
+Disallow: /attivita/estateRagazzi/testi_temp/
+Disallow: /_index.html
+Disallow: /index_old.html
+
+Sitemap: https://www.sacrocuoremondovi.it/sitemap.xml

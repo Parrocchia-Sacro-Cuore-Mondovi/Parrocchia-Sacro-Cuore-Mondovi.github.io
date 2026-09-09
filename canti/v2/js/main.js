@@ -267,6 +267,8 @@ function aggiornaListaCanti() {
     // 3. Renderizzazione con GRUPPI per lo Sticky Header
     let letteraAttuale = '';
     let currentGroup = null; // Memorizza il contenitore del gruppo attuale
+    const mostraBarraAZ = !searchQuery && !(filtroAttuale.tipo === 'messa');
+    const letterePresenti = new Set();
 
     cantiFiltrati.forEach(canto => {
         const nomeMomento = mappaMomenti[canto.momento]?.nome || "Vario";
@@ -274,20 +276,9 @@ function aggiornaListaCanti() {
         let testoSeparatore = '';
         let classeSeparatore = '';
 
-        if (!searchQuery && !(filtroAttuale.tipo === 'messa')) { 
-            let primaLettera = canto.titolo.trim().charAt(0).toLowerCase();
-
-            switch (primaLettera) {
-                case 'è':
-                    primaLettera = 'e';
-                    break;
-                case 'é':
-                    primaLettera = 'e';
-                    break;
-                default:
-                    break;
-            }
-            primaLettera = primaLettera.toUpperCase();
+        if (mostraBarraAZ) {
+            const primaLettera = primaLetteraNormalizzata(canto.titolo);
+            letterePresenti.add(primaLettera);
 
             if (primaLettera !== letteraAttuale) {
                 letteraAttuale = primaLettera;
@@ -296,11 +287,12 @@ function aggiornaListaCanti() {
                 classeSeparatore = 'letter-separator';
             }
         }
-        
+
         // Se c'è un cambio lettera/momento, creiamo il "recinto" (div) per quel gruppo
         if (creaNuovoGruppo) {
             currentGroup = document.createElement('div');
             currentGroup.className = 'song-group';
+            currentGroup.id = 'gruppo-lettera-' + letteraAttuale;
             currentGroup.innerHTML = `<div class="list-separator ${classeSeparatore}">${testoSeparatore}</div>`;
             container.appendChild(currentGroup);
         }
@@ -329,6 +321,49 @@ function aggiornaListaCanti() {
                 </div>
             </div>`;
         targetContainer.insertAdjacentHTML('beforeend', cardHTML);
+    });
+
+    aggiornaBarraAZ(mostraBarraAZ, letterePresenti);
+}
+
+// Prima lettera del titolo di un canto, normalizzata (maiuscola, accenti sulla "e" ricondotti a "e").
+function primaLetteraNormalizzata(titolo) {
+    let lettera = titolo.trim().charAt(0).toLowerCase();
+    if (lettera === 'è' || lettera === 'é') lettera = 'e';
+    return lettera.toUpperCase();
+}
+
+// --- BARRA DI SCORRIMENTO RAPIDO A-Z (mobile) ---
+
+const ALFABETO = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+// Popola (o nasconde) la barra laterale A-Z in base a se la lista è attualmente
+// raggruppata per lettera (niente ricerca attiva, niente filtro per messa).
+function aggiornaBarraAZ(mostra, letterePresenti) {
+    const nav = document.getElementById('azNav');
+    if (!nav) return;
+
+    nav.innerHTML = '';
+
+    if (!mostra || letterePresenti.size === 0) {
+        nav.classList.add('nascosta');
+        return;
+    }
+    nav.classList.remove('nascosta');
+
+    ALFABETO.forEach(lettera => {
+        const attiva = letterePresenti.has(lettera);
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = lettera;
+        btn.disabled = !attiva;
+        if (attiva) {
+            btn.addEventListener('click', () => {
+                const gruppo = document.getElementById('gruppo-lettera-' + lettera);
+                if (gruppo) gruppo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        }
+        nav.appendChild(btn);
     });
 }
 
