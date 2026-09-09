@@ -1,0 +1,75 @@
+/* --- Banner di consenso cookie (Google Analytics) --- */
+.cookie-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3000;
+    background: #1a4f76;
+    color: #ffffff;
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
+.cookie-banner p {
+    margin: 0;
+    flex: 1 1 320px;
+    line-height: 1.5;
+}
+
+.cookie-banner a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.cookie-banner-azioni {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-cookie {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-cookie-primario {
+    background-color: #b35235;
+    color: #ffffff;
+}
+
+.btn-cookie-primario:hover {
+    background-color: #8f3e26;
+}
+
+.btn-cookie-secondario {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-cookie-secondario:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 600px) {
+    .cookie-banner {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .cookie-banner-azioni {
+        justify-content: center;
+    }
+}

@@ -86,6 +86,7 @@ locandine.forEach(img => {
     img.addEventListener("click", function() {
         modal.style.display = "flex"; // Mostriamo la modale
         modalImg.src = this.src;      // Copiamo il link dell'immagine cliccata
+        modalImg.alt = this.alt;      // Copiamo anche il testo alternativo, per l'accessibilità
     });
 });
 

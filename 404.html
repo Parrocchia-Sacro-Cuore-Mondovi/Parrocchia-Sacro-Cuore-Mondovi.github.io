@@ -3,30 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amico - Parrocchia S.Cuore di Gesù</title>
+    <title>Pagina non trovata - Parrocchia S.Cuore di Gesù</title>
 
-    <meta name="description" content="Bollettino parrocchiale e foglietti settimanali della Parrocchia Sacro Cuore di Gesù di Mondovì.">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sacrocuoremondovi.it/amico/">
-    <meta property="og:title" content="Amico - Parrocchia S.Cuore di Gesù">
-    <meta property="og:description" content="Bollettino parrocchiale e foglietti settimanali della Parrocchia Sacro Cuore di Gesù di Mondovì.">
-    <meta property="og:image" content="https://www.sacrocuoremondovi.it/img/bg2.webp">
-    <meta property="og:locale" content="it_IT">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Amico - Parrocchia S.Cuore di Gesù">
-    <meta name="twitter:description" content="Bollettino parrocchiale e foglietti settimanali della Parrocchia Sacro Cuore di Gesù di Mondovì.">
-    <meta name="twitter:image" content="https://www.sacrocuoremondovi.it/img/bg2.webp">
+    <meta name="description" content="La pagina cercata non esiste o è stata spostata.">
+    <meta name="robots" content="noindex">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/legal.css">
     <link rel="stylesheet" href="/css/cookie-consent.css">
-    <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -40,11 +28,11 @@
                 <p>Mondovì</p>
             </div>
         </div>
-        
+
         <button class="hamburger-btn" onclick="toggleNav()">
             <i class="fa-solid fa-bars"></i>
         </button>
-        
+
         <nav id="mainNav">
             <button class="close-nav-btn" onclick="toggleNav()">
                 <i class="fa-solid fa-xmark"></i>
@@ -54,6 +42,7 @@
                 <li><a href="/canti/v2/">CANTI</a></li>
                 <li class="dropdown">
                     <a href="/attivita/" class="dropdown-toggle">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+
                     <!-- IL SOTTOMENU -->
                     <ul class="dropdown-menu">
                         <li class="link-generale-mobile"><a href="/attivita/">Tutte le attività</a></li>
@@ -62,58 +51,31 @@
                         <li><a href="/attivita/estateRagazzi/">Estate Ragazzi</a></li>
                     </ul>
                 </li>
-                <li><a href="/amico/" class="active">Amico</a></li>
+                <li><a href="/amico/">Amico</a></li>
             </ul>
         </nav>
         <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
     </header>
-    
-    <div class="archivio-container">
-        <!-- COLONNA 1: LOCANDINE -->
-        <div class="archivio-colonna">
-            <h2 class="archivio-titolo">Foglietto Settimanale</h2>
-            
-            <!-- Qui il JS inietterà le immagini dei foglietti -->
-            <div id="griglia-locandine" class="archivio-griglia">
 
-            </div>
-            
-            <!-- Pulsanti Paginazione -->
-            <div class="paginazione">
-                <button id="btn-prev-locandine" class="btn-pag"><i class="fa-solid fa-chevron-left"></i> Indietro</button>
-                <span id="num-pag-locandine">Pagina 1</span>
-                <button id="btn-next-locandine" class="btn-pag">Avanti <i class="fa-solid fa-chevron-right"></i></button>
-            </div>
+    <main class="pagina-404">
+        <div class="codice-404">404</div>
+        <h1>Questa pagina non esiste</h1>
+        <p>
+            Il link seguito potrebbe essere sbagliato o la pagina potrebbe essere stata spostata.
+        </p>
+        <a href="/" class="btn-primary">Torna alla Home</a>
+
+        <div class="link-utili">
+            <a href="/canti/v2/">Canti</a> ·
+            <a href="/attivita/">Attività</a> ·
+            <a href="/amico/">Amico</a> ·
+            <a href="/faq/">Domande Frequenti</a>
         </div>
-
-        <!-- COLONNA 2: BOLLETTINI (PDF) -->
-        <div class="archivio-colonna">
-            <h2 class="archivio-titolo">Bollettini Parrocchiali</h2>
-            
-            <!-- Qui il JS inietterà le Card dei PDF -->
-            <div id="griglia-bollettini" class="archivio-griglia">
-
-            </div>
-            
-            <!-- Pulsanti Paginazione -->
-            <div class="paginazione">
-                <button id="btn-prev-bollettini" class="btn-pag"><i class="fa-solid fa-chevron-left"></i> Indietro</button>
-                <span id="num-pag-bollettini">Pagina 1</span>
-                <button id="btn-next-bollettini" class="btn-pag">Avanti <i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal-immagine" class="image-modal">
-        <!-- Pulsante di chiusura -->
-        <span class="chiudi-modal-img">&times;</span>
-        <!-- Il tag img vuoto che riempiremo con JS -->
-        <img class="image-modal-content" id="img-modale-src" src="" alt="Locandina Ingrandita">
-    </div>
+    </main>
 
     <footer class="main-footer">
         <div class="footer-container">
-            
+
             <div class="footer-col">
                 <h3>Parrocchia S.Cuore di Gesù</h3>
                 <p><i class="fa-solid fa-location-dot"></i> Via Dante Alighieri 2, Mondovì (CN)</p>
@@ -152,7 +114,7 @@
             </div>
 
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2026 Parrocchia S.Cuore di Gesù - Mondovì. Tutti i diritti riservati.</p>
         </div>
@@ -160,8 +122,5 @@
 
     <script src="/js/header.js"></script>
     <script src="/js/cookie-consent.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
-    
 </body>
 </html>
