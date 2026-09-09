@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ora i dati sono già dentro datiParrocchiali perché caricati da data.js
     inizializzaSidebar();
     aggiornaListaCanti();
+    inizializzaToggleAzNav();
 
     // Ricerca
     const searchInput = document.getElementById('searchInput');
@@ -341,9 +342,10 @@ const ALFABETO = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 // raggruppata per lettera (niente ricerca attiva, niente filtro per messa).
 function aggiornaBarraAZ(mostra, letterePresenti) {
     const nav = document.getElementById('azNav');
-    if (!nav) return;
+    const lettereContainer = document.getElementById('azNavLettere');
+    if (!nav || !lettereContainer) return;
 
-    nav.innerHTML = '';
+    lettereContainer.innerHTML = '';
 
     if (!mostra || letterePresenti.size === 0) {
         nav.classList.add('nascosta');
@@ -363,7 +365,39 @@ function aggiornaBarraAZ(mostra, letterePresenti) {
                 if (gruppo) gruppo.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         }
-        nav.appendChild(btn);
+        lettereContainer.appendChild(btn);
+    });
+}
+
+const CHIAVE_AZ_NAV_COLLASSATA = 'azNavCollassata';
+
+// Pulsantino per nascondere/richiamare la barra A-Z. Di base è sempre aperta;
+// se l'utente la nasconde, ricordiamo la scelta (localStorage) per le visite successive.
+function inizializzaToggleAzNav() {
+    const nav = document.getElementById('azNav');
+    const toggleBtn = document.getElementById('azNavToggle');
+    if (!nav || !toggleBtn) return;
+
+    const icona = toggleBtn.querySelector('i');
+
+    function impostaStato(collassata) {
+        nav.classList.toggle('collassata', collassata);
+        icona.className = collassata ? 'fa-solid fa-chevron-right' : 'fa-solid fa-chevron-left';
+        toggleBtn.title = collassata ? 'Mostra scorrimento alfabetico' : 'Nascondi scorrimento alfabetico';
+    }
+
+    let collassataSalvata = false;
+    try {
+        collassataSalvata = localStorage.getItem(CHIAVE_AZ_NAV_COLLASSATA) === '1';
+    } catch (e) { /* localStorage non disponibile: teniamo la barra aperta di default */ }
+    impostaStato(collassataSalvata);
+
+    toggleBtn.addEventListener('click', () => {
+        const nuovoStato = !nav.classList.contains('collassata');
+        impostaStato(nuovoStato);
+        try {
+            localStorage.setItem(CHIAVE_AZ_NAV_COLLASSATA, nuovoStato ? '1' : '0');
+        } catch (e) { /* niente di grave se non si salva: la scelta resta valida per la sessione */ }
     });
 }
 

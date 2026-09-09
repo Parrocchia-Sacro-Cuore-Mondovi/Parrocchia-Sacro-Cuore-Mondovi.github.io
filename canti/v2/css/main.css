@@ -751,19 +751,43 @@ footer {
         top: 50%;
         transform: translateY(-50%);
         max-height: 75vh;
-        overflow-y: auto;
         z-index: 500; /* Sotto al menu mobile (999-1000), sopra al resto */
         background: rgba(255, 255, 255, 0.85);
         border-radius: 12px;
-        padding: 6px 3px;
+        padding: 4px 3px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: padding 0.2s ease;
     }
 
     .az-nav.nascosta {
         display: none;
     }
 
-    .az-nav button {
+    .az-nav-toggle {
+        background: none;
+        border: none;
+        color: var(--primary-blue);
+        font-size: 12px;
+        padding: 6px 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .az-nav-lettere {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        max-height: calc(75vh - 30px);
+    }
+
+    .az-nav.collassata .az-nav-lettere {
+        display: none;
+    }
+
+    .az-nav-lettere button {
         background: none;
         border: none;
         padding: 1.5px 4px;
@@ -774,7 +798,7 @@ footer {
         cursor: pointer;
     }
 
-    .az-nav button:disabled {
+    .az-nav-lettere button:disabled {
         color: #ccc;
         cursor: default;
     }
