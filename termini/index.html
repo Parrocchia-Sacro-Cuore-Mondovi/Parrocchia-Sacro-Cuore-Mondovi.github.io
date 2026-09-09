@@ -15,6 +15,14 @@
     <meta property="og:image" content="https://www.sacrocuoremondovi.it/img/bg2.webp">
     <meta property="og:locale" content="it_IT">
 
+    <link rel="canonical" href="https://www.sacrocuoremondovi.it/termini/">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="/css/main.css">
@@ -24,6 +32,8 @@
     <link rel="stylesheet" href="/css/cookie-consent.css">
 </head>
 <body>
+
+    <a href="#main-content" class="skip-link">Salta al contenuto</a>
 
     <header class="main-header">
         <div class="logo-container">
@@ -36,12 +46,12 @@
             </div>
         </div>
 
-        <button class="hamburger-btn" onclick="toggleNav()">
+        <button class="hamburger-btn" onclick="toggleNav()" aria-label="Apri il menu" aria-expanded="false" aria-controls="mainNav">
             <i class="fa-solid fa-bars"></i>
         </button>
 
         <nav id="mainNav">
-            <button class="close-nav-btn" onclick="toggleNav()">
+            <button class="close-nav-btn" onclick="toggleNav()" aria-label="Chiudi il menu">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <ul>
@@ -64,7 +74,7 @@
         <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
     </header>
 
-    <main class="legal-page">
+    <main class="legal-page" id="main-content">
         <h1>Termini di Utilizzo</h1>
         <p class="legal-aggiornamento">Ultimo aggiornamento: 9 settembre 2026</p>
 
@@ -168,9 +178,9 @@
                 <h3>Rimani in contatto</h3>
                 <p>Seguici sui nostri canali per ricevere tutti gli aggiornamenti della nostra comunità.</p>
                 <div class="social-links">
-                    <a href="https://whatsapp.com/channel/0029Vb7pfAtHwXb8zl7Wrn2T" class="social-icon" title="Canale WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://whatsapp.com/channel/0029Vb7pfAtHwXb8zl7Wrn2T" class="social-icon" title="Canale WhatsApp" aria-label="Canale WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     <!-- <a href="#" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a> -->
-                    <a href="https://www.instagram.com/altipianopower" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/altipianopower" class="social-icon" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 

@@ -124,6 +124,13 @@ window.addEventListener("click", function(event) {
     }
 });
 
+// Chiudi la modale con il tasto Esc, utile per chi naviga da tastiera
+window.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+    }
+});
+
 // --- Gestione Menu Iscrizioni Attive ---
 const toggleIscrizioni = document.getElementById("toggle-iscrizioni");
 const menuIscrizioni = document.getElementById("menu-iscrizioni");

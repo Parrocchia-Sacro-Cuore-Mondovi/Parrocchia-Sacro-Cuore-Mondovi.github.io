@@ -1,0 +1,20 @@
+{
+    "name": "Parrocchia Sacro Cuore di Gesù - Mondovì",
+    "short_name": "S.Cuore Mondovì",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1a4f76",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/"
+}

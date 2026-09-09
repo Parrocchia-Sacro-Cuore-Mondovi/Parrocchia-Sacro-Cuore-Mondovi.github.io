@@ -14,10 +14,18 @@
     <meta property="og:image" content="https://www.sacrocuoremondovi.it/attivita/img/attivita_bg.webp">
     <meta property="og:locale" content="it_IT">
 
+    <link rel="canonical" href="https://www.sacrocuoremondovi.it/attivita/oratorio/">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Oratorio - Parrocchia S.Cuore di Gesù">
     <meta name="twitter:description" content="L'oratorio della Parrocchia Sacro Cuore di Gesù di Mondovì: attività, eventi e iscrizioni per bambini e ragazzi.">
     <meta name="twitter:image" content="https://www.sacrocuoremondovi.it/attivita/img/attivita_bg.webp">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -30,6 +38,8 @@
 </head>
 <body>
 
+    <a href="#main-content" class="skip-link">Salta al contenuto</a>
+
     <header class="main-header">
         <div class="logo-container">
             <div class="logo-icon">
@@ -41,12 +51,12 @@
             </div>
         </div>
         
-        <button class="hamburger-btn" onclick="toggleNav()">
+        <button class="hamburger-btn" onclick="toggleNav()" aria-label="Apri il menu" aria-expanded="false" aria-controls="mainNav">
             <i class="fa-solid fa-bars"></i>
         </button>
         
         <nav id="mainNav">
-            <button class="close-nav-btn" onclick="toggleNav()">
+            <button class="close-nav-btn" onclick="toggleNav()" aria-label="Chiudi il menu">
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <ul>
@@ -77,7 +87,7 @@
         </div>
     </section>
 
-    <main class="main-container">
+    <main class="main-container" id="main-content">
         
         <!-- Sezione di sinistra: Box Orizzontali -->
         <section class="cards-section">
@@ -200,9 +210,9 @@
                 <h3>Rimani in contatto</h3>
                 <p>Seguici sui nostri canali per ricevere tutti gli aggiornamenti della nostra comunità.</p>
                 <div class="social-links">
-                    <a href="https://whatsapp.com/channel/0029Vb7pfAtHwXb8zl7Wrn2T" class="social-icon" title="Canale WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://whatsapp.com/channel/0029Vb7pfAtHwXb8zl7Wrn2T" class="social-icon" title="Canale WhatsApp" aria-label="Canale WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     <!-- <a href="#" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a> -->
-                    <a href="https://www.instagram.com/altipianopower" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/altipianopower" class="social-icon" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -215,7 +225,7 @@
 
     <!-- Modale per ingrandire le locandine -->
     <div id="imageModal" class="modal">
-        <span class="close-modal">&times;</span>
+        <button type="button" class="close-modal" aria-label="Chiudi anteprima">&times;</button>
         <img class="modal-content" id="enlargedImg" alt="">
     </div>
     <script src="/js/header.js"></script>

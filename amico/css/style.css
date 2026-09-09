@@ -101,17 +101,27 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-/* La X per chiudere */
+/* La X per chiudere (è un <button>: resettiamo lo stile di default del browser) */
 .chiudi-modal-img {
     position: absolute;
     top: 15px;
     right: 25px;
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    font-family: inherit;
     color: white;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
     z-index: 3001;
     transition: color 0.3s;
+}
+
+.chiudi-modal-img:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
 }
 
 .chiudi-modal-img:hover {

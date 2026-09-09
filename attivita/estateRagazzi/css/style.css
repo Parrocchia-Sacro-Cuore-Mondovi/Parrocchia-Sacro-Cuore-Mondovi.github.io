@@ -442,10 +442,16 @@
 }
 
 /* Pulsante di chiusura (la "X") */
+/* È un <button>: resettiamo lo stile di default del browser */
 .close-modal {
     position: absolute;
     top: 20px;
     right: 35px;
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    font-family: inherit;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
@@ -457,6 +463,11 @@
 .close-modal:focus {
     color: #bbb;
     text-decoration: none;
+}
+
+.close-modal:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
 }
 
 /* Media Queries per la Responsività (Mobile e Tablet) */

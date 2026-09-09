@@ -122,4 +122,12 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+    // 4. Chiudi con il tasto Esc, utile per chi naviga da tastiera
+    window.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && modaleImg && modaleImg.style.display === "block") {
+            modaleImg.style.display = "none";
+            imgNelModale.src = "";
+        }
+    });
 });
