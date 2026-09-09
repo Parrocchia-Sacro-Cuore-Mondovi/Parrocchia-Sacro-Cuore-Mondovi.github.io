@@ -24,12 +24,6 @@ const documentiDb = [
 
 const eventiDb = [
     {
-        "data": "9/09",
-        "ore": "7:45/19:00",
-        "titolo": "Gita al parco avventura \"Gran Paradiso\"",
-        "desc": "Iscrizioni entro martedì 2 settembre"
-    },
-    {
         "data": "11/09",
         "ore": "14:30/21:00",
         "titolo": "Festa di fine Estate Ragazzi",
