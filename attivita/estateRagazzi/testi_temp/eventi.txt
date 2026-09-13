@@ -1,6 +1,2 @@
 ﻿---
-data: 11/09
-ore: 14:30/21:00
-titolo: Festa di fine Estate Ragazzi
-desc: Iscrizioni entro lunedì 7 settembre
 ---

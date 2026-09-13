@@ -41,7 +41,7 @@ else {
         const eventHTML = `
             <div class="event-item">
                 <div class="event-date"><strong>${event.data}</strong><span>ore ${event.ore}</span></div>
-                <div class="event-desc"><strong>${event.titolo}</strong><span>${event.desc}</span></div>
+                <div class="event-desc"><strong>${event.titolo}</strong>${event.desc ? `<span>${event.desc}</span>` : ''}</div>
             </div>
         `;
         eventList.insertAdjacentHTML('beforeend', eventHTML);
@@ -70,8 +70,32 @@ else {
                 <a href="${(form.link === '') ? '#' : form.link}" class="btn-iscriviti">Iscriviti</a>
             </li>
         `;
-        iscrizioniList.insertAdjacentHTML('beforeend', formHTML) 
-    } 
+        iscrizioniList.insertAdjacentHTML('beforeend', formHTML)
+    }
+}
+
+// --- Aggiunta Documenti ---
+const documentiList = document.getElementById('documenti-list');
+documentiList.innerHTML = '';
+const documentiCard = document.getElementById('card-documenti');
+
+if (typeof documentiDb === 'undefined' || documentiDb.length === 0) {
+    documentiCard.classList.add('card-disabled');
+}
+else {
+    documentiCard.classList.remove('card-disabled');
+    for (let form of documentiDb) {
+        const formHTML = `
+            <li>
+                <div class="documenti-info">
+                    <h4>${form.titolo}</h4>
+                    <span><i class="fa-regular fa-calendar"></i> ${form.desc}</span>
+                </div>
+                <a href="${(form.link === '') ? '#' : form.link}" download="${form.titolo}.pdf" class="btn-scarica">Scarica</a>
+            </li>
+        `;
+        documentiList.insertAdjacentHTML('beforeend', formHTML)
+    }
 }
 
 //- Zoom locandina
@@ -124,6 +148,24 @@ toggleIscrizioni.addEventListener("click", function() {
         // Se è chiuso, lo apre assegnandogli l'altezza del suo contenuto interno
         menuIscrizioni.style.maxHeight = menuIscrizioni.scrollHeight + "px";
         arrowIcon.classList.add("ruotata"); // Gira la freccia in sù
+    }
+});
+
+// --- Gestione Menu Documenti da scaricare ---
+const toggleDocumenti = document.getElementById("toggle-documenti");
+const menuDocumenti = document.getElementById("menu-documenti");
+const arrowIconDocumenti = document.getElementById("arrow-icon-documenti");
+
+toggleDocumenti.addEventListener("click", function() {
+    // Controlla se il menù è aperto (se ha un'altezza massima assegnata)
+    if (menuDocumenti.style.maxHeight) {
+        // Se è aperto, lo chiude
+        menuDocumenti.style.maxHeight = null;
+        arrowIconDocumenti.classList.remove("ruotata"); // Rimette la freccia in giù
+    } else {
+        // Se è chiuso, lo apre assegnandogli l'altezza del suo contenuto interno
+        menuDocumenti.style.maxHeight = menuDocumenti.scrollHeight + "px";
+        arrowIconDocumenti.classList.add("ruotata"); // Gira la freccia in sù
     }
 });
 

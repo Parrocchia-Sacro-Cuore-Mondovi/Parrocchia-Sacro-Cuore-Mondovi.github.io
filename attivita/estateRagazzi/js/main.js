@@ -20,26 +20,26 @@ const eventList = document.getElementById('event-list');
 const eventCard = document.getElementById('card-eventi');
 eventList.innerHTML = '';
 if (typeof eventiDb === 'undefined' || eventiDb.length === 0) {
-    eventCard.classList.add('card-disabled');
+    // eventCard.classList.add('card-disabled');
     // Rimando all'oratorio se non ci sono eventi programmati
-    // const eventHTML = `
-    //     <div class="event-item">
-    //         <div class="event-desc">
-    //             <strong>Non ci sono eventi programmati</strong>
-    //             <a href="/attivita/oratorio/" class="btn-iscriviti">
-    //                 <span>Ci vediamo in oratorio!</span>
-    //             </a>
-    //         </div>
-    //     </div>
-    // `;
-    // eventList.insertAdjacentHTML('beforeend', eventHTML);
+    const eventHTML = `
+        <div class="event-item">
+            <div class="event-desc">
+                <strong>Non ci sono eventi programmati</strong>
+                <a href="/attivita/oratorio/" class="btn-iscriviti">
+                    <span>Ci vediamo in oratorio!</span>
+                </a>
+            </div>
+        </div>
+    `;
+    eventList.insertAdjacentHTML('beforeend', eventHTML);
 } else {
     eventCard.classList.remove('card-disabled');
     for (let event of eventiDb) {
         const eventHTML = `
             <div class="event-item">
                 <div class="event-date"><strong>${event.data}</strong><span>ore ${event.ore}</span></div>
-                <div class="event-desc"><strong>${event.titolo}</strong><span>${event.desc}</span></div>
+                <div class="event-desc"><strong>${event.titolo}</strong>${event.desc ? `<span>${event.desc}</span>` : ''}</div>
             </div>
         `;
         eventList.insertAdjacentHTML('beforeend', eventHTML);

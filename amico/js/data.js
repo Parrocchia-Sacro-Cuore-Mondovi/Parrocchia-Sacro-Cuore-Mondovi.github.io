@@ -1,7 +1,8 @@
 const fogliettiDb = [
     "2026_08_23.png",
     "2026_08_30.png",
-    "2026_09_06.png"
+    "2026_09_06.png",
+    "2026_13_09.png"
 ];
 
 const bollettiniDb = [
@@ -28,5 +29,9 @@ const bollettiniDb = [
     {
         "titolo": "Giugno 2026",
         "file": "2026_06.pdf"
+    },
+    {
+        "titolo": "Settembre 2026",
+        "file": "2026_09.pdf"
     }
 ];

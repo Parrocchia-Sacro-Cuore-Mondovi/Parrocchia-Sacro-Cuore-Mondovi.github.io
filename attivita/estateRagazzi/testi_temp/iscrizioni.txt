@@ -1,5 +1,2 @@
 ﻿---
-titolo: Iscrizioni Estate Ragazzi 2026
-desc: 31 agosto - 11 settembre 2026
-link: https://forms.gle/u8ayMuttz2nVUiUH6
 ---

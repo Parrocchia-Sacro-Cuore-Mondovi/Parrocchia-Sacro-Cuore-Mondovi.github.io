@@ -1,1 +1,5 @@
-﻿
+﻿---
+data: 3/10
+ore: 14:30/18:00
+titolo: Ricomincia l'Oratorio!
+---

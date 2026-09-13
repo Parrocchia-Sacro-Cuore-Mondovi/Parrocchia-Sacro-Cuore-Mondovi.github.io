@@ -1,13 +1,7 @@
 const notizieDb = [
     {
-        "titolo": "Benedizione degli zainetti",
-        "data": "11 settembre 2026 - ore 18:30"
-    },
-    {
-        "titolo": "Iscrizioni Estate Ragazzi 2026",
-        "data": "31 agosto - 11 settembre 2026",
-        "link": "/attivita/estateRagazzi",
-        "testo_link": "Iscriviti"
+        "titolo": "Orari messe invernali",
+        "data": "Controlla i nuovi orari!"
     },
     {
         "titolo": "Canale WhatsApp della Parrocchia",
