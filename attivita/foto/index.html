@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina non trovata - Parrocchia S.Cuore di Gesù</title>
+    <title>Foto - Parrocchia S.Cuore di Gesù</title>
 
-    <meta name="description" content="La pagina cercata non esiste o è stata spostata.">
-    <meta name="robots" content="noindex">
+    <meta name="description" content="Tutti gli album fotografici dell'Oratorio e dell'Estate Ragazzi della Parrocchia Sacro Cuore di Gesù di Mondovì.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sacrocuoremondovi.it/attivita/foto/">
+    <meta property="og:title" content="Foto - Parrocchia S.Cuore di Gesù">
+    <meta property="og:description" content="Tutti gli album fotografici dell'Oratorio e dell'Estate Ragazzi della Parrocchia Sacro Cuore di Gesù di Mondovì.">
+    <meta property="og:image" content="https://www.sacrocuoremondovi.it/attivita/img/attivita_bg.webp">
+    <meta property="og:locale" content="it_IT">
+
+    <link rel="canonical" href="https://www.sacrocuoremondovi.it/attivita/foto/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Foto - Parrocchia S.Cuore di Gesù">
+    <meta name="twitter:description" content="Tutti gli album fotografici dell'Oratorio e dell'Estate Ragazzi della Parrocchia Sacro Cuore di Gesù di Mondovì.">
+    <meta name="twitter:image" content="https://www.sacrocuoremondovi.it/attivita/img/attivita_bg.webp">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,8 +32,9 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/legal.css">
     <link rel="stylesheet" href="/css/cookie-consent.css">
+    <link rel="stylesheet" href="/attivita/foto/css/style.css">
+
 </head>
 <body>
 
@@ -49,7 +63,7 @@
                 <li><a href="/">HOME</a></li>
                 <li><a href="/canti/v2/">CANTI</a></li>
                 <li class="dropdown">
-                    <a href="/attivita/" class="dropdown-toggle">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="/attivita/" class="dropdown-toggle active">ATTIVITÀ <i class="fa-solid fa-chevron-down"></i></a>
 
                     <!-- IL SOTTOMENU -->
                     <ul class="dropdown-menu">
@@ -57,7 +71,7 @@
                         <li><a href="/attivita/oratorio/">Oratorio</a></li>
                         <!-- <li><a href="/attivita/campeggi/">Campeggi</a></li> -->
                         <li><a href="/attivita/estateRagazzi/">Estate Ragazzi</a></li>
-                        <li><a href="/attivita/foto/">Foto</a></li>
+                        <li><a href="/attivita/foto/" class="active">Foto</a></li>
                     </ul>
                 </li>
                 <li><a href="/amico/">Amico</a></li>
@@ -66,20 +80,30 @@
         <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
     </header>
 
-    <main class="pagina-404" id="main-content">
-        <div class="codice-404">404</div>
-        <h1>Questa pagina non esiste</h1>
-        <p>
-            Il link seguito potrebbe essere sbagliato o la pagina potrebbe essere stata spostata.
-        </p>
-        <a href="/" class="btn-primary">Torna alla Home</a>
-
-        <div class="link-utili">
-            <a href="/canti/v2/">Canti</a> ·
-            <a href="/attivita/">Attività</a> ·
-            <a href="/amico/">Amico</a> ·
-            <a href="/faq/">Domande Frequenti</a>
+    <section class="hero-section hero-foto">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Foto</h1>
+            <p>Tutti gli album fotografici dell'Oratorio e dell'Estate Ragazzi, in un unico posto.</p>
         </div>
+    </section>
+
+    <main class="main-container container-foto" id="main-content">
+
+        <section class="foto-main-content">
+
+            <div class="foto-filters" id="fotoFilters">
+                <!-- Popolati via JS in base alle classi presenti nel database -->
+            </div>
+
+            <ul class="foto-list" id="fotoList">
+                <!-- Popolati via JS -->
+            </ul>
+
+            <p class="foto-empty" id="fotoEmpty" hidden>Nessun album disponibile per questa categoria al momento.</p>
+
+        </section>
+
     </main>
 
     <footer class="main-footer">
@@ -131,5 +155,8 @@
 
     <script src="/js/header.js"></script>
     <script src="/js/cookie-consent.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

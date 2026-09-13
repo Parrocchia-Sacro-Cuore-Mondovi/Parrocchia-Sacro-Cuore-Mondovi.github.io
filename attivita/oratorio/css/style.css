@@ -50,6 +50,13 @@
     margin-bottom: 10px;
 }
 
+.foto-archivio-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: -10px; /* Avvicina la nota alla card "Foto" qui sopra */
+}
+
 .hero-section.hero-oratorio {
     /* Suggerimento: Usa una foto della comunità/gruppi qui */
     background-image: url('/attivita/oratorio/img/scritta_pace.webp'); 

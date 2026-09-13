@@ -1,0 +1,12 @@
+const fotoDb = [
+    {
+        "titolo": "Foto 2025/2026",
+        "classe": "oratorio",
+        "link": "https://photos.app.goo.gl/i432dqaMpURxi8Lh6"
+    },
+    {
+        "titolo": "Foto 2026",
+        "classe": "estateRagazzi",
+        "link": "https://photos.app.goo.gl/gdCHRvJBqrsorW4p6"
+    }
+];
