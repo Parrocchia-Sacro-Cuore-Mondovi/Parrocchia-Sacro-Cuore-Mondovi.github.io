@@ -1,0 +1,5 @@
+﻿---
+data: 17/10
+ore: 17:00-18:00
+titolo: Inizia il Catechismo!
+---

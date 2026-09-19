@@ -1,9 +1,31 @@
 ﻿---
+titolo: Ricomincia l'oratorio!
+data: Sabato 3 ottobre dalle 14:30 alle 18
+link: /attivita/oratorio/
+testo_link: Informazioni
+---
+---
+titolo: Ricominciano i Giovanissimi!
+data: Domenica 4 ottobre dalle 15:30 alle 19:30, con visita alla cupola del Santuario di Vicoforte e animazione della messa delle 18:30 in parrocchia
+---
+---
+titolo: Apertura visita pastorale del vescovo
+data: Venerdì 9 ottobre alle ore 20:30 in Duomo
+---
+---
+titolo: Visita pastorale del vescovo
+data: Presiederà alle celebrazioni festive di sabato 10 e domenica 11
+---
+---
+titolo: Ricomincia il catechismo!
+data: Sabato 17 ottobre dalle 17:00 alle 18:00
+link: /attivita/catechismo/
+testo_link: Informazioni
+---
+---
 titolo: Orari messe invernali
 data: Controlla i nuovi orari!
 ---
-
-
 ---
 titolo: Canale WhatsApp della Parrocchia
 data: Rimani sempre aggiornato!

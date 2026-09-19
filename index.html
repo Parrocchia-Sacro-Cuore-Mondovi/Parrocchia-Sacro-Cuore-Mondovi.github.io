@@ -70,6 +70,7 @@
                         <li><a href="/attivita/oratorio/">Oratorio</a></li>
                         <!-- <li><a href="/attivita/campeggi/">Campeggi</a></li> -->
                         <li><a href="/attivita/estateRagazzi/">Estate Ragazzi</a></li>
+                        <li><a href="/attivita/catechismo/">Catechismo</a></li>
                         <li><a href="/attivita/foto/">Foto</a></li>
                     </ul>
                 </li>
@@ -165,6 +166,51 @@
                 </div>
             </div>
 
+            <!--
+                ULTIMO FOGLIETTO SETTIMANALE
+                Sezione automatica: legge fogliettiDb da /amico/js/data.js
+                (lo stesso database usato dalla pagina Amico, aggiornato da
+                aggiornaSito.py) e mostra solo il più recente in ordine
+                cronologico. Nessuna modifica manuale necessaria qui. -->
+            <div class="foglietto-widget" id="fogliettoWidgetHome">
+                <h2 class="widget-title">FOGLIETTO SETTIMANALE</h2>
+
+                <div class="foglietto-container" id="fogliettoContainerHome">
+
+                </div>
+
+                <p class="foglietto-empty" id="fogliettoEmptyHome" style="display:none;">Nessun foglietto disponibile al momento.</p>
+
+                <a href="/amico/" class="news-link">Vedi l'archivio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!--
+                LOCANDINE DELLA HOME
+                Sezione scritta a mano, NON collegata allo script di aggiornamento
+                automatico (a differenza delle locandine dell'oratorio).
+                Per aggiungerne una nuova:
+                  1) carica l'immagine (meglio in .webp) dentro /img/locandine/
+                  2) incolla qui sotto un blocco come quello di esempio, cambiando
+                     src e alt. Ricordati di togliere  e dal blocco. -->
+            <div class="locandine-widget" id="locandineWidgetHome">
+                <h2 class="widget-title">LOCANDINE</h2>
+
+                <div class="locandine-grid" id="locandineGridHome">
+
+                    <div class="locandina-item">
+                        <img src="/img/locandine/parco_giochi.webp" alt="Locandina - parco giochi">
+                    </div>
+
+                </div>
+
+                <p class="locandine-empty" id="locandineEmptyHome">Nessuna locandina al momento.</p>
+
+                <div class="pagination-container" id="paginationLocandineHome" style="display:none;">
+                    <button id="prevLocandineHome" class="pag-btn" aria-label="Locandine precedenti"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="nextLocandineHome" class="pag-btn" aria-label="Locandine successive"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
         </aside>
 
     </main>
@@ -216,9 +262,18 @@
         </div>
     </footer>
 
+    <!-- Modale per ingrandire le locandine -->
+    <div id="imageModal" class="modal">
+        <button type="button" class="close-modal" aria-label="Chiudi anteprima">&times;</button>
+        <img class="modal-content" id="enlargedImg" alt="">
+    </div>
+
     <script src="/js/header.js"></script>
     <script src="/js/cookie-consent.js"></script>
     <script src="/js/news.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/locandine-home.js"></script>
+    <script src="/amico/js/data.js"></script>
+    <script src="/js/foglietto-home.js"></script>
 </body>
 </html>

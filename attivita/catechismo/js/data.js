@@ -4,14 +4,14 @@ const documentiDb = [
     {
         "titolo": "Patto di responsabilità parrocchia e famiglie (2026-2027)",
         "desc": "2026-2027",
-        "link": "/attivita/estateRagazzi/pdf/patto_resp_2026-2027.pdf"
+        "link": "/attivita/catechismo/pdf/patto_resp_2026-2027.pdf"
     }
 ];
 
 const eventiDb = [
     {
-        "data": "3/10",
-        "ore": "14:30/18:00",
-        "titolo": "Ricomincia l'Oratorio!"
+        "data": "17/10",
+        "ore": "17:00-18:00",
+        "titolo": "Inizia il Catechismo!"
     }
 ];
