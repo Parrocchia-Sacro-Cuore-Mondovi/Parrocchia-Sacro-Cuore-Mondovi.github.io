@@ -260,9 +260,13 @@ a.card:hover {
 }
 
 .news-item .news-date {
-    font-size: 0.7rem;
+    display: block;
+    font-size: 0.65rem;
     color: #7f8c8d;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* --- Stili Navigazione Locandine --- */

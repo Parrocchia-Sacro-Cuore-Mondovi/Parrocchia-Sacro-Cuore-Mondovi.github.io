@@ -345,7 +345,7 @@
 }
 
 .event-date strong { font-size: 1.4rem; }
-.event-date span { font-size: 0.8rem; opacity: 0.9; }
+.event-date span { font-size: 0.7rem; opacity: 0.9; white-space: nowrap; }
 
 .event-desc {
     display: flex;
