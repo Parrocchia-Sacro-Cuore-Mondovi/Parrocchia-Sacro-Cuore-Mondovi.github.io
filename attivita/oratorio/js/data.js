@@ -9,7 +9,7 @@ const documentiDb = [
     {
         "titolo": "Patto di responsabilità parrocchia e famiglie (2026-2027)",
         "desc": "2026-2027",
-        "link": "/attivita/estateRagazzi/pdf/patto_resp_2026-2027.pdf"
+        "link": "/attivita/oratorio/pdf/patto_resp_2026-2027.pdf"
     }
 ];
 
