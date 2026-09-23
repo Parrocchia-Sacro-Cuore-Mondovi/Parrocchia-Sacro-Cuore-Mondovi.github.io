@@ -94,6 +94,7 @@ body {
 .main-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    align-items: start;
     gap: 2rem;
     padding: 3rem 10%;
     max-width: 1400px;
@@ -261,12 +262,9 @@ a.card:hover {
 
 .news-item .news-date {
     display: block;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: #7f8c8d;
     text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 /* --- Stili Navigazione Locandine --- */
