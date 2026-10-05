@@ -15,14 +15,14 @@ const documentiDb = [
 
 const eventiDb = [
     {
-        "data": "17/10",
-        "ore": "17:00-18:15",
-        "titolo": "Inizia il catechismo!"
-    },
-    {
         "data": "14/10",
         "ore": "20:45-22:00",
         "titolo": "Incontro per iscrivere i bambini al catechismo in oratorio"
+    },
+    {
+        "data": "17/10",
+        "ore": "17:00-18:15",
+        "titolo": "Inizia il catechismo!"
     },
     {
         "data": "12/12",
