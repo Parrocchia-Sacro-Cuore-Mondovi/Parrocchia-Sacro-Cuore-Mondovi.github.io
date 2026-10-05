@@ -1,15 +1,5 @@
 const notizieDb = [
     {
-        "titolo": "Ricomincia l'oratorio!",
-        "data": "Sabato 3 ottobre dalle 14:30 alle 18:00 e partecipazione alla messa delle 18:30",
-        "link": "/attivita/oratorio/",
-        "testo_link": "Informazioni"
-    },
-    {
-        "titolo": "Ricominciano i Giovanissimi!",
-        "data": "Domenica 4 ottobre dalle 15:30 alle 19:30, con visita alla cupola del Santuario di Vicoforte e animazione della messa delle 18:30 in parrocchia"
-    },
-    {
         "titolo": "Apertura visita pastorale del vescovo",
         "data": "Venerdì 9 ottobre alle ore 20:30 in Duomo"
     },
