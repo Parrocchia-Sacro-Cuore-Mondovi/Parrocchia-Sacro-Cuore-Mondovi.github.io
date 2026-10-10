@@ -1,8 +1,4 @@
 ﻿---
-titolo: Apertura visita pastorale del vescovo
-data: Venerdì 9 ottobre alle ore 20:30 in Duomo
----
----
 titolo: Visita pastorale del vescovo
 data: Presiederà alle celebrazioni festive di sabato 10 e domenica 11
 ---
