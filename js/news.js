@@ -1,9 +1,5 @@
 const notizieDb = [
     {
-        "titolo": "Visita pastorale del vescovo",
-        "data": "Presiederà alle celebrazioni festive di sabato 10 e domenica 11"
-    },
-    {
         "titolo": "Iscrizioni catechismo",
         "data": "Mercoledì 14 ottobre alle ore 20:45 in oratorio riunione per i genitori per iscrivere i bambini al catechismo e conoscere le attività proposte"
     },
