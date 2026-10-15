@@ -1,9 +1,5 @@
 const notizieDb = [
     {
-        "titolo": "Iscrizioni catechismo",
-        "data": "Mercoledì 14 ottobre alle ore 20:45 in oratorio riunione per i genitori per iscrivere i bambini al catechismo e conoscere le attività proposte"
-    },
-    {
         "titolo": "Ricomincia il catechismo!",
         "data": "Da sabato 17 ottobre dalle 17:00 alle 18:15",
         "link": "/attivita/catechismo/",
@@ -16,6 +12,14 @@ const notizieDb = [
     {
         "titolo": "Novena di Natale",
         "data": "Alle 20:30 in chiesa. Il 16, il 18 ed il 22 dicembre animata dai ragazzi delle medie; il 17, il 21 ed il 23 dicembre animata dai bambini delle elementari"
+    },
+    {
+        "titolo": "Recita di Natale",
+        "data": "Il 23 dicembre alle ore 20:30 in oratorio i bambini dell'oratorio presentano la recita di Natale"
+    },
+    {
+        "titolo": "Messa di Natale",
+        "data": "Il 24 dicembre alle ore 22"
     },
     {
         "titolo": "Orari messe invernali",
