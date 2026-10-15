@@ -1,12 +1,7 @@
 ﻿---
-data: da sabato 3/10 a sabato 19/12
+data: da sabato 17/10 a sabato 19/12
 ore: 14:30-17:00
-titolo: Pomeriggi di oratorio
----
----
-data: 17/10
-ore: 14:30-17:00
-titolo: Inizio prove recita di Natale
+titolo: Prove recita di Natale
 ---
 ---
 data: 23/12
