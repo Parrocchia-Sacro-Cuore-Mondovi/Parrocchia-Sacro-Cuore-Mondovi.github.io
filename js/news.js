@@ -1,13 +1,19 @@
 const notizieDb = [
     {
-        "titolo": "Ricomincia il catechismo!",
-        "data": "Da sabato 17 ottobre dalle 17:00 alle 18:15",
+        "titolo": "Oratorio: prove recita di Natale",
+        "data": "Ogni sabato dalle 14:30 alle 17:00",
+        "link": "/attivita/oratorio/",
+        "testo_link": "Informazioni"
+    },
+    {
+        "titolo": "Catechismo",
+        "data": "Ogni sabato dalle 17:00 alle 18:15",
         "link": "/attivita/catechismo/",
         "testo_link": "Informazioni"
     },
     {
         "titolo": "Variazione orario catechismo",
-        "data": "Sabato 12 e 19 dicembre il catechismo sarà dalle 17:50 alle 18:20 per consentire le prove della recita di Natale"
+        "data": "Sabato 12 e 19 dicembre il catechismo sarà dalle 17:50 alle 18:20 per consentire le prove generali della recita di Natale"
     },
     {
         "titolo": "Novena di Natale",
