@@ -1,4 +1,10 @@
 ﻿---
+titolo: Corso ministranti
+data: Ogni sabato dal 31/10 al 5/12 dale 14:00 alle 14:45
+link: https://forms.gle/YkNo2VWvo6dSc33MA
+testo_link: Informazioni corso ministranti
+---
+---
 titolo: Oratorio: prove recita di Natale
 data: Ogni sabato dalle 14:30 alle 17:00
 link: /attivita/oratorio/
