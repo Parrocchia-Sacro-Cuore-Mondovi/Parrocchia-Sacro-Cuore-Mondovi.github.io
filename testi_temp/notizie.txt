@@ -1,6 +1,10 @@
 ﻿---
+titolo: Rosario meditato e castagnata
+data: Sabato 31 ottobre alle ore 20:30. Per bambini, adulti, famiglie e chiunque voglia partecipare
+---
+---
 titolo: Corso ministranti
-data: Ogni sabato dal 31/10 al 5/12 dale 14:00 alle 14:45
+data: Ogni sabato dal 31/10 al 5/12 dalle 14:00 alle 14:45
 link: https://forms.gle/YkNo2VWvo6dSc33MA
 testo_link: Informazioni corso ministranti
 ---
