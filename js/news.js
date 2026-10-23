@@ -5,7 +5,7 @@ const notizieDb = [
     },
     {
         "titolo": "Corso ministranti",
-        "data": "Ogni sabato dal 31/10 al 5/12 dalle 14:00 alle 14:45",
+        "data": "Ogni sabato dal 31/10 al 5/12 dalle 14:00 alle 14:45 in chiesa",
         "link": "https://forms.gle/YkNo2VWvo6dSc33MA",
         "testo_link": "Informazioni corso ministranti"
     },
