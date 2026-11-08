@@ -7,7 +7,8 @@ const fogliettiDb = [
     "2026_09_27.png",
     "2026_10_11.png",
     "2026_10_18.png",
-    "2026_10_25.png"
+    "2026_10_25.png",
+    "2026_11_01.png"
 ];
 
 const bollettiniDb = [
