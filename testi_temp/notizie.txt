@@ -1,4 +1,24 @@
 ﻿---
+titolo: Sospensione messa feriale
+data: Da lunedì 9 a venerdì 20 novembre è sospesa la celebrazione feriale delle ore 8
+---
+---
+titolo: Prove dei canti per la messa di Natale
+data: Venerdì 27 novembre alle ore 20:30
+---
+---
+titolo: Spettacolo "Ma che bela duminica"
+data: Sabato 28 novembre alle ore 21:00 in oratorio, commedia presentata dalla compagnia teatrale di Carrù
+---
+---
+titolo: Prove dei canti per la messa di Natale
+data: Venerdì 11 dicembre alle ore 20:30
+---
+---
+titolo: Prove dei canti per la messa di Natale
+data: Domenica 20 dicembre alle ore 21:00
+---
+---
 titolo: Oratorio: prove recita di Natale
 data: Ogni sabato dalle 14:30 alle 17:00
 link: /attivita/oratorio/
