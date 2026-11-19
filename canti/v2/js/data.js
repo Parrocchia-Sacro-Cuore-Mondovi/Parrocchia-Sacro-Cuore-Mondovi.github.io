@@ -206,6 +206,12 @@ const datiParrocchialiSalvati = {
         "testo_md": "Padre nostro, Dio di tutti noi,\nda ogni terra ci hai raccolti Tu:\nora il Cielo pare sceso giù\nin mezzo a noi, con noi.\nPadre nostro, qui davanti a Te\nfigli Tuoi, fratelli siamo già,\ncon un solo cuore, un’anima\npreghiamo Te, Padre. **Rit.**\n\n> Rit.\n> L’amore brilla in mezzo a noi, stasera,\n> il Tuo cielo si è specchiato qui:\n> Padre di tutti, fa’ che il mondo sia presto sia così.\n\nPadre nostro e d’ogni uomo Tu\nguida i passi dell’umanità\nfinché in terra splenda l’unità\ncome lassù, lassù. **Rit.**"
     },
     {
+        "titolo": "Come nessun altro - Reale",
+        "momento": "messe:",
+        "messe": [],
+        "testo_md": "Credo che la pace vera sia solo in Te,\r\ncredo che l'amore vero sia solo in Te,\r\ncredo che il futuro vero sia quel che Tu vuoi per me.\r\n\r\nCredo che nessuno mi ami come fai Tu,\r\ncredo che nessuno al mondo sia come Te,\r\ncredo che tuo figlio è nato, morto e risorto per me. **Rit.**\r\n\r\n> Rit.\n> E come nessun'altro sai parlare al cuore\n> e come nessun'altro sai parlare d'amore\n> ti prego mio Signore di prender la mia mano\n> e di farmi innamorare del Tuo immenso cuore Gesù.\n>\n> Luce calda e splendente così sei Tu,\n> acqua chiara e trasparente così sei Tu,\n> aria fresca che risveglia l'anima Tu sei per me.\n>\n> Dove c'è amicizia vera io vedo Te,\n> quando una famiglia ama lì ci sei Tu,\n> anche nel mio buoi più profondo so che sei con me. Rit. (x2)\n\r\n>\n> ...del Tuo immenso cuore Gesù,\n> del Tuo immenso cuore."
+    },
+    {
         "titolo": "Come Tu mi vuoi",
         "momento": "comunione",
         "messe": [],
