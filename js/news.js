@@ -1,9 +1,5 @@
 const notizieDb = [
     {
-        "titolo": "Sospensione messa feriale",
-        "data": "Da lunedì 9 a venerdì 20 novembre è sospesa la celebrazione feriale delle ore 8"
-    },
-    {
         "titolo": "Prove dei canti per la messa di Natale",
         "data": "Venerdì 27 novembre alle ore 20:30"
     },
