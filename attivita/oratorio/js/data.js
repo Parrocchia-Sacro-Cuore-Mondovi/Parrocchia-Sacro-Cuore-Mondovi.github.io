@@ -20,7 +20,7 @@ const documentiDb = [
 const eventiDb = [
     {
         "data": "Tutti i sabati",
-        "ore": "14:30-17:00",
+        "ore": "14:30-17:45",
         "titolo": "Prove recita di Natale"
     },
     {
