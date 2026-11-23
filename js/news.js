@@ -17,7 +17,7 @@ const notizieDb = [
     },
     {
         "titolo": "Oratorio: prove recita di Natale",
-        "data": "Ogni sabato dalle 14:30 alle 17:00",
+        "data": "Ogni sabato dalle 14:30 alle 17:45",
         "link": "/attivita/oratorio/",
         "testo_link": "Informazioni"
     },
