@@ -650,7 +650,7 @@ const datiParrocchialiSalvati = {
             "gSanto",
             "matrimonio"
         ],
-        "testo_md": "[Intro: LA RE LA RE]\n\n**Uomini**\n[LA] Santo il Signore [RE]Dio dell’uni[LA]ver[RE]so.\nI Cieli e la [LA]terra sono pieni [RE]della Tua [LA]gloria[RE].\nO[LA]sanna nell’alto dei Ci[RE]eli e bene[LA]detto Colui che [RE]viene\nnel [LA]nome del Si[RE]gnore. Osanna, nell’[LA]alto dei Ci[RE]eli.\n\n**Donne**\nE [LA]santo, santo, santo, il Si[RE]gnore della vita.\nE [LA}santo, santo, santo, il Si[RE]gnore della storia.\nNei [LA]Cieli e sulla terra rispl[RE]ende la Sua glori[LA]a. [RE]\nOs[LA}anna, osanna, osanna nel ci[RE]elo sconfinato.\nOs[LA]anna, osanna, osanna nel [RE]canto del creato.\nE [LA]sia benedetto Co[RE]lui che viene in nome di [LA]Dio. [RE] (x2)",
+        "testo_md": "[Intro: LA RE LA RE]\n\n**Uomini**\n[LA] Santo il Signore [RE]Dio dell’uni[LA]ver[RE]so.\nI Cieli e la [LA]terra sono pieni [RE]della Tua [LA]gloria[RE].\nO[LA]sanna nell’alto dei Ci[RE]eli e bene[LA]detto Colui che [RE]viene\nnel [LA]nome del Si[RE]gnore. Osanna, nell’[LA]alto dei Ci[RE]eli.\n\n**Donne**\nE [LA]santo, santo, santo, il Si[RE]gnore della vita.\nE [LA]santo, santo, santo, il Si[RE]gnore della storia.\nNei [LA]Cieli e sulla terra rispl[RE]ende la Sua glori[LA]a. [RE]\nOs[LA]anna, osanna, osanna nel ci[RE]elo sconfinato.\nOs[LA]anna, osanna, osanna nel [RE]canto del creato.\nE [LA]sia benedetto Co[RE]lui che viene in nome di [LA]Dio. [RE] (x2)",
         "ordineMesse": {
             "gSanto": 5,
             "matrimonio": 7
