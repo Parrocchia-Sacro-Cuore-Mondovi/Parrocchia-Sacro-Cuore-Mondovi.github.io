@@ -104,7 +104,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Alleluia, celebrate il Signore - Cioffi",
         "momento": "alleluia",
         "messe": [],
-        "testo_md": "[Intro: MI  SI  DO#-  SI  LA  SI / MI]\n\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
+        "testo_md": "[Intro: MI  SI  LA  MI  LA  MI]\n\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,[LA]\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
     },
     {
         "titolo": "Altissimo",

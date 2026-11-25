@@ -5,10 +5,10 @@ momento: alleluia
 messe:
 ---
 
-[Intro: MI  SI  DO#-  SI  LA  SI / MI]
+[Intro: MI  SI  LA  MI  LA  MI]
 
 **Rit.
-Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,
+Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,[LA]
 alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.**
 
 Cele[LA]brate il Si[SI]gnore perché è [DO#-]buono,
