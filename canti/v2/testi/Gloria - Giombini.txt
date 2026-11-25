@@ -6,11 +6,11 @@ messe:
 ---
 
 [DO]Glo - - [SOL] - - - -[DO]ria, [FA SOL]
-[DO]glo--[SOL]----[DO]ria, [FA SOL]
+[DO]glo - - [SOL] - - - -[DO]ria, [FA SOL]
 [DO]a    [MI-]Dio nell’[LA-]alto dei [FA]cieli,
-[DO]glo--[SOL]----[DO]ria. [FA DO]
+[DO]glo - - [SOL] - - - -[DO]ria. [FA DO]
 
-[DO]E    [SOL]pa[DO]ce, [FA SOL]
-[DO]e    [SOL]pa[DO]ce, [FA SOL]
+[DO]E    [SOL]pa - [DO]ce, [FA SOL]
+[DO]e    [SOL]pa - [DO]ce, [FA SOL]
 [DO]in   [MI-]terra agli [LA-]uomi[FA]ni,
 [DO]di buona [SOL]volon[DO]tà. [FA DO]
