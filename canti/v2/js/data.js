@@ -309,7 +309,7 @@ const datiParrocchialiSalvati = {
         "titolo": "Gloria - Giombini",
         "momento": "gloria",
         "messe": [],
-        "testo_md": "[DO]Glo - - [SOL] - - - -[DO]ria, [FA SOL]\r\n[DO]glo - - [SOL] - - - -[DO]ria, [FA SOL]\r\n[DO]a    [MI-]Dio nell’[LA-]alto dei [FA]cieli,\r\n[DO]glo - - [SOL] - - - -[DO]ria. [FA DO]\r\n\r\n[DO]E    [SOL]pa - [DO]ce, [FA SOL]\r\n[DO]e    [SOL]pa - [DO]ce, [FA SOL]\r\n[DO]in   [MI-]terra agli [LA-]uomi[FA]ni,\r\n[DO]di buona [SOL]volon[DO]tà. [FA DO]"
+        "testo_md": "[DO]Glo - - [SOL] - - - -[DO]ria, [FA SOL]\n[DO]glo - - [SOL] - - - -[DO]ria, [FA SOL]\n[DO]a    [MI-]Dio nell’[LA-]alto dei [FA]cieli,\n[DO]glo - - [SOL] - - - -[DO]ria. [FA DO]\n\n[DO]E    [SOL]pa - [DO]ce, [FA SOL]\n[DO]e    [SOL]pa - [DO]ce, [FA SOL]\n[DO]in   [MI-]terra agli [LA-]uomi[FA]ni,\n[DO]di buona [SOL]volon[DO]tà. [FA DO]"
     },
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
