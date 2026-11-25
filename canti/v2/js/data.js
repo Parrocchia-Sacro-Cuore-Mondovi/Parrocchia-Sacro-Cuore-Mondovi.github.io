@@ -583,7 +583,7 @@ const datiParrocchialiSalvati = {
             "gSanto",
             "matrimonio"
         ],
-        "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. [RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi.",
+        "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. (è per te)[RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. (è per te)[RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi.",
         "ordineMesse": {
             "gSanto": 6,
             "matrimonio": 6
