@@ -306,6 +306,12 @@ const datiParrocchialiSalvati = {
         "testo_md": "Giovane donna, attesa dell'umanità:\nun desiderio d'amore e pura libertà.\nIl Dio lontano è qui vicino a te,\nvoce e silenzio, annuncio di novità. **Rit.**\n\n> Rit.\n> A - ve, Mari - a. A - ve, Mari - a.\n\nDio t'ha prescelta qual madre piena di bellezza\ne il Suo amore t'avvolgerà con la Sua ombra.\nGrembo per Dio venuto sulla terra,\ntu sarai madre di un uomo nuovo. **Rit.**\n\nEcco l'ancella che vive della Tua parola,\nlibero il cuore perché l'amore trovi casa.\nOra l'attesa è densa di preghiera\ne l'uomo nuovo è qui, in mezzo a noi. **Rit.**"
     },
     {
+        "titolo": "Gloria - Giombini",
+        "momento": "gloria",
+        "messe": [],
+        "testo_md": "[DO]Glo--[SOL]-[DO]ria, [FA SOL]\r\n[DO]a [MI-]Dio nell’[LA-]alto dei [FA]cieli, [DO]glo--[SOL]----[DO]ria. [FA DO]\r\n\r\n[DO]E [SOL]pa[DO]ce, [FA SOL]\r\n[DO]e [SOL]pa[DO]ce, [FA SOL]\r\n[DO]in [MI-]terra agli [LA-]uomi[FA]ni, [DO]di buona [SOL]volon[DO]tà. [FA DO]"
+    },
+    {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
         "momento": "gloria",
         "messe": [],
