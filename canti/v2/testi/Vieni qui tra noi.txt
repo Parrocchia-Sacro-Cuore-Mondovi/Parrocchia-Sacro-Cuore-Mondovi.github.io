@@ -1,4 +1,4 @@
-﻿#Vieni qui tra noi
+﻿# Vieni qui tra noi
 
 ---
 momento: comunione
@@ -6,27 +6,36 @@ messe:
 ---
 
 **Rit.
-Vieni qui tra noi
-come fiamma che scende dal cielo.
-Vieni qui tra noi,
-rinnova il cuore del mondo.
-Vieni qui tra noi
-col tuo amore rischiara la terra.
-Vieni qui tra noi,
-soffio di libertà.**
+[DO SOL]Vieni [RE]qui tra[SOL] noi
+[SOL]come fia[DO]mma che sce[MI-]nde dal cielo. [RE4]
+[DO SOL]Vieni [RE]qui tra[MI-7] noi,
+[LA-7]ri - [SOL]nnova il [DO]cuore del mondo. [RE4]
+[DO SOL]Vieni [RE]qui tra[SOL] noi
+[SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]
+[DO SOL]Vieni [RE]qui tra[MI-7] noi,
+[LA-7]soffio di [RE4]libertà. [SOL DO SOL]**
 
-Nel silenzio Tu sei pace,
-nella notte luce,
-Dio nascosto, vita,
-Dio Tu sei, amore.
-Tutto si ricrea in Te,
-tutto vive in Te.
-Scalda col tuo fuoco
-terra e cielo.
-Tu, che sai raccogliere
-ogni gemito,
-semina nel nostro cuore
-una speranza d’eternità. **Rit.**
+[SOL]Nel silenzio Tu [DO]sei pace, [SOL]
+nella notte [DO]luce, [SOL]
+Dio nascosto, [DO]vita, [SOL]
+Dio Tu sei, [DO]amore. [SOL]
+Tutto si ricrea[DO] in [SOL]Te,
+tutto [RE]vive in [Mi-7]Te.
+Scalda col tuo [DO SOL]fuoco
+terra e [RE]cielo. [Mi-7]
+Tu, che sai rac[DO]cogliere [SOL]
+ogni [RE]gemito, [MI-]
+semina nel [DO]nostro cuore [SOL]
+una spe[LA-7]ranza d’eternità. [DO-]**Rit.**
 
-**Finale …amore, Dio in mezzo a noi!**
-
+**Rit.
+[DO SOL]Vieni [RE]qui tra[SOL] noi
+[SOL]come fia[DO]mma che sce[MI-]nde dal cielo. [RE4]
+[DO SOL]Vieni [RE]qui tra[MI-7] noi,
+[LA-7]ri - [SOL]nnova il [DO]cuore del mondo. [RE4]
+[DO SOL]Vieni [RE]qui tra[SOL] noi
+[SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]
+[DO SOL]Vieni [RE]qui tra[MI-7] noi,
+[DO]soffio di libertà...[DO-]
+(soffio di libertà...)
+...[LA7]amore, [DO]Dio in mezzo a [SOL]noi!**
