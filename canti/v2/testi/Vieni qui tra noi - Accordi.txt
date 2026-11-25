@@ -6,13 +6,13 @@ messe:
 ---
 
 **Rit.
-[DO SOL]Vieni [RE]qui tra[SOL] noi
-[SOL]come fia[DO]mma che sce[MI-]nde dal cielo. [RE4]
-[DO SOL]Vieni [RE]qui tra[MI-7] noi,
-[LA-7]ri - [SOL]nnova il [DO]cuore del mondo. [RE4]
-[DO SOL]Vieni [RE]qui tra[SOL] noi
+[DO SOL RE]Vieni qui tra[SOL] noi
+[SOL]come fia[DO]mma che sce[MI-]nde dal [RE4]cielo.
+[DO SOL RE]Vieni qui tra[MI-7] noi,
+[LA-7 SOL]ri - nnova il [DO]cuore del mondo. [RE4]
+[DO SOL RE]Vieni qui tra[SOL] noi
 [SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]
-[DO SOL]Vieni [RE]qui tra[MI-7] noi,
+[DO SOL RE]Vieni qui tra[MI-7] noi,
 [LA-7]soffio di [RE4]libertà. [SOL DO SOL]**
 
 [SOL]Nel silenzio Tu [DO]sei pace, [SOL]
@@ -29,13 +29,13 @@ semina nel [DO]nostro cuore [SOL]
 una spe[LA-7]ranza d’eternità. [DO-]**Rit.**
 
 **Rit.
-[DO SOL]Vieni [RE]qui tra[SOL] noi
-[SOL]come fia[DO]mma che sce[MI-]nde dal cielo. [RE4]
-[DO SOL]Vieni [RE]qui tra[MI-7] noi,
-[LA-7]ri - [SOL]nnova il [DO]cuore del mondo. [RE4]
-[DO SOL]Vieni [RE]qui tra[SOL] noi
+[DO SOL RE]Vieni qui tra[SOL] noi
+[SOL]come fia[DO]mma che sce[MI-]nde dal [RE4]cielo.
+[DO SOL RE]Vieni qui tra[MI-7] noi,
+[LA-7 SOL]ri - nnova il [DO]cuore del mondo. [RE4]
+[DO SOL RE]Vieni qui tra[SOL] noi
 [SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]
-[DO SOL]Vieni [RE]qui tra[MI-7] noi,
+[DO SOL RE]Vieni qui tra[MI-7] noi,
 [DO]soffio di libertà...[DO-]
 (soffio di libertà...)
 ...[LA7]amore, [DO]Dio in mezzo a [SOL]noi!**
