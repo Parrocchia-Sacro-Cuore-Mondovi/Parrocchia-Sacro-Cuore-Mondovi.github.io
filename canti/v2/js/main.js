@@ -179,6 +179,20 @@ function renderizzaLyrics(testoMd) {
     testoConAccordi = testoConAccordi.replace(/\[([^\]]+)\]/g, (match, accordo) => {
         // Un a capo dentro le parentesi (es. nella [Intro: ...]) viene mantenuto: si tolgono solo gli spazi attorno
         accordo = accordo.replace(/[ \t]*\r?\n[ \t]*/g, '\n');
+        if (accordo.includes('\n')) {
+            // Etichetta su piu' righe (es. Intro): le righe successive alla prima vengono rientrate
+            // della larghezza del prefisso "Intro: " (copia invisibile, stesso font => allineamento esatto)
+            const righe = accordo.split('\n');
+            const pos = righe[0].indexOf(': ');
+            const prefisso = pos >= 0 ? righe[0].slice(0, pos + 2) : '';
+            const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            const htmlRighe = righe.map((r, i) =>
+                '<span class="c-line">' +
+                (i > 0 && prefisso ? '<span class="c-pad">' + esc(prefisso) + '</span>' : '') +
+                esc(r) + '</span>'
+            ).join('');
+            return `<span class="c c-multi"><span class="c-lab">${htmlRighe}</span></span>`;
+        }
         return `<span class="c" data-v="${accordo}"></span>`;
     });
     return marked.parse(testoConAccordi, { breaks: true });
