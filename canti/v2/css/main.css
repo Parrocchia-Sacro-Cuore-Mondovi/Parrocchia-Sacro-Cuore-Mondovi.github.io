@@ -1060,4 +1060,7 @@ footer {
     display: none !important;
 }
 
-/* Etichetta su piu righe: piu spazio sopra la riga, cosi non si sovrappone al testo precedente database/ img/ testiCanti/
+/* Etichetta su piu' righe: piu' spazio sopra la riga, cosi' non si sovrappone al testo precedente */
+.lyrics:not(.hide-chords) .c-multi::after {
+    height: 3.6em !important;
+}
