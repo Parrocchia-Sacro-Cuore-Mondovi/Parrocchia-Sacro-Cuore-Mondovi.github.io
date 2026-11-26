@@ -19,9 +19,7 @@ const datiParrocchialiSalvati = {
                 { "id": "vario", "nome": "Vario", "ordine": 17, "nascosto": true },
             ],
             "messe": [
-                { "id": "gSanto", "nome": "Giovedì Santo" },
-                { "id": "matrimonio", "nome": "Matrimonio" },
-                { "id": "natale", "nome": "Natale" },
+                { "id": "natale", "nome": "Natale 2026" },
             ],
             "canti": [
     {
