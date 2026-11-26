@@ -3,6 +3,7 @@
 ---
 momento: fine
 messe:
+ - natale - 10
 ---
 
 [Intro: LA- MI- FA DO RE- LA- FA SOL

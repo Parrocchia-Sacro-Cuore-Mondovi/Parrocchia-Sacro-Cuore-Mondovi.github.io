@@ -3,6 +3,7 @@
 ---
 momento: gloria
 messe:
+ - natale - 2
 ---
 
 [DO]Glo - - [SOL] - - - -[DO]ria, [FA SOL]

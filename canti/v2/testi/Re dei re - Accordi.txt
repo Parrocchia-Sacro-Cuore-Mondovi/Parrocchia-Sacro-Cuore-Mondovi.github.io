@@ -3,6 +3,7 @@
 ---
 momento: fine
 messe:
+ - natale - 9
 ---
 
 [Intro: MI- DO SOL RE (x2)]

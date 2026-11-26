@@ -4,6 +4,7 @@
 momento: pace
 messe:
  - matrimonio - 8
+ - natale - 7
 ---
 
 **Rit.

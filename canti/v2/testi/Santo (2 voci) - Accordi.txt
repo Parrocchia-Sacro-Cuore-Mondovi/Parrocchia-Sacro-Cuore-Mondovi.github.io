@@ -5,6 +5,7 @@ momento: santo
 messe:
  - gSanto - 5
  - matrimonio - 7
+ - natale - 6
 ---
 
 [Intro: LA RE LA RE]

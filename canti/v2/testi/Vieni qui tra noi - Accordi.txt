@@ -3,6 +3,7 @@
 ---
 momento: comunione
 messe:
+ - natale - 8
 ---
 
 **Rit.

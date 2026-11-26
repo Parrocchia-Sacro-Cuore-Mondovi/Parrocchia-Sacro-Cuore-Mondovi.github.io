@@ -5,6 +5,7 @@ momento: offertorio
 messe:
  - gSanto - 6
  - matrimonio - 6
+ - natale - 4
 ---
 
 [Intro: RE  RE4  RE  RE4]

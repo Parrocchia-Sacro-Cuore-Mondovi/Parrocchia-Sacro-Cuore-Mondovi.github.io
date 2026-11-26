@@ -104,8 +104,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Alleluia, celebrate il Signore - Cioffi",
         "momento": "alleluia",
-        "messe": [],
-        "testo_md": "[Intro: MI  SI  LA  MI  LA  MI]\n\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,[LA]\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**"
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "[Intro: MI  SI  LA  MI  LA  MI]\n\n> Rit.\n> Alle[MI]lu  -  [SI]u  -  [MI]ia, alle[DO#-]luia, alleluia,[LA]\n> alle[MI]lu  -  [SI]u  -  [LA]ia, alle[MI]luia, [LA]allelu[MI]ia.\n\nCele[LA]brate il Si[SI]gnore perché è [DO#-]buono,\nperché [FA#-]eterna è la [LA]Sua miseri[MI4]cord[MI]ia. **Rit.**",
+        "ordineMesse": {
+            "natale": 3
+        }
     },
     {
         "titolo": "Altissimo",
@@ -297,8 +302,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Frutto della nostra terra",
         "momento": "offertorio",
-        "messe": [],
-        "testo_md": "Frutto della nostra terra,\ndel lavoro di ogni uomo,\npane della nostra vita,\ncibo della quotidianità.\nTu che lo prendevi un giorno,\nlo spezzavi per i Tuoi,\noggi vieni in questo pane,\ncibo vero dell'umanità. **Rit.**\n\n> Rit.\n> E sarò pane\n> e sarò vino\n> nella mia vita,\n> nelle Tue mani.\n> Ti accoglierò dentro di me,\n> farò di me un'offerta viva,\n> un sacrificio gradito a Te.\n\nFrutto della nostra terra,\ndel lavoro di ogni uomo,\nvino delle nostre vigne\nsulla mensa dei fratelli Tuoi.\nTu che lo prendevi un giorno,\nlo bevevi con i Tuoi,\noggi vieni in questo vino\ne Ti doni per la vita mia. **Rit.**\n\n>\n> …un sacrificio gradito a Te."
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "Frutto della nostra terra,\ndel lavoro di ogni uomo,\npane della nostra vita,\ncibo della quotidianità.\nTu che lo prendevi un giorno,\nlo spezzavi per i Tuoi,\noggi vieni in questo pane,\ncibo vero dell'umanità. **Rit.**\n\n> Rit.\n> E sarò pane\n> e sarò vino\n> nella mia vita,\n> nelle Tue mani.\n> Ti accoglierò dentro di me,\n> farò di me un'offerta viva,\n> un sacrificio gradito a Te.\n\nFrutto della nostra terra,\ndel lavoro di ogni uomo,\nvino delle nostre vigne\nsulla mensa dei fratelli Tuoi.\nTu che lo prendevi un giorno,\nlo bevevi con i Tuoi,\noggi vieni in questo vino\ne Ti doni per la vita mia. **Rit.**\n\n>\n> …un sacrificio gradito a Te.",
+        "ordineMesse": {
+            "natale": 5
+        }
     },
     {
         "titolo": "Giovane donna",
@@ -309,8 +319,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Gloria - Giombini",
         "momento": "gloria",
-        "messe": [],
-        "testo_md": "[DO]Glo - - [SOL] - - - -[DO]ria, [FA SOL]\n[DO]glo - - [SOL] - - - -[DO]ria, [FA SOL]\n[DO]a    [MI-]Dio nell’[LA-]alto dei [FA]cieli,\n[DO]glo - - [SOL] - - - -[DO]ria. [FA DO]\n\n[DO]E    [SOL]pa - [DO]ce, [FA SOL]\n[DO]e    [SOL]pa - [DO]ce, [FA SOL]\n[DO]in   [MI-]terra agli [LA-]uomi[FA]ni,\n[DO]di buona [SOL]volon[DO]tà. [FA DO]"
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "[DO]Glo - - [SOL] - - - -[DO]ria, [FA SOL]\r\n[DO]glo - - [SOL] - - - -[DO]ria, [FA SOL]\r\n[DO]a    [MI-]Dio nell’[LA-]alto dei [FA]cieli,\r\n[DO]glo - - [SOL] - - - -[DO]ria. [FA DO]\r\n\r\n[DO]E    [SOL]pa - [DO]ce, [FA SOL]\r\n[DO]e    [SOL]pa - [DO]ce, [FA SOL]\r\n[DO]in   [MI-]terra agli [LA-]uomi[FA]ni,\r\n[DO]di buona [SOL]volon[DO]tà. [FA DO]",
+        "ordineMesse": {
+            "natale": 2
+        }
     },
     {
         "titolo": "Gloria a Dio nell’alto dei Cieli (Ricci)",
@@ -422,8 +437,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Le Tue meraviglie",
         "momento": "fine",
-        "messe": [],
-        "testo_md": "[Intro: LA- MI- FA DO RE- LA- FA SOL\n        LA- MI- FA DO RE- LA- FA SOL LA-]\n\n> Rit.\n> Ora [FA]lascia, Si[SOL]gnore, che io [MI-]vada in p[LA-]ace\n> perché ho [RE-]visto le [DO]Tue mera[SIb SOL]viglie.\n> Il Tuo [FA]popolo in [SOL]festa per le [MI-]strade corre[LA-]rà\n> a por[RE-]tare le [DO]Tue mera[SIb SOL]viglie.\n\n[LA-]La Tua pre[MI-]senza ha riem[FA]pito d’a[DO]more\n[LA-]le nostre [MI-]vite, le [FA]nostre gior[DO]nate.\nIn[SIb] Te una sola [FA]anima,\n[SOL-]un solo cuore [FA]siamo noi:\n[SIb]con Te la luce ris[FA]plende,\n[SOL-]splende più chiara che [DO]mai! **Rit.**\n\nLa Tua presenza ha inondato d’amore\nle nostre vite, le nostre giornate.\nFra la Tua gente resterai\nper sempre vivo in mezzo a noi\nfino ai confini del tempo:\ncosì ci accompagnerai. **Rit.**\n\n>\n> Ora [FA]lascia, Si[SOL]gnore, che io [MI-]vada in p[LA-]ace\n> perché ho [FA]visto le [SOL]Tue mera[MI- LA-]viglie.\n> Il Tuo [FA]popolo in [SOL]festa per le [MI-]strade corre[LA-]rà\n> a por[FA]tare le [SOL]Tue mera[FA DO]viglie."
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "[Intro: LA- MI- FA DO RE- LA- FA SOL\n        LA- MI- FA DO RE- LA- FA SOL LA-]\n\n> Rit.\n> Ora [FA]lascia, Si[SOL]gnore, che io [MI-]vada in p[LA-]ace\n> perché ho [RE-]visto le [DO]Tue mera[SIb SOL]viglie.\n> Il Tuo [FA]popolo in [SOL]festa per le [MI-]strade corre[LA-]rà\n> a por[RE-]tare le [DO]Tue mera[SIb SOL]viglie.\n\n[LA-]La Tua pre[MI-]senza ha riem[FA]pito d’a[DO]more\n[LA-]le nostre [MI-]vite, le [FA]nostre gior[DO]nate.\nIn[SIb] Te una sola [FA]anima,\n[SOL-]un solo cuore [FA]siamo noi:\n[SIb]con Te la luce ris[FA]plende,\n[SOL-]splende più chiara che [DO]mai! **Rit.**\n\nLa Tua presenza ha inondato d’amore\nle nostre vite, le nostre giornate.\nFra la Tua gente resterai\nper sempre vivo in mezzo a noi\nfino ai confini del tempo:\ncosì ci accompagnerai. **Rit.**\n\n>\n> Ora [FA]lascia, Si[SOL]gnore, che io [MI-]vada in p[LA-]ace\n> perché ho [FA]visto le [SOL]Tue mera[MI- LA-]viglie.\n> Il Tuo [FA]popolo in [SOL]festa per le [MI-]strade corre[LA-]rà\n> a por[FA]tare le [SOL]Tue mera[FA DO]viglie.",
+        "ordineMesse": {
+            "natale": 10
+        }
     },
     {
         "titolo": "Litanie blues (Uz)",
@@ -570,11 +590,13 @@ const datiParrocchialiSalvati = {
         "titolo": "Preghiera semplice",
         "momento": "pace",
         "messe": [
-            "matrimonio"
+            "matrimonio",
+            "natale"
         ],
         "testo_md": "> Rit.\n> Fai di me\n> strumento della pace\n> della tua pace, sì\n> strumento fai di me.\n\nDove è odio, ch'io porti l'amore.\nDove è offesa, ch'io porti il perdono.\nL'unità dove c'è la discordia.\nDove è dubbio, ch'io porti la fede\ned il vero dove regna l'errore\ne speranza a chi più non spera.\nDove è il pianto, ch'io porti la gioia.\nDove è buio, ch'io porti la luce. **Rit.**\n\nFa’ che non cerchi di essere io\nconsolato, capito ed amato,\nma che io cerchi di dare, mio Dio,\nconsolare, capire ed amare.\nPerché è dando che poi si riceve,\nperdonando, che si è perdonati\ne morendo che poi si risorge\na una vita che dura per sempre. **Rit.**",
         "ordineMesse": {
-            "matrimonio": 8
+            "matrimonio": 8,
+            "natale": 7
         }
     },
     {
@@ -582,19 +604,26 @@ const datiParrocchialiSalvati = {
         "momento": "offertorio",
         "messe": [
             "gSanto",
-            "matrimonio"
+            "matrimonio",
+            "natale"
         ],
         "testo_md": "[Intro: RE  RE4  RE  RE4]\n[RE]Ecco il fru[RE4]mento che [RE]noi Ti por[RE4]tiamo, (Il frumento)\n[RE]pane della Madre [LA]Terra\n[SOL]e del lavor[RE]o e su[MI-]dore di t[RE]anti:\n[SOL]quelli che [LA]amano [RE]Te. (è per te)[RE4  RE  RE4]\n\n[RE]Portiamo il [RE4]vino, [RE]frutto della [RE4]vite, (Ecco il vino)\n[RE]sangue della Madre [LA]Terra\n[SOL]e del [RE]lavoro e la [MI-]gioia di [RE]tanti:\n[SOL]quelli che [LA]amano [RE]Te. (è per te)[RE4  RE  RE4]**Rit.**\n\n> Rit.\n> [LA]Insieme ai doni ve[RE]niamo noi stessi\n> [SOL]figli di tutta la [LA]Terra\n> [SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi. (tutto x2)\n>\n>\n> …[SOL]per riscal[RE]darci atto[MI-]rno alla m[RE]ensa\n> [SOL]che hai prepa[LA]rato per n[RE]oi.",
         "ordineMesse": {
             "gSanto": 6,
-            "matrimonio": 6
+            "matrimonio": 6,
+            "natale": 4
         }
     },
     {
         "titolo": "Re dei re",
         "momento": "fine",
-        "messe": [],
-        "testo_md": "[Intro: MI- DO SOL RE (x2)]\n\n[MI-]Hai solle[DO]vato i nostri [SOL]volti dalla [RE]polvere,\n[MI-]le nostre [DO]colpe hai [SOL]portato su di [RE]Te,\n[MI-]Signore [DO]Ti sei fatto [SOL]uomo in tutto [RE]come noi,\n[MI-]per [DO SOL RE]a - mo - re. **Rit.**\n\n> Rit.\n> [MI-]Figlio dell'Altissimo, [DO]povero tra i poveri, [SOL]vieni a dimorare tra [RE]noi.\n> [MI-]Dio dell'impossibile, [DO]Re di tutti secoli, [SOL]vieni nella Tua mae[RE]stà.\n> [MI-]Re dei [DO]re, i [SOL]popoli Ti acclamano, i [RE]cieli Ti proclamano\n> [MI-]Re dei [DO]re,   [SOL]luce degli uomini, [RE]regna col Tuo amore tra [MI- DO SOL RE4 RE MI- (x2)]no - - i.\n\n[MI-]Ci hai riscat[DO]tati dalla [SOL]stretta delle [RE]tenebre\n[MI-]perché po[DO]tessimo glo[SOL]rificare [RE]Te,\n[Mi-]hai river[DO]sato in noi la [SOL]vita del Tuo [RE]Spirito,\n[MI-]per [DO SOL RE]a - mo - re. **Rit.**\n\n[MI- DO]]Tua è la [SOL RE}glo - ria per [MI DO SOL RE]se - e - mpre.\n[MI- DO]]Tua è la [SOL RE}glo - ria per [MI DO SOL RE]se - e - mpre.\n[MI- DO]Glo - ria, [SOL RE]glo - ria,\n[MI- DO]glo - ria, [SOL RE]glo - ria. **Rit.**"
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "[Intro: MI- DO SOL RE (x2)]\n\n[MI-]Hai solle[DO]vato i nostri [SOL]volti dalla [RE]polvere,\n[MI-]le nostre [DO]colpe hai [SOL]portato su di [RE]Te,\n[MI-]Signore [DO]Ti sei fatto [SOL]uomo in tutto [RE]come noi,\n[MI-]per [DO SOL RE]a - mo - re. **Rit.**\n\n> Rit.\n> [MI-]Figlio dell'Altissimo, [DO]povero tra i poveri, [SOL]vieni a dimorare tra [RE]noi.\n> [MI-]Dio dell'impossibile, [DO]Re di tutti secoli, [SOL]vieni nella Tua mae[RE]stà.\n> [MI-]Re dei [DO]re, i [SOL]popoli Ti acclamano, i [RE]cieli Ti proclamano\n> [MI-]Re dei [DO]re,   [SOL]luce degli uomini, [RE]regna col Tuo amore tra [MI- DO SOL RE4 RE MI- (x2)]no - - i.\n\n[MI-]Ci hai riscat[DO]tati dalla [SOL]stretta delle [RE]tenebre\n[MI-]perché po[DO]tessimo glo[SOL]rificare [RE]Te,\n[Mi-]hai river[DO]sato in noi la [SOL]vita del Tuo [RE]Spirito,\n[MI-]per [DO SOL RE]a - mo - re. **Rit.**\n\n[MI- DO]]Tua è la [SOL RE}glo - ria per [MI DO SOL RE]se - e - mpre.\n[MI- DO]]Tua è la [SOL RE}glo - ria per [MI DO SOL RE]se - e - mpre.\n[MI- DO]Glo - ria, [SOL RE]glo - ria,\n[MI- DO]glo - ria, [SOL RE]glo - ria. **Rit.**",
+        "ordineMesse": {
+            "natale": 9
+        }
     },
     {
         "titolo": "Resta accanto a me",
@@ -649,12 +678,14 @@ const datiParrocchialiSalvati = {
         "momento": "santo",
         "messe": [
             "gSanto",
-            "matrimonio"
+            "matrimonio",
+            "natale"
         ],
         "testo_md": "[Intro: LA RE LA RE]\n\n**Uomini**\n[LA] Santo il Signore [RE]Dio dell’uni[LA]ver[RE]so.\nI Cieli e la [LA]terra sono pieni [RE]della Tua [LA]gloria[RE].\nO[LA]sanna nell’alto dei Ci[RE]eli e bene[LA]detto Colui che [RE]viene\nnel [LA]nome del Si[RE]gnore. Osanna, nell’[LA]alto dei Ci[RE]eli.\n\n**Donne**\nE [LA]santo, santo, santo, il Si[RE]gnore della vita.\nE [LA]santo, santo, santo, il Si[RE]gnore della storia.\nNei [LA]Cieli e sulla terra rispl[RE]ende la Sua glori[LA]a. [RE]\nOs[LA]anna, osanna, osanna nel ci[RE]elo sconfinato.\nOs[LA]anna, osanna, osanna nel [RE]canto del creato.\nE [LA]sia benedetto Co[RE]lui che viene in nome di [LA]Dio. [RE] (x2)",
         "ordineMesse": {
             "gSanto": 5,
-            "matrimonio": 7
+            "matrimonio": 7,
+            "natale": 6
         }
     },
     {
@@ -737,8 +768,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Tu scendi dalle stelle",
         "momento": "natale",
-        "messe": [],
-        "testo_md": "Tu scendi dalle stelle,\no Re del Cielo,\ne vieni in una grotta\nal freddo al gelo,\ne vieni in una grotta\nal freddo al gelo.\n\nO Bambino, mio Divino,\nio Ti vedo qui a tremar.\nO Dio Beato.\nAh, quanto Ti costò\nl'avermi amato!\nAh, quanto Ti costò\nl'avermi amato!\n\nA Te, che sei del mondo\nil Creatore,\nmancano panni e fuoco\no mio Signore!\nMancano panni e fuoco\no mio Signore!\n\nCaro eletto Pargoletto\nquanto questa povertà\npiù mi innamora!\nGiacché Ti fece amor\npovero ancora!\nGiacché Ti fece amor\npovero ancora!"
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "Tu scendi dalle stelle,\no Re del Cielo,\ne vieni in una grotta\nal freddo al gelo,\ne vieni in una grotta\nal freddo al gelo.\n\nO Bambino, mio Divino,\nio Ti vedo qui a tremar.\nO Dio Beato.\nAh, quanto Ti costò\nl'avermi amato!\nAh, quanto Ti costò\nl'avermi amato!\n\nA Te, che sei del mondo\nil Creatore,\nmancano panni e fuoco\no mio Signore!\nMancano panni e fuoco\no mio Signore!\n\nCaro eletto Pargoletto\nquanto questa povertà\npiù mi innamora!\nGiacché Ti fece amor\npovero ancora!\nGiacché Ti fece amor\npovero ancora!",
+        "ordineMesse": {
+            "natale": 11
+        }
     },
     {
         "titolo": "Tu sei - Paolo Spoladore",
@@ -760,8 +796,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Venite fedeli",
         "momento": "natale",
-        "messe": [],
-        "testo_md": "Venite fedeli, l'angelo ci invita.\nVenite, venite a Betlemme.\n\n> Rit.\n> Nasce per noi Cristo Salvatore.\n> Venite adoriamo, venite adoriamo,\n> venite adoriamo il Signore Gesù.\n\nLa luce del mondo brilla in una grotta:\nla fede ci guida a Betlemme. **Rit.**\n\nLa notte risplende, tutto il mondo attende:\nseguiamo i pastori a Betlemme. **Rit.**\n\nIl Figlio di Dio, Re dell'universo,\nsi è fatto Bambino a Betlemme. **Rit.**\n\n\"Sia gloria nei Cieli, pace sulla terra\"\nun angelo annunzia a Betlemme. **Rit.**"
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "Venite fedeli, l'angelo ci invita.\nVenite, venite a Betlemme.\n\n> Rit.\n> Nasce per noi Cristo Salvatore.\n> Venite adoriamo, venite adoriamo,\n> venite adoriamo il Signore Gesù.\n\nLa luce del mondo brilla in una grotta:\nla fede ci guida a Betlemme. **Rit.**\n\nLa notte risplende, tutto il mondo attende:\nseguiamo i pastori a Betlemme. **Rit.**\n\nIl Figlio di Dio, Re dell'universo,\nsi è fatto Bambino a Betlemme. **Rit.**\n\n\"Sia gloria nei Cieli, pace sulla terra\"\nun angelo annunzia a Betlemme. **Rit.**",
+        "ordineMesse": {
+            "natale": 1
+        }
     },
     {
         "titolo": "Verbum panis",
@@ -789,8 +830,13 @@ const datiParrocchialiSalvati = {
     {
         "titolo": "Vieni qui tra noi",
         "momento": "comunione",
-        "messe": [],
-        "testo_md": "> Rit.\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]come fia[DO]mma che sce[MI-]nde dal [RE4]cielo.\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [LA-7 SOL]ri - nnova il [DO]cuore del mondo. [RE4]\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [LA-7]soffio di [RE4]libertà. [SOL DO SOL]\n\n[SOL]Nel silenzio Tu [DO]sei pace, [SOL]\nnella notte [DO]luce, [SOL]\nDio nascosto, [DO]vita, [SOL]\nDio Tu sei, [DO]amore. [SOL]\nTutto si ricrea[DO] in [SOL]Te,\ntutto [RE]vive in [Mi-7]Te.\nScalda col tuo [DO SOL]fuoco\nterra e [RE]cielo. [Mi-7]\nTu, che sai rac[DO]cogliere [SOL]\nogni [RE]gemito, [MI-]\nsemina nel [DO]nostro cuore [SOL]\nuna spe[LA-7]ranza d’eternità. [DO-]**Rit.**\n\n> Rit.\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]come fia[DO]mma che sce[MI-]nde dal [RE4]cielo.\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [LA-7 SOL]ri - nnova il [DO]cuore del mondo. [RE4]\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [DO]soffio di libertà...[DO-]\n> (soffio di libertà...)\n> ...[LA7]amore, [DO]Dio in mezzo a [SOL]noi!"
+        "messe": [
+            "natale"
+        ],
+        "testo_md": "> Rit.\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]come fia[DO]mma che sce[MI-]nde dal [RE4]cielo.\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [LA-7 SOL]ri - nnova il [DO]cuore del mondo. [RE4]\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [LA-7]soffio di [RE4]libertà. [SOL DO SOL]\n\n[SOL]Nel silenzio Tu [DO]sei pace, [SOL]\nnella notte [DO]luce, [SOL]\nDio nascosto, [DO]vita, [SOL]\nDio Tu sei, [DO]amore. [SOL]\nTutto si ricrea[DO] in [SOL]Te,\ntutto [RE]vive in [Mi-7]Te.\nScalda col tuo [DO SOL]fuoco\nterra e [RE]cielo. [Mi-7]\nTu, che sai rac[DO]cogliere [SOL]\nogni [RE]gemito, [MI-]\nsemina nel [DO]nostro cuore [SOL]\nuna spe[LA-7]ranza d’eternità. [DO-]**Rit.**\n\n> Rit.\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]come fia[DO]mma che sce[MI-]nde dal [RE4]cielo.\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [LA-7 SOL]ri - nnova il [DO]cuore del mondo. [RE4]\n> [DO SOL RE]Vieni qui tra[SOL] noi\n> [SOL]col tuo am[DO]ore rischiara[MI-] la terra. [RE4]\n> [DO SOL RE]Vieni qui tra[MI-7] noi,\n> [DO]soffio di libertà...[DO-]\n> (soffio di libertà...)\n> ...[LA7]amore, [DO]Dio in mezzo a [SOL]noi!",
+        "ordineMesse": {
+            "natale": 8
+        }
     },
     {
         "titolo": "Vivere la vita",

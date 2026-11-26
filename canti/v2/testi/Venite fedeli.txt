@@ -3,6 +3,7 @@
 ---
 momento: natale
 messe:
+ - natale - 1
 ---
 
 Venite fedeli, l'angelo ci invita.

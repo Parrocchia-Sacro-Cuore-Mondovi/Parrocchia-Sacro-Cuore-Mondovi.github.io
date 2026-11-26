@@ -3,6 +3,7 @@
 ---
 momento: offertorio
 messe:
+ - natale - 5
 ---
 
 Frutto della nostra terra,

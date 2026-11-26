@@ -3,6 +3,7 @@
 ---
 momento: alleluia
 messe:
+ - natale - 3
 ---
 
 [Intro: MI  SI  LA  MI  LA  MI]

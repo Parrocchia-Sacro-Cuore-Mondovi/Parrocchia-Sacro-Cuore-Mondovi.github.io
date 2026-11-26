@@ -3,6 +3,7 @@
 ---
 momento: natale
 messe:
+ - natale - 11
 ---
 
 Tu scendi dalle stelle,
