@@ -486,7 +486,7 @@ footer {
     line-height: 1 !important;
     pointer-events: none !important;
     user-select: none !important;
-    white-space: nowrap !important;
+    white-space: pre !important; /* nowrap + rispetta gli a capo scritti nel .txt (es. Intro su due righe) */
     text-transform: uppercase !important;
 }
 

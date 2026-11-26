@@ -177,6 +177,8 @@ function impostaFiltro(tipo, id, nomeTesto = "Esplora i Canti") {
 function renderizzaLyrics(testoMd) {
     let testoConAccordi = testoMd.replace(/(\S*\[[^\]]+\]\S*)/g, '<span class="keep-together">$1</span>');
     testoConAccordi = testoConAccordi.replace(/\[([^\]]+)\]/g, (match, accordo) => {
+        // Un a capo dentro le parentesi (es. nella [Intro: ...]) viene mantenuto: si tolgono solo gli spazi attorno
+        accordo = accordo.replace(/[ \t]*\r?\n[ \t]*/g, '\n');
         return `<span class="c" data-v="${accordo}"></span>`;
     });
     return marked.parse(testoConAccordi, { breaks: true });
