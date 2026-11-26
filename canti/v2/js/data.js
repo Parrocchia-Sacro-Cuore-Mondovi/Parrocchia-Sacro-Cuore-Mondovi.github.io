@@ -21,6 +21,7 @@ const datiParrocchialiSalvati = {
             "messe": [
                 { "id": "gSanto", "nome": "Giovedì Santo" },
                 { "id": "matrimonio", "nome": "Matrimonio" },
+                { "id": "natale", "nome": "Natale" },
             ],
             "canti": [
     {
