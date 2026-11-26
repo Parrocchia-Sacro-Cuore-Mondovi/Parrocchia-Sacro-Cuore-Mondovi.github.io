@@ -1040,7 +1040,7 @@ footer {
     color: var(--primary-blue) !important;
     font-weight: bold !important;
     font-size: 0.85rem !important;
-    line-height: 1.35 !important; /* un minimo di spazio tra una riga e l'altra */
+    line-height: 1.8 !important; /* spazio tra una riga e l'altra */
     white-space: pre !important;
     text-transform: uppercase !important;
     pointer-events: none !important;
@@ -1059,3 +1059,5 @@ footer {
 .lyrics.hide-chords .c-lab {
     display: none !important;
 }
+
+/* Etichetta su piu righe: piu spazio sopra la riga, cosi non si sovrappone al testo precedente database/ img/ testiCanti/
